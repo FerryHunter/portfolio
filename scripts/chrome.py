@@ -276,14 +276,25 @@ def cookies(D, home=""):
 def shell(D, lang, body, title=None, description=None, home=""):
     """Dokumen lengkap: CSS dan modul motion yang SAMA PERSIS
     dengan yang dipakai Next.js — nol drift antara dua render."""
+    t = title or D['meta']['title']
+    desc = description or D['meta']['description']
     return f'''<!DOCTYPE html>
 
 <html lang="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title or D['meta']['title']}</title>
-<meta name="description" content="{description or D['meta']['description']}">
+<title>{t}</title>
+<meta name="description" content="{desc}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ferry Works">
+<meta property="og:title" content="{t}">
+<meta property="og:description" content="{desc}">
+<meta property="og:image" content="https://www.ferryworks.space/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{t}">
+<meta name="twitter:description" content="{desc}">
+<meta name="twitter:image" content="https://www.ferryworks.space/og-image.png">
 <link rel="icon" href="../public/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../public/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="../public/apple-touch-icon.png">

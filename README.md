@@ -1296,6 +1296,67 @@ punya preview statis Python supaya tetap bisa diverifikasi tanpa
 dependency itu, jadi shape `metadata.icons` diperiksa manual
 terhadap tipe `Metadata` Next.js, bukan lewat render nyata.
 
+### Open Graph image (thumbnail saat link di-share)
+
+Diminta setelah pengguna share link situs ke Slack dan yang muncul
+cuma ikon placeholder abu-abu — situs ini belum pernah punya
+`og:image` sama sekali, jadi *unfurl* di Slack/Discord/Twitter tidak
+ada gambar untuk ditampilkan.
+
+Kartu 1200×630 dirancang mengikuti sistem visual yang sudah ada:
+mark crosshair (sama seperti favicon) + wordmark "FERRY WORKS" di
+kiri atas, nama besar dalam Switzer bold, dua baris peran dalam
+JetBrains Mono warna aksen (pola `nav-coords-lines` yang sama, bukan
+digabung dash), garis meta "7+ Years · UI/UX · Web3 · Fintech ·
+Enterprise" di bawah, dan dua emoji ambient (🎨 ✨) dari set sticker
+hero yang sama — supaya kartu share terasa seperti potongan dari
+situsnya sendiri, bukan aset terpisah.
+
+Cara render-nya beda dari favicon: font Switzer/JetBrains Mono cuma
+di-load penuh lewat webfont asli (Fontshare + Google Fonts) di
+browser sungguhan, bukan lewat rasterisasi SVG statis (`sips` tidak
+bisa fetch web font eksternal). Jadi dipakai jalur lain: sebuah
+halaman harness sementara menggambar seluruh kartu ke elemen
+`<canvas>` 1200×630 lewat Canvas 2D API — teks dengan `fillText`
+setelah menunggu `document.fonts.ready`, mark crosshair digambar
+langsung dari `d` attribute path SVG aslinya lewat `Path2D`, bukan
+elemen `<img>` terpisah. Hasilnya diambil lewat `canvas.toDataURL()`
+di browser, base64-nya diekstrak dan di-decode jadi
+`public/og-image.png`, lalu di-flatten dari RGBA ke RGB opaque
+(hindari isu transparansi di sebagian crawler unfurl).
+
+Dipasang sekali di `app/layout.tsx`: field `openGraph`/`twitter`
+sengaja TIDAK menyebut `title`/`description` sendiri — Next.js
+otomatis mengambil dari `title`/`description` yang sudah di-resolve
+tiap route (root, `[lang]`, case study), jadi `og:title` tetap benar
+per halaman sementara `og:image` satu gambar sitewide yang
+diwariskan ke semua turunan tanpa perlu diulang di halaman case
+study manapun. `metadataBase` ditambahkan (`https://www.ferryworks.
+space`, domain `www` karena apex 308-redirect ke situ) supaya path
+relatif `/og-image.png` di-resolve jadi URL absolut — wajib untuk
+`og:image`, kebanyakan crawler menolak path relatif. Tag yang sama
+ditambahkan manual ke `shell()` di `chrome.py` untuk preview statis.
+
+Diverifikasi lewat DOM nyata: `og:title`/`og:description` di
+halaman case study (`amazon.html`) terbukti beda dari halaman index
+(mengikuti judul case study-nya sendiri) sementara `og:image` tetap
+sama di keduanya — membuktikan pola inheritance-nya bekerja seperti
+yang dirancang, bukan cuma dites di satu halaman. Fetch langsung ke
+`og-image.png` mengembalikan `200`/`image/png`.
+
+### Navbar atas: "Case Studies" dan "Design Systems" dihapus dari drawer
+
+Diminta: dua item itu dihapus dari drawer "more links" di navbar
+atas (pill grup ketiga, sebelah kanan). `nav.drawer` di
+`content/*.json` sebelumnya berisi 4 item (Case studies, Design
+systems, Résumé, Contact) — dipangkas jadi 2 (Résumé, Contact) di
+kedua bahasa. Baik `Nav.tsx` maupun `chrome.py` sudah nge-loop
+generic atas array itu (dan menu mobile pakai array yang sama lewat
+spread `[...primary, ...drawer]`), jadi tidak ada perubahan kode
+sama sekali, murni penyesuaian data. Diverifikasi lewat DOM nyata
+(drawer desktop dan menu mobile dua-duanya tinggal 2 item) dan
+screenshot visual drawer dalam keadaan terbuka.
+
 ## Penyimpangan sadar dari spec
 
 | Spec | Di sini | Alasan |
