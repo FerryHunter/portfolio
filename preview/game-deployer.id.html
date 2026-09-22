@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web3 Game Deployer Engine · Ferry Works</title>
+<meta name="description" content="Studi kasus: dashboard yang membawa satu game shard World Engine dari pendaftaran sampai jadi chain EVM yang live, tanpa terminal terbuka sepanjang waktu.">
+<link rel="icon" href="../public/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../public/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../public/apple-touch-icon.png">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap">
+<!-- CSS yang sama persis dengan yang dipakai Next.js -->
+<link rel="stylesheet" href="../app/globals.css">
+</head>
+<body class="preloading">
+
+<div id="preloader" data-preloader role="status" aria-label="Memuat">
+  <div class="pre-brand"><span>Ferry Works</span></div>
+  <span class="pre-count" data-pre-count aria-hidden="true">000</span>
+  <span class="pre-bar" data-pre-bar aria-hidden="true"></span>
+</div>
+<div id="cursor" data-cursor-el data-label-default="Lihat" aria-hidden="true">
+  <span class="cursor-label" data-cursor-label></span>
+</div>
+
+<a class="skip-link" href="#main">Lewati ke konten</a>
+
+<nav class="nav" data-nav aria-label="Menu">
+  <div class="nav-inner">
+
+    <div class="nav-layer nav-layer--top">
+      <div class="nav-group">
+        <a class="pill t-eyebrow" href="index.id.html#work">Karya<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.id.html#process">Proses<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.id.html#about">Tentang<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+      <div class="nav-group nav-coords t-eyebrow">
+        <span class="nav-coords-lines"><span>Senior Product Designer</span><span>Visual Designer</span></span><span>7+ TAHUN · UI/UX · WEB3</span>
+      </div>
+      <div class="nav-group">
+        <div class="nav-drawer-zone">
+          <button class="nav-more" data-more aria-expanded="false" aria-label="Tautan lain">
+            <span class="nav-more-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+          <div class="nav-drawer" data-drawer>
+            <a class="pill t-eyebrow" href="index.id.html#work">Studi kasus<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.id.html#process">Design system<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.id.html#contact">Résumé<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.id.html#contact">Kontak<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-layer nav-layer--scrolled">
+      <a class="nav-wordmark" href="index.id.html#top">Ferry Works</a>
+      <div class="nav-group">
+        <a class="pill t-eyebrow" href="index.id.html#contact">Ajak kerja sama<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+    </div>
+
+    <div class="nav-mobile-bar">
+      <a class="nav-wordmark" href="index.id.html#top">Ferry Works</a>
+      <button class="burger" data-burger aria-expanded="false" aria-controls="mobile-menu"
+              aria-label="Menu"><i></i><i></i></button>
+    </div>
+
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+  <div>
+    <a class="t-menu" href="index.id.html#work">Karya</a><a class="t-menu" href="index.id.html#process">Proses</a><a class="t-menu" href="index.id.html#about">Tentang</a><a class="t-menu" href="index.id.html#work">Studi kasus</a><a class="t-menu" href="index.id.html#process">Design system</a><a class="t-menu" href="index.id.html#contact">Résumé</a><a class="t-menu" href="index.id.html#contact">Kontak</a>
+  </div>
+  <div class="mobile-menu-foot t-eyebrow">
+    <span class="nav-coords-lines"><span>Senior Product Designer</span><span>Visual Designer</span></span><span>7+ TAHUN · UI/UX · WEB3</span>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="case-hero" id="top">
+  <div class="case-hero-deco case-hero-deco--game-deployer" aria-hidden="true"><div class="case-hero-deco-blob"></div></div>
+  <div class="case-hero-head reveal">
+    <div class="case-back">
+      <a class="pill t-eyebrow" href="index.id.html#work">Semua proyek<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      <span class="t-eyebrow case-eyebrow">Studi kasus</span>
+    </div>
+    <h1 class="t-case-title case-title"><span class="w"><span>Web3</span></span> <span class="w"><span>Game</span></span> <span class="w"><span>Deployer</span></span> <span class="w"><span>Engine</span></span> </h1>
+    <p class="t-detail-b case-lead">Lima perintah World CLI berubah jadi satu game shard onchain. Saya mendesain dashboard yang menampilkan prosesnya: daftar, sambungkan chain, deploy, dan lihat statusnya berubah dari pending ke live tanpa keluar dari browser.</p>
+    <a class="pill pill--lg t-eyebrow" href="https://world.dev/" target="_blank" rel="noopener noreferrer">Kunjungi world.dev<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+  </div>
+
+  <dl class="case-facts reveal"><div class="case-fact"><dt class="t-eyebrow">Klien</dt><dd class="t-meta">Argus Labs</dd></div><div class="case-fact"><dt class="t-eyebrow">Sektor</dt><dd class="t-meta">Web3 · Infrastruktur</dd></div><div class="case-fact"><dt class="t-eyebrow">Peran</dt><dd class="t-meta">Senior UI/UX Designer</dd></div><div class="case-fact"><dt class="t-eyebrow">Tim</dt><dd class="t-meta">1 desain · 3 engineer</dd></div><div class="case-fact"><dt class="t-eyebrow">Periode</dt><dd class="t-meta">2023–2024</dd></div><div class="case-fact"><dt class="t-eyebrow">Platform</dt><dd class="t-meta">Aplikasi web · Desktop dulu</dd></div></dl>
+
+  <figure class="case-fig reveal case-fig--shot case-fig--rounded-lg"><div class="case-media" style="--ar:1.1847"><img src="../public/work/covers/web3-game-deployer-engine.webp" alt="Overview deployer World Engine menampilkan EVM chain ID, block height, dan status deployment satu game shard sekaligus" loading="eager" decoding="async"></div></figure>
+</section>
+
+<section class="section tagline-section">
+  <div class="tagline-grid reveal" data-stagger="18">
+    <div>
+      <p class="t-label">Ringkasan</p>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">01 · Brief-nya</p>
+    </div>
+    <p class="t-tagline tagline"><span class="w"><span>World</span></span> <span class="w"><span>Engine</span></span> <span class="w"><span>adalah</span></span> <span class="w"><span>framework</span></span> <span class="w"><span>ECS</span></span> <span class="w"><span>dan</span></span> <span class="w"><span>tick-driven</span></span> <span class="w"><span>untuk</span></span> <span class="w"><span>game</span></span> <span class="w"><span>onchain</span></span> <span class="w"><span>real-time,</span></span> <span class="w"><span>lebih</span></span> <span class="w"><span>dekat</span></span> <span class="w"><span>ke</span></span> <span class="w"><span>Unity</span></span> <span class="w"><span>atau</span></span> <span class="w"><span>Unreal</span></span> <span class="w"><span>ketimbang</span></span> <span class="w"><span>tooling</span></span> <span class="w"><span>blockchain</span></span> <span class="w"><span>pada</span></span> <span class="w"><span>umumnya.</span></span> <span class="w"><span>State</span></span> <span class="w"><span>tiap</span></span> <span class="w"><span>shard</span></span> <span class="w"><span>hidup</span></span> <span class="w"><span>di</span></span> <span class="w"><span>chain</span></span> <span class="w"><span>yang</span></span> <span class="w"><span>selalu</span></span> <span class="w"><span>bisa</span></span> <span class="w"><span>dijangkau</span></span> <span class="w"><span>studio,</span></span> <span class="w"><span>bukan</span></span> <span class="w"><span>di</span></span> <span class="w"><span>server</span></span> <span class="w"><span>satu</span></span> <span class="w"><span>perusahaan.</span></span> <span class="w"><span>Meluncurkan</span></span> <span class="w"><span>satu</span></span> <span class="w"><span>shard</span></span> <span class="w"><span>tetap</span></span> <span class="w"><span>lewat</span></span> <span class="w"><span>terminal:</span></span> <span class="w"><span>lima</span></span> <span class="w"><span>perintah</span></span> <span class="w"><span>CLI,</span></span> <span class="w"><span>tanpa</span></span> <span class="w"><span>satu</span></span> <span class="w"><span>pun</span></span> <span class="w"><span>tampilan</span></span> <span class="w"><span>bersama</span></span> <span class="w"><span>soal</span></span> <span class="w"><span>apa</span></span> <span class="w"><span>yang</span></span> <span class="w"><span>sudah</span></span> <span class="w"><span>benar-benar</span></span> <span class="w"><span><em>ter-deploy</em>.</span></span> <span class="w"><span>Saya</span></span> <span class="w"><span>mendesain</span></span> <span class="w"><span>dashboard</span></span> <span class="w"><span>di</span></span> <span class="w"><span>sekeliling</span></span> <span class="w"><span>CLI</span></span> <span class="w"><span>itu:</span></span> <span class="w"><span>daftar,</span></span> <span class="w"><span>buat</span></span> <span class="w"><span>world,</span></span> <span class="w"><span>dan</span></span> <span class="w"><span>lihat</span></span> <span class="w"><span>satu</span></span> <span class="w"><span>shard</span></span> <span class="w"><span>jadi</span></span> <span class="w"><span><em>live</em>.</span></span> </p>
+  </div>
+</section>
+
+<section class="section">
+  <figure class="case-fig reveal case-fig--shot case-fig--rounded-lg"><div class="case-media" style="--ar:1.3333"><img src="../public/work/game-deployer/macbook.webp" alt="Layar Overview World Engine untuk Argus Labs, mendaftar game shard miliknya, ditampilkan terbuka di MacBook Pro" loading="lazy" decoding="async"></div></figure>
+</section>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Cakupan</h2>
+    <p class="t-meta">Yang saya kerjakan</p>
+  </div>
+  <ol class="case-scope reveal"><li class="case-scope-item"><span class="case-scope-num t-eyebrow">01</span><span class="case-scope-label">Wawancara developer</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">02</span><span class="case-scope-label">Pemetaan alur CLI</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">03</span><span class="case-scope-label">Information architecture</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">04</span><span class="case-scope-label">User flow</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">05</span><span class="case-scope-label">Wireframe</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">06</span><span class="case-scope-label">Desain antarmuka</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">07</span><span class="case-scope-label">Design system</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">08</span><span class="case-scope-label">Empty & error state</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">09</span><span class="case-scope-label">Prototyping</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">10</span><span class="case-scope-label">Design QA</span></li></ol>
+</section>
+
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
+      <h2 class="t-label">Masalah</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">02 · Titik rusaknya</p>
+    </div>
+    <div class="case-note-body">
+      <h3 class="t-detail-h case-note-h">Deploy satu game shard berarti membaca dokumentasi di satu tab dan terminal di tab lain.</h3>
+      <p class="case-p">World CLI bisa menyalakan satu game shard dalam lima perintah, tapi dashboard di sekelilingnya berhenti di halaman daftar: tidak ada status shard, tidak ada chain ID, tidak ada cara membedakan base shard yang deploy mulus dari game shard yang gagal diam-diam. Satu-satunya umpan balik adalah menjalankan ulang perintah deploy dan menonton terminal bergulir.</p><p class="case-p">Setiap deployment memunculkan tiga pertanyaan yang sama tanpa satu tempat untuk menjawabnya: chain ini live atau tidak, berjalan di atas apa, dan commit mana yang tayang. Menjawabnya berarti menyilangkan block explorer, log CLI, dan satu thread Discord.</p><p class="case-p">Premis Cardinal adalah state satu shard tidak hidup di infrastruktur satu tim seperti server Nakama: kehilangan akun yang mengelola server berarti state game ikut hilang, tapi game shard yang tertaut ke blockchain tetap bisa dijangkau lewat chain itu sendiri. Tidak satu pun dari itu terlihat di dashboard. Studio tidak punya cara untuk melihat sekilas bahwa chain ID dan block height shard mereka adalah jaminan nyata, bukan sekadar baris log dari CLI yang harus dipercaya begitu saja.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
+      <h2 class="t-label">Pendekatan</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">03 · Cara kerjanya</p>
+    </div>
+    <div class="case-note-body">
+      <h3 class="t-detail-h case-note-h">Satu kartu overview untuk vital sign shard, satu checklist terpandu untuk lima perintah yang membuatnya.</h3>
+      <p class="case-p">Tab Overview menampilkan EVM chain ID, RPC URL, tautan block explorer, dan block height satu game shard begitu ia live, dengan status pill (Success, Running, Failed) menggantikan tugas log terminal mentah. Detail chain yang sama itu juga jadi jalan masuk kembali kalau studio pernah kehilangan akses ke World Engine itu sendiri: state shard hidup di chain, bukan di server satu tim, jadi chain ID dan tautan explorer sudah cukup untuk menjangkaunya secara mandiri.</p><p class="case-p">Create your World mengubah lima perintah World CLI, login, create, link, evm deploy untuk chain dasarnya, cardinal deploy untuk logika dan state game shard itu sendiri, jadi checklist yang bisa disalin di sebelah dokumentasinya, sehingga developer mengikuti urutan yang sama baik ia membaca panduan atau layarnya.</p><p class="case-p">Recent Deployments mendaftar setiap shard berdasarkan branch, commit, environment, dan author, bisa disaring lewat rentang tanggal dan status, sehingga deploy yang gagal tinggal satu pandangan dari yang berhasil di sebelahnya, bukan di tab berbeda.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Layar</h2>
+    <p class="t-meta">Empat layar dari pendaftaran sampai shard live</p>
+  </div>
+  <div class="case-gallery"><figure class="case-fig reveal"><div class="case-media" style="--ar:1.5"><img src="../public/work/game-deployer/register.webp" alt="Web3 Game Deployer Engine" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media" style="--ar:1.5"><img src="../public/work/game-deployer/overview.webp" alt="Web3 Game Deployer Engine" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media" style="--ar:1.5"><img src="../public/work/game-deployer/create-world.webp" alt="Web3 Game Deployer Engine" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media" style="--ar:1.5"><img src="../public/work/game-deployer/deployments.webp" alt="Web3 Game Deployer Engine" loading="lazy" decoding="async"></div></figure></div>
+</section>
+
+<section class="section case-metrics grain" data-dark data-reveal>
+  <div class="section-head">
+    <h2 class="t-label">Hasil</h2>
+    <p class="t-meta">06 · Setelah rilis</p>
+  </div>
+  <div class="case-metrics-row"><div class="case-metric"><span class="case-metric-v">3 → 1</span><span class="case-metric-k t-meta">Tempat status satu shard berada</span></div><div class="case-metric"><span class="case-metric-v">5</span><span class="case-metric-k t-meta">Perintah World CLI dari login sampai shard live</span></div><div class="case-metric"><span class="case-metric-v">0</span><span class="case-metric-k t-meta">Jendela terminal untuk mengecek satu deploy</span></div><div class="case-metric"><span class="case-metric-v">1</span><span class="case-metric-k t-meta">Dashboard overview, deployment, dan dokumentasi jadi satu</span></div></div>
+  <p class="t-meta case-metrics-note">Angka sementara. Diganti setelah tinjauan pasca-rilis selesai.</p>
+</section>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Deliverable</h2>
+    <p class="t-meta">Yang diserahkan ke tim</p>
+  </div>
+  <ul class="service-tags case-deliverables reveal">
+    <li>Dashboard overview dengan status shard</li><li>Checklist CLI Create your World</li><li>Log Recent Deployments</li><li>Alur sign up / sign in</li><li>Empty & error state</li><li>Design system</li><li>Spesifikasi handoff</li>
+  </ul>
+</section>
+
+<section class="section case-next-section">
+  <div class="case-marquee" aria-hidden="true">
+    <div class="case-marquee-track">
+      <div style="display:flex"><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span></div>
+      <div style="display:flex"><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span></div>
+    </div>
+  </div>
+
+  <a class="case-next reveal" href="nanovest-calendar.id.html"
+     data-cursor="view" data-cursor-label="Karya">
+    <span class="case-next-text">
+      <span class="case-next-label t-eyebrow">Next case<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></span>
+      <span class="case-next-title t-service">Nanovest US Stocks Event Calendar</span>
+      <span class="case-next-cat t-meta">Fintech · Mobile</span>
+    </span>
+    <span class="case-next-media"><img src="../public/work/covers/us-stock-event-calendar.webp" alt="Nanovest US Stocks Event Calendar"
+          loading="lazy" decoding="async"></span>
+  </a>
+</section>
+
+</main>
+
+<footer class="grain" id="footer-cta" data-dark data-reveal>
+  <div class="footer-top">
+    <h2 class="t-claim footer-claim"><span class="line"><span>Punya ide</span></span><span class="line"><span>yang perlu dibentuk?</span></span><span class="line"><span>Mari bicara.</span></span></h2>
+    <div class="footer-contact t-meta" id="contact">
+      <address>Terbuka untuk freelance<br>dan posisi full time<br>Remote · ke mana saja<br></address>
+      <a href="mailto:mr.feriansyah@gmail.com">mr.feriansyah@gmail.com</a>
+      <div class="footer-actions">
+        <a class="pill pill--solid pill--lg t-eyebrow" href="mailto:mr.feriansyah@gmail.com?subject=%5BUI%2FUX%20Request%5D%20Project%20Inquiry&body=Hi%20Feri%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A%0A-%20Project%20or%20company%3A%0A-%20What%20you%20need%3A%0A-%20Timeline%3A%0A-%20Budget%20(optional)%3A%0A%0AThanks%2C%0A">
+          Hubungi saya<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+        
+      </div>
+      <div><span class="footer-links-label t-eyebrow">Tautan lain</span><div class="footer-links"><a class="pill t-eyebrow" href="https://www.linkedin.com/in/mrferiansyah/" target="_blank" rel="noopener noreferrer">LinkedIn<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="https://dribbble.com/ferferferry" target="_blank" rel="noopener noreferrer">Dribbble<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="https://wa.me/6282234561360" target="_blank" rel="noopener noreferrer">WhatsApp<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div>
+    </div>
+  </div>
+  <div class="footer-bottom t-meta">
+    <nav class="footer-nav" aria-label="Hubungi saya"><a href="index.id.html#work">Karya</a><a href="index.id.html#process">Proses</a><a href="index.id.html#about">Tentang</a><button type="button" data-resume-cta>Résumé</button><a href="index.id.html#contact">Kontak</a></nav>
+    <span>©2026 Ferry Works · Mochamad Feriansyah</span>
+  </div>
+</footer>
+
+<div class="resume-backdrop" data-resume-backdrop hidden></div>
+<div class="resume-card" data-resume-card hidden role="dialog" aria-modal="true"
+     aria-labelledby="resume-title" data-email="mr.feriansyah@gmail.com">
+  <div class="resume-head">
+    <h2 class="resume-title" id="resume-title">Minta résumé saya</h2>
+    <button class="resume-close" data-resume-close aria-label="Tutup">
+      <svg viewBox="0 0 10 10" width="9" height="9" aria-hidden="true">
+        <path d="M1 1l8 8M9 1l-8 8" stroke="currentColor" stroke-width="1.2"/></svg>
+    </button>
+  </div>
+  <p class="resume-sub">Tinggalkan email kamu, CV-nya saya kirim langsung ke inbox, biasanya dalam satu hari.</p>
+  <form data-resume-form>
+    <label class="resume-field">
+      <span class="resume-field-label t-eyebrow">Email kamu</span>
+      <input type="email" name="email" required placeholder="you@company.com">
+    </label>
+    <label class="resume-field">
+      <span class="resume-field-label t-eyebrow">Perusahaan / posisi (opsional)</span>
+      <input type="text" name="company" placeholder="Acme Inc. · Recruiter">
+    </label>
+    <div class="resume-actions">
+      <button class="pill t-eyebrow" data-resume-cancel type="button">Batal</button>
+      <button class="pill pill--solid t-eyebrow" type="submit">
+        Kirim permintaan<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></button>
+    </div>
+  </form>
+  <p class="resume-note">Membuka aplikasi email kamu dengan pesan yang siap dikirim. Tidak ada yang terkirim otomatis.</p>
+</div>
+
+
+<div class="cc" data-cookies hidden role="dialog" aria-labelledby="cc-title" aria-live="polite">
+  <h2 class="cc-title" id="cc-title">Cookie</h2>
+  <p class="cc-body">Saya pakai satu cookie analitik untuk melihat proyek mana yang paling sering dibuka. Tolak pun, tidak ada bagian situs ini yang berhenti bekerja.</p>
+  <div class="cc-actions">
+    <button class="pill t-eyebrow" data-cc-deny type="button">Tolak</button>
+    <button class="pill t-eyebrow" data-cc-accept type="button">Terima</button>
+  </div>
+  <div class="cc-links"><a href="index.id.html#contact">Privasi</a><a href="index.id.html#contact">Kebijakan cookie</a></div>
+</div>
+
+<!-- Modul motion yang sama persis dengan yang dipakai Next.js -->
+<script type="module">
+  import { initAll } from "../motion/index.js";
+  initAll(document);
+</script>
+</body>
+</html>
