@@ -7,6 +7,7 @@ import GameDeployer from "./GameDeployer";
 import GameInterfaceStudy from "./GameInterfaceStudy";
 import GameQuest from "./GameQuest";
 import HrisDashboard from "./HrisDashboard";
+import InvestmentAppReimagined from "./InvestmentAppReimagined";
 import NanovestAppRedesign from "./NanovestAppRedesign";
 import NanovestCalendar from "./NanovestCalendar";
 import NanovestForeignStocks from "./NanovestForeignStocks";
@@ -51,4 +52,5 @@ export const CASE_PAGES: Record<string, ComponentType<CaseProps<Case>>> = {
   "hris-dashboard": HrisDashboard as ComponentType<CaseProps<Case>>,
   "stiqy-dashboard": StiqyDashboard as ComponentType<CaseProps<Case>>,
   "game-deployer": GameDeployer as ComponentType<CaseProps<Case>>,
+  "investment-app-reimagined": InvestmentAppReimagined as ComponentType<CaseProps<Case>>,
 };
