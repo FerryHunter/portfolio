@@ -1,0 +1,3422 @@
+{
+  "brand": "Ferry Works",
+  "meta": {
+    "title": "Ferry Works · Mochamad Feriansyah, Senior Product Designer",
+    "description": "Senior product designer with 7+ years shipping web3, fintech, enterprise and game interfaces. Research, design systems, and work that survives handoff."
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "loading": "Loading",
+    "close": "Close",
+    "chooseFile": "Choose file",
+    "dropHint": "or drag an image here",
+    "cancel": "Cancel",
+    "place": "Place it",
+    "previewAlt": "Sticker preview",
+    "stickerNote": "PNG, JPG, GIF or WEBP · 6 MB max. Resized in your browser and stored only on this device, nothing is uploaded.",
+    "errTooLarge": "That file is over 6 MB.",
+    "errFormat": "Unsupported format. Use PNG, JPG, GIF or WEBP.",
+    "errProcess": "Could not read that image.",
+    "cursorView": "View",
+    "resumeTitle": "Request my résumé",
+    "resumeSub": "Leave your email and I'll send the CV straight to your inbox, usually within a day.",
+    "resumeEmailLabel": "Your email",
+    "resumeCompanyLabel": "Company / role (optional)",
+    "resumeSend": "Send request",
+    "resumeNote": "Opens your email app with a message ready to send. Nothing is submitted automatically.",
+    "notFound": "This page doesn't exist.",
+    "notFoundBack": "Back to work"
+  },
+  "nav": {
+    "primary": [
+      {
+        "label": "Work",
+        "href": "#work"
+      },
+      {
+        "label": "Process",
+        "href": "#process"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      }
+    ],
+    "drawer": [
+      {
+        "label": "Case studies",
+        "href": "#work"
+      },
+      {
+        "label": "Design systems",
+        "href": "#process"
+      },
+      {
+        "label": "Résumé",
+        "href": "#contact"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "coords": [
+      "Senior Product Designer",
+      "Visual Designer"
+    ],
+    "est": "7+ YEARS · UI/UX · WEB3",
+    "cta": "Work with me",
+    "menu": "Menu",
+    "more": "More links"
+  },
+  "hero": {
+    "roles": [
+      "Senior Product Designer",
+      "Visual Designer"
+    ],
+    "stickers": [
+      {
+        "kind": "emoji",
+        "layer": "back",
+        "x": 14,
+        "y": 27,
+        "w": 11,
+        "r": -7,
+        "emoji": "🎨"
+      },
+      {
+        "kind": "emoji",
+        "layer": "back",
+        "x": 86,
+        "y": 21,
+        "w": 9,
+        "r": 8,
+        "emoji": "✏️"
+      },
+      {
+        "kind": "emoji",
+        "layer": "back",
+        "x": 79,
+        "y": 74,
+        "w": 12,
+        "r": -4,
+        "emoji": "🧩"
+      },
+      {
+        "kind": "emoji",
+        "layer": "front",
+        "x": 25,
+        "y": 77,
+        "w": 8,
+        "r": 11,
+        "emoji": "💡"
+      },
+      {
+        "kind": "emoji",
+        "layer": "front",
+        "x": 93,
+        "y": 51,
+        "w": 7,
+        "r": -9,
+        "emoji": "📐"
+      },
+      {
+        "kind": "emoji",
+        "layer": "front",
+        "x": 7,
+        "y": 63,
+        "w": 6.5,
+        "r": 5,
+        "emoji": "✨"
+      }
+    ],
+    "scroll": "(SCROLL)",
+    "sticker": {
+      "line1": "Leave your",
+      "line2": "sticker"
+    }
+  },
+  "reel": {
+    "tag": "FW® · Selected work",
+    "year": "©2026",
+    "mute": "Mute",
+    "unmute": "Unmute"
+  },
+  "tagline": {
+    "label": "About",
+    "meta": "01 · What I actually do",
+    "text": "Seven years turning rough ideas into products that *ship*, hold up in production, and earn a second *visit*."
+  },
+  "services": {
+    "label": "Process",
+    "meta": "Three phases, one loop",
+    "items": [
+      {
+        "num": "01",
+        "title": "Discovery",
+        "heading": "Understand the problem before drawing anything.",
+        "body": "I start with the business and the people inside it: what the product is for, where users quietly give up, and what the team can realistically build this quarter. Interviews, funnel data, competitor teardowns, whatever it takes to stop designing on guesses.",
+        "tags": [
+          "User research",
+          "Competitive audit",
+          "User flows",
+          "Scope mapping"
+        ]
+      },
+      {
+        "num": "02",
+        "title": "Design",
+        "heading": "Make the obvious version, then make it better.",
+        "body": "Wireframes before polish, always. I work in systems rather than screens (components, tokens, empty and error states), so the twentieth screen costs a fraction of the first and nothing falls apart at handoff.",
+        "tags": [
+          "Wireframing",
+          "UI design",
+          "Design systems",
+          "Prototyping"
+        ]
+      },
+      {
+        "num": "03",
+        "title": "Delivery",
+        "heading": "Design isn't finished until it's live.",
+        "body": "I stay with engineers through build, spec the edge cases nobody drew, and review what shipped against what we designed. Then I watch how it performs and fix the parts that were wrong, because some of them always are.",
+        "tags": [
+          "Dev handoff",
+          "Design QA",
+          "Usability testing",
+          "Iteration"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "label": "Work",
+    "meta": "Selected work since 2019",
+    "hint": "Drag",
+    "swipe": "Swipe",
+    "comingSoon": "Coming soon",
+    "items": [
+      {
+        "title": "Nanovest US Stocks Event Calendar",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/us-stock-event-calendar.webp",
+        "href": "/work/nanovest-calendar",
+        "case": "nanovest-calendar",
+        "comingSoon": false
+      },
+      {
+        "title": "Nanovest Limit Order",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-limit-order.webp",
+        "href": "/work/nanovest-limit-order",
+        "case": "nanovest-limit-order",
+        "comingSoon": false
+      },
+      {
+        "title": "Nanovest Foreign Stocks",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-foreign-stocks.webp",
+        "href": "/work/nanovest-foreign-stocks",
+        "case": "nanovest-foreign-stocks",
+        "comingSoon": false
+      },
+      {
+        "title": "Nanovest US Stocks IPO",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-us-stocks-ipo.webp",
+        "href": "/work/nanovest-us-stocks-ipo",
+        "case": "nanovest-us-stocks-ipo",
+        "comingSoon": false
+      },
+      {
+        "title": "Web3 Quest Web Design",
+        "cat": "Conversion",
+        "ar": 1.1855,
+        "img": "/work/covers/web3-quest-web-design.webp",
+        "href": "https://ferryworks.framer.website/detailsstiqylanding",
+        "case": "",
+        "comingSoon": true
+      },
+      {
+        "title": "Nanovest Crypto Locked Staking",
+        "cat": "Fintech · Web3",
+        "ar": 1.1855,
+        "img": "/work/covers/crypto-locked-staking.webp",
+        "href": "/work/crypto-locked-staking",
+        "case": "crypto-locked-staking",
+        "comingSoon": false
+      },
+      {
+        "title": "HRIS Dashboard",
+        "cat": "Enterprise · Data",
+        "ar": 1.1855,
+        "img": "/work/covers/hris-dashboard.webp",
+        "href": "/work/hris-dashboard",
+        "case": "hris-dashboard",
+        "comingSoon": false
+      },
+      {
+        "title": "Rampage Game Quest",
+        "cat": "Game interface",
+        "ar": 1.1855,
+        "img": "/work/covers/game-quest-design.webp",
+        "href": "/work/game-quest",
+        "case": "game-quest",
+        "comingSoon": false
+      },
+      {
+        "title": "Rampage Evolution Card",
+        "cat": "Game interface",
+        "ar": 1.1855,
+        "img": "/work/covers/rampage-evolution-card.webp",
+        "href": "/work/rampage-evolution-card",
+        "case": "rampage-evolution-card",
+        "comingSoon": false
+      },
+      {
+        "title": "Web3 Game Deployer Engine",
+        "cat": "Developer tools",
+        "ar": 1.1847,
+        "img": "/work/covers/web3-game-deployer-engine.webp",
+        "href": "/work/game-deployer",
+        "case": "game-deployer",
+        "comingSoon": false
+      },
+      {
+        "title": "Amazon App Checkout Redesign",
+        "cat": "Case study",
+        "ar": 1.1855,
+        "img": "/work/covers/amazon-checkout-redesign.webp",
+        "href": "/work/amazon",
+        "case": "amazon",
+        "comingSoon": false
+      },
+      {
+        "title": "Web App Game Quest",
+        "cat": "Web3",
+        "ar": 1.1855,
+        "img": "/work/covers/web3-quest-dashboard.webp",
+        "href": "https://ferryworks.framer.website/detailsstiqyquestingdashboard",
+        "case": "",
+        "comingSoon": true
+      },
+      {
+        "title": "Nanovest Investment App",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-investment-app.webp",
+        "href": "/work/nanovest-investment-app",
+        "case": "nanovest-investment-app",
+        "comingSoon": false
+      },
+      {
+        "title": "Nanovest App Redesign",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-app-redesign.webp",
+        "href": "/work/nanovest-app-redesign",
+        "case": "nanovest-app-redesign",
+        "comingSoon": false
+      },
+      {
+        "title": "Pluang Investment App",
+        "cat": "Fintech",
+        "ar": 1.1871,
+        "img": "https://framerusercontent.com/images/mzeoKkaSUYg6Tv6Sdu1JAC1sK9k.png?width=996&height=840",
+        "href": "",
+        "case": "",
+        "comingSoon": true
+      },
+      {
+        "title": "Bukalapak Logistic Admin Panel",
+        "cat": "Ecommerce · Ops",
+        "ar": 1.1871,
+        "img": "https://framerusercontent.com/images/1Pzy92K3ieuyPxNlr8aAdNZXzns.png?width=996&height=840",
+        "href": "",
+        "case": "",
+        "comingSoon": true
+      },
+      {
+        "title": "Game Interface Study",
+        "cat": "Case study",
+        "ar": 1.1855,
+        "img": "/work/covers/game-interface-study.webp",
+        "href": "/work/game-interface-study",
+        "case": "game-interface-study",
+        "comingSoon": false
+      },
+      {
+        "title": "Stiqy Rewards Dashboard",
+        "cat": "Web3 · Growth",
+        "ar": 1.1855,
+        "img": "/work/covers/stiqy-dashboard.webp",
+        "href": "/work/stiqy-dashboard",
+        "case": "stiqy-dashboard",
+        "comingSoon": false
+      },
+      {
+        "title": "Investment App Reimagined",
+        "cat": "Case study",
+        "ar": 1.1855,
+        "img": "/work/covers/investment-app-reimagined.webp",
+        "href": "/work/investment-app-reimagined",
+        "case": "investment-app-reimagined",
+        "comingSoon": false
+      }
+    ]
+  },
+  "clients": {
+    "label": "Sectors",
+    "meta": "02 · Six industries, one question",
+    "segments": [
+      {
+        "t": "Seven years spread across "
+      },
+      {
+        "t": "web3",
+        "href": "#work"
+      },
+      {
+        "t": ", "
+      },
+      {
+        "t": "fintech",
+        "href": "#work"
+      },
+      {
+        "t": ", "
+      },
+      {
+        "t": "gaming",
+        "href": "#work"
+      },
+      {
+        "t": ", "
+      },
+      {
+        "t": "HR tech",
+        "href": "#work"
+      },
+      {
+        "t": ", "
+      },
+      {
+        "t": "ecommerce",
+        "href": "#work"
+      },
+      {
+        "t": " and "
+      },
+      {
+        "t": "developer tools",
+        "href": "#work"
+      },
+      {
+        "t": ". Different users, different stakes, and every time the same question: what makes someone finish the flow instead of leaving?"
+      }
+    ]
+  },
+  "companies": {
+    "label": "Companies",
+    "meta": "Teams I have worked with",
+    "items": [
+      {
+        "name": "Nanovest",
+        "href": "https://www.nanovest.io/"
+      },
+      {
+        "name": "Stiqy",
+        "href": "https://www.stiqy.io/"
+      },
+      {
+        "name": "Pluang",
+        "href": "https://pluang.com/"
+      },
+      {
+        "name": "Bukalapak",
+        "href": "https://www.bukalapak.com/"
+      },
+      {
+        "name": "Argus Labs",
+        "href": "https://argus.gg/"
+      },
+      {
+        "name": "Reku",
+        "href": "https://reku.id/"
+      },
+      {
+        "name": "Tricor",
+        "href": "https://www.tricorglobal.com/"
+      },
+      {
+        "name": "KB Bank",
+        "href": "https://www.kbbank.co.id/"
+      }
+    ]
+  },
+  "footer": {
+    "claim": [
+      "Got an idea",
+      "that needs shape?",
+      "Let's talk."
+    ],
+    "address": [
+      "Available for freelance",
+      "and full time roles",
+      "Remote · worldwide"
+    ],
+    "email": "mr.feriansyah@gmail.com",
+    "cta": "Get in touch",
+    "nav": [
+      {
+        "label": "Work",
+        "href": "#work",
+        "action": ""
+      },
+      {
+        "label": "Process",
+        "href": "#process",
+        "action": ""
+      },
+      {
+        "label": "About",
+        "href": "#about",
+        "action": ""
+      },
+      {
+        "label": "Résumé",
+        "href": "#contact",
+        "action": "resume"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact",
+        "action": ""
+      }
+    ],
+    "legal": "©2026 Ferry Works · Mochamad Feriansyah",
+    "contactHref": "mailto:mr.feriansyah@gmail.com?subject=%5BUI%2FUX%20Request%5D%20Project%20Inquiry&body=Hi%20Feri%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A%0A-%20Project%20or%20company%3A%0A-%20What%20you%20need%3A%0A-%20Timeline%3A%0A-%20Budget%20(optional)%3A%0A%0AThanks%2C%0A",
+    "social": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/mrferiansyah/"
+      },
+      {
+        "label": "Dribbble",
+        "href": "https://dribbble.com/ferferferry"
+      },
+      {
+        "label": "WhatsApp",
+        "href": "https://wa.me/6282234561360"
+      }
+    ],
+    "cvLabel": "Download CV",
+    "cvHref": "",
+    "contactLabel": "Contact me",
+    "socialLabel": "Elsewhere"
+  },
+  "cookies": {
+    "title": "Cookies",
+    "body": "I use one analytics cookie to see which projects people actually open. Decline it and nothing on this site stops working.",
+    "accept": "Accept",
+    "deny": "Decline",
+    "links": [
+      {
+        "label": "Privacy",
+        "href": "#contact"
+      },
+      {
+        "label": "Cookie policy",
+        "href": "#contact"
+      }
+    ]
+  },
+  "cases": {
+    "nanovest-calendar": {
+      "slug": "nanovest-calendar",
+      "meta": {
+        "title": "Nanovest US Stocks Event Calendar · Ferry Works",
+        "description": "Case study: the US stock event calendar inside Nanovest, dividends, splits, earnings and market holidays for the stocks a user already owns."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Nanovest US Stocks Event Calendar",
+      "lead": "Dividends, splits, earnings and US market holidays, for the stocks someone already owns, in a screen that opens on this month.",
+      "site": {
+        "label": "Visit nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/us-stock-event-calendar.webp",
+        "ar": 1.1855,
+        "alt": "US Stock Event Calendar: home screen showing US Markets and a calendar view with dividend events",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sector",
+          "v": "Fintech · US Stocks"
+        },
+        {
+          "k": "Role",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Team",
+          "v": "1 design · 3 eng"
+        },
+        {
+          "k": "Period",
+          "v": "2025"
+        },
+        {
+          "k": "Surface",
+          "v": "Mobile app · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Nanovest lets Indonesians hold US stocks. Corporate actions are the events that move a portfolio without anyone pressing *buy*, so they got a room of their own: every dated event that touches what a user holds, as a list that opens on this month and a grid one tap *away*."
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Stakeholder interviews",
+          "Competitive teardown",
+          "Event taxonomy",
+          "Information architecture",
+          "User flows",
+          "Wireframes",
+          "Interface design",
+          "Filter & empty states",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "An ex-dividend date arrived as a surprise.",
+          "body": [
+            "Corporate actions reached people after the fact. A dividend showed up as a balance that had changed overnight, a split as a share count that no longer matched yesterday's, a closed US market as a day where nothing moved and nothing explained why. The dates existed (in filings, in the news feed, in support replies), but never next to the stocks a person actually held.",
+            "What the app had instead was a feed: everything about every ticker, ordered by recency. It answered what happened. Nobody could use it to answer what happens next, to me, and that is the only version of the question a retail investor asks."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "A list that opens on this month, a grid when the month is the question.",
+          "body": [
+            "The list is the default. Events group under the month they fall in, the date keeps its own left rail, and the whole thing scrolls forward, because the usual question is what is coming for my stocks, and a list answers it without asking anyone to aim at a target first.",
+            "The month grid sits behind one icon in the header, for the other question: what does this week look like. It carries the same three event classes as coloured dots (US holiday, corporate action, economic event), and the list stays underneath it, unchanged. One data set, two readings, no second screen to keep in sync.",
+            "Scope is a pair of chips, not a tab bar: My Portfolio and Watchlist narrow the same rows in place. Event type is a sheet from the filter icon, so four choices arrive full width and thumb-reachable instead of squeezed into a dropdown at the top of the screen."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-calendar/list-default.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Interaction study",
+        "year": "2025",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Four of the six states",
+        "items": [
+          {
+            "img": "/work/nanovest-calendar/us-stocks.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-calendar/list-scroll.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-calendar/calendar-view.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-calendar/filter.webp",
+            "ar": 0.4621,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomy",
+        "meta": "05 · Four parts that carry the screen",
+        "items": [
+          {
+            "num": "1",
+            "title": "Scope before search",
+            "body": "My Portfolio and Watchlist are chips on the list, not tabs above it. They narrow the same rows in place, so changing scope never costs the scroll position, and search stays one field instead of one per tab.",
+            "img": "/work/nanovest-calendar/list-portfolio.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "2",
+            "title": "Months, not pages",
+            "body": "Events group under the month they fall in and the list keeps going. The date sits in its own left rail so a run of the same day reads as one block, and the event line carries type and amount in the same sentence.",
+            "img": "/work/nanovest-calendar/list-scroll.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "3",
+            "title": "The grid, for the other question",
+            "body": "One icon in the header swaps the list for a month grid. Coloured dots under a date say which classes of event it holds (US holiday, corporate action, economic event), and the list below stays exactly where it was.",
+            "img": "/work/nanovest-calendar/calendar-view.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "4",
+            "title": "Filter as a sheet",
+            "body": "Four choices: all events, US holiday, corporate action, economic action. A sheet gives each one a full-width row inside thumb reach, which a dropdown pinned to the top of a 19.5:9 screen never does.",
+            "img": "/work/nanovest-calendar/filter.webp",
+            "ar": 0.4621
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · After three months",
+        "items": [
+          {
+            "v": "2 taps",
+            "k": "Home to the next dividend"
+          },
+          {
+            "v": "+41%",
+            "k": "Corporate-action screen opens"
+          },
+          {
+            "v": "−58%",
+            "k": "Dividend questions in support"
+          },
+          {
+            "v": "3 → 1",
+            "k": "Places to check a date"
+          }
+        ],
+        "note": "Placeholder figures. Replaced once the post-launch review lands."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Event list",
+          "Month grid",
+          "Event type system",
+          "Filter sheet",
+          "Empty & loading states",
+          "Explore entry point",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "NANOVEST · US STOCK EVENT CALENDAR · 2025",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest Limit Order",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-limit-order",
+        "img": "/work/covers/nanovest-limit-order.webp"
+      }
+    },
+    "nanovest-investment-app": {
+      "slug": "nanovest-investment-app",
+      "meta": {
+        "title": "Nanovest Investment App · Ferry Works",
+        "description": "Case study: a guided onboarding home for Nanovest, fewer steps after login, and two ways into a first trade: explore assets or invest right away."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Nanovest Investment App",
+      "lead": "A guided first session and a shorter path to a first trade: fewer steps after login, and two ways in from the same home screen, explore assets or invest right away.",
+      "site": {
+        "label": "Visit nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/nanovest-investment-app.webp",
+        "ar": 1.1855,
+        "alt": "Nanovest onboarding and home: the Start Investing screen for a new user next to the Portfolio Balance home with Stocks and Crypto bubbles",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sector",
+          "v": "Fintech · Stocks & Crypto"
+        },
+        {
+          "k": "Role",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Team",
+          "v": "1 design · 4 eng"
+        },
+        {
+          "k": "Period",
+          "v": "2024"
+        },
+        {
+          "k": "Surface",
+          "v": "Mobile app · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Nanovest wanted fewer steps between signing in and a first trade, and a home screen that never leaves a brand-new investor *guessing* what to do next. So the home carries two ways in at once: explore everything first, or go straight to *buying*, instead of forcing one path on everyone."
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Stakeholder interviews",
+          "Competitive teardown",
+          "Onboarding flow",
+          "Information architecture",
+          "User flows",
+          "Wireframes",
+          "Interface design",
+          "Empty & zero-balance states",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "A new account had a dashboard, not a guide.",
+          "body": [
+            "Signing in dropped every investor into the same screen, with no path forward for the one that mattered most: an account that owned nothing yet. The layout assumed a decision had already been made (what to buy, how much, in which asset class) when the real first question was simpler: where do I even start?",
+            "Getting to a first purchase took more taps than it needed to, each one an unguided decision with no default. Nothing on the home screen said start here, so first-time investors either stalled before their first trade or wandered through menus built for someone who already knew what they were doing."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "Two ways in, decided from one screen.",
+          "body": [
+            "A first session reduces to one screen and one choice: Explore Assets, for someone who wants to look around first, or a direct Invest in Crypto / Invest in Stocks button, for someone who already knows what they want. Neither path is the only way in; both start from the same home.",
+            "Explore Assets opens a guided list (Crypto, Stocks, Gold, Mutual Fund), the same one-line pitch and a single tap forward on each, so browsing never turns into research. Going straight to an asset class instead opens a two-card picker, one paragraph of context per class, one CTA each; the decision gets made once, before any screen asks for an amount.",
+            "Once an account actually holds something, Stocks and Crypto become two bubbles instead of one summed number, sitting above a Wallet Balance row (Top Up, Scan, Request, Transfer) that holds its position whether the portfolio counts five instruments or none. The guide doesn't disappear the moment someone becomes an investor; it just changes shape."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-investment-app/home.webp",
+        "posterFocus": "50% 6%",
+        "tag": "Interaction study",
+        "year": "2024",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "All four screens, light and dark",
+        "items": [
+          {
+            "img": "/work/nanovest-investment-app/new-user-dark.webp",
+            "ar": 0.4618,
+            "cap": "First session · zero balance, one move (Dark)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/home-dark.webp",
+            "ar": 0.4618,
+            "cap": "Returning investor · two bubbles, one wallet row (Dark)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/invest-dark.webp",
+            "ar": 0.4618,
+            "cap": "Asset picker · crypto or stocks, one CTA each (Dark)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/choose-asset-dark.webp",
+            "ar": 0.4618,
+            "cap": "Full asset menu · crypto, stocks, gold, mutual fund (Dark)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/new-user.webp",
+            "ar": 0.4618,
+            "cap": "First session · zero balance, one move (Light)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/home.webp",
+            "ar": 0.4618,
+            "cap": "Returning investor · two bubbles, one wallet row (Light)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/invest.webp",
+            "ar": 0.4618,
+            "cap": "Asset picker · crypto or stocks, one CTA each (Light)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/choose-asset.webp",
+            "ar": 0.4618,
+            "cap": "Full asset menu · crypto, stocks, gold, mutual fund (Light)"
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · After three months",
+        "items": [
+          {
+            "v": "+27%",
+            "k": "First deposit within session one"
+          },
+          {
+            "v": "2 taps",
+            "k": "Zero balance to the asset picker"
+          },
+          {
+            "v": "−33%",
+            "k": "Time to first order"
+          },
+          {
+            "v": "+19%",
+            "k": "Week-one return visits"
+          }
+        ],
+        "note": "Placeholder figures. Replaced once the post-launch review lands."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Home screen system",
+          "Zero-balance onboarding",
+          "Asset-class picker",
+          "Wallet action row",
+          "Empty & loading states",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "NANOVEST · INVESTMENT APP · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest App Redesign",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-app-redesign",
+        "img": "/work/covers/nanovest-app-redesign.webp"
+      }
+    },
+    "nanovest-app-redesign": {
+      "slug": "nanovest-app-redesign",
+      "meta": {
+        "title": "Nanovest App Redesign · Ferry Works",
+        "description": "Case study: redesigning the Nanovest app around an AI assistant reachable from the navigation itself, a dark-mode-first interface, and a calmer, more professional colour system."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Nanovest App Redesign",
+      "lead": "A dark-mode-first redesign that gives Nanovest's AI a permanent home in the navigation itself, and trades the app's playful gradient identity for a calmer, more professional tech surface.",
+      "site": {
+        "label": "Visit nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/nanovest-app-redesign.webp",
+        "ar": 1.1855,
+        "alt": "Two Nanovest home screens side by side: the AI assistant's calm resting state on the left, its red alert state after a portfolio drop on the right",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sector",
+          "v": "Fintech · Stocks, Crypto & Gold"
+        },
+        {
+          "k": "Role",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Team",
+          "v": "1 design · 3 eng"
+        },
+        {
+          "k": "Period",
+          "v": "2026"
+        },
+        {
+          "k": "Surface",
+          "v": "Mobile app · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Nanovest's next move is putting AI at the center of the investing experience, but the app's bright, gradient-heavy interface read as consumer-fun rather than as something trustworthy enough to hand financial decisions to. This redesign rebuilds the visual system around dark mode and a tighter, more technical palette, and gives the AI assistant a fixed home in the navigation bar itself, so it's reachable from every tab, not buried inside a single screen."
+      },
+      "showcase": {
+        "label": "Look and feel",
+        "meta": "The resting and alert states, in hand",
+        "img": "/work/nanovest-app-redesign/mockup.webp",
+        "ar": 1.3333,
+        "alt": "Two phones showing the Nanovest redesign at an angle: the AI alert home screen on the left, the Net Worth and Asset Allocation screen on the right",
+        "caption": ""
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Competitive teardown",
+          "Dark-mode design system",
+          "AI navigation model",
+          "Information architecture",
+          "AI insight surface",
+          "Wallet & multi-currency flows",
+          "Wireframes",
+          "Interface design",
+          "Empty & alert states",
+          "Prototyping"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "The app's colour language undercut the seriousness of an AI advisor.",
+          "body": [
+            "Nanovest's interface leaned on a bright purple-to-pink gradient and colourful, badge-style icons for nearly everything, Featured cards, product icons, promo banners. That reads as consumer-fun, which is the wrong register for a product about to hand out AI-generated financial judgement calls; the same visual language sitting under a stock alert and a referral promo made both feel equally weightless.",
+            "The AI itself had no fixed address. *Ask anything* lived inside Home's feed, one field among several, so using it meant being on the right screen first. An assistant that only exists on one tab isn't a navigation-level capability, it's a widget."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "Dark mode as the default, AI moved into the navigation itself.",
+          "body": [
+            "The interface rebuilt dark-first: near-black surfaces, a narrow set of cool graphite tones, replacing the purple-pink gradient identity with something closer to a trading terminal than a lifestyle app. Colour stopped decorating and started signalling, an accent only appears when it's carrying information, a gain, a loss, an alert that needs attention.",
+            "The center icon in the tab bar, previously a static brand mark, became the app's AI entry point. Tapping it from Home, Invest, Wallet or Account opens the same Ask Anything surface, so getting an answer never depends on which screen someone happens to be on.",
+            "On Home specifically, that AI layer surfaces as two things: a calm resting state in the everyday dark palette, and a deliberately sharper red state when the AI has something to flag, a drawdown, an earnings move, so the one moment worth noticing looks different from the fifty that aren't."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-app-redesign/home-ai-alert.webp",
+        "posterFocus": "50% 8%",
+        "tag": "Interaction study",
+        "year": "2026",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Eight surfaces, one shell",
+        "items": [
+          {
+            "img": "/work/nanovest-app-redesign/home-default.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/home-ai-alert.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/invest-tab.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/portfolio-detail.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/stocks-tab.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/wallet-tab.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/account-tab.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/social-tab.webp",
+            "ar": 0.4621,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomy",
+        "meta": "05 · Four parts that carry the shell",
+        "items": [
+          {
+            "num": "1",
+            "title": "AI lives in the navigation, not just the feed",
+            "body": "The tab bar's center icon is the app's permanent AI entry point. It opens *Ask Anything* from any tab, Home, Invest, Wallet, Account, so asking a question never means finding the right screen first.",
+            "img": "/work/nanovest-app-redesign/home-ai-alert.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "2",
+            "title": "Five products, one tab",
+            "body": "Crypto, Web3, Stocks and Gold stop competing for the home screen and move into Invest, next to the Pending Orders someone actually needs to act on.",
+            "img": "/work/nanovest-app-redesign/invest-tab.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "3",
+            "title": "One wallet, six currencies",
+            "body": "Nanovest Cash and Crypto Cash read the same Add / Transfer / Withdraw pattern under IDR, USD, RMB, HKD, SGD and Crypto, a row per currency instead of a picker in front of the balance.",
+            "img": "/work/nanovest-app-redesign/wallet-tab.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "4",
+            "title": "Progress stays visible, not just at signup",
+            "body": "nPoints and the Elite-level bar move to Account permanently, so the gamification a new user sees once during onboarding is something a returning one can actually check back on.",
+            "img": "/work/nanovest-app-redesign/account-tab.webp",
+            "ar": 0.4621
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · What the redesign changed",
+        "items": [
+          {
+            "v": "1",
+            "k": "Single AI entry point, reachable from every tab"
+          },
+          {
+            "v": "5 → 1",
+            "k": "Product surfaces folded into a single Invest tab"
+          },
+          {
+            "v": "6",
+            "k": "Currencies read through one wallet pattern, zero extra screens"
+          },
+          {
+            "v": "1",
+            "k": "Accent colour, replacing a multi-gradient palette across Home, Wallet and Invest"
+          }
+        ],
+        "note": "Placeholder figures. Replaced once the post-launch review lands."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Dark-mode design system",
+          "AI entry point in the navigation bar",
+          "Home alert state & insight rail",
+          "Invest tab: markets, movers, themes",
+          "Wallet: six-currency pattern",
+          "Account: tier & points system",
+          "Handoff notes"
+        ]
+      },
+      "marquee": "NANOVEST · APP REDESIGN · 2026",
+      "next": {
+        "label": "Next case",
+        "title": "Amazon Checkout Redesign",
+        "cat": "Case study",
+        "href": "/work/amazon",
+        "img": "/work/covers/amazon-checkout-redesign.webp"
+      }
+    },
+    "nanovest-limit-order": {
+      "slug": "nanovest-limit-order",
+      "meta": {
+        "title": "Nanovest Limit Order · Ferry Works",
+        "description": "Case study: a limit buy order for US stocks inside Nanovest — naming a price, walking away, and coming back to a filled order."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Nanovest Limit Order",
+      "lead": "Buy a US stock at the price someone names, not the one the market hands them the moment they happen to be looking.",
+      "site": {
+        "label": "Visit nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/nanovest-limit-order.webp",
+        "ar": 1.1855,
+        "alt": "US Stocks Limit Order: Apple stock detail next to a limit buy summary at Rp90.000 per share",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sector",
+          "v": "Fintech · US Stocks"
+        },
+        {
+          "k": "Role",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Team",
+          "v": "1 design · 3 eng"
+        },
+        {
+          "k": "Period",
+          "v": "2024"
+        },
+        {
+          "k": "Surface",
+          "v": "Mobile app · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Nanovest's US stocks only traded at market: *buy* meant right now, at whatever number sat on the ticker. A limit order lets someone name their own price instead and *leave*, so the app fills it later, at that number or better, without them watching the screen for it."
+      },
+      "mockup": {
+        "img": "/work/nanovest-limit-order/mockup.webp",
+        "ar": 1.3333,
+        "alt": "Limit Buy AAPL shown on two phones — setting the limit price and reviewing the order summary",
+        "caption": ""
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Stakeholder interviews",
+          "Competitive teardown",
+          "Order-type taxonomy",
+          "User flows",
+          "Wireframes",
+          "Interface design",
+          "Pricing & fee copy",
+          "Confirmation & error states",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "Every order was a bet on the exact second it fired.",
+          "body": [
+            "The order screen had two buttons, Buy and Sell, both market orders. A trade filled at whatever price sat on the ticker that instant, so anyone with a number in mind (buy under Rp90.000, not before) had to hold the app open and time the tap themselves, or miss the price entirely.",
+            "US markets trade while Jakarta sleeps, which turned that into a real cost, not a hypothetical one. Support kept hearing the same request in different words: a target price, and a way to leave an order behind and come back to it filled, cancelled, or still waiting."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "Name a price, walk away, come back to a decision already made.",
+          "body": [
+            "Limit Buy sits one tap from the stock's own detail screen, next to Buy and Sell, so it reads as a third way to trade the stock someone is already looking at, not a separate feature filed somewhere else.",
+            "The price field opens anchored to today's price, with four quick offsets, -2%, -3%, -5%, -10%, above the keypad, because most limit orders are a discount off the current number, not a figure typed from memory.",
+            "PIN authorization and a processing screen, the same two steps as any other transaction in the app, keep a scheduled order feeling like a purchase rather than a new kind of risk. It settles on one state, Scheduled, with total cost, share count, and a plain sentence saying the wallet is already charged and refunded automatically if the order never fills."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-limit-order/limit-price.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Interaction study",
+        "year": "2024",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Four of the five states",
+        "items": [
+          {
+            "img": "/work/nanovest-limit-order/stock-detail.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-limit-order/limit-price.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-limit-order/pin-code.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-limit-order/scheduled.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomy",
+        "meta": "05 · Five screens that carry the order",
+        "items": [
+          {
+            "num": "1",
+            "title": "Start from the stock itself",
+            "body": "Limit Buy lives next to Buy and Sell on the stock's own detail screen, not behind a separate order-type menu. Someone already looking at Apple's chart and price never has to leave it to name their own.",
+            "img": "/work/nanovest-limit-order/stock-detail.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "2",
+            "title": "A price anchored to today's",
+            "body": "The keypad opens under the current price, not a blank field, and four chips, -2% to -10%, cover the offsets people actually type. Total cost and transaction fee sit above the keypad the whole time, never a second screen away.",
+            "img": "/work/nanovest-limit-order/limit-price.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "3",
+            "title": "PIN, same as any transaction",
+            "body": "Authorizing a limit order borrows the exact PIN screen every other transaction already uses. A new order type never needed a new way to prove it was really them.",
+            "img": "/work/nanovest-limit-order/pin-code.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "4",
+            "title": "Priced live, not from memory",
+            "body": "A short processing screen says plainly that the share count can shift slightly, because stock prices and exchange rates keep moving between the tap and the fill. Naming the reason once here means it never has to be a support ticket later.",
+            "img": "/work/nanovest-limit-order/processing.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "5",
+            "title": "Scheduled, not silent",
+            "body": "One screen closes the loop: limit price, share count, and a line stating the wallet is charged now and refunded automatically if the order is cancelled or never fills. Cancel and Done sit side by side, so leaving the order alone is as easy as pulling it back.",
+            "img": "/work/nanovest-limit-order/scheduled.webp",
+            "ar": 0.4618
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · After launch",
+        "items": [
+          {
+            "v": "3 taps",
+            "k": "Stock detail to a scheduled order"
+          },
+          {
+            "v": "38%",
+            "k": "US stock orders placed as limit"
+          },
+          {
+            "v": "−24%",
+            "k": "Missed-price questions to support"
+          },
+          {
+            "v": "1 screen",
+            "k": "Where an order's status lives"
+          }
+        ],
+        "note": "Placeholder figures. Replaced once the post-launch review lands."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Limit buy flow",
+          "Price entry with quick offsets",
+          "PIN & processing states",
+          "Scheduled confirmation",
+          "Empty & error states",
+          "Order-status entry point",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "NANOVEST · LIMIT ORDER · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest Foreign Stocks",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-foreign-stocks",
+        "img": "/work/covers/nanovest-foreign-stocks.webp"
+      }
+    },
+    "nanovest-foreign-stocks": {
+      "slug": "nanovest-foreign-stocks",
+      "meta": {
+        "title": "Nanovest Foreign Stocks · Ferry Works",
+        "description": "Case study: bringing Hong Kong and China stocks into Nanovest, so Indonesian investors buy foreign shares in the same shelf that already holds gold, crypto, and US stocks."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Nanovest Foreign Stocks",
+      "lead": "Let an Indonesian investor buy a Hong Kong or China-listed stock the same way they already buy Apple: same wallet, same shelf, no new app to learn.",
+      "site": {
+        "label": "Visit nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/nanovest-foreign-stocks.webp",
+        "ar": 1.1855,
+        "alt": "Foreign Stocks home screen with the HK Stocks tab open, next to a Shenzhen International Holdings limit buy summary",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sector",
+          "v": "Fintech · Foreign Stocks"
+        },
+        {
+          "k": "Role",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Team",
+          "v": "1 design · 3 eng"
+        },
+        {
+          "k": "Period",
+          "v": "2024"
+        },
+        {
+          "k": "Surface",
+          "v": "Mobile app · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Nanovest's shelf already held *gold*, *crypto*, and *US stocks* under one wallet. Foreign Stocks adds Hong Kong and mainland China listings to that *same* shelf, so an Indonesian investor buys a Shenzhen-listed stock the *same* way they already buy Apple."
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Stakeholder interviews",
+          "HK & CN market entry research",
+          "Cross-asset navigation model",
+          "Multi-currency pricing",
+          "Order-flow reuse audit",
+          "User flows",
+          "Interface design",
+          "Settlement & session copy",
+          "Confirmation & error states",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "The shelf stopped at the US border.",
+          "body": [
+            "Nanovest already sat as one wallet under gold, crypto, and US stocks, all read from a single balance. But an investor reading about a Hong Kong tech rebound or a Shenzhen-listed name had nowhere to act on it inside the app: those tickers simply didn't exist in Nanovest, so the only route out was a separate broker, a separate KYC, a separate account to remember.",
+            "The company's own roadmap made the shape of the gap obvious: all-in-one only meant something if the assets people actually wanted, not just the ones already built, lived under that one roof."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "New markets, the same shelf.",
+          "body": [
+            "Foreign Stocks became a row of tabs, not a new app section: US Stocks, HK Stocks, CN Stocks, and Gold sit inside one screen with a shared portfolio chart underneath, so switching markets is a tap, not a new place to learn.",
+            "Each market keeps its own index widget above the fold (HSI, HSCI, HSTECH for Hong Kong), so someone can read the mood of a market before opening a single stock. The stock detail and limit-buy screens carry over almost unchanged from the earlier US stocks case, quick-offset price chips included, so an HK$ order feels exactly as familiar as a US one already did.",
+            "What actually changed underneath was surfaced in one place, not spread across the whole flow: a processing screen with a world map names what's happening, a rupiah wallet routing through a foreign-exchange leg before it reaches a Hong Kong-listed share, so the extra second or two reads as visible progress, not a stall."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-foreign-stocks/order-summary.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Interaction study",
+        "year": "2024",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Eight states, start to finish",
+        "items": [
+          {
+            "img": "/work/nanovest-foreign-stocks/home.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/stock-detail.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/limit-price.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/order-summary.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/processing.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/scheduled.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/purchased.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/trading-hours.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomy",
+        "meta": "05 · Six screens that carry the trade",
+        "items": [
+          {
+            "num": "1",
+            "title": "One shelf, four markets",
+            "body": "US Stocks, HK Stocks, CN Stocks, and Gold sit as tabs on the same screen, above a portfolio chart and an index widget for whichever market is open. Foreign Stocks reads as one more tab, not a separate app bolted on.",
+            "img": "/work/nanovest-foreign-stocks/home.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "2",
+            "title": "A listing that behaves like one already trusted",
+            "body": "Shenzhen International Holdings gets the exact same detail screen Apple already had: price chart, Market Open badge, Buy and Sell. Nothing about buying an HK-listed stock needed to look unfamiliar.",
+            "img": "/work/nanovest-foreign-stocks/stock-detail.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "3",
+            "title": "The same limit-price pattern, in HK$",
+            "body": "The keypad, the anchor to today's price, the tip about orders above market: all carried over from the US stocks limit order. Only the currency symbol changed, because the pattern had already been learned once.",
+            "img": "/work/nanovest-foreign-stocks/limit-price.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "4",
+            "title": "A summary that names the local hours",
+            "body": "Trading Hours and Active Until sit in WIB, not Hong Kong time, because that's the clock the person placing the order actually lives by. Fee and share count sit above the Confirm button, never a second screen away.",
+            "img": "/work/nanovest-foreign-stocks/order-summary.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "5",
+            "title": "Cross-border, made visible",
+            "body": "A processing screen with a world map stands in for the extra leg a foreign trade takes: rupiah converting, an order routing to a market on the other side of a border, so the wait reads as progress happening, not the app stalling.",
+            "img": "/work/nanovest-foreign-stocks/processing.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "6",
+            "title": "Scheduled, then done",
+            "body": "A limit order settles on Scheduled, wallet charged and refundable, exactly like the US stocks version. A market order settles on Purchased in the same breath. Two endings, one shared vocabulary for both.",
+            "img": "/work/nanovest-foreign-stocks/scheduled.webp",
+            "ar": 0.4618
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · After launch",
+        "items": [
+          {
+            "v": "3 markets",
+            "k": "US, HK & China stocks under one shelf"
+          },
+          {
+            "v": "4 tabs",
+            "k": "US, HK, CN and Gold in a single screen"
+          },
+          {
+            "v": "0 new",
+            "k": "Wallets or KYC steps needed to trade"
+          },
+          {
+            "v": "1 flow",
+            "k": "Buy & limit pattern reused from US stocks"
+          }
+        ],
+        "note": "Placeholder figures. Replaced once the post-launch review lands."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Cross-market shelf design",
+          "Stock detail & order flow for HK/CN",
+          "Multi-currency price & fee copy",
+          "Cross-border processing state",
+          "Trading-session explainer",
+          "Confirmation & error states",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "NANOVEST · FOREIGN STOCKS · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest US Stocks IPO",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-us-stocks-ipo",
+        "img": "/work/covers/nanovest-us-stocks-ipo.webp"
+      }
+    },
+    "nanovest-us-stocks-ipo": {
+      "slug": "nanovest-us-stocks-ipo",
+      "meta": {
+        "title": "Nanovest US Stocks IPO · Ferry Works",
+        "description": "Case study: ordering shares in a US company before it starts trading, inside Nanovest. A conditional order against a price range, settled the moment the offering allocates."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Nanovest US Stocks IPO",
+      "lead": "Reserve part of a US company's IPO days before it lists, against a price range instead of a number, and let Nanovest settle the difference the moment shares are allocated.",
+      "site": {
+        "label": "Visit nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/nanovest-us-stocks-ipo.webp",
+        "ar": 1.1855,
+        "alt": "e-IPO US Stocks list next to the Lumora Health offering detail, price range $28–$32",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sector",
+          "v": "Fintech · US Stocks"
+        },
+        {
+          "k": "Role",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Team",
+          "v": "1 design · 3 eng"
+        },
+        {
+          "k": "Period",
+          "v": "2024"
+        },
+        {
+          "k": "Surface",
+          "v": "Mobile app · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Nanovest could only sell a US stock once it was already trading. A company mid-IPO, still working through a price range days before its first trade, had *no order screen at all*: someone could only wait, then buy it at whatever multiple the market set on day one."
+      },
+      "mockup": {
+        "img": "/work/nanovest-us-stocks-ipo/mockup.webp",
+        "ar": 1.3333,
+        "alt": "Two phones showing a submitted US$750 order for LUMR and the e-IPO US Stocks list behind it",
+        "caption": ""
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Stakeholder interviews",
+          "Competitive teardown",
+          "Regulatory & eligibility review",
+          "Offering-lifecycle mapping",
+          "User flows",
+          "Wireframes",
+          "Interface design",
+          "Pricing & fee copy",
+          "Allocation & refund states",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "There was nowhere to ask for a stock before it existed on the market.",
+          "body": [
+            "Every order screen in the app assumed a live ticker: type a company, see a price, buy at market. A company still mid-IPO, its shares priced only as a range and its first trade still days away, had no detail screen, no order button, nowhere in search: it simply wasn't tradable yet.",
+            "High-profile US IPOs are rare and time-boxed: a handful a year, each with a window that opens and shuts before the stock ever lists. Missing that window meant waiting for the ordinary listing day and buying in at whatever the market decided to charge for it."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "A price range in, a price range out: one order that settles itself.",
+          "body": [
+            "The e-IPO list groups every offering by On Going, Upcoming, Past, so the one fact that actually changes a decision, how many days are left to order, is visible before anyone taps into a single company.",
+            "The order commits a dollar amount against the company's published range, not a share count, because the final price isn't set until the offering closes. A review screen states plainly what that money buys: an estimated share count, a transaction fee, and a total charged today.",
+            "Allocation is the step every other order type in the app skips entirely. A timeline carries the whole lifecycle: offer placed, priced, allocated in full or in part, listed, and states the exact refund the moment a partial fill leaves money unspent, so nobody has to ask support where the rest of it went."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-us-stocks-ipo/detail.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Interaction study",
+        "year": "2024",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "List to allocation",
+        "items": [
+          {
+            "img": "/work/nanovest-us-stocks-ipo/list.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-us-stocks-ipo/detail.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-us-stocks-ipo/review.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-us-stocks-ipo/allocation.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomy",
+        "meta": "05 · Four screens that carry an offering",
+        "items": [
+          {
+            "num": "1",
+            "title": "Every offering, sorted by what's left",
+            "body": "On Going, Upcoming, Past: three tabs instead of one long list, because a closing date matters more here than anywhere else in the app. Each card leads with the number that decides whether someone still has time.",
+            "img": "/work/nanovest-us-stocks-ipo/list.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "2",
+            "title": "A range, a story, a timeline",
+            "body": "The detail screen states the price range before anything else, then one paragraph on what the company does, then the three dates that matter: when the offering closes, when it allocates, when it starts trading.",
+            "img": "/work/nanovest-us-stocks-ipo/detail.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "3",
+            "title": "Spend a number, not a share count",
+            "body": "The order is a dollar amount against the range, so the review screen converts it back into what it actually buys: an estimated share count, the transaction fee, and a total, charged today against a price that isn't set yet.",
+            "img": "/work/nanovest-us-stocks-ipo/review.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "4",
+            "title": "Allocated, partial or not",
+            "body": "One screen closes the loop: shares allocated against shares requested, the final price, and a timeline stating exactly when the offer was placed, priced, allocated, and refunded, in plain dates, not a support ticket.",
+            "img": "/work/nanovest-us-stocks-ipo/allocation.webp",
+            "ar": 0.4618
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · After launch",
+        "items": [
+          {
+            "v": "4 taps",
+            "k": "List to a submitted conditional order"
+          },
+          {
+            "v": "3",
+            "k": "Offerings open for order side by side, at launch"
+          },
+          {
+            "v": "100% auto",
+            "k": "Refund on any unfilled or partial allocation"
+          },
+          {
+            "v": "1 screen",
+            "k": "Where an order's full lifecycle lives"
+          }
+        ],
+        "note": "Placeholder figures. Replaced once the post-launch review lands."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "e-IPO list with On Going/Upcoming/Past",
+          "Offering detail & order flow",
+          "Conditional order review",
+          "PIN & processing states",
+          "Allocation & refund states",
+          "Order-status timeline",
+          "Empty & error states",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "NANOVEST · US STOCKS IPO · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest Crypto Locked Staking",
+        "cat": "Fintech · Web3",
+        "href": "/work/crypto-locked-staking",
+        "img": "/work/covers/crypto-locked-staking.webp"
+      }
+    },
+    "crypto-locked-staking": {
+      "meta": {
+        "title": "Nanovest Crypto Locked Staking · Ferry Works",
+        "description": "Case study: a guided lock-up flow for IDDR and crypto balances inside Nanovest, from picking a coin to seeing the yield before committing."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Nanovest Crypto Locked Staking",
+      "lead": "A third thing to do with a balance besides trade it or let it sit: lock it for a fixed term, at a yield you see before you commit to it.",
+      "site": {
+        "label": "Visit nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/crypto-locked-staking.webp",
+        "ar": 1.1855,
+        "alt": "Nanovest Locked Staking: the Lock NBT term screen next to the Wallet view showing Locked Staking Principal and transaction history",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sector",
+          "v": "Fintech · Crypto"
+        },
+        {
+          "k": "Role",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Team",
+          "v": "1 design · 2 eng"
+        },
+        {
+          "k": "Period",
+          "v": "2025"
+        },
+        {
+          "k": "Surface",
+          "v": "Mobile app · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "A Nanovest balance could do two things before this: move, as a trade, or wait, doing nothing, in a wallet. Locked staking is the third option: commit an amount of IDDR or NBT for a term you choose, in exchange for a yield that's *fixed* before you lock, not somewhere in a rate table after."
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Competitive teardown",
+          "Yield & term modeling with the crypto team",
+          "Information architecture",
+          "User flows",
+          "Wireframes",
+          "Interface design",
+          "Confirmation & PIN flow",
+          "Edge & error states",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "A balance could only move or wait. Nothing in between.",
+          "body": [
+            "Trading was the only way a Nanovest balance grew, and a wallet was the only place it could rest; nothing rewarded someone for committing to *time* instead of a *position*. Competitor staking screens existed, but most buried the yield inside a rate table, let the term quietly change the number without saying so on the same screen, or asked for a commitment before showing what came out the other end.",
+            "For someone putting real money behind a number they can't watch move day to day, that gap between committing and understanding is where trust gets spent, not earned."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "One decision per screen, the number recalculating before you commit to it.",
+          "body": [
+            "Coin comes before term. Stablecoin (IDDR) and crypto (NBT) sit as two cards, each stating its own estimated yield and available window up front, so the choice that changes everything downstream gets made before an amount is ever typed in.",
+            "Term and amount live on one screen, not two. Changing the period redraws the estimated principal and yield in place, start date and maturity date read as one line instead of two facts to reconcile by hand, and the maturity instruction, auto-rollover or release, gets set here, before confirmation, not assumed afterward.",
+            "PIN closes a decision instead of opening a new one. Everything it locks in was already visible on the screen before it: amount, term, yield, maturity. So entering it reads as *sealing* a choice, not restarting the form."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/crypto-locked-staking/lock-term.webp",
+        "posterFocus": "50% 20%",
+        "tag": "Interaction study",
+        "year": "2025",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Entry to confirmation, four of the flow's states",
+        "items": [
+          {
+            "img": "/work/crypto-locked-staking/home-entry.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/crypto-locked-staking/select-coin.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/crypto-locked-staking/lock-term.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/crypto-locked-staking/wallet-principal.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "05 · After launch",
+        "items": [
+          {
+            "v": "3 taps",
+            "k": "Home to a confirmed lock"
+          },
+          {
+            "v": "2 screens",
+            "k": "From coin choice to signed term"
+          },
+          {
+            "v": "0",
+            "k": "Fees revealed only after confirming"
+          },
+          {
+            "v": "10% p.a.",
+            "k": "Top estimated yield, stated up front"
+          }
+        ],
+        "note": "Placeholder figures. Replaced once the post-launch review lands."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Coin picker",
+          "Term & amount screen",
+          "Confirmation & PIN flow",
+          "Locked Staking wallet card",
+          "Auto-rollover setting",
+          "Empty & error states",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "NANOVEST · CRYPTO LOCKED STAKING · 2025",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest Investment App",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-investment-app",
+        "img": "/work/covers/nanovest-investment-app.webp"
+      }
+    },
+    "amazon": {
+      "slug": "amazon",
+      "meta": {
+        "title": "Amazon Checkout Redesign · Ferry Works",
+        "description": "Case study: a concept redesign of Amazon's mobile checkout — six recurring frictions fixed across four screens: shipping address, delivery options, payment method, and one confirmation before the order goes through."
+      },
+      "back": "All work",
+      "eyebrow": "Concept case study",
+      "title": "Amazon Checkout Redesign",
+      "lead": "Four checkout screens that let someone switch delivery speed, recognize a card by its logo, and see the whole bill before a single tap commits them to it.",
+      "site": {
+        "label": "Visit amazon.com",
+        "href": "https://www.amazon.com/"
+      },
+      "cover": {
+        "img": "/work/covers/amazon-checkout-redesign.webp",
+        "ar": 1.1855,
+        "alt": "Amazon checkout screens: order confirmation and delivery options side by side",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Self-initiated"
+        },
+        {
+          "k": "Sector",
+          "v": "E-commerce"
+        },
+        {
+          "k": "Role",
+          "v": "Product Designer"
+        },
+        {
+          "k": "Team",
+          "v": "Solo"
+        },
+        {
+          "k": "Period",
+          "v": "2023"
+        },
+        {
+          "k": "Surface",
+          "v": "Mobile app · iOS"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Amazon's own checkout works, but six small frictions keep resurfacing in it: a delivery choice that locks in too early, a summary that shows a total with no math behind it, a payment method that reads as plain text instead of a recognizable card. A concept redesign that rebuilds the same four steps, address, delivery, payment, review, around one rule: *nothing* is confirmed until its consequence is already visible."
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the study covered",
+        "items": [
+          "Flow audit",
+          "Competitive teardown",
+          "Information architecture",
+          "User flows",
+          "Wireframes",
+          "Interface design",
+          "Microcopy",
+          "Accessibility pass",
+          "Prototyping"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "Six small frictions, never solved as one flow.",
+          "body": [
+            "Delivery locked in early: switching from delivery to pickup, or changing the shipping speed, meant abandoning the order and starting over. The order summary showed a single total with no breakdown, so items, voucher, and delivery fee were impossible to check against each other before paying.",
+            "Quantity lived in a dropdown, one extra tap for a change most people make more than once. Saved cards showed as a masked number and a name, nothing that read as Visa or Mastercard at a glance, and payment carried no visible reassurance that a transaction was safe, no line about encryption, right where trust actually gets decided."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "Four screens, one modular flow, each doing one job.",
+          "body": [
+            "Address, delivery, payment, and review split into four screens instead of one long form, so switching delivery to pickup, or a card to PayPal, means returning to that one screen, not restarting the order. The review screen keeps every section tappable back to its source screen for exactly that reason.",
+            "The order summary breaks into items, voucher, and delivery before it shows a total, and quantity is an inline stepper next to the item itself, not a menu two taps away. Every saved card and wallet carries its own logo, Mastercard, Visa, PayPal, Klarna, so recognizing which one is selected takes a glance, not a read.",
+            "A single line under the payment methods, all transactions are secure and encrypted, sits exactly where the decision to pay gets made, not buried in a footer or a help article three taps away."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/amazon/order-confirmation.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Interaction study",
+        "year": "2023",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Four checkout steps",
+        "items": [
+          {
+            "img": "/work/amazon/order-confirmation.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/amazon/delivery-options.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/amazon/shipping-address.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/amazon/payment-method.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomy",
+        "meta": "05 · Four screens that carry the order",
+        "items": [
+          {
+            "num": "1",
+            "title": "Address, one tap to switch",
+            "body": "Saved addresses list as cards with the selected one already marked, so choosing where an order ships is a single tap over the saved options, not a form filled out again.",
+            "img": "/work/amazon/shipping-address.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "2",
+            "title": "A fee and a date for every option",
+            "body": "Doorstep, inside entryway, room of choice: each option states its price and delivery window before it's picked, with a Fastest badge on the one that wins by default, so nobody has to compare three cards to find the quickest one.",
+            "img": "/work/amazon/delivery-options.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "3",
+            "title": "Balance checked before it's chosen",
+            "body": "A wallet balance too low for the order shows as insufficient right on its own card, in red, rather than after checkout fails. The saved card underneath is already marked as the fallback, ready to select instead.",
+            "img": "/work/amazon/payment-method.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "4",
+            "title": "One screen, every section tappable back",
+            "body": "Address, item, delivery, payment, and voucher sit stacked in review, each with a chevron out to its own screen. Fixing one field is a tap out and a tap back, not a restart of the whole order.",
+            "img": "/work/amazon/order-confirmation.webp",
+            "ar": 0.4618
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · What the study produced",
+        "items": [
+          {
+            "v": "6",
+            "k": "Recurring frictions addressed in one flow"
+          },
+          {
+            "v": "0",
+            "k": "Restarts needed to change delivery or payment"
+          },
+          {
+            "v": "1 tap",
+            "k": "To correct any field from review"
+          },
+          {
+            "v": "4",
+            "k": "Payment brands recognizable by logo alone"
+          }
+        ],
+        "note": "A concept redesign, not a shipped feature — figures describe the design, not production data."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "What the study produced",
+        "items": [
+          "Checkout flow map",
+          "Shipping address screen",
+          "Delivery options screen",
+          "Payment method screen",
+          "Order review & confirmation",
+          "Trust & security microcopy",
+          "Component notes"
+        ]
+      },
+      "marquee": "AMAZON · CHECKOUT REDESIGN · 2023",
+      "next": {
+        "label": "Next case",
+        "title": "Game Interface Study",
+        "cat": "Case study",
+        "href": "/work/game-interface-study",
+        "img": "/work/covers/game-interface-study.webp"
+      }
+    },
+    "game-quest": {
+      "slug": "game-quest",
+      "meta": {
+        "title": "Rampage Game Quest · Ferry Works",
+        "description": "Case study: the daily-quest and rewards HUD for a mobile action RPG — concept UI work on claim states, reward info and a two-currency economy."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Rampage Game Quest",
+      "lead": "A daily-quest and rewards HUD for a mobile action RPG, redesigned so claiming a reward reads as a payoff, not paperwork.",
+      "site": {
+        "label": "Visit argus.gg",
+        "href": "https://argus.gg/"
+      },
+      "cover": {
+        "img": "/work/covers/game-quest-design.webp",
+        "ar": 1.1855,
+        "alt": "Rampage Game Quest HUD: the daily quest panel and Obtained Rewards screen next to the game's key art",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Argus Labs"
+        },
+        {
+          "k": "Sector",
+          "v": "Gaming · Mobile RPG"
+        },
+        {
+          "k": "Role",
+          "v": "UI/UX Designer"
+        },
+        {
+          "k": "Team",
+          "v": "Solo"
+        },
+        {
+          "k": "Period",
+          "v": "2026"
+        },
+        {
+          "k": "Surface",
+          "v": "Mobile game · Landscape UI"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Rampage Game Quest hands out two currencies, five-plus reward types and a difficulty ladder before a player finishes their first run. The quest panel is where all of that has to *resolve* into three things: what to do next, what it's worth, and how to *claim* it."
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Competitive teardown",
+          "Quest & reward taxonomy",
+          "Currency & economy mapping",
+          "User flows",
+          "Wireframes",
+          "Interface design",
+          "Iconography direction",
+          "Reward & claim states",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "Every icon needed a tooltip that didn't exist.",
+          "body": [
+            "Four quest cards, two currencies, five reward icons and a difficulty label all sat on one screen with no way to ask what any single piece meant. A player could see “+150” next to a gem icon and a coin icon in the same breath and have no way to tell which one mattered for the gear they actually wanted.",
+            "Claimed, claimable and locked cards used the same card shell with only a label change, so a full row of grey “Claimed” buttons read as broken, not finished. Reward-drop screens were bolted on afterward as their own modal, so opening one meant losing the quest list underneath it."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "State does the explaining, not a label.",
+          "body": [
+            "Every quest card carries its state in colour and shape before a player reads a word: a lit green Claim button, a greyed Claimed shell, a progress track that fills left to right. Daily and Lifetime share one card language behind two tabs, so switching between them never feels like a different screen.",
+            "Claim All sits under the row for the moment every card is already lit, because asking someone to tap four identical buttons in sequence is the app re-counting what the player already counted. Obtained Rewards opens as a full-screen pause between claiming and getting back to the run, so five drops land as one moment, not four missed toasts.",
+            "Every reward icon opens the same Reward Info card on tap: name, amount owned, what it's for, where to farm more. One pattern answers every “+2 Shinning Jar, so what” question the raw HUD couldn't."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 2.1667,
+        "poster": "/work/game-quest/daily-quests.webp",
+        "posterFocus": "50% 35%",
+        "tag": "Interaction study",
+        "year": "2026",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Four HUD states",
+        "items": [
+          {
+            "img": "/work/game-quest/daily-quests.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-quest/lifetime-quests.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-quest/obtained-rewards.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-quest/reward-info.webp",
+            "ar": 2.1667,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · What the study produced",
+        "items": [
+          {
+            "v": "2 tabs",
+            "k": "Daily and Lifetime sharing one card language"
+          },
+          {
+            "v": "3 states",
+            "k": "Claim, claimed and locked read without a label"
+          },
+          {
+            "v": "1 tap",
+            "k": "From any reward icon to what it does"
+          },
+          {
+            "v": "0",
+            "k": "New currencies added beyond the existing two"
+          }
+        ],
+        "note": "A concept UI system, not a shipped game — figures describe the design, not production data."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Quest & rewards HUD",
+          "Daily/Lifetime tab system",
+          "Claim, claimed & locked states",
+          "Obtained Rewards modal",
+          "Reward Info modal",
+          "Iconography direction",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "RAMPAGE GAME QUEST · UI SYSTEM · 2026",
+      "next": {
+        "label": "Next case",
+        "title": "Rampage Evolution Card",
+        "cat": "Game interface",
+        "href": "/work/rampage-evolution-card",
+        "img": "/work/covers/rampage-evolution-card.webp"
+      }
+    },
+    "rampage-evolution-card": {
+      "slug": "rampage-evolution-card",
+      "meta": {
+        "title": "Rampage Evolution Card · Ferry Works",
+        "description": "Case study: a level-up ability card system for a mobile roguelite — rarity tiers, holographic Evolution cards and the UI players see every time XP fills."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Rampage Evolution Card",
+      "lead": "A level-up card system for a mobile roguelite: three ability choices every time XP fills, with a rarity ladder and a holographic Evolution tier that make one card feel worth more than the other two.",
+      "site": {
+        "label": "Visit argus.gg",
+        "href": "https://argus.gg/"
+      },
+      "cover": {
+        "img": "/work/covers/rampage-evolution-card.webp",
+        "ar": 1.1855,
+        "alt": "Rampage Evolution Card level-up screen shown over the game's key art, three ability cards offered mid-run",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Argus Labs"
+        },
+        {
+          "k": "Sector",
+          "v": "Gaming · Mobile RPG"
+        },
+        {
+          "k": "Role",
+          "v": "UI/UX Designer"
+        },
+        {
+          "k": "Team",
+          "v": "Solo"
+        },
+        {
+          "k": "Period",
+          "v": "2026"
+        },
+        {
+          "k": "Surface",
+          "v": "Mobile game · Landscape UI"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Every time a Rampage run fills its XP bar, the game pauses and offers *three* ability cards to build a run around. The screen had to do two jobs at once: read instantly mid-combat, and make a Legendary or Evolution pull feel like a genuinely different event from pulling a Common."
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Card rarity system",
+          "Level-up flow",
+          "Ability iconography",
+          "Evolution card treatment",
+          "Reroll & recover mechanics",
+          "Wireframes",
+          "Interface design",
+          "Motion direction",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Challenge",
+          "meta": "02 · What had to be solved",
+          "heading": "Three cards, no precedent for what any of them should weigh.",
+          "body": [
+            "Rampage didn't have a level-up screen before this — every run paused on XP-fill with nothing built yet to fill that pause. Three ability cards had to sit on one shell and each read instantly mid-combat: a run-defining Legendary and a minor stat tweak couldn't just differ in copy, because a player has maybe two seconds to weigh them before the run keeps going underneath the pause.",
+            "Re-roll and Recover HP needed a place on that same screen, and giving them anywhere near the same visual weight as the cards would turn one choice into four competing ones."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "Rarity has to read before the label does.",
+          "body": [
+            "I built a five-tier ladder — Common, Rare, Epic, Legendary and Evolution — where the border, corner cut and background foil change with the tier, not just the pill text underneath it. A Legendary card's gold foil and an Evolution card's shifting holographic gradient are readable from across the screen, before a player's eyes ever land on the word.",
+            "Evolution cards get their own treatment on top of that ladder: an animated holo-foil background and a beveled edge that mimics a physical trading-card pull, because an Evolution merges an ability the player already owns into something stronger — it has to feel rarer than a Legendary pull, not just differently colored.",
+            "Re-roll and Recover HP moved to two flat hex badges anchored to the screen's bottom corners, out of the card row entirely, so the three cards stay the only thing competing for the choice itself."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 2.1667,
+        "poster": "/work/rampage-evolution-card/upgrade-select.webp",
+        "posterFocus": "50% 35%",
+        "tag": "Interaction study",
+        "year": "2026",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Four states of the upgrade screen",
+        "items": [
+          {
+            "img": "/work/rampage-evolution-card/upgrade-select.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/rampage-evolution-card/upgrade-rarity.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/rampage-evolution-card/card-system-evolution.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/rampage-evolution-card/card-system-tiers.webp",
+            "ar": 2.1667,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · What the study produced",
+        "items": [
+          {
+            "v": "5 tiers",
+            "k": "Common through Evolution, each readable at a glance"
+          },
+          {
+            "v": "1 system",
+            "k": "One card shell reused across every rarity and state"
+          },
+          {
+            "v": "2 corners",
+            "k": "Reroll and Recover HP moved out of the card row"
+          },
+          {
+            "v": "0",
+            "k": "New currencies added beyond the run's existing coin"
+          }
+        ],
+        "note": "A concept UI system, not a shipped game — figures describe the design, not production data."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Level-up card screen",
+          "5-tier rarity system",
+          "Evolution holo-foil treatment",
+          "Reroll & Recover HP badges",
+          "Ability iconography set",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "RAMPAGE EVOLUTION CARD · UI SYSTEM · 2026",
+      "next": {
+        "label": "Next case",
+        "title": "HRIS Dashboard",
+        "cat": "Enterprise · Data",
+        "href": "/work/hris-dashboard",
+        "img": "/work/covers/hris-dashboard.webp"
+      }
+    },
+    "hris-dashboard": {
+      "slug": "hris-dashboard",
+      "meta": {
+        "title": "HRIS Dashboard · TricorUnify · Ferry Works",
+        "description": "Case study: the company-and-employee HR dashboard for TricorUnify Asia, a real-time, multi-country platform for payroll, leave and employee records, run out of a Hong Kong head office."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "HRIS Dashboard",
+      "lead": "A company-and-employee HR platform for Tricor's Asia offices, built so payroll, time and employee records stay in sync in real time, from a Hong Kong head office to every market it serves.",
+      "site": {
+        "label": "Visit tricorunify.com",
+        "href": "https://tricorunify.com/login"
+      },
+      "cover": {
+        "img": "/work/covers/hris-dashboard.webp",
+        "ar": 1.1855,
+        "alt": "TricorUnify dashboard mockup: demographic and tenure charts in a browser window",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "TricorUnify"
+        },
+        {
+          "k": "Sector",
+          "v": "HR Tech · SaaS"
+        },
+        {
+          "k": "Role",
+          "v": "UI/UX Designer"
+        },
+        {
+          "k": "Team",
+          "v": "1 UX · 3 eng · 1 PM"
+        },
+        {
+          "k": "Period",
+          "v": "2023"
+        },
+        {
+          "k": "Markets",
+          "v": "Hong Kong HQ · Asia"
+        },
+        {
+          "k": "Surface",
+          "v": "Web app · Desktop"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "TricorUnify runs Tricor Group's HR for offices across Asia out of Hong Kong, real-time in every market. I designed the shared shell: one dashboard, one table pattern, one filter, so *whichever* module a manager or employee opens next still feels like the same product."
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Stakeholder interviews",
+          "Company & employee IA",
+          "Multi-country data model",
+          "Data table & filter system",
+          "User flows",
+          "Wireframes",
+          "Interface design",
+          "Data visualisation",
+          "Design system",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "Every country read a different version of the truth.",
+          "body": [
+            "TricorUnify runs HR for Tricor Group's offices across Asia out of a Hong Kong head office, so an employee's record, leave balance and payroll status had to match the moment they changed, no matter which country's HR team or which employee opened them next. Data that synced overnight, not the instant a manager approved it, meant two people looking at the same profile could be looking at two different truths.",
+            "The product had also grown two audiences that didn't share a design language: an admin console for the Company side, and a self-service view for the Employee side, each shipped as if the other didn't exist. A payroll update an admin made in Hong Kong had no visible echo on the employee's own payroll tab, so trust in the number depended on a phone call, not the screen."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "One shell, two sides, real-time by default.",
+          "body": [
+            "Every module (Dashboard, Employee, Payroll, Time Management, Benefits) now reads from the same live data layer instead of a nightly batch, so an approval, a new hire or a payroll change shows up the same second on both the Company console and the Employee self-service view, in whichever country it happened.",
+            "Company and Employee sides share one table, filter and chart-type pattern instead of two design languages, so an HR admin at the Hong Kong head office and an employee at a branch office are reading the same product, not two products that happen to share a login screen."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.3981,
+        "poster": "/work/hris-dashboard/leave-approval.webp",
+        "posterFocus": "78% 38%",
+        "tag": "Interaction study",
+        "year": "2023",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Four modules, one shell",
+        "items": [
+          {
+            "img": "/work/hris-dashboard/dashboard.webp",
+            "ar": 1.4063,
+            "cap": ""
+          },
+          {
+            "img": "/work/hris-dashboard/employee-list.webp",
+            "ar": 1.4063,
+            "cap": ""
+          },
+          {
+            "img": "/work/hris-dashboard/employee-payroll.webp",
+            "ar": 1.4063,
+            "cap": ""
+          },
+          {
+            "img": "/work/hris-dashboard/leave-approval.webp",
+            "ar": 1.3981,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · What the system produced",
+        "items": [
+          {
+            "v": "4 modules",
+            "k": "Employee, Payroll, Time Management and Benefits sharing one shell"
+          },
+          {
+            "v": "2 sides",
+            "k": "Company console and Employee self-service reading the same live data"
+          },
+          {
+            "v": "4 charts",
+            "k": "Metric, line, bar and pie behind one menu, not four screens"
+          },
+          {
+            "v": "0",
+            "k": "Nightly batch jobs between what Company sees and what Employee sees"
+          }
+        ],
+        "note": "A design system case study, not shipped usage data: figures describe the pattern, not production metrics."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Dashboard & analytics",
+          "Employee directory",
+          "Employee profile & payroll",
+          "Leave approval workflow",
+          "Company & employee IA",
+          "Shared table & filter system",
+          "Chart-type switcher",
+          "Design system",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "HRIS DASHBOARD · TRICORUNIFY ASIA · 2023",
+      "next": {
+        "label": "Next case",
+        "title": "Stiqy Rewards Dashboard",
+        "cat": "Web3 · Growth",
+        "href": "/work/stiqy-dashboard",
+        "img": "/work/covers/stiqy-dashboard.webp"
+      }
+    },
+    "stiqy-dashboard": {
+      "slug": "stiqy-dashboard",
+      "meta": {
+        "title": "Stiqy Rewards Dashboard · Ferry Works",
+        "description": "Case study: the campaign dashboard game partners use to turn level clears into GEM rewards, claimed on a page of their own and redeemed for gear or another prize."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Stiqy Rewards Dashboard",
+      "lead": "A partner sets one task, clear five levels in their game, and Stiqy turns it into a reward a player claims on a page outside the game itself, spent on gear, a prize, or whatever the campaign is paying out.",
+      "site": {
+        "label": "Visit stiqy.io",
+        "href": "https://www.stiqy.io/"
+      },
+      "cover": {
+        "img": "/work/covers/stiqy-dashboard.webp",
+        "ar": 1.1855,
+        "alt": "Stiqy campaign dashboard for the Apeiron Sprints Challenge, framed with the task, reward and reach numbers a manager checks first",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Stiqy"
+        },
+        {
+          "k": "Sector",
+          "v": "Web3 · Growth"
+        },
+        {
+          "k": "Role",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Team",
+          "v": "1 design · 4 eng · 1 PM"
+        },
+        {
+          "k": "Period",
+          "v": "2024–2025"
+        },
+        {
+          "k": "Surface",
+          "v": "Web app · Desktop first"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Stiqy is the reward layer a game studio plugs into its own title: a partner sets a task, say, clear five levels, and Stiqy tracks who finished it, pays it out in GEMs, and hosts the claim page a player uses outside the game client. I designed the half of the dashboard the partner actually runs the campaign from: *tasks*, GEMs, referrals, and the white-label setup a community sees before a single campaign goes *live*."
+      },
+      "mockup": {
+        "img": "/work/stiqy-dashboard/macbook.webp",
+        "ar": 1.3333,
+        "alt": "Stiqy campaign dashboard for the Apeiron Sprints Challenge, shown open on a MacBook Pro"
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Stakeholder interviews",
+          "Competitive teardown",
+          "Task & reward taxonomy",
+          "User flows",
+          "Wireframes",
+          "Interface design",
+          "Data visualisation",
+          "Design system",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "A task completed in the game and a reward claimed outside it had no single record.",
+          "body": [
+            "A partner running a reward campaign for their own game needs one thing to hold: a player clears five levels inside the game, a custom API call tells Stiqy, and a reward is waiting on a claim page hosted outside the game client, not a spreadsheet an admin updates by hand. At a volume that had already crossed 550,000 completed tasks, tasks sat in one module, GEM balances in another, and the lucky draw or shop that spent those GEMs in a third, each built before anyone asked how a manager was supposed to answer one plain question: did the reward actually reach the player who cleared the level? Cross-checking a single participant meant three tabs open at once.",
+            "Launching a campaign for a new game made it worse. Logo, domain, governance token, and socials, the fields a white-label claim page needs to read like the partner's own game rather than a generic Stiqy page, had no home of their own, so setup requests turned into a support thread instead of a form someone could fill in and launch from."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "One flow from a level cleared to a reward claimed, one screen for making the claim page look like the partner's own game.",
+          "body": [
+            "Task cards carry their own economics now: points and GEMs sit on the card itself, next to the type of action being rewarded, a social quest, an on-chain check, or a custom API event fired the moment a player clears a level, and active and inactive quests split into their own tabs so a manager scans six live tasks instead of scrolling past forty finished ones.",
+            "A single flow diagram replaces the spreadsheet: GEMs created from Tasks and Party Spin, spent through the Shop or Lucky Draw on gear, merch, or whatever the campaign is paying out, or left Unspent, read left to right, no legend needed, next to the referral leaderboard those same GEMs are funding, the loyalty loop Stiqy calls Passive Yield Rewards.",
+            "Community Settings collects everything a white-label claim page needs, logo, favicon, domain, governance token contract, network, socials, on one form with one Update button, so a partner launching a reward campaign for their next game takes minutes, not a ticket."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/stiqy-dashboard/task-grid.webp",
+        "posterFocus": "50% 8%",
+        "tag": "Interaction study",
+        "year": "2025",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Four screens behind one reward",
+        "items": [
+          {
+            "img": "/work/stiqy-dashboard/campaign-dashboard.webp",
+            "ar": 1.2245,
+            "cap": ""
+          },
+          {
+            "img": "/work/stiqy-dashboard/task-grid.webp",
+            "ar": 1.2245,
+            "cap": ""
+          },
+          {
+            "img": "/work/stiqy-dashboard/rewards.webp",
+            "ar": 1.2245,
+            "cap": ""
+          },
+          {
+            "img": "/work/stiqy-dashboard/community-settings.webp",
+            "ar": 1.2934,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · After launch",
+        "items": [
+          {
+            "v": "2 tabs → 1",
+            "k": "Where a reward’s status lives"
+          },
+          {
+            "v": "+41%",
+            "k": "Tasks completed after the grid redesign"
+          },
+          {
+            "v": "−58%",
+            "k": "Setup tickets for a new community"
+          },
+          {
+            "v": "1 form",
+            "k": "From logo to a live white-label campaign"
+          }
+        ],
+        "note": "Placeholder figures. Replaced once the post-launch review lands."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Task grid with reward states",
+          "GEM flow diagram",
+          "Referral leaderboard",
+          "Community settings form",
+          "Empty & error states",
+          "Design system",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "STIQY · REWARDS DASHBOARD · 2025",
+      "next": {
+        "label": "Next case",
+        "title": "Web3 Game Deployer Engine",
+        "cat": "Web3 · Infrastructure",
+        "href": "/work/game-deployer",
+        "img": "/work/covers/web3-game-deployer-engine.webp"
+      }
+    },
+    "game-deployer": {
+      "slug": "game-deployer",
+      "meta": {
+        "title": "Web3 Game Deployer Engine · Ferry Works",
+        "description": "Case study: the dashboard that takes a World Engine game shard from sign-up to a live, EVM-compatible chain, without a terminal window open the whole time."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Web3 Game Deployer Engine",
+      "lead": "Five World CLI commands turn into one onchain game shard. I designed the dashboard that watches it happen: sign up, wire up a chain, deploy, and see it go from pending to live without leaving the browser.",
+      "site": {
+        "label": "Visit world.dev",
+        "href": "https://world.dev/"
+      },
+      "cover": {
+        "img": "/work/covers/web3-game-deployer-engine.webp",
+        "ar": 1.1847,
+        "alt": "World Engine deployer overview showing a game shard's EVM chain ID, block height and deployment status at a glance",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Argus Labs"
+        },
+        {
+          "k": "Sector",
+          "v": "Web3 · Infrastructure"
+        },
+        {
+          "k": "Role",
+          "v": "Senior UI/UX Designer"
+        },
+        {
+          "k": "Team",
+          "v": "1 design · 3 engineering"
+        },
+        {
+          "k": "Period",
+          "v": "2023–2024"
+        },
+        {
+          "k": "Surface",
+          "v": "Web app · Desktop first"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "World Engine is an ECS, tick-driven framework for onchain real-time games, closer to Unity or Unreal than typical blockchain tooling. Each shard's state lives on a chain a studio can always reach, not inside one company's server. Shipping one still ran through a terminal though: five CLI commands, no shared view of what had actually *deployed*. I designed the dashboard around that CLI: register, create a world, and watch a shard go *live*."
+      },
+      "mockup": {
+        "img": "/work/game-deployer/macbook.webp",
+        "ar": 1.3333,
+        "alt": "World Engine's Overview screen for Argus Labs, listing its game shards, shown open on a MacBook Pro"
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Developer interviews",
+          "CLI flow mapping",
+          "Information architecture",
+          "User flows",
+          "Wireframes",
+          "Interface design",
+          "Design system",
+          "Empty & error states",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "Deploying a game shard meant reading the docs in one tab and a terminal in another.",
+          "body": [
+            "World CLI could spin up a game shard in five commands, but the dashboard around it stopped at sign-up: no shard status, no chain ID, no way to tell a base shard that deployed clean from a game shard that failed silently. The only feedback loop was re-running the deploy command and watching the terminal scroll.",
+            "Every deployment raised the same three questions with nowhere to answer them: is this chain live, what's it running on, and which commit shipped it. Answering meant cross-referencing a block explorer, a CLI log, and a Discord thread.",
+            "Cardinal's whole premise is that a shard's state doesn't live inside one team's infrastructure the way a Nakama server would: lose the account that manages a server and the game's state goes with it, but a game shard anchored onchain stays reachable through the chain itself. None of that showed up in the dashboard. A studio had no way to see, at a glance, that their shard's chain ID and block height were real guarantees, not just log lines from a CLI they'd have to trust."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "One overview card for a shard's vitals, one guided checklist for the five commands that create it.",
+          "body": [
+            "The Overview tab surfaces a game shard's EVM chain ID, RPC URL, block explorer link and block height as soon as it's live, with a status pill (Success, Running, Failed) doing the job a raw terminal log used to. Those same chain details are also a studio's way back in if they ever lose access to World Engine itself: the shard's state lives on the chain, not inside one team's server, so the chain ID and explorer link are enough to reach it independently.",
+            "Create your World turns the five World CLI commands, login, create, link, evm deploy for the base chain, cardinal deploy for the game shard's own logic and state, into a copyable checklist next to the docs, so a developer follows the same sequence whether they're reading the guide or the screen.",
+            "Recent Deployments lists every shard by branch, commit, environment and author, filterable by date range and status, so a failed deploy sits one glance from the successful one next to it, not in a different tab."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.5,
+        "poster": "/work/game-deployer/create-world.webp",
+        "posterFocus": "50% 15%",
+        "tag": "Interaction study",
+        "year": "2024",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Four screens from sign-up to a live shard",
+        "items": [
+          {
+            "img": "/work/game-deployer/register.webp",
+            "ar": 1.5,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-deployer/overview.webp",
+            "ar": 1.5,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-deployer/create-world.webp",
+            "ar": 1.5,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-deployer/deployments.webp",
+            "ar": 1.5,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · After launch",
+        "items": [
+          {
+            "v": "3 → 1",
+            "k": "Where a shard's status lives"
+          },
+          {
+            "v": "5",
+            "k": "World CLI commands from login to a live shard"
+          },
+          {
+            "v": "0",
+            "k": "Terminal windows needed to check a deploy"
+          },
+          {
+            "v": "1",
+            "k": "Dashboard for overview, deployments and docs"
+          }
+        ],
+        "note": "Placeholder figures. Replaced once the post-launch review lands."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Overview dashboard with shard status",
+          "Create your World CLI checklist",
+          "Recent Deployments log",
+          "Sign up / sign in flow",
+          "Empty & error states",
+          "Design system",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "WORLD ENGINE · GAME DEPLOYER · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest US Stocks Event Calendar",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-calendar",
+        "img": "/work/covers/us-stock-event-calendar.webp"
+      }
+    },
+    "game-interface-study": {
+      "slug": "game-interface-study",
+      "meta": {
+        "title": "Game Interface Study · Ferry Works",
+        "description": "Case study: a brand identity and HUD system for Hunters: Legend of Heroes, an imaginary MOBA explored for Argus Labs, balancing stylised magitech visuals against the clarity a competitive interface needs."
+      },
+      "back": "All work",
+      "eyebrow": "Case study",
+      "title": "Game Interface Study",
+      "lead": "A brand identity and HUD system for Hunters: Legend of Heroes, an imaginary magitech MOBA designed for Argus Labs to read as competitive without reading as intimidating.",
+      "site": {
+        "label": "Visit argus.gg",
+        "href": "https://argus.gg/"
+      },
+      "cover": {
+        "img": "/work/covers/game-interface-study.webp",
+        "ar": 1.1855,
+        "alt": "Hunters: Legend of Heroes lobby screen on a desktop monitor, framed with the Play button, friends list and last match card built from Argus Labs’ magitech brand system",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Argus Labs"
+        },
+        {
+          "k": "Sector",
+          "v": "Gaming · MOBA"
+        },
+        {
+          "k": "Role",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Team",
+          "v": "Solo"
+        },
+        {
+          "k": "Period",
+          "v": "2024"
+        },
+        {
+          "k": "Surface",
+          "v": "Desktop game · Landscape UI"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Argus Labs, the studio behind World Engine, asked for a brand and UI exploration of an imaginary MOBA: something *stylised* enough to read as premium, without losing the *clarity* a health bar or a minimap needs mid-fight."
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the work covered",
+        "items": [
+          "Competitive teardown",
+          "Brand identity & colour system",
+          "Typography direction",
+          "Information architecture",
+          "Wireframes",
+          "Interface design",
+          "HUD & overlay design",
+          "Mini design system",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · Where it broke",
+          "heading": "Most MOBA interfaces read as either too casual or too cluttered, and Hunters had to be neither.",
+          "body": [
+            "Argus Labs asked for a UI and brand exploration for Hunters: Legend of Heroes, an imaginary magitech MOBA, sitting in a genre where interfaces tend to split into two failure modes: casual titles that read as too thin for a competitive player, and hardcore titles so dense with HUD elements that a new player bounces before their first match ends.",
+            "The brief carried a second tension: a midcore audience wants the visual depth of a hardcore title but won’t tolerate the onboarding cost of one, so every screen, from the lobby to the health bar, had to read as competitive without reading as intimidating."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · How I worked",
+          "heading": "A magitech identity built from three references, then carried into every HUD element.",
+          "body": [
+            "The visual language borrows Cyberpunk’s colour palette, DOTA’s layout and hierarchy, and Heroes of the Storm’s team-oriented framing, then binds them with a four-colour brand palette, Cyber Pink, Magic Yellow, Fusion Cyan and Bloody Red, geometric shapes and DIN Next LT Pro type for the tech half of magitech, glowing edges and the Hunters logotype for the magic half.",
+            "A mini design system, health bar, skills and inventory, chat, in-game team banner, minimap, buttons, keeps every one of those elements consistent whether it shows up in the lobby chrome or over live gameplay.",
+            "That identity gets tested against the interface it actually runs inside: a lobby where Play stays the one filled action beside a friends list, guilds and a last match card, and a battle HUD where health, mana, a minimap, a skill and inventory panel, team banners and chat all read at a glance."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.6,
+        "poster": "/work/game-interface-study/battle-hud.webp",
+        "posterFocus": "50% 30%",
+        "tag": "Interaction study",
+        "year": "2024",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Four screens, one identity system",
+        "items": [
+          {
+            "img": "/work/game-interface-study/branding-kit.webp",
+            "ar": 1.6,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-interface-study/mini-design-system.webp",
+            "ar": 1.6,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-interface-study/home-lobby.webp",
+            "ar": 1.6,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-interface-study/battle-hud.webp",
+            "ar": 1.6,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "06 · What the study produced",
+        "items": [
+          {
+            "v": "4 colours",
+            "k": "Cyber Pink, Magic Yellow, Fusion Cyan and Bloody Red carrying the brand"
+          },
+          {
+            "v": "3",
+            "k": "Cyberpunk, DOTA and Heroes of the Storm merged into one identity"
+          },
+          {
+            "v": "6",
+            "k": "Health, mana, minimap, skills, chat and team banner sharing one HUD"
+          },
+          {
+            "v": "2 screens",
+            "k": "Lobby and battle HUD running the same system"
+          }
+        ],
+        "note": "A concept UI and brand study for Argus Labs, not a shipped game: figures describe the design system, not production data."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "Handed to the team",
+        "items": [
+          "Visual identity & logotype",
+          "Colour & typography system",
+          "Lobby & in-game wireframes",
+          "Mini HUD design system",
+          "Home lobby screen",
+          "In-game battle HUD",
+          "Handoff spec"
+        ]
+      },
+      "marquee": "HUNTERS · GAME INTERFACE STUDY · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Rampage Game Quest",
+        "cat": "Game interface",
+        "href": "/work/game-quest",
+        "img": "/work/covers/game-quest-design.webp"
+      }
+    },
+    "investment-app-reimagined": {
+      "slug": "investment-app-reimagined",
+      "meta": {
+        "title": "Investment App Reimagined · Ferry Works",
+        "description": "Concept case study: what an investment app looks like when it borrows its energy from the trading floor itself, a portfolio screen built from tickers, arrows, and a color that changes with the market's mood."
+      },
+      "back": "All work",
+      "eyebrow": "Concept case study",
+      "title": "Investment App Reimagined",
+      "lead": "A portfolio screen that behaves like the trading floor it's named after: numbers always moving, a color for every mood, an arrow pointed at every price.",
+      "site": {
+        "label": "Visit nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/investment-app-reimagined.webp",
+        "ar": 1.1855,
+        "alt": "Investment App Reimagined portfolio screen, a glowing arrow rising above a live portfolio balance",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Client",
+          "v": "Self-initiated"
+        },
+        {
+          "k": "Sector",
+          "v": "Fintech · Investment app"
+        },
+        {
+          "k": "Role",
+          "v": "Product Designer"
+        },
+        {
+          "k": "Team",
+          "v": "Solo"
+        },
+        {
+          "k": "Period",
+          "v": "2026"
+        },
+        {
+          "k": "Surface",
+          "v": "Mobile app · Concept"
+        }
+      ],
+      "overview": {
+        "label": "Overview",
+        "meta": "01 · The brief",
+        "text": "Most investment apps calm the market down before it reaches the screen: a soft portfolio card, muted greens and reds, a ticker tucked into a corner nobody scrolls to. This concept asks the opposite question, what if the app kept the noise instead of hiding it, compressing an actual trading floor, its tickers, its arrows, its red and green fighting over the same headline, into *one* portrait screen."
+      },
+      "scope": {
+        "label": "Scope",
+        "meta": "What the exploration covered",
+        "items": [
+          "Concept direction",
+          "Visual language exploration",
+          "Portfolio dashboard",
+          "Ticker & motion system",
+          "Color-coded price states",
+          "Stock detail & chart screen",
+          "Iconography",
+          "Prototyping"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Problem",
+          "meta": "02 · The premise",
+          "heading": "Every investment app plays it safe. The market it tracks never does.",
+          "body": [
+            "A portfolio screen usually works hard to stay calm: one total, one soft color, a small arrow that barely tilts. That calm is good manners toward anyone who gets nervous watching a number fall, but it also erases the one feeling that made investing interesting to begin with, the pulse of a live market, numbers in motion, red and green arguing over the same letter.",
+            "The real trading floor never plays it that safe. Tickers scroll overhead in a blur, screens compete for the same square foot of attention, and a single stock can turn a room's mood in the time it takes a number to update. None of that survives the trip into a phone screen, where everything gets sanded down to one quiet card."
+          ]
+        },
+        {
+          "label": "Approach",
+          "meta": "03 · The direction",
+          "heading": "Compress the trading floor into one portrait screen.",
+          "body": [
+            "The portfolio balance sits under a ticker banner that never stops scrolling, and the banner's whole background flips between green and red the instant the tracked stocks do, not a subtle tint, a full change of weather, with arrows pointing exactly where each price just went.",
+            "Crypto and stocks each get their own board: coin and company logos next to percentage pills that carry their own color, so a portfolio reads like a wall of tickers rather than a spreadsheet trying to be gentle about it. A stock's own detail screen keeps the same electricity, a single line chart spiking and diving across a trading grid, Buy and Sell sitting side by side like two decisions being made on the floor itself.",
+            "News and watchlists ride the same scroll as the balance, headlines styled like tabloid stickers fighting for a glance the way real financial news does, so checking a portfolio starts to feel like walking past a newsstand on the way onto the floor, not opening a quiet ledger."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Motion",
+        "meta": "04 · Screen recording",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/investment-app-reimagined/stock-chart.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Interaction study",
+        "year": "2026",
+        "badge": "MP4 · placeholder",
+        "caption": "Interaction study · recording pending"
+      },
+      "gallery": {
+        "label": "Screens",
+        "meta": "Four moods of the same portfolio",
+        "items": [
+          {
+            "img": "/work/investment-app-reimagined/portfolio-dashboard.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/investment-app-reimagined/market-down.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/investment-app-reimagined/watchlist-news.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/investment-app-reimagined/stock-chart.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Results",
+        "meta": "04 · What the exploration produced",
+        "items": [
+          {
+            "v": "2",
+            "k": "Colors carrying the market's entire mood, green or red"
+          },
+          {
+            "v": "12+",
+            "k": "Live tickers and prices visible before a single tap"
+          },
+          {
+            "v": "0",
+            "k": "Muted tones left in the palette"
+          },
+          {
+            "v": "1 scroll",
+            "k": "Portfolio, watchlist, news and a chart sharing one screen"
+          }
+        ],
+        "note": "A concept exploration, not a shipped feature: figures describe the design direction, not production data."
+      },
+      "deliverables": {
+        "label": "Deliverables",
+        "meta": "What the exploration produced",
+        "items": [
+          "Portfolio dashboard concept",
+          "Ticker banner system",
+          "Crypto & stocks asset rows",
+          "Stock detail & chart screen",
+          "Watchlist & news carousel",
+          "Color & motion direction",
+          "Component notes"
+        ]
+      },
+      "marquee": "INVESTMENT APP REIMAGINED · 2026",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest Investment App",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-investment-app",
+        "img": "/work/covers/nanovest-investment-app.webp"
+      }
+    }
+  }
+}

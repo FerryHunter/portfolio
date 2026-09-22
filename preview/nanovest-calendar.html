@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nanovest US Stocks Event Calendar · Ferry Works</title>
+<meta name="description" content="Case study: the US stock event calendar inside Nanovest, dividends, splits, earnings and market holidays for the stocks a user already owns.">
+<link rel="icon" href="../public/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../public/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../public/apple-touch-icon.png">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap">
+<!-- CSS yang sama persis dengan yang dipakai Next.js -->
+<link rel="stylesheet" href="../app/globals.css">
+</head>
+<body class="preloading">
+
+<div id="preloader" data-preloader role="status" aria-label="Loading">
+  <div class="pre-brand"><span>Ferry Works</span></div>
+  <span class="pre-count" data-pre-count aria-hidden="true">000</span>
+  <span class="pre-bar" data-pre-bar aria-hidden="true"></span>
+</div>
+<div id="cursor" data-cursor-el data-label-default="View" aria-hidden="true">
+  <span class="cursor-label" data-cursor-label></span>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" data-nav aria-label="Menu">
+  <div class="nav-inner">
+
+    <div class="nav-layer nav-layer--top">
+      <div class="nav-group">
+        <a class="pill t-eyebrow" href="index.html#work">Work<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#process">Process<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#about">About<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+      <div class="nav-group nav-coords t-eyebrow">
+        <span class="nav-coords-lines"><span>Senior Product Designer</span><span>Visual Designer</span></span><span>7+ YEARS · UI/UX · WEB3</span>
+      </div>
+      <div class="nav-group">
+        <div class="nav-drawer-zone">
+          <button class="nav-more" data-more aria-expanded="false" aria-label="More links">
+            <span class="nav-more-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+          <div class="nav-drawer" data-drawer>
+            <a class="pill t-eyebrow" href="index.html#work">Case studies<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#process">Design systems<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#contact">Résumé<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#contact">Contact<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-layer nav-layer--scrolled">
+      <a class="nav-wordmark" href="index.html#top">Ferry Works</a>
+      <div class="nav-group">
+        <a class="pill t-eyebrow" href="index.html#contact">Work with me<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+    </div>
+
+    <div class="nav-mobile-bar">
+      <a class="nav-wordmark" href="index.html#top">Ferry Works</a>
+      <button class="burger" data-burger aria-expanded="false" aria-controls="mobile-menu"
+              aria-label="Menu"><i></i><i></i></button>
+    </div>
+
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+  <div>
+    <a class="t-menu" href="index.html#work">Work</a><a class="t-menu" href="index.html#process">Process</a><a class="t-menu" href="index.html#about">About</a><a class="t-menu" href="index.html#work">Case studies</a><a class="t-menu" href="index.html#process">Design systems</a><a class="t-menu" href="index.html#contact">Résumé</a><a class="t-menu" href="index.html#contact">Contact</a>
+  </div>
+  <div class="mobile-menu-foot t-eyebrow">
+    <span class="nav-coords-lines"><span>Senior Product Designer</span><span>Visual Designer</span></span><span>7+ YEARS · UI/UX · WEB3</span>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="case-hero" id="top">
+  <div class="case-hero-deco" aria-hidden="true"><div class="case-hero-deco-blob"></div></div>
+  <div class="case-hero-head reveal">
+    <div class="case-back">
+      <a class="pill t-eyebrow" href="index.html#work">All work<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      <span class="t-eyebrow case-eyebrow">Case study</span>
+    </div>
+    <h1 class="t-case-title case-title"><span class="w"><span>Nanovest</span></span> <span class="w"><span>US</span></span> <span class="w"><span>Stocks</span></span> <span class="w"><span>Event</span></span> <span class="w"><span>Calendar</span></span> </h1>
+    <p class="t-detail-b case-lead">Dividends, splits, earnings and US market holidays, for the stocks someone already owns, in a screen that opens on this month.</p>
+    <a class="pill pill--lg t-eyebrow" href="https://nanovest.io/" target="_blank" rel="noopener noreferrer">Visit nanovest.io<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+  </div>
+
+  <dl class="case-facts reveal"><div class="case-fact"><dt class="t-eyebrow">Client</dt><dd class="t-meta">Nanovest</dd></div><div class="case-fact"><dt class="t-eyebrow">Sector</dt><dd class="t-meta">Fintech · US Stocks</dd></div><div class="case-fact"><dt class="t-eyebrow">Role</dt><dd class="t-meta">Senior Product Designer</dd></div><div class="case-fact"><dt class="t-eyebrow">Team</dt><dd class="t-meta">1 design · 3 eng</dd></div><div class="case-fact"><dt class="t-eyebrow">Period</dt><dd class="t-meta">2025</dd></div><div class="case-fact"><dt class="t-eyebrow">Surface</dt><dd class="t-meta">Mobile app · iOS & Android</dd></div></dl>
+
+  <figure class="case-fig reveal case-fig--shot"><div class="case-media case-media--phone" style="--ar:1.1855"><img src="../public/work/covers/us-stock-event-calendar.webp" alt="US Stock Event Calendar: home screen showing US Markets and a calendar view with dividend events" loading="eager" decoding="async"></div></figure>
+</section>
+
+<section class="section section--divided tagline-section">
+  <div class="tagline-grid reveal" data-stagger="18">
+    <div>
+      <p class="t-label">Overview</p>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">01 · The brief</p>
+    </div>
+    <p class="t-tagline tagline"><span class="w"><span>Nanovest</span></span> <span class="w"><span>lets</span></span> <span class="w"><span>Indonesians</span></span> <span class="w"><span>hold</span></span> <span class="w"><span>US</span></span> <span class="w"><span>stocks.</span></span> <span class="w"><span>Corporate</span></span> <span class="w"><span>actions</span></span> <span class="w"><span>are</span></span> <span class="w"><span>the</span></span> <span class="w"><span>events</span></span> <span class="w"><span>that</span></span> <span class="w"><span>move</span></span> <span class="w"><span>a</span></span> <span class="w"><span>portfolio</span></span> <span class="w"><span>without</span></span> <span class="w"><span>anyone</span></span> <span class="w"><span>pressing</span></span> <span class="w"><span><em>buy</em>,</span></span> <span class="w"><span>so</span></span> <span class="w"><span>they</span></span> <span class="w"><span>got</span></span> <span class="w"><span>a</span></span> <span class="w"><span>room</span></span> <span class="w"><span>of</span></span> <span class="w"><span>their</span></span> <span class="w"><span>own:</span></span> <span class="w"><span>every</span></span> <span class="w"><span>dated</span></span> <span class="w"><span>event</span></span> <span class="w"><span>that</span></span> <span class="w"><span>touches</span></span> <span class="w"><span>what</span></span> <span class="w"><span>a</span></span> <span class="w"><span>user</span></span> <span class="w"><span>holds,</span></span> <span class="w"><span>as</span></span> <span class="w"><span>a</span></span> <span class="w"><span>list</span></span> <span class="w"><span>that</span></span> <span class="w"><span>opens</span></span> <span class="w"><span>on</span></span> <span class="w"><span>this</span></span> <span class="w"><span>month</span></span> <span class="w"><span>and</span></span> <span class="w"><span>a</span></span> <span class="w"><span>grid</span></span> <span class="w"><span>one</span></span> <span class="w"><span>tap</span></span> <span class="w"><span><em>away</em>.</span></span> </p>
+  </div>
+</section>
+
+<figure class="case-fig reveal case-fig--wide">
+  <div class="case-media" style="--ar:1.3333">
+    <img src="../public/work/nanovest-calendar/event-calendar-mockup.webp"
+         alt="" loading="lazy" decoding="async">
+  </div>
+</figure>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Scope</h2>
+    <p class="t-meta">What the work covered</p>
+  </div>
+  <ol class="case-scope reveal"><li class="case-scope-item"><span class="case-scope-num t-eyebrow">01</span><span class="case-scope-label">Stakeholder interviews</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">02</span><span class="case-scope-label">Competitive teardown</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">03</span><span class="case-scope-label">Event taxonomy</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">04</span><span class="case-scope-label">Information architecture</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">05</span><span class="case-scope-label">User flows</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">06</span><span class="case-scope-label">Wireframes</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">07</span><span class="case-scope-label">Interface design</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">08</span><span class="case-scope-label">Filter & empty states</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">09</span><span class="case-scope-label">Prototyping</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">10</span><span class="case-scope-label">Design QA</span></li></ol>
+</section>
+
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
+      <h2 class="t-label">Problem</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">02 · Where it broke</p>
+    </div>
+    <div class="case-note-body">
+      <h3 class="t-detail-h case-note-h">An ex-dividend date arrived as a surprise.</h3>
+      <p class="case-p">Corporate actions reached people after the fact. A dividend showed up as a balance that had changed overnight, a split as a share count that no longer matched yesterday's, a closed US market as a day where nothing moved and nothing explained why. The dates existed (in filings, in the news feed, in support replies), but never next to the stocks a person actually held.</p><p class="case-p">What the app had instead was a feed: everything about every ticker, ordered by recency. It answered what happened. Nobody could use it to answer what happens next, to me, and that is the only version of the question a retail investor asks.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
+      <h2 class="t-label">Approach</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">03 · How I worked</p>
+    </div>
+    <div class="case-note-body">
+      <h3 class="t-detail-h case-note-h">A list that opens on this month, a grid when the month is the question.</h3>
+      <p class="case-p">The list is the default. Events group under the month they fall in, the date keeps its own left rail, and the whole thing scrolls forward, because the usual question is what is coming for my stocks, and a list answers it without asking anyone to aim at a target first.</p><p class="case-p">The month grid sits behind one icon in the header, for the other question: what does this week look like. It carries the same three event classes as coloured dots (US holiday, corporate action, economic event), and the list stays underneath it, unchanged. One data set, two readings, no second screen to keep in sync.</p><p class="case-p">Scope is a pair of chips, not a tab bar: My Portfolio and Watchlist narrow the same rows in place. Event type is a sheet from the filter icon, so four choices arrive full width and thumb-reachable instead of squeezed into a dropdown at the top of the screen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Screens</h2>
+    <p class="t-meta">Four of the six states</p>
+  </div>
+  <div class="case-gallery case-gallery--phones"><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4621"><img src="../public/work/nanovest-calendar/us-stocks.webp" alt="Nanovest US Stocks Event Calendar" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4621"><img src="../public/work/nanovest-calendar/list-scroll.webp" alt="Nanovest US Stocks Event Calendar" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4621"><img src="../public/work/nanovest-calendar/calendar-view.webp" alt="Nanovest US Stocks Event Calendar" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4621"><img src="../public/work/nanovest-calendar/filter.webp" alt="Nanovest US Stocks Event Calendar" loading="lazy" decoding="async"></div></figure></div>
+</section>
+
+<section class="section case-metrics grain" data-dark data-reveal>
+  <div class="section-head">
+    <h2 class="t-label">Results</h2>
+    <p class="t-meta">06 · After three months</p>
+  </div>
+  <div class="case-metrics-row"><div class="case-metric"><span class="case-metric-v">2 taps</span><span class="case-metric-k t-meta">Home to the next dividend</span></div><div class="case-metric"><span class="case-metric-v">+41%</span><span class="case-metric-k t-meta">Corporate-action screen opens</span></div><div class="case-metric"><span class="case-metric-v">−58%</span><span class="case-metric-k t-meta">Dividend questions in support</span></div><div class="case-metric"><span class="case-metric-v">3 → 1</span><span class="case-metric-k t-meta">Places to check a date</span></div></div>
+  <p class="t-meta case-metrics-note">Placeholder figures. Replaced once the post-launch review lands.</p>
+</section>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Deliverables</h2>
+    <p class="t-meta">Handed to the team</p>
+  </div>
+  <ul class="service-tags case-deliverables reveal">
+    <li>Event list</li><li>Month grid</li><li>Event type system</li><li>Filter sheet</li><li>Empty & loading states</li><li>Explore entry point</li><li>Handoff spec</li>
+  </ul>
+</section>
+
+<section class="section case-next-section">
+  <div class="case-marquee" aria-hidden="true">
+    <div class="case-marquee-track">
+      <div style="display:flex"><span class="case-marquee-word">NANOVEST · US STOCK EVENT CALENDAR · 2025</span><span class="case-marquee-word">NANOVEST · US STOCK EVENT CALENDAR · 2025</span><span class="case-marquee-word">NANOVEST · US STOCK EVENT CALENDAR · 2025</span><span class="case-marquee-word">NANOVEST · US STOCK EVENT CALENDAR · 2025</span></div>
+      <div style="display:flex"><span class="case-marquee-word">NANOVEST · US STOCK EVENT CALENDAR · 2025</span><span class="case-marquee-word">NANOVEST · US STOCK EVENT CALENDAR · 2025</span><span class="case-marquee-word">NANOVEST · US STOCK EVENT CALENDAR · 2025</span><span class="case-marquee-word">NANOVEST · US STOCK EVENT CALENDAR · 2025</span></div>
+    </div>
+  </div>
+
+  <a class="case-next reveal" href="nanovest-limit-order.html"
+     data-cursor="view" data-cursor-label="Work">
+    <span class="case-next-text">
+      <span class="case-next-label t-eyebrow">Next case<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></span>
+      <span class="case-next-title t-service">Nanovest Limit Order</span>
+      <span class="case-next-cat t-meta">Fintech · Mobile</span>
+    </span>
+    <span class="case-next-media"><img src="../public/work/covers/nanovest-limit-order.webp" alt="Nanovest Limit Order"
+          loading="lazy" decoding="async"></span>
+  </a>
+</section>
+
+</main>
+
+<footer class="grain" id="footer-cta" data-dark data-reveal>
+  <div class="footer-top">
+    <h2 class="t-claim footer-claim"><span class="line"><span>Got an idea</span></span><span class="line"><span>that needs shape?</span></span><span class="line"><span>Let's talk.</span></span></h2>
+    <div class="footer-contact t-meta" id="contact">
+      <address>Available for freelance<br>and full time roles<br>Remote · worldwide<br></address>
+      <a href="mailto:mr.feriansyah@gmail.com">mr.feriansyah@gmail.com</a>
+      <div class="footer-actions">
+        <a class="pill pill--solid pill--lg t-eyebrow" href="mailto:mr.feriansyah@gmail.com?subject=%5BUI%2FUX%20Request%5D%20Project%20Inquiry&body=Hi%20Feri%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A%0A-%20Project%20or%20company%3A%0A-%20What%20you%20need%3A%0A-%20Timeline%3A%0A-%20Budget%20(optional)%3A%0A%0AThanks%2C%0A">
+          Contact me<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+        
+      </div>
+      <div><span class="footer-links-label t-eyebrow">Elsewhere</span><div class="footer-links"><a class="pill t-eyebrow" href="https://www.linkedin.com/in/mrferiansyah/" target="_blank" rel="noopener noreferrer">LinkedIn<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="https://dribbble.com/ferferferry" target="_blank" rel="noopener noreferrer">Dribbble<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="https://wa.me/6282234561360" target="_blank" rel="noopener noreferrer">WhatsApp<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div>
+    </div>
+  </div>
+  <div class="footer-bottom t-meta">
+    <nav class="footer-nav" aria-label="Get in touch"><a href="index.html#work">Work</a><a href="index.html#process">Process</a><a href="index.html#about">About</a><button type="button" data-resume-cta>Résumé</button><a href="index.html#contact">Contact</a></nav>
+    <span>©2026 Ferry Works · Mochamad Feriansyah</span>
+  </div>
+</footer>
+
+<div class="resume-backdrop" data-resume-backdrop hidden></div>
+<div class="resume-card" data-resume-card hidden role="dialog" aria-modal="true"
+     aria-labelledby="resume-title" data-email="mr.feriansyah@gmail.com">
+  <div class="resume-head">
+    <h2 class="resume-title" id="resume-title">Request my résumé</h2>
+    <button class="resume-close" data-resume-close aria-label="Close">
+      <svg viewBox="0 0 10 10" width="9" height="9" aria-hidden="true">
+        <path d="M1 1l8 8M9 1l-8 8" stroke="currentColor" stroke-width="1.2"/></svg>
+    </button>
+  </div>
+  <p class="resume-sub">Leave your email and I'll send the CV straight to your inbox, usually within a day.</p>
+  <form data-resume-form>
+    <label class="resume-field">
+      <span class="resume-field-label t-eyebrow">Your email</span>
+      <input type="email" name="email" required placeholder="you@company.com">
+    </label>
+    <label class="resume-field">
+      <span class="resume-field-label t-eyebrow">Company / role (optional)</span>
+      <input type="text" name="company" placeholder="Acme Inc. · Recruiter">
+    </label>
+    <div class="resume-actions">
+      <button class="pill t-eyebrow" data-resume-cancel type="button">Cancel</button>
+      <button class="pill pill--solid t-eyebrow" type="submit">
+        Send request<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></button>
+    </div>
+  </form>
+  <p class="resume-note">Opens your email app with a message ready to send. Nothing is submitted automatically.</p>
+</div>
+
+
+<div class="cc" data-cookies hidden role="dialog" aria-labelledby="cc-title" aria-live="polite">
+  <h2 class="cc-title" id="cc-title">Cookies</h2>
+  <p class="cc-body">I use one analytics cookie to see which projects people actually open. Decline it and nothing on this site stops working.</p>
+  <div class="cc-actions">
+    <button class="pill t-eyebrow" data-cc-deny type="button">Decline</button>
+    <button class="pill t-eyebrow" data-cc-accept type="button">Accept</button>
+  </div>
+  <div class="cc-links"><a href="index.html#contact">Privacy</a><a href="index.html#contact">Cookie policy</a></div>
+</div>
+
+<!-- Modul motion yang sama persis dengan yang dipakai Next.js -->
+<script type="module">
+  import { initAll } from "../motion/index.js";
+  initAll(document);
+</script>
+</body>
+</html>

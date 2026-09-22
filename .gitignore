@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+
+# Bahan kerja mentah (belum di-crop/convert) untuk tiap case study,
+# termasuk CV pribadi — bukan bagian dari situs yang di-deploy.
+# Versi final yang dipakai situs ada di public/work/*.webp.
+Source

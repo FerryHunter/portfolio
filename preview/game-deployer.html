@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web3 Game Deployer Engine · Ferry Works</title>
+<meta name="description" content="Case study: the dashboard that takes a World Engine game shard from sign-up to a live, EVM-compatible chain, without a terminal window open the whole time.">
+<link rel="icon" href="../public/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../public/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../public/apple-touch-icon.png">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap">
+<!-- CSS yang sama persis dengan yang dipakai Next.js -->
+<link rel="stylesheet" href="../app/globals.css">
+</head>
+<body class="preloading">
+
+<div id="preloader" data-preloader role="status" aria-label="Loading">
+  <div class="pre-brand"><span>Ferry Works</span></div>
+  <span class="pre-count" data-pre-count aria-hidden="true">000</span>
+  <span class="pre-bar" data-pre-bar aria-hidden="true"></span>
+</div>
+<div id="cursor" data-cursor-el data-label-default="View" aria-hidden="true">
+  <span class="cursor-label" data-cursor-label></span>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" data-nav aria-label="Menu">
+  <div class="nav-inner">
+
+    <div class="nav-layer nav-layer--top">
+      <div class="nav-group">
+        <a class="pill t-eyebrow" href="index.html#work">Work<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#process">Process<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#about">About<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+      <div class="nav-group nav-coords t-eyebrow">
+        <span class="nav-coords-lines"><span>Senior Product Designer</span><span>Visual Designer</span></span><span>7+ YEARS · UI/UX · WEB3</span>
+      </div>
+      <div class="nav-group">
+        <div class="nav-drawer-zone">
+          <button class="nav-more" data-more aria-expanded="false" aria-label="More links">
+            <span class="nav-more-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+          <div class="nav-drawer" data-drawer>
+            <a class="pill t-eyebrow" href="index.html#work">Case studies<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#process">Design systems<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#contact">Résumé<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#contact">Contact<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-layer nav-layer--scrolled">
+      <a class="nav-wordmark" href="index.html#top">Ferry Works</a>
+      <div class="nav-group">
+        <a class="pill t-eyebrow" href="index.html#contact">Work with me<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+    </div>
+
+    <div class="nav-mobile-bar">
+      <a class="nav-wordmark" href="index.html#top">Ferry Works</a>
+      <button class="burger" data-burger aria-expanded="false" aria-controls="mobile-menu"
+              aria-label="Menu"><i></i><i></i></button>
+    </div>
+
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+  <div>
+    <a class="t-menu" href="index.html#work">Work</a><a class="t-menu" href="index.html#process">Process</a><a class="t-menu" href="index.html#about">About</a><a class="t-menu" href="index.html#work">Case studies</a><a class="t-menu" href="index.html#process">Design systems</a><a class="t-menu" href="index.html#contact">Résumé</a><a class="t-menu" href="index.html#contact">Contact</a>
+  </div>
+  <div class="mobile-menu-foot t-eyebrow">
+    <span class="nav-coords-lines"><span>Senior Product Designer</span><span>Visual Designer</span></span><span>7+ YEARS · UI/UX · WEB3</span>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="case-hero" id="top">
+  <div class="case-hero-deco case-hero-deco--game-deployer" aria-hidden="true"><div class="case-hero-deco-blob"></div></div>
+  <div class="case-hero-head reveal">
+    <div class="case-back">
+      <a class="pill t-eyebrow" href="index.html#work">All work<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      <span class="t-eyebrow case-eyebrow">Case study</span>
+    </div>
+    <h1 class="t-case-title case-title"><span class="w"><span>Web3</span></span> <span class="w"><span>Game</span></span> <span class="w"><span>Deployer</span></span> <span class="w"><span>Engine</span></span> </h1>
+    <p class="t-detail-b case-lead">Five World CLI commands turn into one onchain game shard. I designed the dashboard that watches it happen: sign up, wire up a chain, deploy, and see it go from pending to live without leaving the browser.</p>
+    <a class="pill pill--lg t-eyebrow" href="https://world.dev/" target="_blank" rel="noopener noreferrer">Visit world.dev<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+  </div>
+
+  <dl class="case-facts reveal"><div class="case-fact"><dt class="t-eyebrow">Client</dt><dd class="t-meta">Argus Labs</dd></div><div class="case-fact"><dt class="t-eyebrow">Sector</dt><dd class="t-meta">Web3 · Infrastructure</dd></div><div class="case-fact"><dt class="t-eyebrow">Role</dt><dd class="t-meta">Senior UI/UX Designer</dd></div><div class="case-fact"><dt class="t-eyebrow">Team</dt><dd class="t-meta">1 design · 3 engineering</dd></div><div class="case-fact"><dt class="t-eyebrow">Period</dt><dd class="t-meta">2023–2024</dd></div><div class="case-fact"><dt class="t-eyebrow">Surface</dt><dd class="t-meta">Web app · Desktop first</dd></div></dl>
+
+  <figure class="case-fig reveal case-fig--shot case-fig--rounded-lg"><div class="case-media" style="--ar:1.1847"><img src="../public/work/covers/web3-game-deployer-engine.webp" alt="World Engine deployer overview showing a game shard's EVM chain ID, block height and deployment status at a glance" loading="eager" decoding="async"></div></figure>
+</section>
+
+<section class="section tagline-section">
+  <div class="tagline-grid reveal" data-stagger="18">
+    <div>
+      <p class="t-label">Overview</p>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">01 · The brief</p>
+    </div>
+    <p class="t-tagline tagline"><span class="w"><span>World</span></span> <span class="w"><span>Engine</span></span> <span class="w"><span>is</span></span> <span class="w"><span>an</span></span> <span class="w"><span>ECS,</span></span> <span class="w"><span>tick-driven</span></span> <span class="w"><span>framework</span></span> <span class="w"><span>for</span></span> <span class="w"><span>onchain</span></span> <span class="w"><span>real-time</span></span> <span class="w"><span>games,</span></span> <span class="w"><span>closer</span></span> <span class="w"><span>to</span></span> <span class="w"><span>Unity</span></span> <span class="w"><span>or</span></span> <span class="w"><span>Unreal</span></span> <span class="w"><span>than</span></span> <span class="w"><span>typical</span></span> <span class="w"><span>blockchain</span></span> <span class="w"><span>tooling.</span></span> <span class="w"><span>Each</span></span> <span class="w"><span>shard's</span></span> <span class="w"><span>state</span></span> <span class="w"><span>lives</span></span> <span class="w"><span>on</span></span> <span class="w"><span>a</span></span> <span class="w"><span>chain</span></span> <span class="w"><span>a</span></span> <span class="w"><span>studio</span></span> <span class="w"><span>can</span></span> <span class="w"><span>always</span></span> <span class="w"><span>reach,</span></span> <span class="w"><span>not</span></span> <span class="w"><span>inside</span></span> <span class="w"><span>one</span></span> <span class="w"><span>company's</span></span> <span class="w"><span>server.</span></span> <span class="w"><span>Shipping</span></span> <span class="w"><span>one</span></span> <span class="w"><span>still</span></span> <span class="w"><span>ran</span></span> <span class="w"><span>through</span></span> <span class="w"><span>a</span></span> <span class="w"><span>terminal</span></span> <span class="w"><span>though:</span></span> <span class="w"><span>five</span></span> <span class="w"><span>CLI</span></span> <span class="w"><span>commands,</span></span> <span class="w"><span>no</span></span> <span class="w"><span>shared</span></span> <span class="w"><span>view</span></span> <span class="w"><span>of</span></span> <span class="w"><span>what</span></span> <span class="w"><span>had</span></span> <span class="w"><span>actually</span></span> <span class="w"><span><em>deployed</em>.</span></span> <span class="w"><span>I</span></span> <span class="w"><span>designed</span></span> <span class="w"><span>the</span></span> <span class="w"><span>dashboard</span></span> <span class="w"><span>around</span></span> <span class="w"><span>that</span></span> <span class="w"><span>CLI:</span></span> <span class="w"><span>register,</span></span> <span class="w"><span>create</span></span> <span class="w"><span>a</span></span> <span class="w"><span>world,</span></span> <span class="w"><span>and</span></span> <span class="w"><span>watch</span></span> <span class="w"><span>a</span></span> <span class="w"><span>shard</span></span> <span class="w"><span>go</span></span> <span class="w"><span><em>live</em>.</span></span> </p>
+  </div>
+</section>
+
+<section class="section">
+  <figure class="case-fig reveal case-fig--shot case-fig--rounded-lg"><div class="case-media" style="--ar:1.3333"><img src="../public/work/game-deployer/macbook.webp" alt="World Engine's Overview screen for Argus Labs, listing its game shards, shown open on a MacBook Pro" loading="lazy" decoding="async"></div></figure>
+</section>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Scope</h2>
+    <p class="t-meta">What the work covered</p>
+  </div>
+  <ol class="case-scope reveal"><li class="case-scope-item"><span class="case-scope-num t-eyebrow">01</span><span class="case-scope-label">Developer interviews</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">02</span><span class="case-scope-label">CLI flow mapping</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">03</span><span class="case-scope-label">Information architecture</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">04</span><span class="case-scope-label">User flows</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">05</span><span class="case-scope-label">Wireframes</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">06</span><span class="case-scope-label">Interface design</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">07</span><span class="case-scope-label">Design system</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">08</span><span class="case-scope-label">Empty & error states</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">09</span><span class="case-scope-label">Prototyping</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">10</span><span class="case-scope-label">Design QA</span></li></ol>
+</section>
+
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
+      <h2 class="t-label">Problem</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">02 · Where it broke</p>
+    </div>
+    <div class="case-note-body">
+      <h3 class="t-detail-h case-note-h">Deploying a game shard meant reading the docs in one tab and a terminal in another.</h3>
+      <p class="case-p">World CLI could spin up a game shard in five commands, but the dashboard around it stopped at sign-up: no shard status, no chain ID, no way to tell a base shard that deployed clean from a game shard that failed silently. The only feedback loop was re-running the deploy command and watching the terminal scroll.</p><p class="case-p">Every deployment raised the same three questions with nowhere to answer them: is this chain live, what's it running on, and which commit shipped it. Answering meant cross-referencing a block explorer, a CLI log, and a Discord thread.</p><p class="case-p">Cardinal's whole premise is that a shard's state doesn't live inside one team's infrastructure the way a Nakama server would: lose the account that manages a server and the game's state goes with it, but a game shard anchored onchain stays reachable through the chain itself. None of that showed up in the dashboard. A studio had no way to see, at a glance, that their shard's chain ID and block height were real guarantees, not just log lines from a CLI they'd have to trust.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
+      <h2 class="t-label">Approach</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">03 · How I worked</p>
+    </div>
+    <div class="case-note-body">
+      <h3 class="t-detail-h case-note-h">One overview card for a shard's vitals, one guided checklist for the five commands that create it.</h3>
+      <p class="case-p">The Overview tab surfaces a game shard's EVM chain ID, RPC URL, block explorer link and block height as soon as it's live, with a status pill (Success, Running, Failed) doing the job a raw terminal log used to. Those same chain details are also a studio's way back in if they ever lose access to World Engine itself: the shard's state lives on the chain, not inside one team's server, so the chain ID and explorer link are enough to reach it independently.</p><p class="case-p">Create your World turns the five World CLI commands, login, create, link, evm deploy for the base chain, cardinal deploy for the game shard's own logic and state, into a copyable checklist next to the docs, so a developer follows the same sequence whether they're reading the guide or the screen.</p><p class="case-p">Recent Deployments lists every shard by branch, commit, environment and author, filterable by date range and status, so a failed deploy sits one glance from the successful one next to it, not in a different tab.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Screens</h2>
+    <p class="t-meta">Four screens from sign-up to a live shard</p>
+  </div>
+  <div class="case-gallery"><figure class="case-fig reveal"><div class="case-media" style="--ar:1.5"><img src="../public/work/game-deployer/register.webp" alt="Web3 Game Deployer Engine" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media" style="--ar:1.5"><img src="../public/work/game-deployer/overview.webp" alt="Web3 Game Deployer Engine" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media" style="--ar:1.5"><img src="../public/work/game-deployer/create-world.webp" alt="Web3 Game Deployer Engine" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media" style="--ar:1.5"><img src="../public/work/game-deployer/deployments.webp" alt="Web3 Game Deployer Engine" loading="lazy" decoding="async"></div></figure></div>
+</section>
+
+<section class="section case-metrics grain" data-dark data-reveal>
+  <div class="section-head">
+    <h2 class="t-label">Results</h2>
+    <p class="t-meta">06 · After launch</p>
+  </div>
+  <div class="case-metrics-row"><div class="case-metric"><span class="case-metric-v">3 → 1</span><span class="case-metric-k t-meta">Where a shard's status lives</span></div><div class="case-metric"><span class="case-metric-v">5</span><span class="case-metric-k t-meta">World CLI commands from login to a live shard</span></div><div class="case-metric"><span class="case-metric-v">0</span><span class="case-metric-k t-meta">Terminal windows needed to check a deploy</span></div><div class="case-metric"><span class="case-metric-v">1</span><span class="case-metric-k t-meta">Dashboard for overview, deployments and docs</span></div></div>
+  <p class="t-meta case-metrics-note">Placeholder figures. Replaced once the post-launch review lands.</p>
+</section>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Deliverables</h2>
+    <p class="t-meta">Handed to the team</p>
+  </div>
+  <ul class="service-tags case-deliverables reveal">
+    <li>Overview dashboard with shard status</li><li>Create your World CLI checklist</li><li>Recent Deployments log</li><li>Sign up / sign in flow</li><li>Empty & error states</li><li>Design system</li><li>Handoff spec</li>
+  </ul>
+</section>
+
+<section class="section case-next-section">
+  <div class="case-marquee" aria-hidden="true">
+    <div class="case-marquee-track">
+      <div style="display:flex"><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span></div>
+      <div style="display:flex"><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span><span class="case-marquee-word">WORLD ENGINE · GAME DEPLOYER · 2024</span></div>
+    </div>
+  </div>
+
+  <a class="case-next reveal" href="nanovest-calendar.html"
+     data-cursor="view" data-cursor-label="Work">
+    <span class="case-next-text">
+      <span class="case-next-label t-eyebrow">Next case<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></span>
+      <span class="case-next-title t-service">Nanovest US Stocks Event Calendar</span>
+      <span class="case-next-cat t-meta">Fintech · Mobile</span>
+    </span>
+    <span class="case-next-media"><img src="../public/work/covers/us-stock-event-calendar.webp" alt="Nanovest US Stocks Event Calendar"
+          loading="lazy" decoding="async"></span>
+  </a>
+</section>
+
+</main>
+
+<footer class="grain" id="footer-cta" data-dark data-reveal>
+  <div class="footer-top">
+    <h2 class="t-claim footer-claim"><span class="line"><span>Got an idea</span></span><span class="line"><span>that needs shape?</span></span><span class="line"><span>Let's talk.</span></span></h2>
+    <div class="footer-contact t-meta" id="contact">
+      <address>Available for freelance<br>and full time roles<br>Remote · worldwide<br></address>
+      <a href="mailto:mr.feriansyah@gmail.com">mr.feriansyah@gmail.com</a>
+      <div class="footer-actions">
+        <a class="pill pill--solid pill--lg t-eyebrow" href="mailto:mr.feriansyah@gmail.com?subject=%5BUI%2FUX%20Request%5D%20Project%20Inquiry&body=Hi%20Feri%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A%0A-%20Project%20or%20company%3A%0A-%20What%20you%20need%3A%0A-%20Timeline%3A%0A-%20Budget%20(optional)%3A%0A%0AThanks%2C%0A">
+          Contact me<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+        
+      </div>
+      <div><span class="footer-links-label t-eyebrow">Elsewhere</span><div class="footer-links"><a class="pill t-eyebrow" href="https://www.linkedin.com/in/mrferiansyah/" target="_blank" rel="noopener noreferrer">LinkedIn<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="https://dribbble.com/ferferferry" target="_blank" rel="noopener noreferrer">Dribbble<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="https://wa.me/6282234561360" target="_blank" rel="noopener noreferrer">WhatsApp<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div>
+    </div>
+  </div>
+  <div class="footer-bottom t-meta">
+    <nav class="footer-nav" aria-label="Get in touch"><a href="index.html#work">Work</a><a href="index.html#process">Process</a><a href="index.html#about">About</a><button type="button" data-resume-cta>Résumé</button><a href="index.html#contact">Contact</a></nav>
+    <span>©2026 Ferry Works · Mochamad Feriansyah</span>
+  </div>
+</footer>
+
+<div class="resume-backdrop" data-resume-backdrop hidden></div>
+<div class="resume-card" data-resume-card hidden role="dialog" aria-modal="true"
+     aria-labelledby="resume-title" data-email="mr.feriansyah@gmail.com">
+  <div class="resume-head">
+    <h2 class="resume-title" id="resume-title">Request my résumé</h2>
+    <button class="resume-close" data-resume-close aria-label="Close">
+      <svg viewBox="0 0 10 10" width="9" height="9" aria-hidden="true">
+        <path d="M1 1l8 8M9 1l-8 8" stroke="currentColor" stroke-width="1.2"/></svg>
+    </button>
+  </div>
+  <p class="resume-sub">Leave your email and I'll send the CV straight to your inbox, usually within a day.</p>
+  <form data-resume-form>
+    <label class="resume-field">
+      <span class="resume-field-label t-eyebrow">Your email</span>
+      <input type="email" name="email" required placeholder="you@company.com">
+    </label>
+    <label class="resume-field">
+      <span class="resume-field-label t-eyebrow">Company / role (optional)</span>
+      <input type="text" name="company" placeholder="Acme Inc. · Recruiter">
+    </label>
+    <div class="resume-actions">
+      <button class="pill t-eyebrow" data-resume-cancel type="button">Cancel</button>
+      <button class="pill pill--solid t-eyebrow" type="submit">
+        Send request<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></button>
+    </div>
+  </form>
+  <p class="resume-note">Opens your email app with a message ready to send. Nothing is submitted automatically.</p>
+</div>
+
+
+<div class="cc" data-cookies hidden role="dialog" aria-labelledby="cc-title" aria-live="polite">
+  <h2 class="cc-title" id="cc-title">Cookies</h2>
+  <p class="cc-body">I use one analytics cookie to see which projects people actually open. Decline it and nothing on this site stops working.</p>
+  <div class="cc-actions">
+    <button class="pill t-eyebrow" data-cc-deny type="button">Decline</button>
+    <button class="pill t-eyebrow" data-cc-accept type="button">Accept</button>
+  </div>
+  <div class="cc-links"><a href="index.html#contact">Privacy</a><a href="index.html#contact">Cookie policy</a></div>
+</div>
+
+<!-- Modul motion yang sama persis dengan yang dipakai Next.js -->
+<script type="module">
+  import { initAll } from "../motion/index.js";
+  initAll(document);
+</script>
+</body>
+</html>

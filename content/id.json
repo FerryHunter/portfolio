@@ -1,0 +1,3422 @@
+{
+  "brand": "Ferry Works",
+  "meta": {
+    "title": "Ferry Works · Mochamad Feriansyah, Senior Product Designer",
+    "description": "Senior product designer dengan pengalaman 7+ tahun di web3, fintech, enterprise, dan antarmuka game. Riset, design system, dan desain yang selamat sampai produksi."
+  },
+  "ui": {
+    "skip": "Lewati ke konten",
+    "loading": "Memuat",
+    "close": "Tutup",
+    "chooseFile": "Pilih berkas",
+    "dropHint": "atau tarik gambar ke sini",
+    "cancel": "Batal",
+    "place": "Tempel",
+    "previewAlt": "Pratinjau sticker",
+    "stickerNote": "PNG, JPG, GIF, atau WEBP · maksimal 6 MB. Diproses di browser kamu dan hanya tersimpan di perangkat ini, tidak ada yang diunggah.",
+    "errTooLarge": "Berkasnya lebih dari 6 MB.",
+    "errFormat": "Format tidak didukung. Pakai PNG, JPG, GIF, atau WEBP.",
+    "errProcess": "Gambarnya tidak bisa dibaca.",
+    "cursorView": "Lihat",
+    "resumeTitle": "Minta résumé saya",
+    "resumeSub": "Tinggalkan email kamu, CV-nya saya kirim langsung ke inbox, biasanya dalam satu hari.",
+    "resumeEmailLabel": "Email kamu",
+    "resumeCompanyLabel": "Perusahaan / posisi (opsional)",
+    "resumeSend": "Kirim permintaan",
+    "resumeNote": "Membuka aplikasi email kamu dengan pesan yang siap dikirim. Tidak ada yang terkirim otomatis.",
+    "notFound": "Halaman ini tidak ada.",
+    "notFoundBack": "Kembali ke karya"
+  },
+  "nav": {
+    "primary": [
+      {
+        "label": "Karya",
+        "href": "#work"
+      },
+      {
+        "label": "Proses",
+        "href": "#process"
+      },
+      {
+        "label": "Tentang",
+        "href": "#about"
+      }
+    ],
+    "drawer": [
+      {
+        "label": "Studi kasus",
+        "href": "#work"
+      },
+      {
+        "label": "Design system",
+        "href": "#process"
+      },
+      {
+        "label": "Résumé",
+        "href": "#contact"
+      },
+      {
+        "label": "Kontak",
+        "href": "#contact"
+      }
+    ],
+    "coords": [
+      "Senior Product Designer",
+      "Visual Designer"
+    ],
+    "est": "7+ TAHUN · UI/UX · WEB3",
+    "cta": "Ajak kerja sama",
+    "menu": "Menu",
+    "more": "Tautan lain"
+  },
+  "hero": {
+    "roles": [
+      "Senior Product Designer",
+      "Visual Designer"
+    ],
+    "stickers": [
+      {
+        "kind": "emoji",
+        "layer": "back",
+        "x": 14,
+        "y": 27,
+        "w": 11,
+        "r": -7,
+        "emoji": "🎨"
+      },
+      {
+        "kind": "emoji",
+        "layer": "back",
+        "x": 86,
+        "y": 21,
+        "w": 9,
+        "r": 8,
+        "emoji": "✏️"
+      },
+      {
+        "kind": "emoji",
+        "layer": "back",
+        "x": 79,
+        "y": 74,
+        "w": 12,
+        "r": -4,
+        "emoji": "🧩"
+      },
+      {
+        "kind": "emoji",
+        "layer": "front",
+        "x": 25,
+        "y": 77,
+        "w": 8,
+        "r": 11,
+        "emoji": "💡"
+      },
+      {
+        "kind": "emoji",
+        "layer": "front",
+        "x": 93,
+        "y": 51,
+        "w": 7,
+        "r": -9,
+        "emoji": "📐"
+      },
+      {
+        "kind": "emoji",
+        "layer": "front",
+        "x": 7,
+        "y": 63,
+        "w": 6.5,
+        "r": 5,
+        "emoji": "✨"
+      }
+    ],
+    "scroll": "(GESER)",
+    "sticker": {
+      "line1": "Tempel",
+      "line2": "sticker kamu"
+    }
+  },
+  "reel": {
+    "tag": "FW® · Pilihan karya",
+    "year": "©2026",
+    "mute": "Bisukan",
+    "unmute": "Nyalakan suara"
+  },
+  "tagline": {
+    "label": "Tentang",
+    "meta": "01 · Yang sebenarnya saya kerjakan",
+    "text": "Tujuh tahun mengubah ide mentah jadi produk yang *rilis*, tahan di produksi, dan bikin orang *kembali*."
+  },
+  "services": {
+    "label": "Proses",
+    "meta": "Tiga fase, satu putaran",
+    "items": [
+      {
+        "num": "01",
+        "title": "Discovery",
+        "heading": "Pahami masalahnya sebelum menggambar apa pun.",
+        "body": "Saya mulai dari bisnis dan tim di dalamnya: produk ini untuk apa, di titik mana pengguna menyerah tanpa bilang apa pun, dan apa yang realistis dibangun kuartal ini. Wawancara, data funnel, bedah kompetitor, apa pun supaya desain tidak jalan di atas dugaan.",
+        "tags": [
+          "Riset pengguna",
+          "Audit kompetitor",
+          "User flow",
+          "Pemetaan scope"
+        ]
+      },
+      {
+        "num": "02",
+        "title": "Design",
+        "heading": "Buat versi yang paling jelas dulu, baru perbaiki.",
+        "body": "Wireframe dulu, polish belakangan, selalu. Saya bekerja dalam sistem, bukan per layar (komponen, token, empty state, error state), sehingga layar kedua puluh jadi jauh lebih murah daripada yang pertama dan tidak ada yang berantakan saat handoff.",
+        "tags": [
+          "Wireframe",
+          "Desain UI",
+          "Design system",
+          "Prototipe"
+        ]
+      },
+      {
+        "num": "03",
+        "title": "Delivery",
+        "heading": "Desain belum selesai sebelum tayang.",
+        "body": "Saya menemani engineer sampai build, menuliskan edge case yang tidak digambar siapa pun, dan membandingkan yang rilis dengan yang didesain. Setelah itu saya lihat performanya dan perbaiki bagian yang salah, karena selalu ada yang salah.",
+        "tags": [
+          "Handoff ke dev",
+          "QA desain",
+          "Uji usability",
+          "Iterasi"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "label": "Karya",
+    "meta": "Pilihan karya sejak 2019",
+    "hint": "Tarik",
+    "swipe": "Geser",
+    "comingSoon": "Segera hadir",
+    "items": [
+      {
+        "title": "Nanovest US Stocks Event Calendar",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/us-stock-event-calendar.webp",
+        "href": "/work/nanovest-calendar",
+        "case": "nanovest-calendar",
+        "comingSoon": false
+      },
+      {
+        "title": "Nanovest Limit Order",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-limit-order.webp",
+        "href": "/work/nanovest-limit-order",
+        "case": "nanovest-limit-order",
+        "comingSoon": false
+      },
+      {
+        "title": "Nanovest Foreign Stocks",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-foreign-stocks.webp",
+        "href": "/work/nanovest-foreign-stocks",
+        "case": "nanovest-foreign-stocks",
+        "comingSoon": false
+      },
+      {
+        "title": "Nanovest US Stocks IPO",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-us-stocks-ipo.webp",
+        "href": "/work/nanovest-us-stocks-ipo",
+        "case": "nanovest-us-stocks-ipo",
+        "comingSoon": false
+      },
+      {
+        "title": "Web3 Quest Web Design",
+        "cat": "Konversi",
+        "ar": 1.1855,
+        "img": "/work/covers/web3-quest-web-design.webp",
+        "href": "https://ferryworks.framer.website/detailsstiqylanding",
+        "case": "",
+        "comingSoon": true
+      },
+      {
+        "title": "Nanovest Crypto Locked Staking",
+        "cat": "Fintech · Web3",
+        "ar": 1.1855,
+        "img": "/work/covers/crypto-locked-staking.webp",
+        "href": "/work/crypto-locked-staking",
+        "case": "crypto-locked-staking",
+        "comingSoon": false
+      },
+      {
+        "title": "HRIS Dashboard",
+        "cat": "Enterprise · Data",
+        "ar": 1.1855,
+        "img": "/work/covers/hris-dashboard.webp",
+        "href": "/work/hris-dashboard",
+        "case": "hris-dashboard",
+        "comingSoon": false
+      },
+      {
+        "title": "Rampage Game Quest",
+        "cat": "Antarmuka game",
+        "ar": 1.1855,
+        "img": "/work/covers/game-quest-design.webp",
+        "href": "/work/game-quest",
+        "case": "game-quest",
+        "comingSoon": false
+      },
+      {
+        "title": "Rampage Evolution Card",
+        "cat": "Antarmuka game",
+        "ar": 1.1855,
+        "img": "/work/covers/rampage-evolution-card.webp",
+        "href": "/work/rampage-evolution-card",
+        "case": "rampage-evolution-card",
+        "comingSoon": false
+      },
+      {
+        "title": "Web3 Game Deployer Engine",
+        "cat": "Developer tools",
+        "ar": 1.1847,
+        "img": "/work/covers/web3-game-deployer-engine.webp",
+        "href": "/work/game-deployer",
+        "case": "game-deployer",
+        "comingSoon": false
+      },
+      {
+        "title": "Amazon App Checkout Redesign",
+        "cat": "Studi kasus",
+        "ar": 1.1855,
+        "img": "/work/covers/amazon-checkout-redesign.webp",
+        "href": "/work/amazon",
+        "case": "amazon",
+        "comingSoon": false
+      },
+      {
+        "title": "Web App Game Quest",
+        "cat": "Web3",
+        "ar": 1.1855,
+        "img": "/work/covers/web3-quest-dashboard.webp",
+        "href": "https://ferryworks.framer.website/detailsstiqyquestingdashboard",
+        "case": "",
+        "comingSoon": true
+      },
+      {
+        "title": "Nanovest Investment App",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-investment-app.webp",
+        "href": "/work/nanovest-investment-app",
+        "case": "nanovest-investment-app",
+        "comingSoon": false
+      },
+      {
+        "title": "Nanovest App Redesign",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-app-redesign.webp",
+        "href": "/work/nanovest-app-redesign",
+        "case": "nanovest-app-redesign",
+        "comingSoon": false
+      },
+      {
+        "title": "Pluang Investment App",
+        "cat": "Fintech",
+        "ar": 1.1871,
+        "img": "https://framerusercontent.com/images/mzeoKkaSUYg6Tv6Sdu1JAC1sK9k.png?width=996&height=840",
+        "href": "",
+        "case": "",
+        "comingSoon": true
+      },
+      {
+        "title": "Bukalapak Logistic Admin Panel",
+        "cat": "Ecommerce · Ops",
+        "ar": 1.1871,
+        "img": "https://framerusercontent.com/images/1Pzy92K3ieuyPxNlr8aAdNZXzns.png?width=996&height=840",
+        "href": "",
+        "case": "",
+        "comingSoon": true
+      },
+      {
+        "title": "Game Interface Study",
+        "cat": "Studi kasus",
+        "ar": 1.1855,
+        "img": "/work/covers/game-interface-study.webp",
+        "href": "/work/game-interface-study",
+        "case": "game-interface-study",
+        "comingSoon": false
+      },
+      {
+        "title": "Stiqy Rewards Dashboard",
+        "cat": "Web3 · Growth",
+        "ar": 1.1855,
+        "img": "/work/covers/stiqy-dashboard.webp",
+        "href": "/work/stiqy-dashboard",
+        "case": "stiqy-dashboard",
+        "comingSoon": false
+      },
+      {
+        "title": "Investment App Reimagined",
+        "cat": "Studi kasus",
+        "ar": 1.1855,
+        "img": "/work/covers/investment-app-reimagined.webp",
+        "href": "/work/investment-app-reimagined",
+        "case": "investment-app-reimagined",
+        "comingSoon": false
+      }
+    ]
+  },
+  "clients": {
+    "label": "Sektor",
+    "meta": "02 · Enam industri, satu pertanyaan",
+    "segments": [
+      {
+        "t": "Tujuh tahun tersebar di "
+      },
+      {
+        "t": "web3",
+        "href": "#work"
+      },
+      {
+        "t": ", "
+      },
+      {
+        "t": "fintech",
+        "href": "#work"
+      },
+      {
+        "t": ", "
+      },
+      {
+        "t": "gaming",
+        "href": "#work"
+      },
+      {
+        "t": ", "
+      },
+      {
+        "t": "HR tech",
+        "href": "#work"
+      },
+      {
+        "t": ", "
+      },
+      {
+        "t": "ecommerce",
+        "href": "#work"
+      },
+      {
+        "t": ", dan "
+      },
+      {
+        "t": "developer tools",
+        "href": "#work"
+      },
+      {
+        "t": ". Pengguna berbeda, risiko berbeda, dan tiap kali pertanyaannya sama: apa yang membuat orang menyelesaikan alurnya, bukan pergi?"
+      }
+    ]
+  },
+  "companies": {
+    "label": "Company",
+    "meta": "Tim yang pernah saya kerjasamai",
+    "items": [
+      {
+        "name": "Nanovest",
+        "href": "https://www.nanovest.io/"
+      },
+      {
+        "name": "Stiqy",
+        "href": "https://www.stiqy.io/"
+      },
+      {
+        "name": "Pluang",
+        "href": "https://pluang.com/"
+      },
+      {
+        "name": "Bukalapak",
+        "href": "https://www.bukalapak.com/"
+      },
+      {
+        "name": "Argus Labs",
+        "href": "https://argus.gg/"
+      },
+      {
+        "name": "Reku",
+        "href": "https://reku.id/"
+      },
+      {
+        "name": "Tricor",
+        "href": "https://www.tricorglobal.com/"
+      },
+      {
+        "name": "KB Bank",
+        "href": "https://www.kbbank.co.id/"
+      }
+    ]
+  },
+  "footer": {
+    "claim": [
+      "Punya ide",
+      "yang perlu dibentuk?",
+      "Mari bicara."
+    ],
+    "address": [
+      "Terbuka untuk freelance",
+      "dan posisi full time",
+      "Remote · ke mana saja"
+    ],
+    "email": "mr.feriansyah@gmail.com",
+    "cta": "Hubungi saya",
+    "nav": [
+      {
+        "label": "Karya",
+        "href": "#work",
+        "action": ""
+      },
+      {
+        "label": "Proses",
+        "href": "#process",
+        "action": ""
+      },
+      {
+        "label": "Tentang",
+        "href": "#about",
+        "action": ""
+      },
+      {
+        "label": "Résumé",
+        "href": "#contact",
+        "action": "resume"
+      },
+      {
+        "label": "Kontak",
+        "href": "#contact",
+        "action": ""
+      }
+    ],
+    "legal": "©2026 Ferry Works · Mochamad Feriansyah",
+    "contactHref": "mailto:mr.feriansyah@gmail.com?subject=%5BUI%2FUX%20Request%5D%20Project%20Inquiry&body=Hi%20Feri%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A%0A-%20Project%20or%20company%3A%0A-%20What%20you%20need%3A%0A-%20Timeline%3A%0A-%20Budget%20(optional)%3A%0A%0AThanks%2C%0A",
+    "social": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/mrferiansyah/"
+      },
+      {
+        "label": "Dribbble",
+        "href": "https://dribbble.com/ferferferry"
+      },
+      {
+        "label": "WhatsApp",
+        "href": "https://wa.me/6282234561360"
+      }
+    ],
+    "cvLabel": "Unduh CV",
+    "cvHref": "",
+    "contactLabel": "Hubungi saya",
+    "socialLabel": "Tautan lain"
+  },
+  "cookies": {
+    "title": "Cookie",
+    "body": "Saya pakai satu cookie analitik untuk melihat proyek mana yang paling sering dibuka. Tolak pun, tidak ada bagian situs ini yang berhenti bekerja.",
+    "accept": "Terima",
+    "deny": "Tolak",
+    "links": [
+      {
+        "label": "Privasi",
+        "href": "#contact"
+      },
+      {
+        "label": "Kebijakan cookie",
+        "href": "#contact"
+      }
+    ]
+  },
+  "cases": {
+    "nanovest-calendar": {
+      "slug": "nanovest-calendar",
+      "meta": {
+        "title": "Nanovest US Stocks Event Calendar · Ferry Works",
+        "description": "Studi kasus: kalender event saham AS di dalam Nanovest, dividen, stock split, earnings, dan hari libur bursa untuk saham yang sudah dipegang pengguna."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Nanovest US Stocks Event Calendar",
+      "lead": "Dividen, stock split, earnings, dan hari libur bursa AS, untuk saham yang sudah dipegang, di layar yang terbuka pada bulan ini.",
+      "site": {
+        "label": "Kunjungi nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/us-stock-event-calendar.webp",
+        "ar": 1.1855,
+        "alt": "US Stock Event Calendar: layar home menampilkan US Markets dan tampilan kalender dengan event dividen",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sektor",
+          "v": "Fintech · Saham AS"
+        },
+        {
+          "k": "Peran",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "1 desain · 3 eng"
+        },
+        {
+          "k": "Periode",
+          "v": "2025"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Aplikasi mobile · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Nanovest membuat orang Indonesia bisa memegang saham AS. Corporate action adalah event yang menggerakkan portofolio tanpa siapa pun menekan tombol *beli*, jadi ia diberi ruangnya sendiri: semua tanggal yang menyentuh isi portofolio, sebagai daftar yang terbuka pada bulan ini dan grid yang cukup berjarak satu *ketuk*."
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Wawancara stakeholder",
+          "Bedah kompetitor",
+          "Taksonomi event",
+          "Arsitektur informasi",
+          "User flow",
+          "Wireframe",
+          "Desain antarmuka",
+          "Filter & empty state",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Tanggal ex-dividen datang sebagai kejutan.",
+          "body": [
+            "Corporate action selalu sampai ke pengguna setelah kejadian. Dividen muncul sebagai saldo yang berubah semalam, stock split sebagai jumlah lembar yang tidak lagi cocok dengan kemarin, bursa AS yang tutup sebagai hari tanpa pergerakan dan tanpa penjelasan. Tanggalnya ada (di filing, di news feed, di balasan support), tapi tidak pernah berada di sebelah saham yang benar-benar dipegang.",
+            "Yang tersedia sebelumnya adalah feed: semua hal tentang semua ticker, diurutkan dari yang terbaru. Ia menjawab apa yang sudah terjadi. Tidak ada yang bisa memakainya untuk menjawab apa yang akan terjadi, pada saya, dan hanya versi itulah yang ditanyakan investor ritel."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Daftar yang terbuka pada bulan ini, grid saat bulannya yang jadi pertanyaan.",
+          "body": [
+            "Daftar adalah kondisi awalnya. Event dikelompokkan di bawah bulannya, tanggal memegang rel kirinya sendiri, dan seluruhnya bergulir maju, karena pertanyaan yang biasa muncul adalah apa yang akan datang untuk saham saya, dan daftar menjawabnya tanpa menyuruh siapa pun membidik satu tanggal lebih dulu.",
+            "Grid bulanan duduk di balik satu ikon di header, untuk pertanyaan yang lain: minggu ini bentuknya seperti apa. Ia membawa tiga kelas event yang sama sebagai titik warna (hari libur AS, corporate action, event ekonomi), dan daftarnya tetap ada di bawahnya, tidak berubah. Satu set data, dua cara membaca, tanpa layar kedua yang harus ikut dirawat.",
+            "Cakupan berupa sepasang chip, bukan tab bar: My Portfolio dan Watchlist mempersempit baris yang sama di tempatnya. Jenis event ditaruh di sheet dari ikon filter, supaya empat pilihannya datang selebar layar dan terjangkau ibu jari, bukan diperas jadi dropdown di pucuk layar."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-calendar/list-default.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Studi interaksi",
+        "year": "2025",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Empat dari enam kondisi",
+        "items": [
+          {
+            "img": "/work/nanovest-calendar/us-stocks.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-calendar/list-scroll.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-calendar/calendar-view.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-calendar/filter.webp",
+            "ar": 0.4621,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomi",
+        "meta": "05 · Empat bagian yang memikul layar ini",
+        "items": [
+          {
+            "num": "1",
+            "title": "Cakupan sebelum pencarian",
+            "body": "My Portfolio dan Watchlist berupa chip di dalam daftar, bukan tab di atasnya. Keduanya mempersempit baris yang sama di tempatnya, jadi berganti cakupan tidak pernah menghanguskan posisi gulir, dan pencarian tetap satu kolom, bukan satu per tab.",
+            "img": "/work/nanovest-calendar/list-portfolio.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "2",
+            "title": "Bulan, bukan halaman",
+            "body": "Event dikelompokkan di bawah bulannya dan daftarnya terus berjalan. Tanggal duduk di rel kirinya sendiri sehingga deretan hari yang sama terbaca sebagai satu blok, dan baris event membawa jenis serta nominalnya dalam satu kalimat.",
+            "img": "/work/nanovest-calendar/list-scroll.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "3",
+            "title": "Grid, untuk pertanyaan yang lain",
+            "body": "Satu ikon di header menukar daftar dengan grid bulanan. Titik warna di bawah tanggal menyebut kelas event yang ada di sana (hari libur AS, corporate action, event ekonomi), dan daftar di bawahnya tetap persis seperti semula.",
+            "img": "/work/nanovest-calendar/calendar-view.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "4",
+            "title": "Filter sebagai sheet",
+            "body": "Empat pilihan: semua event, hari libur AS, corporate action, event ekonomi. Sheet memberi masing-masing satu baris selebar layar dalam jangkauan ibu jari, hal yang tidak pernah dilakukan dropdown yang dipaku di pucuk layar 19,5:9.",
+            "img": "/work/nanovest-calendar/filter.webp",
+            "ar": 0.4621
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Setelah tiga bulan",
+        "items": [
+          {
+            "v": "2 ketuk",
+            "k": "Dari beranda ke dividen terdekat"
+          },
+          {
+            "v": "+41%",
+            "k": "Layar corporate action dibuka"
+          },
+          {
+            "v": "−58%",
+            "k": "Pertanyaan dividen ke support"
+          },
+          {
+            "v": "3 → 1",
+            "k": "Tempat mengecek satu tanggal"
+          }
+        ],
+        "note": "Angka sementara. Diganti setelah tinjauan pasca-rilis selesai."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Daftar event",
+          "Grid bulanan",
+          "Sistem jenis event",
+          "Sheet filter",
+          "Empty & loading state",
+          "Pintu masuk di Explore",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "NANOVEST · US STOCK EVENT CALENDAR · 2025",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest Limit Order",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-limit-order",
+        "img": "/work/covers/nanovest-limit-order.webp"
+      }
+    },
+    "nanovest-investment-app": {
+      "slug": "nanovest-investment-app",
+      "meta": {
+        "title": "Nanovest Investment App · Ferry Works",
+        "description": "Studi kasus: home onboarding yang lebih terpandu untuk Nanovest, lebih sedikit langkah setelah login, dan dua cara menuju transaksi pertama: explore aset atau langsung invest."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Nanovest Investment App",
+      "lead": "Sesi pertama yang lebih terpandu dan jalur lebih pendek menuju transaksi pertama: lebih sedikit langkah setelah login, dan dua cara masuk dari home screen yang sama, explore aset atau langsung invest.",
+      "site": {
+        "label": "Kunjungi nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/nanovest-investment-app.webp",
+        "ar": 1.1855,
+        "alt": "Onboarding dan home Nanovest: layar Start Investing untuk pengguna baru di sebelah home Portfolio Balance dengan bubble Stocks dan Crypto",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sektor",
+          "v": "Fintech · Saham & Kripto"
+        },
+        {
+          "k": "Peran",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "1 desain · 4 eng"
+        },
+        {
+          "k": "Periode",
+          "v": "2024"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Aplikasi mobile · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Nanovest ingin memperpendek jarak antara login dan transaksi pertama, dan home screen yang tidak pernah membiarkan investor baru *menebak-nebak* harus ngapain. Jadi home ini membawa dua cara masuk sekaligus: jelajahi dulu semuanya, atau langsung *membeli*, bukan memaksa satu jalur untuk semua orang."
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Wawancara stakeholder",
+          "Bedah kompetitor",
+          "Alur onboarding",
+          "Arsitektur informasi",
+          "User flow",
+          "Wireframe",
+          "Desain antarmuka",
+          "Empty & zero-balance state",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Akun baru punya dashboard, bukan panduan.",
+          "body": [
+            "Login menjatuhkan semua investor ke layar yang sama, tanpa jalan ke depan untuk yang paling penting: akun yang belum memegang apa pun. Layoutnya berasumsi keputusan sudah diambil (mau beli apa, berapa banyak, kelas aset mana), padahal pertanyaan pertama yang sebenarnya jauh lebih sederhana: mulai dari mana?",
+            "Sampai ke transaksi pertama makan lebih banyak ketukan daripada seharusnya, tiap satu keputusan tanpa panduan dan tanpa default. Tidak ada yang bilang mulai di sini di home screen, jadi investor baru mentok sebelum transaksi pertamanya atau tersesat di menu yang dibuat untuk orang yang sudah tahu mau ngapain."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Dua cara masuk, diputuskan dari satu layar.",
+          "body": [
+            "Sesi pertama disederhanakan jadi satu layar dan satu keputusan: Explore Assets, untuk yang mau lihat-lihat dulu, atau tombol langsung Invest in Crypto / Invest in Stocks, untuk yang sudah tahu mau apa. Tidak ada jalur yang jadi satu-satunya pintu; keduanya berangkat dari home yang sama.",
+            "Explore Assets membuka daftar terpandu (Crypto, Stocks, Gold, Mutual Fund), satu kalimat pitch yang sama dan satu ketukan maju di masing-masing, jadi menjelajah tidak pernah berubah jadi riset. Langsung memilih kelas aset sebaliknya membuka picker dua kartu, satu paragraf konteks per kelas, satu CTA masing-masing; keputusannya diambil sekali, sebelum layar mana pun menanyakan nominal.",
+            "Begitu akun benar-benar memegang sesuatu, Stocks dan Crypto berubah jadi dua bubble alih-alih satu angka gabungan, duduk di atas baris Wallet Balance (Top Up, Scan, Request, Transfer) yang tetap di posisinya baik portofolionya berisi lima instrumen maupun kosong. Panduannya tidak hilang begitu seseorang jadi investor; ia cuma berubah bentuk."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-investment-app/home.webp",
+        "posterFocus": "50% 6%",
+        "tag": "Studi interaksi",
+        "year": "2024",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Keempat layar, light dan dark",
+        "items": [
+          {
+            "img": "/work/nanovest-investment-app/new-user-dark.webp",
+            "ar": 0.4618,
+            "cap": "Sesi pertama · saldo nol, satu langkah (Dark)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/home-dark.webp",
+            "ar": 0.4618,
+            "cap": "Investor lama · dua bubble, satu baris wallet (Dark)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/invest-dark.webp",
+            "ar": 0.4618,
+            "cap": "Asset picker · kripto atau saham, satu CTA masing-masing (Dark)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/choose-asset-dark.webp",
+            "ar": 0.4618,
+            "cap": "Menu aset lengkap · kripto, saham, emas, reksa dana (Dark)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/new-user.webp",
+            "ar": 0.4618,
+            "cap": "Sesi pertama · saldo nol, satu langkah (Light)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/home.webp",
+            "ar": 0.4618,
+            "cap": "Investor lama · dua bubble, satu baris wallet (Light)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/invest.webp",
+            "ar": 0.4618,
+            "cap": "Asset picker · kripto atau saham, satu CTA masing-masing (Light)"
+          },
+          {
+            "img": "/work/nanovest-investment-app/choose-asset.webp",
+            "ar": 0.4618,
+            "cap": "Menu aset lengkap · kripto, saham, emas, reksa dana (Light)"
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Setelah tiga bulan",
+        "items": [
+          {
+            "v": "+27%",
+            "k": "Setoran pertama dalam sesi pertama"
+          },
+          {
+            "v": "2 ketuk",
+            "k": "Dari saldo nol ke asset picker"
+          },
+          {
+            "v": "−33%",
+            "k": "Waktu ke order pertama"
+          },
+          {
+            "v": "+19%",
+            "k": "Kunjungan ulang minggu pertama"
+          }
+        ],
+        "note": "Angka sementara. Diganti setelah tinjauan pasca-rilis selesai."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Sistem home screen",
+          "Onboarding saldo nol",
+          "Asset-class picker",
+          "Baris aksi wallet",
+          "Empty & loading state",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "NANOVEST · INVESTMENT APP · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest App Redesign",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-app-redesign",
+        "img": "/work/covers/nanovest-app-redesign.webp"
+      }
+    },
+    "nanovest-app-redesign": {
+      "slug": "nanovest-app-redesign",
+      "meta": {
+        "title": "Nanovest App Redesign · Ferry Works",
+        "description": "Studi kasus: mendesain ulang aplikasi Nanovest di sekitar asisten AI yang terjangkau dari navigasi itu sendiri, antarmuka dark-mode-first, dan sistem warna yang lebih tenang dan profesional."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Nanovest App Redesign",
+      "lead": "Redesain dark-mode-first yang memberi AI Nanovest rumah tetap di navigasi itu sendiri, dan menukar identitas gradasi ceria aplikasinya dengan permukaan tech yang lebih tenang dan profesional.",
+      "site": {
+        "label": "Kunjungi nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/nanovest-app-redesign.webp",
+        "ar": 1.1855,
+        "alt": "Dua home screen Nanovest berdampingan: state diam AI yang tenang di kiri, state alert merahnya setelah portofolio turun di kanan",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sektor",
+          "v": "Fintech · Saham, Kripto & Emas"
+        },
+        {
+          "k": "Peran",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "1 desain · 3 eng"
+        },
+        {
+          "k": "Periode",
+          "v": "2026"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Aplikasi mobile · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Langkah berikutnya Nanovest adalah menaruh AI di pusat pengalaman investasi, tapi antarmuka aplikasinya yang cerah dan penuh gradasi terbaca sebagai fun ala konsumen, bukan sesuatu yang cukup dipercaya untuk diserahi keputusan finansial. Redesain ini membangun ulang sistem visualnya di sekitar dark mode dan palet yang lebih ketat dan teknikal, serta memberi asisten AI rumah tetap di navigation bar itu sendiri, sehingga bisa dijangkau dari tab mana pun, bukan terkubur di satu layar."
+      },
+      "showcase": {
+        "label": "Tampilan nyata",
+        "meta": "State diam dan alert, di tangan",
+        "img": "/work/nanovest-app-redesign/mockup.webp",
+        "ar": 1.3333,
+        "alt": "Dua ponsel menampilkan redesain Nanovest dari sudut: home screen alert AI di kiri, layar Net Worth dan Asset Allocation di kanan",
+        "caption": ""
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Bedah kompetitor",
+          "Sistem desain dark-mode",
+          "Model navigasi AI",
+          "Arsitektur informasi",
+          "Permukaan wawasan AI",
+          "Alur wallet & multi-currency",
+          "Wireframe",
+          "Desain antarmuka",
+          "Empty & alert state",
+          "Prototyping"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Bahasa warna aplikasi ini bertentangan dengan keseriusan seorang penasihat AI.",
+          "body": [
+            "Antarmuka Nanovest mengandalkan gradasi ungu-ke-pink yang cerah dan ikon bergaya badge berwarna-warni untuk hampir semuanya, kartu Featured, ikon produk, banner promo. Itu terbaca sebagai fun ala konsumen, register yang salah untuk produk yang akan menyerahkan keputusan finansial hasil AI; bahasa visual yang sama di bawah alert saham dan promo referral membuat keduanya terasa sama-sama tidak penting.",
+            "AI itu sendiri tidak punya alamat tetap. *Ask anything* hidup di dalam feed Home, satu kolom di antara beberapa lainnya, jadi memakainya berarti harus berada di layar yang tepat dulu. Asisten yang hanya ada di satu tab bukan kapabilitas level navigasi, itu widget."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Dark mode jadi default, AI pindah ke navigasi itu sendiri.",
+          "body": [
+            "Antarmukanya dibangun ulang dark-first: permukaan nyaris hitam, set warna graphite dingin yang sempit, menggantikan identitas gradasi ungu-pink dengan sesuatu yang lebih dekat ke trading terminal ketimbang aplikasi lifestyle. Warna berhenti menghias dan mulai memberi sinyal, aksen hanya muncul saat ia membawa informasi, untung, rugi, alert yang perlu diperhatikan.",
+            "Ikon tengah di tab bar, yang sebelumnya cuma brand mark statis, menjadi entry point AI aplikasi ini. Mengetuknya dari Home, Invest, Wallet, atau Account membuka permukaan Ask Anything yang sama, jadi mendapat jawaban tidak pernah bergantung pada layar mana yang sedang dibuka.",
+            "Khusus di Home, lapisan AI itu tampil sebagai dua hal: state diam yang tenang dalam palet dark sehari-hari, dan state merah yang sengaja lebih tajam saat AI punya sesuatu untuk ditandai, penurunan, pergerakan laba, sehingga satu momen yang layak diperhatikan terlihat berbeda dari lima puluh momen yang tidak."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-app-redesign/home-ai-alert.webp",
+        "posterFocus": "50% 8%",
+        "tag": "Studi interaksi",
+        "year": "2026",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Delapan permukaan, satu shell",
+        "items": [
+          {
+            "img": "/work/nanovest-app-redesign/home-default.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/home-ai-alert.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/invest-tab.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/portfolio-detail.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/stocks-tab.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/wallet-tab.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/account-tab.webp",
+            "ar": 0.4621,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-app-redesign/social-tab.webp",
+            "ar": 0.4621,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomi",
+        "meta": "05 · Empat bagian yang memikul shell ini",
+        "items": [
+          {
+            "num": "1",
+            "title": "AI hidup di navigasi, bukan cuma di feed",
+            "body": "Ikon tengah tab bar adalah entry point AI permanen aplikasi ini. Ia membuka *Ask Anything* dari tab mana pun, Home, Invest, Wallet, Account, jadi bertanya tidak pernah berarti mencari layar yang tepat dulu.",
+            "img": "/work/nanovest-app-redesign/home-ai-alert.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "2",
+            "title": "Lima produk, satu tab",
+            "body": "Crypto, Web3, Stocks, dan Gold berhenti memperebutkan home screen dan pindah ke Invest, tepat di sebelah Pending Orders yang memang perlu segera ditindaklanjuti.",
+            "img": "/work/nanovest-app-redesign/invest-tab.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "3",
+            "title": "Satu wallet, enam mata uang",
+            "body": "Nanovest Cash dan Crypto Cash memakai pola Add / Transfer / Withdraw yang sama di bawah IDR, USD, RMB, HKD, SGD, dan Crypto, satu baris per mata uang, bukan picker di depan saldo.",
+            "img": "/work/nanovest-app-redesign/wallet-tab.webp",
+            "ar": 0.4621
+          },
+          {
+            "num": "4",
+            "title": "Progres tetap terlihat, bukan cuma saat daftar",
+            "body": "nPoints dan bar level Elite pindah permanen ke Account, jadi gamifikasi yang tadinya hanya muncul sekali saat onboarding kini benar-benar bisa dicek kembali oleh pengguna lama.",
+            "img": "/work/nanovest-app-redesign/account-tab.webp",
+            "ar": 0.4621
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Yang berubah dari redesain ini",
+        "items": [
+          {
+            "v": "1",
+            "k": "Satu entry point AI, terjangkau dari tab mana pun"
+          },
+          {
+            "v": "5 → 1",
+            "k": "Permukaan produk dilebur jadi satu tab Invest"
+          },
+          {
+            "v": "6",
+            "k": "Mata uang yang memakai satu pola wallet, nol layar tambahan"
+          },
+          {
+            "v": "1",
+            "k": "Warna aksen, menggantikan palet multi-gradasi di Home, Wallet, dan Invest"
+          }
+        ],
+        "note": "Angka sementara. Diganti setelah tinjauan pasca-rilis selesai."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Sistem desain dark-mode",
+          "Entry point AI di navigation bar",
+          "State alert Home & rail wawasan",
+          "Tab Invest: market, mover, tema",
+          "Wallet: pola enam mata uang",
+          "Account: sistem tier & poin",
+          "Catatan handoff"
+        ]
+      },
+      "marquee": "NANOVEST · APP REDESIGN · 2026",
+      "next": {
+        "label": "Next case",
+        "title": "Amazon Checkout Redesign",
+        "cat": "Studi kasus",
+        "href": "/work/amazon",
+        "img": "/work/covers/amazon-checkout-redesign.webp"
+      }
+    },
+    "nanovest-limit-order": {
+      "slug": "nanovest-limit-order",
+      "meta": {
+        "title": "Nanovest Limit Order · Ferry Works",
+        "description": "Studi kasus: limit buy order untuk saham AS di dalam Nanovest — menentukan harga sendiri, meninggalkannya, dan kembali ke order yang sudah terisi."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Nanovest Limit Order",
+      "lead": "Beli saham AS di harga yang ditentukan sendiri, bukan harga yang diberikan pasar tepat saat kebetulan sedang dilihat.",
+      "site": {
+        "label": "Kunjungi nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/nanovest-limit-order.webp",
+        "ar": 1.1855,
+        "alt": "US Stocks Limit Order: layar detail saham Apple di sebelah ringkasan limit buy pada harga Rp90.000",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sektor",
+          "v": "Fintech · Saham AS"
+        },
+        {
+          "k": "Peran",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "1 desain · 3 eng"
+        },
+        {
+          "k": "Periode",
+          "v": "2024"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Aplikasi mobile · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Saham AS di Nanovest hanya bisa dibeli di harga pasar: *beli* berarti sekarang juga, di angka apa pun yang sedang tertera. Limit order membiarkan seseorang menentukan harganya sendiri lalu *pergi*, sehingga order itu terisi belakangan, di angka itu atau lebih baik, tanpa perlu menunggui layar."
+      },
+      "mockup": {
+        "img": "/work/nanovest-limit-order/mockup.webp",
+        "ar": 1.3333,
+        "alt": "Limit Buy AAPL ditampilkan di dua ponsel — mengatur harga limit dan meninjau ringkasan order",
+        "caption": ""
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Wawancara stakeholder",
+          "Bedah kompetitor",
+          "Taksonomi jenis order",
+          "User flow",
+          "Wireframe",
+          "Desain antarmuka",
+          "Copy harga & biaya",
+          "Konfirmasi & error state",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Setiap order adalah taruhan pada detik ia ditekan.",
+          "body": [
+            "Layar order hanya punya dua tombol, Buy dan Sell, keduanya order pasar. Sebuah transaksi terisi di harga apa pun yang sedang tertera saat itu, jadi siapa pun yang punya angka di kepala (beli di bawah Rp90.000, bukan sebelum itu) harus membuka aplikasi dan menekan beli tepat waktu sendiri, atau kehilangan harganya sama sekali.",
+            "Bursa AS buka saat Jakarta tidur, dan itu mengubahnya jadi biaya yang nyata, bukan sekadar andai-andai. Support terus menerima permintaan yang sama dengan kata-kata berbeda: harga target, dan cara meninggalkan sebuah order lalu kembali menemukannya terisi, dibatalkan, atau masih menunggu."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Tentukan harga, pergi, kembali ke keputusan yang sudah dibuat.",
+          "body": [
+            "Limit Buy duduk satu ketuk dari layar detail saham itu sendiri, di sebelah Buy dan Sell, sehingga terbaca sebagai cara ketiga memperdagangkan saham yang sedang dilihat, bukan fitur terpisah yang disimpan di tempat lain.",
+            "Kolom harga terbuka dengan jangkar di harga hari ini, dengan empat pilihan cepat, -2%, -3%, -5%, -10%, di atas keypad, karena kebanyakan limit order adalah potongan dari angka saat ini, bukan angka yang diketik dari ingatan.",
+            "Otorisasi PIN dan layar processing, dua langkah yang sama seperti transaksi lain di aplikasi ini, membuat order terjadwal tetap terasa seperti pembelian, bukan risiko jenis baru. Semuanya berhenti di satu status, Scheduled, lengkap dengan total biaya, jumlah lembar, dan satu kalimat yang menyatakan saldo sudah dipotong dan akan dikembalikan otomatis kalau order itu tidak pernah terisi."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-limit-order/limit-price.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Studi interaksi",
+        "year": "2024",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Empat dari lima kondisi",
+        "items": [
+          {
+            "img": "/work/nanovest-limit-order/stock-detail.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-limit-order/limit-price.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-limit-order/pin-code.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-limit-order/scheduled.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomi",
+        "meta": "05 · Lima layar yang memikul order ini",
+        "items": [
+          {
+            "num": "1",
+            "title": "Mulai dari saham itu sendiri",
+            "body": "Limit Buy berada di sebelah Buy dan Sell pada layar detail saham itu sendiri, bukan di balik menu jenis order terpisah. Orang yang sedang melihat chart dan harga Apple tidak perlu pergi ke mana pun untuk menentukan harganya sendiri.",
+            "img": "/work/nanovest-limit-order/stock-detail.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "2",
+            "title": "Harga berjangkar pada hari ini",
+            "body": "Keypad terbuka di bawah harga saat ini, bukan kolom kosong, dan empat chip, -2% sampai -10%, mencakup selisih yang biasa diketik orang. Total biaya dan biaya transaksi tetap terlihat di atas keypad sepanjang waktu, tidak pernah berpindah ke layar kedua.",
+            "img": "/work/nanovest-limit-order/limit-price.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "3",
+            "title": "PIN, sama seperti transaksi lain",
+            "body": "Mengotorisasi limit order memakai layar PIN yang sama persis dengan transaksi lain di aplikasi ini. Jenis order baru tidak pernah butuh cara baru untuk membuktikan itu benar-benar dirinya.",
+            "img": "/work/nanovest-limit-order/pin-code.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "4",
+            "title": "Dihargai secara live, bukan dari ingatan",
+            "body": "Layar processing yang singkat menyatakan dengan jelas bahwa jumlah lembar bisa sedikit berubah, karena harga saham dan kurs terus bergerak antara ketukan dan saat order terisi. Menyebut alasannya sekali di sini berarti ia tidak perlu jadi tiket support nanti.",
+            "img": "/work/nanovest-limit-order/processing.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "5",
+            "title": "Terjadwal, bukan diam",
+            "body": "Satu layar menutup lingkarannya: harga limit, jumlah lembar, dan satu baris yang menyatakan saldo sudah dipotong sekarang dan akan dikembalikan otomatis kalau order dibatalkan atau tidak pernah terisi. Cancel dan Done berdampingan, jadi membiarkan order tetap berjalan semudah menariknya kembali.",
+            "img": "/work/nanovest-limit-order/scheduled.webp",
+            "ar": 0.4618
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Setelah rilis",
+        "items": [
+          {
+            "v": "3 ketuk",
+            "k": "Dari detail saham ke order terjadwal"
+          },
+          {
+            "v": "38%",
+            "k": "Order saham AS yang dipasang sebagai limit"
+          },
+          {
+            "v": "−24%",
+            "k": "Pertanyaan harga terlewat ke support"
+          },
+          {
+            "v": "1 layar",
+            "k": "Tempat status satu order berada"
+          }
+        ],
+        "note": "Angka sementara. Diganti setelah tinjauan pasca-rilis selesai."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Flow limit buy",
+          "Input harga dengan pilihan cepat",
+          "State PIN & processing",
+          "Konfirmasi terjadwal",
+          "Empty & error state",
+          "Pintu masuk status order",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "NANOVEST · LIMIT ORDER · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest Foreign Stocks",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-foreign-stocks",
+        "img": "/work/covers/nanovest-foreign-stocks.webp"
+      }
+    },
+    "nanovest-foreign-stocks": {
+      "slug": "nanovest-foreign-stocks",
+      "meta": {
+        "title": "Nanovest Foreign Stocks · Ferry Works",
+        "description": "Studi kasus: menghadirkan saham Hong Kong dan China ke Nanovest, sehingga investor Indonesia membeli saham luar negeri di rak yang sama dengan emas, kripto, dan saham AS."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Nanovest Foreign Stocks",
+      "lead": "Biarkan investor Indonesia membeli saham yang tercatat di Hong Kong atau China dengan cara yang sama seperti membeli Apple: dompet yang sama, rak yang sama, tanpa aplikasi baru yang harus dipelajari.",
+      "site": {
+        "label": "Kunjungi nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/nanovest-foreign-stocks.webp",
+        "ar": 1.1855,
+        "alt": "Layar utama Foreign Stocks dengan tab HK Stocks terbuka, di sebelah ringkasan limit buy Shenzhen International Holdings",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sektor",
+          "v": "Fintech · Saham Luar Negeri"
+        },
+        {
+          "k": "Peran",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "1 desain · 3 eng"
+        },
+        {
+          "k": "Periode",
+          "v": "2024"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Aplikasi mobile · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Rak Nanovest sudah menampung *emas*, *kripto*, dan *saham AS* di satu dompet. Foreign Stocks menambahkan saham Hong Kong dan China daratan ke rak yang *sama*, sehingga investor Indonesia membeli saham tercatat Shenzhen dengan cara yang *sama* seperti mereka sudah membeli Apple."
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Wawancara stakeholder",
+          "Riset masuk pasar HK & CN",
+          "Model navigasi lintas aset",
+          "Penetapan harga multi-mata uang",
+          "Audit penggunaan ulang order-flow",
+          "User flow",
+          "Desain antarmuka",
+          "Copy settlement & sesi",
+          "Konfirmasi & error state",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Rak itu berhenti di perbatasan AS.",
+          "body": [
+            "Nanovest sudah jadi satu dompet untuk emas, kripto, dan saham AS, semuanya terbaca dari satu saldo. Tapi investor yang membaca soal kebangkitan teknologi Hong Kong atau saham tercatat Shenzhen tidak punya tempat untuk bertindak di dalam aplikasi: ticker itu memang belum ada di Nanovest, jadi satu-satunya jalan keluar adalah broker lain, KYC lain, akun lain yang harus diingat.",
+            "Roadmap perusahaan sendiri membuat bentuk celah ini jelas: all-in-one baru berarti sesuatu kalau aset yang benar-benar diinginkan orang, bukan hanya yang sudah dibangun, hidup di bawah satu atap itu."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Pasar baru, rak yang sama.",
+          "body": [
+            "Foreign Stocks menjadi sebaris tab, bukan bagian aplikasi baru: US Stocks, HK Stocks, CN Stocks, dan Gold duduk dalam satu layar dengan chart portofolio yang sama di bawahnya, jadi berpindah pasar hanya satu ketuk, bukan tempat baru yang harus dipelajari.",
+            "Setiap pasar tetap punya widget indeksnya sendiri di bagian atas (HSI, HSCI, HSTECH untuk Hong Kong), sehingga seseorang bisa membaca suasana pasar sebelum membuka satu saham pun. Layar detail saham dan limit buy nyaris tidak berubah dari case saham AS sebelumnya, lengkap dengan chip harga cepat, jadi order dalam HK$ terasa sama familiarnya dengan order dalam USD.",
+            "Yang benar-benar berubah di baliknya ditampilkan di satu tempat saja, bukan tersebar di seluruh flow: layar processing dengan peta dunia menyebutkan apa yang sedang terjadi, saldo rupiah melewati tahap konversi valuta asing sebelum sampai ke saham tercatat Hong Kong, sehingga jeda satu-dua detik itu terbaca sebagai proses yang berjalan, bukan aplikasi yang macet."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-foreign-stocks/order-summary.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Studi interaksi",
+        "year": "2024",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Delapan kondisi, dari awal sampai akhir",
+        "items": [
+          {
+            "img": "/work/nanovest-foreign-stocks/home.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/stock-detail.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/limit-price.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/order-summary.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/processing.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/scheduled.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/purchased.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-foreign-stocks/trading-hours.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomi",
+        "meta": "05 · Enam layar yang memikul transaksi ini",
+        "items": [
+          {
+            "num": "1",
+            "title": "Satu rak, empat pasar",
+            "body": "US Stocks, HK Stocks, CN Stocks, dan Gold duduk sebagai tab di layar yang sama, di atas chart portofolio dan widget indeks untuk pasar mana pun yang sedang buka. Foreign Stocks terbaca sebagai satu tab tambahan, bukan aplikasi terpisah yang ditempel.",
+            "img": "/work/nanovest-foreign-stocks/home.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "2",
+            "title": "Listing yang berperilaku seperti yang sudah dipercaya",
+            "body": "Shenzhen International Holdings mendapat layar detail yang persis sama dengan yang sudah dimiliki Apple: chart harga, badge Market Open, Buy dan Sell. Tidak ada satu pun bagian dari membeli saham HK yang perlu terlihat asing.",
+            "img": "/work/nanovest-foreign-stocks/stock-detail.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "3",
+            "title": "Pola limit price yang sama, dalam HK$",
+            "body": "Keypad, jangkar ke harga hari ini, tip soal order di atas harga pasar: semuanya dibawa langsung dari limit order saham AS. Yang berubah hanya simbol mata uangnya, karena polanya sudah pernah dipelajari sekali.",
+            "img": "/work/nanovest-foreign-stocks/limit-price.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "4",
+            "title": "Ringkasan yang menyebut jam lokal",
+            "body": "Trading Hours dan Active Until ditampilkan dalam WIB, bukan waktu Hong Kong, karena itulah jam yang benar-benar dipakai orang yang memasang order. Biaya dan jumlah lembar tetap di atas tombol Confirm, tidak pernah pindah ke layar kedua.",
+            "img": "/work/nanovest-foreign-stocks/order-summary.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "5",
+            "title": "Lintas negara, dibuat terlihat",
+            "body": "Layar processing dengan peta dunia mewakili tahap tambahan yang dilalui transaksi luar negeri: rupiah yang dikonversi, order yang dialihkan ke pasar di seberang batas negara, sehingga masa tunggunya terbaca sebagai proses yang berjalan, bukan aplikasi yang macet.",
+            "img": "/work/nanovest-foreign-stocks/processing.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "6",
+            "title": "Terjadwal, lalu selesai",
+            "body": "Limit order berhenti di status Scheduled, saldo terpotong dan bisa dikembalikan, persis seperti versi saham AS. Order pasar berhenti di status Purchased dalam satu tarikan napas yang sama. Dua ujung cerita, satu kosakata yang dipakai bersama.",
+            "img": "/work/nanovest-foreign-stocks/scheduled.webp",
+            "ar": 0.4618
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Setelah rilis",
+        "items": [
+          {
+            "v": "3 pasar",
+            "k": "Saham AS, HK & China dalam satu rak"
+          },
+          {
+            "v": "4 tab",
+            "k": "US, HK, CN dan Gold dalam satu layar"
+          },
+          {
+            "v": "0 baru",
+            "k": "Dompet atau langkah KYC untuk mulai bertransaksi"
+          },
+          {
+            "v": "1 flow",
+            "k": "Pola Buy & limit dipakai ulang dari saham AS"
+          }
+        ],
+        "note": "Angka sementara. Diganti setelah tinjauan pasca-rilis selesai."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Desain rak lintas pasar",
+          "Flow detail saham & order untuk HK/CN",
+          "Copy harga & biaya multi-mata uang",
+          "State processing lintas negara",
+          "Penjelas sesi perdagangan",
+          "Konfirmasi & error state",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "NANOVEST · FOREIGN STOCKS · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest US Stocks IPO",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-us-stocks-ipo",
+        "img": "/work/covers/nanovest-us-stocks-ipo.webp"
+      }
+    },
+    "nanovest-us-stocks-ipo": {
+      "slug": "nanovest-us-stocks-ipo",
+      "meta": {
+        "title": "Nanovest US Stocks IPO · Ferry Works",
+        "description": "Studi kasus: memesan saham perusahaan AS sebelum ia mulai diperdagangkan, di dalam Nanovest: order bersyarat terhadap rentang harga, yang diselesaikan sendiri begitu penawarannya dialokasikan."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Nanovest US Stocks IPO",
+      "lead": "Pesan sebagian saham IPO perusahaan AS beberapa hari sebelum listing, terhadap rentang harga, bukan satu angka, dan biarkan Nanovest menyelesaikan selisihnya begitu saham dialokasikan.",
+      "site": {
+        "label": "Kunjungi nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/nanovest-us-stocks-ipo.webp",
+        "ar": 1.1855,
+        "alt": "Daftar e-IPO US Stocks di sebelah layar detail penawaran Lumora Health, rentang harga $28–$32",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sektor",
+          "v": "Fintech · Saham AS"
+        },
+        {
+          "k": "Peran",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "1 desain · 3 eng"
+        },
+        {
+          "k": "Periode",
+          "v": "2024"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Aplikasi mobile · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Nanovest hanya bisa menjual saham AS yang sudah diperdagangkan. Perusahaan yang masih dalam proses IPO, harganya baru berupa rentang dan hari pertama perdagangannya masih beberapa hari lagi, *tidak punya layar order sama sekali*: satu-satunya pilihan adalah menunggu, lalu membeli di angka apa pun yang ditentukan pasar pada hari pertama."
+      },
+      "mockup": {
+        "img": "/work/nanovest-us-stocks-ipo/mockup.webp",
+        "ar": 1.3333,
+        "alt": "Dua ponsel menampilkan order US$750 untuk LUMR yang sudah terkirim, dengan daftar e-IPO US Stocks di baliknya",
+        "caption": ""
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Wawancara stakeholder",
+          "Bedah kompetitor",
+          "Tinjauan regulasi & eligibilitas",
+          "Pemetaan siklus penawaran",
+          "User flow",
+          "Wireframe",
+          "Desain antarmuka",
+          "Copy harga & biaya",
+          "State alokasi & refund",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Tidak ada tempat untuk memesan saham sebelum ia ada di pasar.",
+          "body": [
+            "Setiap layar order di aplikasi ini berasumsi ada harga live: ketik nama perusahaan, lihat harganya, beli di harga pasar. Perusahaan yang masih dalam proses IPO, sahamnya baru berupa rentang harga dan hari perdagangan pertamanya masih beberapa hari lagi, tidak punya layar detail, tidak punya tombol order, tidak muncul di pencarian: ia memang belum bisa diperdagangkan.",
+            "IPO AS yang banyak dicari jumlahnya sedikit dan waktunya terbatas: segelintir dalam setahun, masing-masing dengan jendela yang terbuka dan tertutup sebelum sahamnya sempat listing. Melewatkan jendela itu berarti menunggu hari listing biasa dan membeli di angka berapa pun yang ditentukan pasar."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Rentang harga masuk, rentang harga keluar: satu order yang menyelesaikan dirinya sendiri.",
+          "body": [
+            "Daftar e-IPO mengelompokkan tiap penawaran ke On Going, Upcoming, Past, sehingga satu fakta yang benar-benar mengubah keputusan, berapa hari lagi waktu tersisa untuk order, terlihat sebelum siapa pun membuka satu perusahaan pun.",
+            "Order-nya adalah jumlah uang terhadap rentang harga resmi perusahaan, bukan jumlah lembar, karena harga finalnya baru ditentukan setelah penawaran ditutup. Layar review menyatakan dengan jelas apa yang dibeli uang itu: estimasi jumlah lembar, biaya transaksi, dan total yang ditagih hari ini.",
+            "Alokasi adalah langkah yang dilewati semua jenis order lain di aplikasi ini. Sebuah timeline memuat seluruh siklusnya: order dipasang, diberi harga, dialokasikan penuh atau sebagian, listing, dan menyatakan persis berapa refund-nya begitu alokasi sebagian menyisakan uang yang tidak terpakai, jadi tidak ada yang perlu bertanya ke support ke mana sisanya."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/nanovest-us-stocks-ipo/detail.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Studi interaksi",
+        "year": "2024",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Dari daftar sampai alokasi",
+        "items": [
+          {
+            "img": "/work/nanovest-us-stocks-ipo/list.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-us-stocks-ipo/detail.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-us-stocks-ipo/review.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/nanovest-us-stocks-ipo/allocation.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomi",
+        "meta": "05 · Empat layar yang memikul satu penawaran",
+        "items": [
+          {
+            "num": "1",
+            "title": "Semua penawaran, diurut dari sisa waktunya",
+            "body": "On Going, Upcoming, Past: tiga tab, bukan satu daftar panjang, karena tanggal penutupan lebih penting di sini dibanding di mana pun lagi di aplikasi ini. Tiap kartu memimpin dengan angka yang menentukan apakah waktunya masih ada.",
+            "img": "/work/nanovest-us-stocks-ipo/list.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "2",
+            "title": "Rentang harga, cerita singkat, timeline",
+            "body": "Layar detail menyatakan rentang harga lebih dulu dari apa pun, lalu satu paragraf tentang perusahaannya, lalu tiga tanggal yang penting: kapan penawaran ditutup, kapan dialokasikan, kapan mulai diperdagangkan.",
+            "img": "/work/nanovest-us-stocks-ipo/detail.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "3",
+            "title": "Belanjakan angka, bukan jumlah lembar",
+            "body": "Order-nya adalah jumlah uang terhadap rentang harga, jadi layar review mengubahnya kembali jadi apa yang sebenarnya dibeli: estimasi jumlah lembar, biaya transaksi, dan total, ditagih hari ini terhadap harga yang belum ditentukan.",
+            "img": "/work/nanovest-us-stocks-ipo/review.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "4",
+            "title": "Dialokasikan, penuh atau sebagian",
+            "body": "Satu layar menutup lingkarannya: lembar yang dialokasikan berbanding lembar yang diminta, harga final, dan timeline yang menyatakan persis kapan order dipasang, diberi harga, dialokasikan, dan dikembalikan, dalam tanggal yang jelas, bukan tiket support.",
+            "img": "/work/nanovest-us-stocks-ipo/allocation.webp",
+            "ar": 0.4618
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Setelah rilis",
+        "items": [
+          {
+            "v": "4 ketuk",
+            "k": "Dari daftar ke order bersyarat terkirim"
+          },
+          {
+            "v": "3",
+            "k": "Penawaran terbuka untuk order berdampingan, saat rilis"
+          },
+          {
+            "v": "100% otomatis",
+            "k": "Refund untuk alokasi yang tidak terisi atau sebagian"
+          },
+          {
+            "v": "1 layar",
+            "k": "Tempat seluruh siklus satu order berada"
+          }
+        ],
+        "note": "Angka sementara. Diganti setelah tinjauan pasca-rilis selesai."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Daftar e-IPO dengan On Going/Upcoming/Past",
+          "Layar detail penawaran & flow order",
+          "Review order bersyarat",
+          "State PIN & processing",
+          "State alokasi & refund",
+          "Pintu masuk status order",
+          "Empty & error state",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "NANOVEST · US STOCKS IPO · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest Crypto Locked Staking",
+        "cat": "Fintech · Web3",
+        "href": "/work/crypto-locked-staking",
+        "img": "/work/covers/crypto-locked-staking.webp"
+      }
+    },
+    "crypto-locked-staking": {
+      "meta": {
+        "title": "Nanovest Crypto Locked Staking · Ferry Works",
+        "description": "Studi kasus: alur lock-up bertahap untuk saldo IDDR dan kripto di Nanovest, dari memilih koin sampai melihat yield-nya sebelum berkomitmen."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Nanovest Crypto Locked Staking",
+      "lead": "Hal ketiga yang bisa dilakukan pada saldo selain diperdagangkan atau dibiarkan diam: menguncinya untuk tenor tertentu, dengan yield yang terlihat sebelum benar-benar berkomitmen.",
+      "site": {
+        "label": "Kunjungi nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/crypto-locked-staking.webp",
+        "ar": 1.1855,
+        "alt": "Nanovest Locked Staking: layar tenor Lock NBT di sebelah tampilan Wallet yang menampilkan Locked Staking Principal dan riwayat transaksi",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Nanovest"
+        },
+        {
+          "k": "Sektor",
+          "v": "Fintech · Kripto"
+        },
+        {
+          "k": "Peran",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "1 desain · 2 eng"
+        },
+        {
+          "k": "Periode",
+          "v": "2025"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Aplikasi mobile · iOS & Android"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Sebelum ini, saldo Nanovest cuma bisa dua hal: berpindah, sebagai transaksi, atau menunggu, tanpa melakukan apa pun, di wallet. Locked staking adalah opsi ketiga: mengunci sejumlah IDDR atau NBT untuk tenor pilihan, demi yield yang *pasti* sebelum dikunci, bukan tersembunyi di tabel rate setelahnya."
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Bedah kompetitor",
+          "Pemodelan yield & tenor bersama tim kripto",
+          "Arsitektur informasi",
+          "User flow",
+          "Wireframe",
+          "Desain antarmuka",
+          "Alur konfirmasi & PIN",
+          "Edge & error state",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Saldo cuma bisa berpindah atau menunggu. Tidak ada di antaranya.",
+          "body": [
+            "Trading adalah satu-satunya cara saldo Nanovest bertumbuh, dan wallet satu-satunya tempat ia beristirahat; tidak ada yang memberi imbalan pada orang yang berkomitmen pada *waktu*, bukan *posisi*. Layar staking kompetitor sebenarnya ada, tapi kebanyakan menyembunyikan yield di dalam tabel rate, membiarkan tenor diam-diam mengubah angkanya tanpa bilang-bilang di layar yang sama, atau meminta komitmen sebelum menunjukkan hasil akhirnya.",
+            "Bagi orang yang menaruh uang sungguhan di balik angka yang tidak bisa diawasi pergerakannya hari demi hari, jarak antara berkomitmen dan memahami itulah tempat kepercayaan terkuras, bukan terkumpul."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Satu keputusan per layar, angkanya dihitung ulang sebelum dikunci.",
+          "body": [
+            "Koin didahulukan sebelum tenor. Stablecoin (IDDR) dan kripto (NBT) berupa dua kartu, masing-masing menyatakan estimasi yield dan jendela tenornya sendiri di depan, jadi pilihan yang mengubah semuanya di bawah dibuat sebelum satu nominal pun diketik.",
+            "Tenor dan nominal berada di satu layar, bukan dua. Mengubah periode langsung menggambar ulang estimasi principal dan yield di tempat, tanggal mulai dan jatuh tempo terbaca sebagai satu baris alih-alih dua fakta yang harus dicocokkan sendiri, dan instruksi jatuh tempo, auto-rollover atau cair, ditentukan di sini, sebelum konfirmasi, bukan diasumsikan belakangan.",
+            "PIN menutup sebuah keputusan, bukan membuka form baru. Semua yang dikuncinya sudah terlihat di layar sebelumnya: nominal, tenor, yield, jatuh tempo. Jadi memasukkannya terasa seperti *menyegel* pilihan, bukan mengulang dari awal."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/crypto-locked-staking/lock-term.webp",
+        "posterFocus": "50% 20%",
+        "tag": "Studi interaksi",
+        "year": "2025",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Dari entry point sampai konfirmasi, empat kondisi dalam alurnya",
+        "items": [
+          {
+            "img": "/work/crypto-locked-staking/home-entry.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/crypto-locked-staking/select-coin.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/crypto-locked-staking/lock-term.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/crypto-locked-staking/wallet-principal.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "05 · Setelah rilis",
+        "items": [
+          {
+            "v": "3 ketuk",
+            "k": "Dari beranda ke lock yang terkonfirmasi"
+          },
+          {
+            "v": "2 layar",
+            "k": "Dari pilih koin sampai tenor ditandatangani"
+          },
+          {
+            "v": "0",
+            "k": "Biaya yang baru terlihat setelah konfirmasi"
+          },
+          {
+            "v": "10% p.a.",
+            "k": "Estimasi yield tertinggi, dinyatakan di depan"
+          }
+        ],
+        "note": "Angka sementara. Diganti setelah tinjauan pasca-rilis selesai."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Pemilih koin",
+          "Layar tenor & nominal",
+          "Alur konfirmasi & PIN",
+          "Kartu wallet Locked Staking",
+          "Pengaturan auto-rollover",
+          "Empty & error state",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "NANOVEST · CRYPTO LOCKED STAKING · 2025",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest Investment App",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-investment-app",
+        "img": "/work/covers/nanovest-investment-app.webp"
+      }
+    },
+    "amazon": {
+      "slug": "amazon",
+      "meta": {
+        "title": "Amazon Checkout Redesign · Ferry Works",
+        "description": "Studi kasus: konsep desain ulang checkout mobile Amazon — enam gesekan berulang yang diperbaiki di empat layar: alamat pengiriman, opsi pengiriman, metode pembayaran, dan satu layar konfirmasi sebelum order diproses."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus konsep",
+      "title": "Amazon Checkout Redesign",
+      "lead": "Empat layar checkout yang membiarkan orang mengganti kecepatan pengiriman, mengenali kartu dari logonya sekilas, dan melihat seluruh tagihan sebelum satu ketukan mengikatnya.",
+      "site": {
+        "label": "Kunjungi amazon.com",
+        "href": "https://www.amazon.com/"
+      },
+      "cover": {
+        "img": "/work/covers/amazon-checkout-redesign.webp",
+        "ar": 1.1855,
+        "alt": "Layar checkout Amazon: konfirmasi order berdampingan dengan opsi pengiriman",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Inisiatif sendiri"
+        },
+        {
+          "k": "Sektor",
+          "v": "E-commerce"
+        },
+        {
+          "k": "Peran",
+          "v": "Product Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "Solo"
+        },
+        {
+          "k": "Periode",
+          "v": "2023"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Aplikasi mobile · iOS"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Checkout Amazon sendiri sudah berfungsi, tapi enam gesekan kecil terus muncul di dalamnya: pilihan pengiriman yang terkunci terlalu awal, ringkasan yang hanya menampilkan total tanpa rincian di baliknya, metode pembayaran yang terbaca sebagai teks polos, bukan kartu yang dikenali. Sebuah studi konsep yang membangun ulang empat langkah yang sama, alamat, pengiriman, pembayaran, tinjauan, di sekitar satu aturan: *tidak ada* yang dikonfirmasi sebelum konsekuensinya sudah terlihat."
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang dikerjakan studi ini",
+        "items": [
+          "Audit flow",
+          "Bedah kompetitor",
+          "Arsitektur informasi",
+          "User flow",
+          "Wireframe",
+          "Desain antarmuka",
+          "Microcopy",
+          "Tinjauan aksesibilitas",
+          "Prototyping"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Enam gesekan kecil, tidak pernah diselesaikan sebagai satu alur.",
+          "body": [
+            "Pengiriman dikunci terlalu awal: berpindah dari delivery ke pickup, atau mengganti kecepatan pengiriman, berarti order harus dibatalkan dan diulang dari awal. Ringkasan order hanya menampilkan satu total tanpa rincian, sehingga item, voucher, dan biaya pengiriman mustahil dicek satu sama lain sebelum membayar.",
+            "Jumlah barang hidup di dropdown, satu ketukan ekstra untuk perubahan yang biasanya dilakukan lebih dari sekali. Kartu tersimpan tampil sebagai nomor tersamar dan nama saja, tidak ada yang terbaca sebagai Visa atau Mastercard sekilas pandang, dan pembayaran tidak membawa jaminan yang terlihat bahwa transaksi itu aman, tidak ada satu baris pun soal enkripsi, tepat di tempat kepercayaan sebenarnya diputuskan."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Empat layar, satu alur modular, masing-masing mengerjakan satu tugas.",
+          "body": [
+            "Alamat, pengiriman, pembayaran, dan tinjauan dipecah jadi empat layar, bukan satu formulir panjang, jadi mengganti delivery ke pickup, atau kartu ke PayPal, berarti kembali ke layar itu saja, bukan mengulang order dari awal. Layar tinjauan membuat setiap bagian tetap bisa diketuk balik ke layar sumbernya, justru karena alasan ini.",
+            "Ringkasan order dipecah jadi item, voucher, dan pengiriman sebelum menampilkan total, dan jumlah barang jadi stepper inline di sebelah itemnya sendiri, bukan menu dua ketukan lebih jauh. Setiap kartu dan dompet tersimpan membawa logonya sendiri, Mastercard, Visa, PayPal, Klarna, jadi mengenali mana yang sedang dipilih cukup sekilas pandang, bukan dibaca.",
+            "Satu baris di bawah metode pembayaran, semua transaksi aman dan terenkripsi, duduk tepat di tempat keputusan membayar dibuat, bukan terkubur di footer atau artikel bantuan tiga ketukan lebih jauh."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/amazon/order-confirmation.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Studi interaksi",
+        "year": "2023",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Empat langkah checkout",
+        "items": [
+          {
+            "img": "/work/amazon/order-confirmation.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/amazon/delivery-options.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/amazon/shipping-address.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/amazon/payment-method.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "steps": {
+        "label": "Anatomi",
+        "meta": "05 · Empat layar yang memikul order ini",
+        "items": [
+          {
+            "num": "1",
+            "title": "Alamat, satu ketuk untuk berganti",
+            "body": "Alamat tersimpan tampil sebagai kartu dengan yang terpilih sudah ditandai, jadi memilih tujuan pengiriman cukup satu ketukan di antara opsi tersimpan, bukan mengisi formulir lagi.",
+            "img": "/work/amazon/shipping-address.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "2",
+            "title": "Biaya dan tanggal untuk setiap opsi",
+            "body": "Doorstep, inside entryway, room of choice: setiap opsi menyatakan harga dan jendela pengirimannya sebelum dipilih, dengan badge Fastest pada opsi yang menang secara default, jadi tidak perlu membandingkan tiga kartu untuk menemukan yang tercepat.",
+            "img": "/work/amazon/delivery-options.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "3",
+            "title": "Saldo dicek sebelum dipilih",
+            "body": "Saldo dompet yang tidak cukup untuk order langsung tampil sebagai tidak cukup di kartunya sendiri, berwarna merah, bukan setelah checkout gagal. Kartu tersimpan di bawahnya sudah ditandai sebagai cadangan, siap dipilih sebagai gantinya.",
+            "img": "/work/amazon/payment-method.webp",
+            "ar": 0.4618
+          },
+          {
+            "num": "4",
+            "title": "Satu layar, setiap bagian bisa diketuk balik",
+            "body": "Alamat, item, pengiriman, pembayaran, dan voucher berjajar di layar tinjauan, masing-masing dengan chevron menuju layarnya sendiri. Memperbaiki satu kolom cukup satu ketukan keluar dan satu ketukan kembali, bukan mengulang seluruh order.",
+            "img": "/work/amazon/order-confirmation.webp",
+            "ar": 0.4618
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Yang dihasilkan studi ini",
+        "items": [
+          {
+            "v": "6",
+            "k": "Gesekan berulang yang diselesaikan dalam satu alur"
+          },
+          {
+            "v": "0",
+            "k": "Pengulangan order untuk ganti pengiriman atau pembayaran"
+          },
+          {
+            "v": "1 ketuk",
+            "k": "Untuk memperbaiki kolom mana pun dari tinjauan"
+          },
+          {
+            "v": "4",
+            "k": "Brand pembayaran yang dikenali dari logonya saja"
+          }
+        ],
+        "note": "Sebuah studi konsep, bukan fitur yang dirilis — angka ini menggambarkan desainnya, bukan data produksi."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang dihasilkan studi ini",
+        "items": [
+          "Peta flow checkout",
+          "Layar alamat pengiriman",
+          "Layar opsi pengiriman",
+          "Layar metode pembayaran",
+          "Tinjauan & konfirmasi order",
+          "Microcopy trust & keamanan",
+          "Catatan komponen"
+        ]
+      },
+      "marquee": "AMAZON · CHECKOUT REDESIGN · 2023",
+      "next": {
+        "label": "Next case",
+        "title": "Game Interface Study",
+        "cat": "Studi kasus",
+        "href": "/work/game-interface-study",
+        "img": "/work/covers/game-interface-study.webp"
+      }
+    },
+    "game-quest": {
+      "slug": "game-quest",
+      "meta": {
+        "title": "Rampage Game Quest · Ferry Works",
+        "description": "Studi kasus: HUD quest harian dan reward untuk action RPG mobile — kerja UI konsep pada state klaim, info reward, dan ekonomi dua mata uang."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Rampage Game Quest",
+      "lead": "HUD quest harian dan reward untuk sebuah action RPG mobile, didesain ulang supaya mengklaim reward terasa seperti hadiah, bukan berkas administrasi.",
+      "site": {
+        "label": "Kunjungi argus.gg",
+        "href": "https://argus.gg/"
+      },
+      "cover": {
+        "img": "/work/covers/game-quest-design.webp",
+        "ar": 1.1855,
+        "alt": "HUD Rampage Game Quest: panel quest harian dan layar Obtained Rewards di sebelah key art karakter",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Argus Labs"
+        },
+        {
+          "k": "Sektor",
+          "v": "Gaming · Mobile RPG"
+        },
+        {
+          "k": "Peran",
+          "v": "UI/UX Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "Solo"
+        },
+        {
+          "k": "Periode",
+          "v": "2026"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Game mobile · UI landscape"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Rampage Game Quest membagikan dua mata uang, lebih dari lima jenis reward, dan tangga kesulitan sebelum pemain menyelesaikan run pertamanya. Panel quest adalah tempat semua itu harus *mengerucut* jadi tiga hal: apa yang harus dilakukan berikutnya, seberapa berharga itu, dan bagaimana cara *mengklaim*-nya."
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Bedah kompetitor",
+          "Taksonomi quest & reward",
+          "Pemetaan mata uang & ekonomi",
+          "User flow",
+          "Wireframe",
+          "Desain antarmuka",
+          "Arahan ikonografi",
+          "State reward & klaim",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Setiap ikon butuh tooltip yang tidak pernah ada.",
+          "body": [
+            "Empat kartu quest, dua mata uang, lima ikon reward, dan satu label kesulitan berbagi satu layar tanpa cara untuk bertanya apa arti masing-masing. Pemain bisa melihat “+150” di sebelah ikon kristal dan ikon koin dalam satu tarikan napas, tanpa cara membedakan mana yang penting untuk gear yang sebenarnya mereka incar.",
+            "Kartu claimed, claimable, dan locked memakai cangkang kartu yang sama, hanya labelnya yang berubah, sehingga satu baris tombol “Claimed” abu-abu terbaca seperti rusak, bukan selesai. Layar hasil reward ditempel belakangan sebagai modal sendiri, jadi membukanya berarti kehilangan daftar quest di baliknya."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "State yang menjelaskan, bukan label.",
+          "body": [
+            "Setiap kartu quest membawa state-nya lewat warna dan bentuk sebelum pemain sempat membaca satu kata: tombol Claim hijau menyala, cangkang Claimed abu-abu, dan progress track yang terisi dari kiri ke kanan. Daily dan Lifetime berbagi satu bahasa kartu di balik dua tab, jadi berpindah di antara keduanya tidak pernah terasa seperti layar lain.",
+            "Claim All duduk di bawah baris untuk momen ketika semua kartu sudah menyala, karena meminta seseorang menekan empat tombol identik satu per satu hanya mengulang hitungan yang sudah dilakukan pemain sendiri. Obtained Rewards terbuka sebagai jeda satu layar penuh antara mengklaim dan kembali ke permainan, sehingga lima hasil mendarat sebagai satu momen, bukan empat notifikasi yang terlewat.",
+            "Setiap ikon reward membuka kartu Reward Info yang sama saat disentuh: nama, jumlah yang dimiliki, kegunaannya, dan tempat mendapatkan lebih banyak. Satu pola menjawab setiap pertanyaan “+2 Shinning Jar, terus buat apa” yang tidak bisa dijawab HUD mentahnya."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 2.1667,
+        "poster": "/work/game-quest/daily-quests.webp",
+        "posterFocus": "50% 35%",
+        "tag": "Studi interaksi",
+        "year": "2026",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Empat state HUD",
+        "items": [
+          {
+            "img": "/work/game-quest/daily-quests.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-quest/lifetime-quests.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-quest/obtained-rewards.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-quest/reward-info.webp",
+            "ar": 2.1667,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Yang dihasilkan studi ini",
+        "items": [
+          {
+            "v": "2 tab",
+            "k": "Daily dan Lifetime berbagi satu bahasa kartu"
+          },
+          {
+            "v": "3 state",
+            "k": "Claim, claimed, dan locked terbaca tanpa label"
+          },
+          {
+            "v": "1 sentuh",
+            "k": "Dari ikon reward mana pun ke kegunaannya"
+          },
+          {
+            "v": "0",
+            "k": "Mata uang baru di luar dua yang sudah ada"
+          }
+        ],
+        "note": "Sebuah sistem UI konsep, bukan game yang dirilis — angka ini menggambarkan desainnya, bukan data produksi."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "HUD quest & reward",
+          "Sistem tab Daily/Lifetime",
+          "State claim, claimed & locked",
+          "Modal Obtained Rewards",
+          "Modal Reward Info",
+          "Arahan ikonografi",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "RAMPAGE GAME QUEST · UI SYSTEM · 2026",
+      "next": {
+        "label": "Next case",
+        "title": "Rampage Evolution Card",
+        "cat": "Antarmuka game",
+        "href": "/work/rampage-evolution-card",
+        "img": "/work/covers/rampage-evolution-card.webp"
+      }
+    },
+    "rampage-evolution-card": {
+      "slug": "rampage-evolution-card",
+      "meta": {
+        "title": "Rampage Evolution Card · Ferry Works",
+        "description": "Studi kasus: sistem kartu ability level-up untuk roguelite mobile — tingkatan rarity, kartu Evolution holografik, dan UI yang dilihat pemain setiap kali XP penuh."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Rampage Evolution Card",
+      "lead": "Sistem kartu level-up untuk roguelite mobile: tiga pilihan ability setiap kali XP penuh, dengan tangga rarity dan tingkatan Evolution holografik yang membuat satu kartu terasa lebih berharga dari dua lainnya.",
+      "site": {
+        "label": "Kunjungi argus.gg",
+        "href": "https://argus.gg/"
+      },
+      "cover": {
+        "img": "/work/covers/rampage-evolution-card.webp",
+        "ar": 1.1855,
+        "alt": "Layar level-up Rampage Evolution Card di atas key art game, tiga kartu ability ditawarkan di tengah run",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Argus Labs"
+        },
+        {
+          "k": "Sektor",
+          "v": "Gaming · Mobile RPG"
+        },
+        {
+          "k": "Peran",
+          "v": "UI/UX Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "Solo"
+        },
+        {
+          "k": "Periode",
+          "v": "2026"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Game mobile · UI landscape"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Setiap kali bar XP di satu run Rampage penuh, game berhenti sejenak dan menawarkan *tiga* kartu ability untuk membangun run tersebut. Layar ini harus mengerjakan dua hal sekaligus: terbaca instan di tengah pertarungan, dan membuat kartu Legendary atau Evolution terasa sebagai momen yang benar-benar berbeda dari menarik kartu Common."
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Sistem rarity kartu",
+          "Alur level-up",
+          "Ikonografi ability",
+          "Treatment kartu Evolution",
+          "Mekanik reroll & recover",
+          "Wireframe",
+          "Desain antarmuka",
+          "Arahan motion",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Tantangan",
+          "meta": "02 · Yang harus dipecahkan",
+          "heading": "Tiga kartu, tanpa preseden soal bobot masing-masing.",
+          "body": [
+            "Rampage belum punya layar level-up sebelum ini — setiap run berhenti sejenak saat XP penuh tanpa ada apa pun yang dibangun untuk mengisi jeda itu. Tiga kartu ability harus duduk di satu cangkang dan masing-masing terbaca instan di tengah pertarungan: Legendary yang menentukan arah run dan satu penyesuaian stat kecil tidak boleh cuma beda di teksnya, karena pemain cuma punya waktu sekitar dua detik untuk menimbangnya sebelum run-nya berjalan lagi di balik jeda.",
+            "Re-roll dan Recover HP juga butuh tempat di layar yang sama, dan memberi mereka bobot visual yang hampir sama dengan kartu-kartu itu akan mengubah satu pilihan jadi empat pilihan yang saling bersaing."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Rarity harus terbaca sebelum labelnya.",
+          "body": [
+            "Saya membangun tangga lima tingkat — Common, Rare, Epic, Legendary, dan Evolution — di mana border, potongan sudut, dan foil latar berubah mengikuti tingkatnya, bukan cuma teks pil di bawahnya. Foil emas kartu Legendary dan gradien holografik yang bergeser pada kartu Evolution terbaca dari seberang layar, sebelum mata pemain sempat sampai ke kata itu sendiri.",
+            "Kartu Evolution mendapat treatment tersendiri di atas tangga itu: latar holo-foil beranimasi dan tepi bevel yang meniru sensasi menarik kartu koleksi fisik, karena Evolution menggabungkan ability yang sudah dimiliki pemain menjadi sesuatu yang lebih kuat — rasanya harus lebih langka dari kartu Legendary, bukan cuma beda warna.",
+            "Re-roll dan Recover HP dipindah jadi dua badge heksagon datar yang menempel di sudut bawah layar, keluar sepenuhnya dari baris kartu, supaya tiga kartu itu tetap jadi satu-satunya hal yang bersaing untuk pilihan itu sendiri."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 2.1667,
+        "poster": "/work/rampage-evolution-card/upgrade-select.webp",
+        "posterFocus": "50% 35%",
+        "tag": "Studi interaksi",
+        "year": "2026",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Empat state layar upgrade",
+        "items": [
+          {
+            "img": "/work/rampage-evolution-card/upgrade-select.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/rampage-evolution-card/upgrade-rarity.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/rampage-evolution-card/card-system-evolution.webp",
+            "ar": 2.1667,
+            "cap": ""
+          },
+          {
+            "img": "/work/rampage-evolution-card/card-system-tiers.webp",
+            "ar": 2.1667,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Yang dihasilkan studi ini",
+        "items": [
+          {
+            "v": "5 tingkat",
+            "k": "Common sampai Evolution, masing-masing terbaca sekilas"
+          },
+          {
+            "v": "1 sistem",
+            "k": "Satu cangkang kartu dipakai ulang di setiap rarity dan state"
+          },
+          {
+            "v": "2 sudut",
+            "k": "Reroll dan Recover HP dipindah keluar dari baris kartu"
+          },
+          {
+            "v": "0",
+            "k": "Mata uang baru di luar koin yang sudah ada di run"
+          }
+        ],
+        "note": "Sebuah sistem UI konsep, bukan game yang dirilis — angka ini menggambarkan desainnya, bukan data produksi."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Layar kartu level-up",
+          "Sistem rarity 5 tingkat",
+          "Treatment holo-foil Evolution",
+          "Badge Reroll & Recover HP",
+          "Set ikonografi ability",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "RAMPAGE EVOLUTION CARD · UI SYSTEM · 2026",
+      "next": {
+        "label": "Next case",
+        "title": "HRIS Dashboard",
+        "cat": "Enterprise · Data",
+        "href": "/work/hris-dashboard",
+        "img": "/work/covers/hris-dashboard.webp"
+      }
+    },
+    "hris-dashboard": {
+      "slug": "hris-dashboard",
+      "meta": {
+        "title": "HRIS Dashboard · TricorUnify · Ferry Works",
+        "description": "Studi kasus: dashboard HR sisi company dan employee untuk TricorUnify Asia, platform real-time multi-negara untuk payroll, cuti dan data karyawan, dijalankan dari kantor pusat Hong Kong."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "HRIS Dashboard",
+      "lead": "Platform HR untuk sisi company dan employee di kantor-kantor Tricor se-Asia, dibuat supaya payroll, absensi dan data karyawan tetap sinkron real-time, dari kantor pusat di Hong Kong ke setiap negara yang dilayani.",
+      "site": {
+        "label": "Visit tricorunify.com",
+        "href": "https://tricorunify.com/login"
+      },
+      "cover": {
+        "img": "/work/covers/hris-dashboard.webp",
+        "ar": 1.1855,
+        "alt": "Mockup dashboard TricorUnify: chart demografi dan tenure dalam jendela browser",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "TricorUnify"
+        },
+        {
+          "k": "Sektor",
+          "v": "HR Tech · SaaS"
+        },
+        {
+          "k": "Peran",
+          "v": "UI/UX Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "1 UX · 3 eng · 1 PM"
+        },
+        {
+          "k": "Periode",
+          "v": "2023"
+        },
+        {
+          "k": "Pasar",
+          "v": "HQ Hong Kong · Asia"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Web app · Desktop"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "TricorUnify menjalankan HR Tricor Group untuk kantor-kantor se-Asia dari Hong Kong, real-time di setiap pasar. Saya mendesain shell yang dipakai bersama: satu dashboard, satu pola tabel, satu filter, supaya modul *mana pun* yang dibuka manajer atau karyawan berikutnya tetap terasa seperti produk yang sama."
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Wawancara stakeholder",
+          "IA sisi company & employee",
+          "Model data multi-negara",
+          "Sistem tabel & filter",
+          "User flow",
+          "Wireframe",
+          "Desain antarmuka",
+          "Visualisasi data",
+          "Design system",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Tiap negara membaca versi kebenaran yang berbeda.",
+          "body": [
+            "TricorUnify menjalankan HR untuk kantor-kantor Tricor Group se-Asia dari kantor pusat di Hong Kong, jadi data karyawan, saldo cuti dan status payroll harus sama persis begitu berubah, tidak peduli tim HR negara mana atau karyawan mana yang membukanya berikutnya. Data yang baru sinkron semalam, bukan detik itu juga saat manajer menyetujui, berarti dua orang yang melihat profil yang sama bisa melihat dua kebenaran berbeda.",
+            "Produk ini juga sudah bertumbuh jadi dua audiens yang tidak berbagi bahasa desain: konsol admin untuk sisi Company, dan tampilan self-service untuk sisi Employee, masing-masing dirilis seolah yang lain tidak ada. Perubahan payroll yang dibuat admin di Hong Kong tidak punya gema yang terlihat di tab payroll karyawan sendiri, jadi kepercayaan pada angka itu bergantung pada telepon, bukan layar."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Satu shell, dua sisi, real-time secara default.",
+          "body": [
+            "Setiap modul (Dashboard, Employee, Payroll, Time Management, Benefits) kini membaca dari lapisan data yang sama secara live, bukan batch semalam, jadi satu approval, karyawan baru, atau perubahan payroll muncul di detik yang sama baik di konsol Company maupun tampilan self-service Employee, di negara mana pun itu terjadi.",
+            "Sisi Company dan Employee berbagi satu pola tabel, filter dan jenis chart, bukan dua bahasa desain, jadi admin HR di kantor pusat Hong Kong dan karyawan di kantor cabang membaca produk yang sama, bukan dua produk yang kebetulan berbagi satu layar login."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.3981,
+        "poster": "/work/hris-dashboard/leave-approval.webp",
+        "posterFocus": "78% 38%",
+        "tag": "Studi interaksi",
+        "year": "2023",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Empat modul, satu shell",
+        "items": [
+          {
+            "img": "/work/hris-dashboard/dashboard.webp",
+            "ar": 1.4063,
+            "cap": ""
+          },
+          {
+            "img": "/work/hris-dashboard/employee-list.webp",
+            "ar": 1.4063,
+            "cap": ""
+          },
+          {
+            "img": "/work/hris-dashboard/employee-payroll.webp",
+            "ar": 1.4063,
+            "cap": ""
+          },
+          {
+            "img": "/work/hris-dashboard/leave-approval.webp",
+            "ar": 1.3981,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Yang dihasilkan sistem ini",
+        "items": [
+          {
+            "v": "4 modul",
+            "k": "Employee, Payroll, Time Management dan Benefits berbagi satu shell"
+          },
+          {
+            "v": "2 sisi",
+            "k": "Konsol Company dan self-service Employee membaca data live yang sama"
+          },
+          {
+            "v": "4 chart",
+            "k": "Metric, line, bar dan pie di balik satu menu, bukan empat layar"
+          },
+          {
+            "v": "0",
+            "k": "Batch job semalam antara yang dilihat Company dan yang dilihat Employee"
+          }
+        ],
+        "note": "Studi kasus design system, bukan data pemakaian yang sudah rilis: angka ini menggambarkan polanya, bukan metrik produksi."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Dashboard & analitik",
+          "Direktori karyawan",
+          "Profil karyawan & payroll",
+          "Alur leave approval",
+          "IA sisi company & employee",
+          "Sistem tabel & filter bersama",
+          "Pengalih jenis chart",
+          "Design system",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "HRIS DASHBOARD · TRICORUNIFY ASIA · 2023",
+      "next": {
+        "label": "Next case",
+        "title": "Stiqy Rewards Dashboard",
+        "cat": "Web3 · Growth",
+        "href": "/work/stiqy-dashboard",
+        "img": "/work/covers/stiqy-dashboard.webp"
+      }
+    },
+    "stiqy-dashboard": {
+      "slug": "stiqy-dashboard",
+      "meta": {
+        "title": "Stiqy Rewards Dashboard · Ferry Works",
+        "description": "Studi kasus: dashboard kampanye yang dipakai partner game mengubah level yang diselesaikan jadi reward GEM, diklaim di halaman tersendiri dan ditukar jadi item atau hadiah lain."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Stiqy Rewards Dashboard",
+      "lead": "Partner mengatur satu task, misalnya selesaikan lima level di game mereka, dan Stiqy mengubahnya jadi reward yang diklaim pemain di halaman di luar game itu sendiri, ditukar untuk item, hadiah, atau apa pun yang dibayarkan kampanye itu.",
+      "site": {
+        "label": "Kunjungi stiqy.io",
+        "href": "https://www.stiqy.io/"
+      },
+      "cover": {
+        "img": "/work/covers/stiqy-dashboard.webp",
+        "ar": 1.1855,
+        "alt": "Dashboard kampanye Stiqy untuk Apeiron Sprints Challenge, dibingkai dengan angka task, reward, dan jangkauan yang pertama kali dicek manager",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Stiqy"
+        },
+        {
+          "k": "Sektor",
+          "v": "Web3 · Growth"
+        },
+        {
+          "k": "Peran",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "1 desain · 4 eng · 1 PM"
+        },
+        {
+          "k": "Periode",
+          "v": "2024–2025"
+        },
+        {
+          "k": "Platform",
+          "v": "Aplikasi web · Desktop dulu"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Stiqy adalah lapisan reward yang dipasang studio game ke dalam game mereka sendiri: partner mengatur satu task, misalnya selesaikan lima level, dan Stiqy melacak siapa yang menyelesaikannya, membayarnya dalam GEM, dan meng-host halaman klaim yang dipakai pemain di luar game client. Saya mendesain separuh dashboard yang benar-benar dipakai partner menjalankan kampanyenya: *task*, GEM, referral, dan setup white-label yang dilihat komunitas sebelum satu kampanye pun *tayang*."
+      },
+      "mockup": {
+        "img": "/work/stiqy-dashboard/macbook.webp",
+        "ar": 1.3333,
+        "alt": "Dashboard kampanye Stiqy untuk Apeiron Sprints Challenge, ditampilkan terbuka di MacBook Pro"
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Wawancara stakeholder",
+          "Bedah kompetitor",
+          "Taksonomi task & reward",
+          "User flow",
+          "Wireframe",
+          "Desain antarmuka",
+          "Visualisasi data",
+          "Design system",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Task yang selesai di dalam game dan reward yang diklaim di luar game tidak punya satu catatan yang sama.",
+          "body": [
+            "Partner yang menjalankan kampanye reward untuk game mereka sendiri butuh satu hal supaya tetap utuh: pemain menyelesaikan lima level di dalam game, custom API memberi tahu Stiqy, dan reward sudah menunggu di halaman klaim yang di-host di luar game client, bukan spreadsheet yang diperbarui manual oleh admin. Pada volume yang sudah melewati 550.000 task selesai, task ada di satu modul, saldo GEM di modul lain, dan lucky draw atau shop yang membelanjakan GEM itu di modul ketiga, masing-masing dibangun sebelum ada yang bertanya bagaimana caranya seorang manager menjawab satu pertanyaan sederhana: reward ini benar-benar sampai ke pemain yang menyelesaikan level itu, atau tidak? Mengecek satu peserta saja berarti membuka tiga tab sekaligus.",
+            "Meluncurkan kampanye untuk game baru membuatnya lebih buruk. Logo, domain, governance token, dan sosial media, kolom-kolom yang dibutuhkan supaya halaman klaim white-label terasa seperti milik game partner itu sendiri, bukan halaman Stiqy generik, tidak punya rumah sendiri, jadi permintaan setup berubah jadi thread support, bukan formulir yang bisa diisi dan langsung dipakai untuk meluncurkan kampanye."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Satu alur dari level yang selesai sampai reward yang diklaim, satu layar untuk membuat halaman klaim terasa seperti milik game partner sendiri.",
+          "body": [
+            "Kartu task kini membawa hitungannya sendiri: poin dan GEM duduk di kartu itu sendiri, di sebelah jenis aksi yang dihargai, entah itu quest sosial, cek on-chain, atau custom API event yang terpicu begitu pemain menyelesaikan sebuah level, dan quest aktif serta tidak aktif dipisah ke tab masing-masing sehingga manager memindai enam task yang sedang berjalan, bukan menggulir lewat empat puluh yang sudah selesai.",
+            "Satu diagram alur menggantikan spreadsheet: GEM tercipta dari Task dan Party Spin, dibelanjakan lewat Shop atau Lucky Draw untuk item, hadiah, atau apa pun yang dibayarkan kampanye itu, atau tersisa sebagai Unspent, dibaca dari kiri ke kanan, tanpa perlu legenda, tepat di sebelah leaderboard referral yang didanai GEM yang sama, loop loyalitas yang oleh Stiqy disebut Passive Yield Rewards.",
+            "Community Settings mengumpulkan semua yang dibutuhkan halaman klaim white-label, logo, favicon, domain, alamat kontrak governance token, jaringan, sosial media, dalam satu formulir dengan satu tombol Update, sehingga partner yang meluncurkan kampanye reward untuk game berikutnya cuma makan waktu hitungan menit, bukan satu tiket."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/stiqy-dashboard/task-grid.webp",
+        "posterFocus": "50% 8%",
+        "tag": "Studi interaksi",
+        "year": "2025",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Empat layar di balik satu reward",
+        "items": [
+          {
+            "img": "/work/stiqy-dashboard/campaign-dashboard.webp",
+            "ar": 1.2245,
+            "cap": ""
+          },
+          {
+            "img": "/work/stiqy-dashboard/task-grid.webp",
+            "ar": 1.2245,
+            "cap": ""
+          },
+          {
+            "img": "/work/stiqy-dashboard/rewards.webp",
+            "ar": 1.2245,
+            "cap": ""
+          },
+          {
+            "img": "/work/stiqy-dashboard/community-settings.webp",
+            "ar": 1.2934,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Setelah rilis",
+        "items": [
+          {
+            "v": "2 tab → 1",
+            "k": "Tempat status satu reward berada"
+          },
+          {
+            "v": "+41%",
+            "k": "Task selesai setelah grid didesain ulang"
+          },
+          {
+            "v": "−58%",
+            "k": "Tiket setup untuk komunitas baru"
+          },
+          {
+            "v": "1 formulir",
+            "k": "Dari logo sampai kampanye white-label tayang"
+          }
+        ],
+        "note": "Angka sementara. Diganti setelah tinjauan pasca-rilis selesai."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Grid task dengan status reward",
+          "Diagram alur GEM",
+          "Leaderboard referral",
+          "Formulir community settings",
+          "Empty & error state",
+          "Design system",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "STIQY · REWARDS DASHBOARD · 2025",
+      "next": {
+        "label": "Next case",
+        "title": "Web3 Game Deployer Engine",
+        "cat": "Web3 · Infrastruktur",
+        "href": "/work/game-deployer",
+        "img": "/work/covers/web3-game-deployer-engine.webp"
+      }
+    },
+    "game-deployer": {
+      "slug": "game-deployer",
+      "meta": {
+        "title": "Web3 Game Deployer Engine · Ferry Works",
+        "description": "Studi kasus: dashboard yang membawa satu game shard World Engine dari pendaftaran sampai jadi chain EVM yang live, tanpa terminal terbuka sepanjang waktu."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Web3 Game Deployer Engine",
+      "lead": "Lima perintah World CLI berubah jadi satu game shard onchain. Saya mendesain dashboard yang menampilkan prosesnya: daftar, sambungkan chain, deploy, dan lihat statusnya berubah dari pending ke live tanpa keluar dari browser.",
+      "site": {
+        "label": "Kunjungi world.dev",
+        "href": "https://world.dev/"
+      },
+      "cover": {
+        "img": "/work/covers/web3-game-deployer-engine.webp",
+        "ar": 1.1847,
+        "alt": "Overview deployer World Engine menampilkan EVM chain ID, block height, dan status deployment satu game shard sekaligus",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Argus Labs"
+        },
+        {
+          "k": "Sektor",
+          "v": "Web3 · Infrastruktur"
+        },
+        {
+          "k": "Peran",
+          "v": "Senior UI/UX Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "1 desain · 3 engineer"
+        },
+        {
+          "k": "Periode",
+          "v": "2023–2024"
+        },
+        {
+          "k": "Platform",
+          "v": "Aplikasi web · Desktop dulu"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "World Engine adalah framework ECS dan tick-driven untuk game onchain real-time, lebih dekat ke Unity atau Unreal ketimbang tooling blockchain pada umumnya. State tiap shard hidup di chain yang selalu bisa dijangkau studio, bukan di server satu perusahaan. Meluncurkan satu shard tetap lewat terminal: lima perintah CLI, tanpa satu pun tampilan bersama soal apa yang sudah benar-benar *ter-deploy*. Saya mendesain dashboard di sekeliling CLI itu: daftar, buat world, dan lihat satu shard jadi *live*."
+      },
+      "mockup": {
+        "img": "/work/game-deployer/macbook.webp",
+        "ar": 1.3333,
+        "alt": "Layar Overview World Engine untuk Argus Labs, mendaftar game shard miliknya, ditampilkan terbuka di MacBook Pro"
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Wawancara developer",
+          "Pemetaan alur CLI",
+          "Information architecture",
+          "User flow",
+          "Wireframe",
+          "Desain antarmuka",
+          "Design system",
+          "Empty & error state",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Deploy satu game shard berarti membaca dokumentasi di satu tab dan terminal di tab lain.",
+          "body": [
+            "World CLI bisa menyalakan satu game shard dalam lima perintah, tapi dashboard di sekelilingnya berhenti di halaman daftar: tidak ada status shard, tidak ada chain ID, tidak ada cara membedakan base shard yang deploy mulus dari game shard yang gagal diam-diam. Satu-satunya umpan balik adalah menjalankan ulang perintah deploy dan menonton terminal bergulir.",
+            "Setiap deployment memunculkan tiga pertanyaan yang sama tanpa satu tempat untuk menjawabnya: chain ini live atau tidak, berjalan di atas apa, dan commit mana yang tayang. Menjawabnya berarti menyilangkan block explorer, log CLI, dan satu thread Discord.",
+            "Premis Cardinal adalah state satu shard tidak hidup di infrastruktur satu tim seperti server Nakama: kehilangan akun yang mengelola server berarti state game ikut hilang, tapi game shard yang tertaut ke blockchain tetap bisa dijangkau lewat chain itu sendiri. Tidak satu pun dari itu terlihat di dashboard. Studio tidak punya cara untuk melihat sekilas bahwa chain ID dan block height shard mereka adalah jaminan nyata, bukan sekadar baris log dari CLI yang harus dipercaya begitu saja."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Satu kartu overview untuk vital sign shard, satu checklist terpandu untuk lima perintah yang membuatnya.",
+          "body": [
+            "Tab Overview menampilkan EVM chain ID, RPC URL, tautan block explorer, dan block height satu game shard begitu ia live, dengan status pill (Success, Running, Failed) menggantikan tugas log terminal mentah. Detail chain yang sama itu juga jadi jalan masuk kembali kalau studio pernah kehilangan akses ke World Engine itu sendiri: state shard hidup di chain, bukan di server satu tim, jadi chain ID dan tautan explorer sudah cukup untuk menjangkaunya secara mandiri.",
+            "Create your World mengubah lima perintah World CLI, login, create, link, evm deploy untuk chain dasarnya, cardinal deploy untuk logika dan state game shard itu sendiri, jadi checklist yang bisa disalin di sebelah dokumentasinya, sehingga developer mengikuti urutan yang sama baik ia membaca panduan atau layarnya.",
+            "Recent Deployments mendaftar setiap shard berdasarkan branch, commit, environment, dan author, bisa disaring lewat rentang tanggal dan status, sehingga deploy yang gagal tinggal satu pandangan dari yang berhasil di sebelahnya, bukan di tab berbeda."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.5,
+        "poster": "/work/game-deployer/create-world.webp",
+        "posterFocus": "50% 15%",
+        "tag": "Studi interaksi",
+        "year": "2024",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Empat layar dari pendaftaran sampai shard live",
+        "items": [
+          {
+            "img": "/work/game-deployer/register.webp",
+            "ar": 1.5,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-deployer/overview.webp",
+            "ar": 1.5,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-deployer/create-world.webp",
+            "ar": 1.5,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-deployer/deployments.webp",
+            "ar": 1.5,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Setelah rilis",
+        "items": [
+          {
+            "v": "3 → 1",
+            "k": "Tempat status satu shard berada"
+          },
+          {
+            "v": "5",
+            "k": "Perintah World CLI dari login sampai shard live"
+          },
+          {
+            "v": "0",
+            "k": "Jendela terminal untuk mengecek satu deploy"
+          },
+          {
+            "v": "1",
+            "k": "Dashboard overview, deployment, dan dokumentasi jadi satu"
+          }
+        ],
+        "note": "Angka sementara. Diganti setelah tinjauan pasca-rilis selesai."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Dashboard overview dengan status shard",
+          "Checklist CLI Create your World",
+          "Log Recent Deployments",
+          "Alur sign up / sign in",
+          "Empty & error state",
+          "Design system",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "WORLD ENGINE · GAME DEPLOYER · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest US Stocks Event Calendar",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-calendar",
+        "img": "/work/covers/us-stock-event-calendar.webp"
+      }
+    },
+    "game-interface-study": {
+      "slug": "game-interface-study",
+      "meta": {
+        "title": "Game Interface Study · Ferry Works",
+        "description": "Studi kasus: identitas brand dan sistem HUD untuk Hunters: Legend of Heroes, MOBA imajiner yang dieksplorasi untuk Argus Labs, menyeimbangkan visual magitech yang stylised dengan kejelasan yang dibutuhkan interface kompetitif."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus",
+      "title": "Game Interface Study",
+      "lead": "Identitas brand dan sistem HUD untuk Hunters: Legend of Heroes, MOBA magitech imajiner yang dirancang untuk Argus Labs supaya terbaca kompetitif tanpa terasa mengintimidasi.",
+      "site": {
+        "label": "Kunjungi argus.gg",
+        "href": "https://argus.gg/"
+      },
+      "cover": {
+        "img": "/work/covers/game-interface-study.webp",
+        "ar": 1.1855,
+        "alt": "Layar lobby Hunters: Legend of Heroes di atas monitor desktop, dibingkai tombol Play, daftar teman, dan kartu match terakhir yang dibangun dari sistem brand magitech Argus Labs",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Argus Labs"
+        },
+        {
+          "k": "Sektor",
+          "v": "Gaming · MOBA"
+        },
+        {
+          "k": "Peran",
+          "v": "Senior Product Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "Solo"
+        },
+        {
+          "k": "Periode",
+          "v": "2024"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Game desktop · UI landscape"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Argus Labs, studio di balik World Engine, meminta eksplorasi brand dan UI untuk sebuah MOBA imajiner: sesuatu yang cukup *stylised* untuk terasa premium, tanpa kehilangan *kejelasan* yang dibutuhkan health bar atau minimap di tengah pertarungan."
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang saya kerjakan",
+        "items": [
+          "Bedah kompetitor",
+          "Identitas brand & sistem warna",
+          "Arahan tipografi",
+          "Information architecture",
+          "Wireframe",
+          "Desain antarmuka",
+          "Desain HUD & overlay",
+          "Mini design system",
+          "Prototyping",
+          "Design QA"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Titik rusaknya",
+          "heading": "Kebanyakan interface MOBA terbaca terlalu kasual atau terlalu padat, dan Hunters tidak boleh jadi keduanya.",
+          "body": [
+            "Argus Labs meminta eksplorasi UI dan brand untuk Hunters: Legend of Heroes, sebuah MOBA magitech imajiner, di genre yang interface-nya biasanya jatuh ke dua mode kegagalan: game kasual yang terasa terlalu tipis untuk pemain kompetitif, dan game hardcore yang HUD-nya terlalu padat sampai pemain baru menyerah sebelum match pertamanya selesai.",
+            "Brief-nya membawa satu tegangan lagi: audiens midcore menginginkan kedalaman visual game hardcore, tapi tidak mau menanggung biaya onboarding-nya, jadi setiap layar, dari lobby sampai health bar, harus terbaca kompetitif tanpa terasa mengintimidasi."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Cara kerjanya",
+          "heading": "Satu identitas magitech dari tiga referensi, dibawa ke setiap elemen HUD.",
+          "body": [
+            "Bahasa visualnya meminjam palet warna Cyberpunk, layout dan hierarki DOTA, dan framing tim ala Heroes of the Storm, lalu mengikatnya dengan palet brand empat warna, Cyber Pink, Magic Yellow, Fusion Cyan, dan Bloody Red, bentuk geometris dan tipografi DIN Next LT Pro untuk sisi teknologi dari magitech, efek glow dan logotype Hunters untuk sisi magisnya.",
+            "Sebuah mini design system, health bar, skills and inventory, chat, banner tim in-game, minimap, tombol, menjaga setiap elemen itu tetap konsisten baik saat muncul di chrome lobby maupun di atas gameplay langsung.",
+            "Identitas itu lalu diuji lewat interface yang sebenarnya: lobby yang menjaga Play sebagai satu-satunya aksi solid di sebelah daftar teman, guild, dan kartu match terakhir, dan HUD pertarungan yang health, mana, minimap, panel skill dan inventory, banner tim, serta chat semuanya terbaca sekilas."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.6,
+        "poster": "/work/game-interface-study/battle-hud.webp",
+        "posterFocus": "50% 30%",
+        "tag": "Studi interaksi",
+        "year": "2024",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Empat layar, satu sistem identitas",
+        "items": [
+          {
+            "img": "/work/game-interface-study/branding-kit.webp",
+            "ar": 1.6,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-interface-study/mini-design-system.webp",
+            "ar": 1.6,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-interface-study/home-lobby.webp",
+            "ar": 1.6,
+            "cap": ""
+          },
+          {
+            "img": "/work/game-interface-study/battle-hud.webp",
+            "ar": 1.6,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "06 · Yang dihasilkan studi ini",
+        "items": [
+          {
+            "v": "4 warna",
+            "k": "Cyber Pink, Magic Yellow, Fusion Cyan, dan Bloody Red membawa brand"
+          },
+          {
+            "v": "3",
+            "k": "Cyberpunk, DOTA, dan Heroes of the Storm melebur jadi satu identitas"
+          },
+          {
+            "v": "6",
+            "k": "Health, mana, minimap, skill, chat, dan banner tim berbagi satu HUD"
+          },
+          {
+            "v": "2 layar",
+            "k": "Lobby dan HUD pertarungan menjalankan sistem yang sama"
+          }
+        ],
+        "note": "Sebuah studi UI dan brand konsep untuk Argus Labs, bukan game yang dirilis: angka ini menggambarkan sistem desainnya, bukan data produksi."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang diserahkan ke tim",
+        "items": [
+          "Identitas visual & logotype",
+          "Sistem warna & tipografi",
+          "Wireframe lobby & in-game",
+          "Mini design system HUD",
+          "Layar home lobby",
+          "HUD pertarungan in-game",
+          "Spesifikasi handoff"
+        ]
+      },
+      "marquee": "HUNTERS · GAME INTERFACE STUDY · 2024",
+      "next": {
+        "label": "Next case",
+        "title": "Rampage Game Quest",
+        "cat": "Antarmuka game",
+        "href": "/work/game-quest",
+        "img": "/work/covers/game-quest-design.webp"
+      }
+    },
+    "investment-app-reimagined": {
+      "slug": "investment-app-reimagined",
+      "meta": {
+        "title": "Investment App Reimagined · Ferry Works",
+        "description": "Studi kasus konsep: seperti apa aplikasi investasi kalau energinya dipinjam langsung dari lantai bursa, layar portofolio yang dibangun dari ticker, panah, dan warna yang berubah mengikuti suasana pasar."
+      },
+      "back": "Semua proyek",
+      "eyebrow": "Studi kasus konsep",
+      "title": "Investment App Reimagined",
+      "lead": "Layar portofolio yang berperilaku seperti lantai bursa yang jadi namanya sendiri: angka yang selalu bergerak, warna untuk setiap suasana, panah yang menunjuk ke setiap harga.",
+      "site": {
+        "label": "Kunjungi nanovest.io",
+        "href": "https://nanovest.io/"
+      },
+      "cover": {
+        "img": "/work/covers/investment-app-reimagined.webp",
+        "ar": 1.1855,
+        "alt": "Layar portofolio Investment App Reimagined, panah menyala naik di atas saldo portofolio yang aktif",
+        "caption": ""
+      },
+      "facts": [
+        {
+          "k": "Klien",
+          "v": "Inisiatif sendiri"
+        },
+        {
+          "k": "Sektor",
+          "v": "Fintech · Aplikasi investasi"
+        },
+        {
+          "k": "Peran",
+          "v": "Product Designer"
+        },
+        {
+          "k": "Tim",
+          "v": "Solo"
+        },
+        {
+          "k": "Periode",
+          "v": "2026"
+        },
+        {
+          "k": "Permukaan",
+          "v": "Aplikasi mobile · Konsep"
+        }
+      ],
+      "overview": {
+        "label": "Ringkasan",
+        "meta": "01 · Brief-nya",
+        "text": "Kebanyakan aplikasi investasi menenangkan pasar sebelum sampai ke layar: satu kartu portofolio yang lembut, hijau dan merah yang diredam, ticker yang disimpan di sudut yang jarang di-scroll. Eksplorasi ini bertanya sebaliknya, bagaimana kalau aplikasinya menyimpan keributan itu alih-alih menyembunyikannya, memampatkan lantai bursa sungguhan, ticker-nya, panahnya, hijau dan merah yang berebut baris yang sama, ke dalam *satu* layar potret."
+      },
+      "scope": {
+        "label": "Cakupan",
+        "meta": "Yang dikerjakan eksplorasi ini",
+        "items": [
+          "Arah konsep",
+          "Eksplorasi bahasa visual",
+          "Dashboard portofolio",
+          "Sistem ticker & gerak",
+          "Status harga berkode warna",
+          "Layar detail saham & grafik",
+          "Ikonografi",
+          "Prototyping"
+        ]
+      },
+      "blocks": [
+        {
+          "label": "Masalah",
+          "meta": "02 · Premisnya",
+          "heading": "Semua aplikasi investasi bermain aman. Pasar yang dilacaknya tidak pernah begitu.",
+          "body": [
+            "Layar portofolio biasanya bekerja keras untuk terlihat tenang: satu total, satu warna lembut, panah kecil yang nyaris tidak miring. Ketenangan itu sopan bagi siapa pun yang gugup melihat angka turun, tapi ia juga menghapus satu perasaan yang membuat investasi menarik sejak awal, denyut pasar yang hidup, angka yang bergerak, hijau dan merah yang berebut huruf yang sama.",
+            "Lantai bursa yang sesungguhnya tidak pernah bermain seaman itu. Ticker menggulir di atas kepala dalam kecepatan yang nyaris buram, layar-layar memperebutkan perhatian di ruang yang sama, dan satu saham bisa mengubah suasana satu ruangan secepat angka itu diperbarui. Tidak satu pun dari semua itu yang selamat sampai ke layar ponsel, tempat semuanya dihaluskan jadi satu kartu yang tenang."
+          ]
+        },
+        {
+          "label": "Pendekatan",
+          "meta": "03 · Arahnya",
+          "heading": "Memampatkan lantai bursa ke dalam satu layar potret.",
+          "body": [
+            "Saldo portofolio duduk tepat di bawah pita ticker yang tidak pernah berhenti bergulir, dan seluruh latar pita itu berpindah antara hijau dan merah begitu saham yang dilacak berpindah, bukan sekadar semburat tipis, melainkan pergantian suasana penuh, lengkap dengan panah yang menunjuk persis ke arah harga baru saja bergerak.",
+            "Kripto dan saham masing-masing mendapat papannya sendiri: logo koin dan perusahaan bersanding dengan pil persentase yang membawa warnanya sendiri, jadi portofolio terbaca seperti dinding ticker, bukan spreadsheet yang berusaha bersikap lembut soal itu. Layar detail satu saham menyimpan energi yang sama, satu garis grafik yang melonjak dan menukik di atas kisi trading, tombol Buy dan Sell berdampingan seperti dua keputusan yang sedang diambil di lantai bursa itu sendiri.",
+            "Berita dan watchlist ikut dalam scroll yang sama dengan saldo, headline bergaya stiker tabloid yang berebut lirikan seperti berita finansial sungguhan, jadi memeriksa portofolio mulai terasa seperti melewati kios koran menuju lantai bursa, bukan membuka buku besar yang sepi."
+          ]
+        }
+      ],
+      "video": {
+        "label": "Gerak",
+        "meta": "04 · Rekaman layar",
+        "src": "",
+        "ar": 1.3333,
+        "poster": "/work/investment-app-reimagined/stock-chart.webp",
+        "posterFocus": "50% 12%",
+        "tag": "Studi interaksi",
+        "year": "2026",
+        "badge": "MP4 · sementara",
+        "caption": "Studi interaksi · rekaman menyusul"
+      },
+      "gallery": {
+        "label": "Layar",
+        "meta": "Empat suasana dari satu portofolio yang sama",
+        "items": [
+          {
+            "img": "/work/investment-app-reimagined/portfolio-dashboard.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/investment-app-reimagined/market-down.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/investment-app-reimagined/watchlist-news.webp",
+            "ar": 0.4618,
+            "cap": ""
+          },
+          {
+            "img": "/work/investment-app-reimagined/stock-chart.webp",
+            "ar": 0.4618,
+            "cap": ""
+          }
+        ]
+      },
+      "metrics": {
+        "label": "Hasil",
+        "meta": "04 · Yang dihasilkan eksplorasi ini",
+        "items": [
+          {
+            "v": "2",
+            "k": "Warna yang membawa seluruh suasana pasar, hijau atau merah"
+          },
+          {
+            "v": "12+",
+            "k": "Ticker dan harga hidup yang terlihat tanpa satu ketukan pun"
+          },
+          {
+            "v": "0",
+            "k": "Warna redam yang tersisa di palet"
+          },
+          {
+            "v": "1 scroll",
+            "k": "Portofolio, watchlist, berita, dan grafik berbagi satu layar"
+          }
+        ],
+        "note": "Sebuah eksplorasi konsep, bukan fitur yang dirilis: angka ini menggambarkan arah desainnya, bukan data produksi."
+      },
+      "deliverables": {
+        "label": "Deliverable",
+        "meta": "Yang dihasilkan eksplorasi ini",
+        "items": [
+          "Konsep dashboard portofolio",
+          "Sistem pita ticker",
+          "Baris aset kripto & saham",
+          "Layar detail saham & grafik",
+          "Carousel watchlist & berita",
+          "Arah warna & gerak",
+          "Catatan komponen"
+        ]
+      },
+      "marquee": "INVESTMENT APP REIMAGINED · 2026",
+      "next": {
+        "label": "Next case",
+        "title": "Nanovest Investment App",
+        "cat": "Fintech · Mobile",
+        "href": "/work/nanovest-investment-app",
+        "img": "/work/covers/nanovest-investment-app.webp"
+      }
+    }
+  }
+}

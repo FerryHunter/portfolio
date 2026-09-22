@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HRIS Dashboard · TricorUnify · Ferry Works</title>
+<meta name="description" content="Case study: the company-and-employee HR dashboard for TricorUnify Asia, a real-time, multi-country platform for payroll, leave and employee records, run out of a Hong Kong head office.">
+<link rel="icon" href="../public/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../public/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../public/apple-touch-icon.png">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap">
+<!-- CSS yang sama persis dengan yang dipakai Next.js -->
+<link rel="stylesheet" href="../app/globals.css">
+</head>
+<body class="preloading">
+
+<div id="preloader" data-preloader role="status" aria-label="Loading">
+  <div class="pre-brand"><span>Ferry Works</span></div>
+  <span class="pre-count" data-pre-count aria-hidden="true">000</span>
+  <span class="pre-bar" data-pre-bar aria-hidden="true"></span>
+</div>
+<div id="cursor" data-cursor-el data-label-default="View" aria-hidden="true">
+  <span class="cursor-label" data-cursor-label></span>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" data-nav aria-label="Menu">
+  <div class="nav-inner">
+
+    <div class="nav-layer nav-layer--top">
+      <div class="nav-group">
+        <a class="pill t-eyebrow" href="index.html#work">Work<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#process">Process<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#about">About<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+      <div class="nav-group nav-coords t-eyebrow">
+        <span class="nav-coords-lines"><span>Senior Product Designer</span><span>Visual Designer</span></span><span>7+ YEARS · UI/UX · WEB3</span>
+      </div>
+      <div class="nav-group">
+        <div class="nav-drawer-zone">
+          <button class="nav-more" data-more aria-expanded="false" aria-label="More links">
+            <span class="nav-more-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+          <div class="nav-drawer" data-drawer>
+            <a class="pill t-eyebrow" href="index.html#work">Case studies<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#process">Design systems<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#contact">Résumé<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="index.html#contact">Contact<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-layer nav-layer--scrolled">
+      <a class="nav-wordmark" href="index.html#top">Ferry Works</a>
+      <div class="nav-group">
+        <a class="pill t-eyebrow" href="index.html#contact">Work with me<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+    </div>
+
+    <div class="nav-mobile-bar">
+      <a class="nav-wordmark" href="index.html#top">Ferry Works</a>
+      <button class="burger" data-burger aria-expanded="false" aria-controls="mobile-menu"
+              aria-label="Menu"><i></i><i></i></button>
+    </div>
+
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+  <div>
+    <a class="t-menu" href="index.html#work">Work</a><a class="t-menu" href="index.html#process">Process</a><a class="t-menu" href="index.html#about">About</a><a class="t-menu" href="index.html#work">Case studies</a><a class="t-menu" href="index.html#process">Design systems</a><a class="t-menu" href="index.html#contact">Résumé</a><a class="t-menu" href="index.html#contact">Contact</a>
+  </div>
+  <div class="mobile-menu-foot t-eyebrow">
+    <span class="nav-coords-lines"><span>Senior Product Designer</span><span>Visual Designer</span></span><span>7+ YEARS · UI/UX · WEB3</span>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="case-hero" id="top">
+  <div class="case-hero-head reveal">
+    <div class="case-back">
+      <a class="pill t-eyebrow" href="index.html#work">All work<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      <span class="t-eyebrow case-eyebrow">Case study</span>
+    </div>
+    <h1 class="t-case-title case-title"><span class="w"><span>HRIS</span></span> <span class="w"><span>Dashboard</span></span> </h1>
+    <p class="t-detail-b case-lead">A company-and-employee HR platform for Tricor's Asia offices, built so payroll, time and employee records stay in sync in real time, from a Hong Kong head office to every market it serves.</p>
+    <a class="pill pill--lg t-eyebrow" href="https://tricorunify.com/login" target="_blank" rel="noopener noreferrer">Visit tricorunify.com<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+  </div>
+
+  <dl class="case-facts reveal"><div class="case-fact"><dt class="t-eyebrow">Client</dt><dd class="t-meta">TricorUnify</dd></div><div class="case-fact"><dt class="t-eyebrow">Sector</dt><dd class="t-meta">HR Tech · SaaS</dd></div><div class="case-fact"><dt class="t-eyebrow">Role</dt><dd class="t-meta">UI/UX Designer</dd></div><div class="case-fact"><dt class="t-eyebrow">Team</dt><dd class="t-meta">1 UX · 3 eng · 1 PM</dd></div><div class="case-fact"><dt class="t-eyebrow">Period</dt><dd class="t-meta">2023</dd></div><div class="case-fact"><dt class="t-eyebrow">Markets</dt><dd class="t-meta">Hong Kong HQ · Asia</dd></div><div class="case-fact"><dt class="t-eyebrow">Surface</dt><dd class="t-meta">Web app · Desktop</dd></div></dl>
+
+  <figure class="case-fig reveal case-fig--shot case-fig--rounded-lg"><div class="case-media" style="--ar:1.1855"><img src="../public/work/covers/hris-dashboard.webp" alt="TricorUnify dashboard mockup: demographic and tenure charts in a browser window" loading="eager" decoding="async"></div></figure>
+</section>
+
+<section class="section tagline-section">
+  <div class="tagline-grid reveal" data-stagger="18">
+    <div>
+      <p class="t-label">Overview</p>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">01 · The brief</p>
+    </div>
+    <p class="t-tagline tagline"><span class="w"><span>TricorUnify</span></span> <span class="w"><span>runs</span></span> <span class="w"><span>Tricor</span></span> <span class="w"><span>Group's</span></span> <span class="w"><span>HR</span></span> <span class="w"><span>for</span></span> <span class="w"><span>offices</span></span> <span class="w"><span>across</span></span> <span class="w"><span>Asia</span></span> <span class="w"><span>out</span></span> <span class="w"><span>of</span></span> <span class="w"><span>Hong</span></span> <span class="w"><span>Kong,</span></span> <span class="w"><span>real-time</span></span> <span class="w"><span>in</span></span> <span class="w"><span>every</span></span> <span class="w"><span>market.</span></span> <span class="w"><span>I</span></span> <span class="w"><span>designed</span></span> <span class="w"><span>the</span></span> <span class="w"><span>shared</span></span> <span class="w"><span>shell:</span></span> <span class="w"><span>one</span></span> <span class="w"><span>dashboard,</span></span> <span class="w"><span>one</span></span> <span class="w"><span>table</span></span> <span class="w"><span>pattern,</span></span> <span class="w"><span>one</span></span> <span class="w"><span>filter,</span></span> <span class="w"><span>so</span></span> <span class="w"><span><em>whichever</em></span></span> <span class="w"><span>module</span></span> <span class="w"><span>a</span></span> <span class="w"><span>manager</span></span> <span class="w"><span>or</span></span> <span class="w"><span>employee</span></span> <span class="w"><span>opens</span></span> <span class="w"><span>next</span></span> <span class="w"><span>still</span></span> <span class="w"><span>feels</span></span> <span class="w"><span>like</span></span> <span class="w"><span>the</span></span> <span class="w"><span>same</span></span> <span class="w"><span>product.</span></span> </p>
+  </div>
+</section>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Scope</h2>
+    <p class="t-meta">What the work covered</p>
+  </div>
+  <ol class="case-scope reveal"><li class="case-scope-item"><span class="case-scope-num t-eyebrow">01</span><span class="case-scope-label">Stakeholder interviews</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">02</span><span class="case-scope-label">Company & employee IA</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">03</span><span class="case-scope-label">Multi-country data model</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">04</span><span class="case-scope-label">Data table & filter system</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">05</span><span class="case-scope-label">User flows</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">06</span><span class="case-scope-label">Wireframes</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">07</span><span class="case-scope-label">Interface design</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">08</span><span class="case-scope-label">Data visualisation</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">09</span><span class="case-scope-label">Design system</span></li><li class="case-scope-item"><span class="case-scope-num t-eyebrow">10</span><span class="case-scope-label">Design QA</span></li></ol>
+</section>
+
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
+      <h2 class="t-label">Problem</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">02 · Where it broke</p>
+    </div>
+    <div class="case-note-body">
+      <h3 class="t-detail-h case-note-h">Every country read a different version of the truth.</h3>
+      <p class="case-p">TricorUnify runs HR for Tricor Group's offices across Asia out of a Hong Kong head office, so an employee's record, leave balance and payroll status had to match the moment they changed, no matter which country's HR team or which employee opened them next. Data that synced overnight, not the instant a manager approved it, meant two people looking at the same profile could be looking at two different truths.</p><p class="case-p">The product had also grown two audiences that didn't share a design language: an admin console for the Company side, and a self-service view for the Employee side, each shipped as if the other didn't exist. A payroll update an admin made in Hong Kong had no visible echo on the employee's own payroll tab, so trust in the number depended on a phone call, not the screen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
+      <h2 class="t-label">Approach</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">03 · How I worked</p>
+    </div>
+    <div class="case-note-body">
+      <h3 class="t-detail-h case-note-h">One shell, two sides, real-time by default.</h3>
+      <p class="case-p">Every module (Dashboard, Employee, Payroll, Time Management, Benefits) now reads from the same live data layer instead of a nightly batch, so an approval, a new hire or a payroll change shows up the same second on both the Company console and the Employee self-service view, in whichever country it happened.</p><p class="case-p">Company and Employee sides share one table, filter and chart-type pattern instead of two design languages, so an HR admin at the Hong Kong head office and an employee at a branch office are reading the same product, not two products that happen to share a login screen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Screens</h2>
+    <p class="t-meta">Four modules, one shell</p>
+  </div>
+  <div class="case-gallery"><figure class="case-fig reveal"><div class="case-media" style="--ar:1.4063"><img src="../public/work/hris-dashboard/dashboard.webp" alt="HRIS Dashboard" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media" style="--ar:1.4063"><img src="../public/work/hris-dashboard/employee-list.webp" alt="HRIS Dashboard" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media" style="--ar:1.4063"><img src="../public/work/hris-dashboard/employee-payroll.webp" alt="HRIS Dashboard" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media" style="--ar:1.3981"><img src="../public/work/hris-dashboard/leave-approval.webp" alt="HRIS Dashboard" loading="lazy" decoding="async"></div></figure></div>
+</section>
+
+<section class="section case-metrics grain" data-dark data-reveal>
+  <div class="section-head">
+    <h2 class="t-label">Results</h2>
+    <p class="t-meta">06 · What the system produced</p>
+  </div>
+  <div class="case-metrics-row"><div class="case-metric"><span class="case-metric-v">4 modules</span><span class="case-metric-k t-meta">Employee, Payroll, Time Management and Benefits sharing one shell</span></div><div class="case-metric"><span class="case-metric-v">2 sides</span><span class="case-metric-k t-meta">Company console and Employee self-service reading the same live data</span></div><div class="case-metric"><span class="case-metric-v">4 charts</span><span class="case-metric-k t-meta">Metric, line, bar and pie behind one menu, not four screens</span></div><div class="case-metric"><span class="case-metric-v">0</span><span class="case-metric-k t-meta">Nightly batch jobs between what Company sees and what Employee sees</span></div></div>
+  <p class="t-meta case-metrics-note">A design system case study, not shipped usage data: figures describe the pattern, not production metrics.</p>
+</section>
+
+<section class="section section--divided">
+  <div class="section-head reveal">
+    <h2 class="t-label">Deliverables</h2>
+    <p class="t-meta">Handed to the team</p>
+  </div>
+  <ul class="service-tags case-deliverables reveal">
+    <li>Dashboard & analytics</li><li>Employee directory</li><li>Employee profile & payroll</li><li>Leave approval workflow</li><li>Company & employee IA</li><li>Shared table & filter system</li><li>Chart-type switcher</li><li>Design system</li><li>Handoff spec</li>
+  </ul>
+</section>
+
+<section class="section case-next-section">
+  <div class="case-marquee" aria-hidden="true">
+    <div class="case-marquee-track">
+      <div style="display:flex"><span class="case-marquee-word">HRIS DASHBOARD · TRICORUNIFY ASIA · 2023</span><span class="case-marquee-word">HRIS DASHBOARD · TRICORUNIFY ASIA · 2023</span><span class="case-marquee-word">HRIS DASHBOARD · TRICORUNIFY ASIA · 2023</span><span class="case-marquee-word">HRIS DASHBOARD · TRICORUNIFY ASIA · 2023</span></div>
+      <div style="display:flex"><span class="case-marquee-word">HRIS DASHBOARD · TRICORUNIFY ASIA · 2023</span><span class="case-marquee-word">HRIS DASHBOARD · TRICORUNIFY ASIA · 2023</span><span class="case-marquee-word">HRIS DASHBOARD · TRICORUNIFY ASIA · 2023</span><span class="case-marquee-word">HRIS DASHBOARD · TRICORUNIFY ASIA · 2023</span></div>
+    </div>
+  </div>
+
+  <a class="case-next reveal" href="stiqy-dashboard.html"
+     data-cursor="view" data-cursor-label="Work">
+    <span class="case-next-text">
+      <span class="case-next-label t-eyebrow">Next case<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></span>
+      <span class="case-next-title t-service">Stiqy Rewards Dashboard</span>
+      <span class="case-next-cat t-meta">Web3 · Growth</span>
+    </span>
+    <span class="case-next-media"><img src="../public/work/covers/stiqy-dashboard.webp" alt="Stiqy Rewards Dashboard"
+          loading="lazy" decoding="async"></span>
+  </a>
+</section>
+
+</main>
+
+<footer class="grain" id="footer-cta" data-dark data-reveal>
+  <div class="footer-top">
+    <h2 class="t-claim footer-claim"><span class="line"><span>Got an idea</span></span><span class="line"><span>that needs shape?</span></span><span class="line"><span>Let's talk.</span></span></h2>
+    <div class="footer-contact t-meta" id="contact">
+      <address>Available for freelance<br>and full time roles<br>Remote · worldwide<br></address>
+      <a href="mailto:mr.feriansyah@gmail.com">mr.feriansyah@gmail.com</a>
+      <div class="footer-actions">
+        <a class="pill pill--solid pill--lg t-eyebrow" href="mailto:mr.feriansyah@gmail.com?subject=%5BUI%2FUX%20Request%5D%20Project%20Inquiry&body=Hi%20Feri%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A%0A-%20Project%20or%20company%3A%0A-%20What%20you%20need%3A%0A-%20Timeline%3A%0A-%20Budget%20(optional)%3A%0A%0AThanks%2C%0A">
+          Contact me<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a>
+        
+      </div>
+      <div><span class="footer-links-label t-eyebrow">Elsewhere</span><div class="footer-links"><a class="pill t-eyebrow" href="https://www.linkedin.com/in/mrferiansyah/" target="_blank" rel="noopener noreferrer">LinkedIn<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="https://dribbble.com/ferferferry" target="_blank" rel="noopener noreferrer">Dribbble<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a><a class="pill t-eyebrow" href="https://wa.me/6282234561360" target="_blank" rel="noopener noreferrer">WhatsApp<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div>
+    </div>
+  </div>
+  <div class="footer-bottom t-meta">
+    <nav class="footer-nav" aria-label="Get in touch"><a href="index.html#work">Work</a><a href="index.html#process">Process</a><a href="index.html#about">About</a><button type="button" data-resume-cta>Résumé</button><a href="index.html#contact">Contact</a></nav>
+    <span>©2026 Ferry Works · Mochamad Feriansyah</span>
+  </div>
+</footer>
+
+<div class="resume-backdrop" data-resume-backdrop hidden></div>
+<div class="resume-card" data-resume-card hidden role="dialog" aria-modal="true"
+     aria-labelledby="resume-title" data-email="mr.feriansyah@gmail.com">
+  <div class="resume-head">
+    <h2 class="resume-title" id="resume-title">Request my résumé</h2>
+    <button class="resume-close" data-resume-close aria-label="Close">
+      <svg viewBox="0 0 10 10" width="9" height="9" aria-hidden="true">
+        <path d="M1 1l8 8M9 1l-8 8" stroke="currentColor" stroke-width="1.2"/></svg>
+    </button>
+  </div>
+  <p class="resume-sub">Leave your email and I'll send the CV straight to your inbox, usually within a day.</p>
+  <form data-resume-form>
+    <label class="resume-field">
+      <span class="resume-field-label t-eyebrow">Your email</span>
+      <input type="email" name="email" required placeholder="you@company.com">
+    </label>
+    <label class="resume-field">
+      <span class="resume-field-label t-eyebrow">Company / role (optional)</span>
+      <input type="text" name="company" placeholder="Acme Inc. · Recruiter">
+    </label>
+    <div class="resume-actions">
+      <button class="pill t-eyebrow" data-resume-cancel type="button">Cancel</button>
+      <button class="pill pill--solid t-eyebrow" type="submit">
+        Send request<svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9 9 1" stroke="currentColor" stroke-width="1.2"/><path d="M3.4 1H9v5.6" stroke="currentColor" stroke-width="1.2"/></svg></button>
+    </div>
+  </form>
+  <p class="resume-note">Opens your email app with a message ready to send. Nothing is submitted automatically.</p>
+</div>
+
+
+<div class="cc" data-cookies hidden role="dialog" aria-labelledby="cc-title" aria-live="polite">
+  <h2 class="cc-title" id="cc-title">Cookies</h2>
+  <p class="cc-body">I use one analytics cookie to see which projects people actually open. Decline it and nothing on this site stops working.</p>
+  <div class="cc-actions">
+    <button class="pill t-eyebrow" data-cc-deny type="button">Decline</button>
+    <button class="pill t-eyebrow" data-cc-accept type="button">Accept</button>
+  </div>
+  <div class="cc-links"><a href="index.html#contact">Privacy</a><a href="index.html#contact">Cookie policy</a></div>
+</div>
+
+<!-- Modul motion yang sama persis dengan yang dipakai Next.js -->
+<script type="module">
+  import { initAll } from "../motion/index.js";
+  initAll(document);
+</script>
+</body>
+</html>
