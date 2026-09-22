@@ -44,14 +44,6 @@
     ],
     "drawer": [
       {
-        "label": "Studi kasus",
-        "href": "#work"
-      },
-      {
-        "label": "Design system",
-        "href": "#process"
-      },
-      {
         "label": "Résumé",
         "href": "#contact"
       },

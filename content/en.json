@@ -44,14 +44,6 @@
     ],
     "drawer": [
       {
-        "label": "Case studies",
-        "href": "#work"
-      },
-      {
-        "label": "Design systems",
-        "href": "#process"
-      },
-      {
         "label": "Résumé",
         "href": "#contact"
       },
