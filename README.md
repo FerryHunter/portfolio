@@ -1357,6 +1357,68 @@ sama sekali, murni penyesuaian data. Diverifikasi lewat DOM nyata
 (drawer desktop dan menu mobile dua-duanya tinggal 2 item) dan
 screenshot visual drawer dalam keadaan terbuka.
 
+### Nama di OG image jadi kapital semua
+
+Diminta setelah OG image pertama dikirim: nama "Mochamad Feriansyah"
+diganti jadi "MOCHAMAD FERIANSYAH". Render ulang lewat jalur yang
+sama (canvas 1200×630, `fillText` setelah `document.fonts.ready`) —
+dicek dulu `ctx.measureText()` untuk dua kata itu di Switzer bold
+92px (558px dan 556px) supaya tidak overflow dari gutter 80px kanan
+sebelum di-export, baru diganti `public/og-image.png`. Tidak ada
+perubahan di `app/layout.tsx`/`chrome.py`, keduanya cuma mereferensi
+file yang sama.
+
+### Halaman "Investment App Reimagined" 404 walau deploy sukses
+
+Dilaporkan: link case study ini di strip proyek 404 meskipun build
+Vercel hijau. Penyebabnya BUKAN masalah deploy — `content/*.json →
+cases.investment-app-reimagined` sudah lengkap (facts, blocks,
+gallery 4 layar, metrics, dst.) dan `scripts/
+case_investment_app_reimagined.py` (generator preview statis) sudah
+ada dan sudah pernah jalan, tapi `components/cases/` TIDAK PERNAH
+punya komponen React untuk case ini, dan karenanya juga tidak
+terdaftar di `CASE_PAGES` (`components/cases/index.ts`). Sisi
+Python/preview lengkap, sisi Next.js/React-nya belum pernah dibuat
+sama sekali — beda dari bug "Nanovest App Redesign" sebelumnya (itu
+komponennya sudah ada, cuma belum ditaut); di sini komponennya
+sungguhan tidak ada. `app/(site)/[lang]/work/[slug]/page.tsx`
+memang sengaja `notFound()` kalau salah satu dari data/komponen
+tidak ada (lihat komentarnya sendiri) — 404 di sini bukan bug pada
+routing-nya, tapi gejala yang jujur dari komponen yang memang belum
+dibuat.
+
+Dicari case lain dengan bentuk data JSON yang identik persis
+(`set(keys) == set(keys)`, bukan cuma mirip) untuk dipakai sebagai
+cetakan yang aman — `nanovest-investment-app` cocok 100%. Komponen
+baru `components/cases/InvestmentAppReimagined.tsx` disalin dari
+`NanovestInvestmentApp.tsx`, dengan satu perbedaan yang disengaja:
+section galeri diganti pakai pola grid rata (`Amazon.tsx`), bukan
+split 4+4 dengan divider, karena `case_investment_app_reimagined.py`
+sendiri sudah mendokumentasikan case ini cuma punya 4 tangkapan
+layar total (bukan 8) — kalau tetap pakai pola split, `.slice(4)`
+akan menghasilkan array kosong dan divider-nya nongol sendirian
+tanpa apa pun di bawahnya. Didaftarkan satu baris di `CASE_PAGES`.
+
+Catatan: case ini TIDAK ada di siklus "next case" manapun (tidak
+ada `cases.*.next` yang menunjuk ke sini) — bisa diakses langsung
+lewat strip proyek dan URL, tapi tidak akan pernah muncul kalau
+orang browsing dari "next case" ke "next case" di case study lain.
+Di luar cakupan perbaikan 404 ini (perbaikannya butuh mengubah satu
+mata rantai siklus 11-case yang sudah dikonfirmasi bekerja) — kabari
+kalau ingin ini juga disambungkan ke siklusnya.
+
+Diverifikasi lewat preview statis (data JSON yang sama dipakai
+komponen React ini): regenerate `case_investment_app_reimagined.py`
+nol error, galeri terkonfirmasi flat 4 item tanpa divider lewat DOM
+nyata, seluruh `<img>` (cover, galeri, next-case) fetch `200`, nol
+console error, dan link dari strip proyek homepage terkonfirmasi
+menunjuk ke halaman ini. Sisi Next.js/TypeScript tidak bisa
+dijalankan `tsc`/`next build` sungguhan di environment ini
+(`node`/`npm` tidak terpasang — limitasi yang sama seperti favicon)
+— komponen ditulis dengan menyalin pola JSX yang identik dari
+komponen yang sudah terbukti bekerja, bukan ditulis dari nol, untuk
+menjaga risiko itu serendah mungkin.
+
 ## Penyimpangan sadar dari spec
 
 | Spec | Di sini | Alasan |
