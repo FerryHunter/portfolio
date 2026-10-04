@@ -4,9 +4,12 @@ Generator preview statis — case study: Rampage Evolution Card · level-up card
 
 Satu file per proyek, sepasang dengan komponennya di
 components/cases/RampageEvolutionCard.tsx. Susunan section-nya
-sejajar dengan case_game_quest.py (itu yang dipakai sebagai
-cetakan) — proyek lain dari game yang sama, Rampage — dan asetnya
-juga tangkapan layar landscape 3120 × 1440, bukan potret ponsel,
+mengikuti cetakan case_game_quest.py (proyek lain dari game yang
+sama, Rampage), dengan satu beda sengaja: video interaksinya duduk
+antara overview dan scope, bukan sesudah blocks — klip "choose one
+to upgrade" ini meringkas keseluruhan sistem kartu dalam satu
+napas, jadi lebih pas sebagai pembuka sebelum scope merinci
+cakupannya. Asetnya tangkapan layar landscape, bukan potret ponsel,
 jadi `media()` memakai slot `.case-media` biasa, bukan varian
 `--phone`.
 
@@ -171,33 +174,43 @@ gallery = f'''
 '''
 
 # ---------- video interaksi (§6.4, markup showreel) ----------
-# Dihitung tapi TIDAK disertakan di `html` di bawah: rekamannya
-# belum ada, jadi section-nya disembunyikan dulu daripada tampil
-# sebagai placeholder kosong. Masukkan lagi ke perakitan `html`
-# begitu `video.src` di content/*.json terisi.
+# Ditaruh di antara overview dan scope, bukan sesudah blocks seperti
+# di case_game_quest.py: rekaman "choose one to upgrade" ini adalah
+# ringkasan satu napas dari keseluruhan sistem kartu, jadi ia duduk
+# sebagai pembuka sebelum scope merinci cakupannya.
 V = C["video"]
 poster = f'../public{V["poster"]}' if V["poster"].startswith("/") else V["poster"]
 
 if V["src"]:
     src = f'../public{V["src"]}' if V["src"].startswith("/") else V["src"]
+    # autoplay di atas attach-via-JS (bukan pengganti): beberapa
+    # browser menata ulang kelayakan autoplay saat src diisi lewat
+    # JS kalau atributnya memang ada sejak awal, jadi ini lapisan
+    # kedua di samping panggilan media.play() di motion/reel.js.
     video_media = (
         f'<video class="reel-media" data-reel-media data-src="{src}" '
-        f'poster="{poster}" muted loop playsinline preload="none"></video>')
-    video_extra = (
-        f'<button class="reel-mute" data-reel-mute aria-pressed="false" '
-        f'aria-label="{D["reel"]["unmute"]}">'
-        '<svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true" fill="none">'
-        '<path d="M1 4.5h2L6 2v8L3 7.5H1z" stroke="currentColor" stroke-width="1.1"/>'
-        '<path d="M8.5 4.2 11 6.8M11 4.2 8.5 6.8" stroke="currentColor" stroke-width="1.1"/>'
-        '</svg></button>')
+        f'poster="{poster}" autoplay muted loop playsinline preload="none"></video>')
+    # Spinner loading: motion/reel.js menyembunyikannya lewat kelas
+    # `.loaded` begitu event `playing` menyala (lihat reel.js).
+    video_loading = (
+        '<div class="reel-loading" data-reel-loading aria-hidden="true">'
+        '<span class="reel-loading-pill"><span class="reel-spinner"></span>'
+        f'<span class="t-eyebrow">{D["ui"]["loading"]}</span></span></div>')
+    # Tanpa tombol mute: rekamannya tidak punya trek audio, dan
+    # tombolnya menutupi ikon Recover HP di pojok kanan bawah frame.
+    video_extra = ""
     empty = ""
 else:
     video_media = (f'<img class="reel-media" data-reel-media src="{poster}" alt="" '
                    f'loading="lazy" decoding="async">')
+    video_loading = ""
     video_extra = (f'<div class="case-video-badge" aria-hidden="true">'
                    f'<span class="t-eyebrow">{V["badge"]}</span></div>')
     empty = " case-video--empty"
 
+# Tanpa caption di bawah frame: label + tahun di overlay sudah
+# cukup menjelaskan, dan teks "memilih upgrade … di tengah run" di
+# bawahnya cuma menjelaskan ulang apa yang baru saja dilihat.
 video = f'''
 <section class="section section--divided case-video{empty}" aria-labelledby="case-video-label">
   <div class="section-head reveal">
@@ -207,13 +220,9 @@ video = f'''
   <div class="reel-wrap" data-reel data-dark
        style="--ar:{V['ar']}; --focus:{V['posterFocus']}">
     {video_media}
-    <div class="reel-overlay">
-      <span class="reel-tag t-eyebrow">{V['tag']}</span>
-      <span class="reel-year t-eyebrow">{V['year']}</span>
-    </div>
+    {video_loading}
     {video_extra}
   </div>
-  <p class="t-meta case-cap">{V['caption']}</p>
 </section>
 '''
 
@@ -279,12 +288,7 @@ nxt = f'''
 
 html = shell(
     D, LANG,
-    # `video` sengaja tidak disertakan: rekamannya belum ada
-    # (V["src"] kosong), dan placeholder MP4 lebih baik disembunyikan
-    # dulu daripada menampilkan section kosong. Kode di atas tetap
-    # dihitung supaya tinggal ditambahkan kembali ke sini begitu
-    # rekamannya siap.
-    f"{hero}{overview}{scope}{blocks}{gallery}{metrics}{deliverables}{nxt}",
+    f"{hero}{overview}{video}{scope}{blocks}{gallery}{metrics}{deliverables}{nxt}",
     title=C["meta"]["title"],
     description=C["meta"]["description"],
     home=HOME,

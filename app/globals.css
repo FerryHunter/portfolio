@@ -1863,6 +1863,45 @@ body.preloading { overflow: hidden; }
 }
 .reel-mute:hover { background: var(--bg); color: var(--ink); }
 
+/* Loading state untuk video asli (bukan placeholder): spinner +
+   label tampil di atas poster sampai `playing` benar-benar
+   menyala (motion/reel.js menambahkan `.loaded` ke wrapper),
+   supaya jeda fetch clip terasa seperti sedang memuat, bukan
+   seperti macet. */
+.reel-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity .4s var(--ease);
+}
+.reel-wrap.loaded .reel-loading { opacity: 0; }
+.reel-loading-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 100px;
+  background: rgba(13, 13, 11, .45);
+  color: var(--bg);
+}
+.reel-spinner {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(244, 243, 239, .3);
+  border-top-color: var(--bg);
+  animation: reelSpin .8s linear infinite;
+}
+@keyframes reelSpin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .reel-spinner { animation: none; }
+}
+
 
 /* ============================================================
    §6.8 — CLIENTS (typewriter)
@@ -2391,8 +2430,32 @@ body.preloading { overflow: hidden; }
   height: auto;
   min-height: 0;
   aspect-ratio: var(--ar, 1.7778);
+  /* Sama dengan .case-fig--shot (cover di hero): di layar lebar
+     frame tidak melebar penuh, berhenti di 1120px dan di tengah. */
+  max-width: 1120px;
+  margin-inline: auto;
 }
-.case-video .reel-media { object-position: var(--focus, 50% 50%); }
+/* `.reel-media` di showreel hero sengaja di-overscan 8% (lihat
+   §6.4 di atas) supaya parallax JS-nya bisa menggeser tanpa
+   memperlihatkan tepi — tapi rasio frame di sini SUDAH rasio
+   rekamannya sendiri, jadi overscan itu hanya memotong bagian atas
+   dan bawah rekaman tanpa alasan. Dikembalikan ke pas-penuh di
+   sini; motion/reel.js juga melewati panggilan parallax-nya untuk
+   wrapper berinduk `.case-video` (lihat initReel), supaya
+   keduanya konsisten.
+
+   `object-fit` juga diganti ke `contain`, bukan `cover`: `cover`
+   selalu memotong begitu rasio kotak dan rasio asli medianya
+   meleset walau cuma serpihan piksel dari pembulatan layout
+   (aspect-ratio di box vs rasio asli file) — satu-satunya cara
+   menjamin nol crop adalah `contain`, bukan mengandalkan dua rasio
+   itu sama persis. */
+.case-video .reel-media {
+  inset: 0;
+  height: 100%;
+  object-fit: contain;
+  object-position: var(--focus, 50% 50%);
+}
 .case-video .case-cap { margin-top: 14px; }
 
 /* Placeholder: poster diredupkan supaya jelas ini belum isi

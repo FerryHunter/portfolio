@@ -2441,7 +2441,7 @@
       "blocks": [
         {
           "label": "Challenge",
-          "meta": "02 · What had to be solved",
+          "meta": "03 · Where it broke",
           "heading": "Three cards, no precedent for what any of them should weigh.",
           "body": [
             "Rampage didn't have a level-up screen before this — every run paused on XP-fill with nothing built yet to fill that pause. Three ability cards had to sit on one shell and each read instantly mid-combat: a run-defining Legendary and a minor stat tweak couldn't just differ in copy, because a player has maybe two seconds to weigh them before the run keeps going underneath the pause.",
@@ -2450,7 +2450,7 @@
         },
         {
           "label": "Approach",
-          "meta": "03 · How I worked",
+          "meta": "04 · How I worked",
           "heading": "Rarity has to read before the label does.",
           "body": [
             "I built a five-tier ladder — Common, Rare, Epic, Legendary and Evolution — where the border, corner cut and background foil change with the tier, not just the pill text underneath it. A Legendary card's gold foil and an Evolution card's shifting holographic gradient are readable from across the screen, before a player's eyes ever land on the word.",
@@ -2461,15 +2461,12 @@
       ],
       "video": {
         "label": "Motion",
-        "meta": "04 · Screen recording",
-        "src": "",
-        "ar": 2.1667,
-        "poster": "/work/rampage-evolution-card/upgrade-select.webp",
-        "posterFocus": "50% 35%",
-        "tag": "Interaction study",
-        "year": "2026",
-        "badge": "MP4 · placeholder",
-        "caption": "Interaction study · recording pending"
+        "meta": "02 · Screen recording",
+        "src": "/work/rampage-evolution-card/ability-upgrade.mp4",
+        "ar": 1.7799,
+        "poster": "/work/rampage-evolution-card/ability-upgrade-poster.webp",
+        "posterFocus": "50% 50%",
+        "badge": "MP4 · placeholder"
       },
       "gallery": {
         "label": "Screens",
@@ -2499,7 +2496,7 @@
       },
       "metrics": {
         "label": "Results",
-        "meta": "06 · What the study produced",
+        "meta": "05 · What the study produced",
         "items": [
           {
             "v": "5 tiers",

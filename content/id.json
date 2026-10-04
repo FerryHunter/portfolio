@@ -2441,7 +2441,7 @@
       "blocks": [
         {
           "label": "Tantangan",
-          "meta": "02 · Yang harus dipecahkan",
+          "meta": "03 · Titik rusaknya",
           "heading": "Tiga kartu, tanpa preseden soal bobot masing-masing.",
           "body": [
             "Rampage belum punya layar level-up sebelum ini — setiap run berhenti sejenak saat XP penuh tanpa ada apa pun yang dibangun untuk mengisi jeda itu. Tiga kartu ability harus duduk di satu cangkang dan masing-masing terbaca instan di tengah pertarungan: Legendary yang menentukan arah run dan satu penyesuaian stat kecil tidak boleh cuma beda di teksnya, karena pemain cuma punya waktu sekitar dua detik untuk menimbangnya sebelum run-nya berjalan lagi di balik jeda.",
@@ -2450,7 +2450,7 @@
         },
         {
           "label": "Pendekatan",
-          "meta": "03 · Cara kerjanya",
+          "meta": "04 · Cara kerjanya",
           "heading": "Rarity harus terbaca sebelum labelnya.",
           "body": [
             "Saya membangun tangga lima tingkat — Common, Rare, Epic, Legendary, dan Evolution — di mana border, potongan sudut, dan foil latar berubah mengikuti tingkatnya, bukan cuma teks pil di bawahnya. Foil emas kartu Legendary dan gradien holografik yang bergeser pada kartu Evolution terbaca dari seberang layar, sebelum mata pemain sempat sampai ke kata itu sendiri.",
@@ -2461,15 +2461,12 @@
       ],
       "video": {
         "label": "Gerak",
-        "meta": "04 · Rekaman layar",
-        "src": "",
-        "ar": 2.1667,
-        "poster": "/work/rampage-evolution-card/upgrade-select.webp",
-        "posterFocus": "50% 35%",
-        "tag": "Studi interaksi",
-        "year": "2026",
-        "badge": "MP4 · sementara",
-        "caption": "Studi interaksi · rekaman menyusul"
+        "meta": "02 · Rekaman layar",
+        "src": "/work/rampage-evolution-card/ability-upgrade.mp4",
+        "ar": 1.7799,
+        "poster": "/work/rampage-evolution-card/ability-upgrade-poster.webp",
+        "posterFocus": "50% 50%",
+        "badge": "MP4 · sementara"
       },
       "gallery": {
         "label": "Layar",
@@ -2499,7 +2496,7 @@
       },
       "metrics": {
         "label": "Hasil",
-        "meta": "06 · Yang dihasilkan studi ini",
+        "meta": "05 · Yang dihasilkan studi ini",
         "items": [
           {
             "v": "5 tingkat",

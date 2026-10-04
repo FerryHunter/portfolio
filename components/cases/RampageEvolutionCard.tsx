@@ -7,11 +7,15 @@ import type { CaseProps } from "./types";
 /**
  * Case study: Rampage Evolution Card · level-up ability card system.
  *
- * Susunan section-nya sejajar dengan GameQuest (hero → overview →
- * scope → video → blocks → gallery → metrics → deliverables →
- * next) — proyek lain dari game yang sama, Rampage — dan asetnya
- * juga tangkapan layar landscape 3120 × 1440, jadi <Media> memakai
- * slot `.case-media` biasa, bukan varian `--phone`.
+ * Susunan section-nya mengikuti cetakan GameQuest (hero → overview →
+ * scope → blocks → gallery → metrics → deliverables → next) —
+ * proyek lain dari game yang sama, Rampage — dengan satu beda
+ * sengaja: video interaksinya duduk di antara overview dan scope,
+ * bukan sesudah blocks, karena klip "choose one to upgrade" ini
+ * meringkas keseluruhan sistem kartu dalam satu napas, jadi lebih
+ * pas sebagai pembuka sebelum scope merinci cakupannya. Asetnya
+ * tangkapan layar landscape, jadi <Media> memakai slot
+ * `.case-media` biasa, bukan varian `--phone`.
  *
  * Pasangannya di preview statis adalah
  * scripts/case_rampage_evolution_card.py — dua file yang harus
@@ -135,6 +139,81 @@ export default function RampageEvolutionCard({
         </div>
       </section>
 
+      {/* §6.4 — markup showreel. Duduk di sini, bukan sesudah
+          blocks seperti di GameQuest: klip "choose one to upgrade"
+          ini meringkas keseluruhan sistem kartu dalam satu napas,
+          jadi lebih pas sebagai pembuka sebelum scope merinci
+          cakupannya. Tanpa caption di bawah frame: label + tahun
+          di overlay sudah cukup menjelaskan. */}
+      <section
+        className={`section section--divided case-video${
+          data.video.src ? "" : " case-video--empty"
+        }`}
+        aria-labelledby="case-video-label"
+      >
+        <div className="section-head reveal">
+          <h2 className="t-label" id="case-video-label">
+            {data.video.label}
+          </h2>
+          <p className="t-meta">{data.video.meta}</p>
+        </div>
+
+        <div
+          className="reel-wrap"
+          data-reel
+          data-dark
+          style={
+            { "--ar": data.video.ar, "--focus": data.video.posterFocus } as CSSProperties
+          }
+        >
+          {data.video.src ? (
+            // autoplay di atas attach-via-JS (bukan pengganti): beberapa
+            // browser menata ulang kelayakan autoplay saat src diisi
+            // lewat JS kalau atributnya memang ada sejak awal, jadi ini
+            // lapisan kedua di samping media.play() di motion/reel.js.
+            <video
+              className="reel-media"
+              data-reel-media
+              data-src={data.video.src}
+              poster={data.video.poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="none"
+            />
+          ) : (
+            <img
+              className="reel-media"
+              data-reel-media
+              src={data.video.poster}
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          )}
+
+          {/* Spinner loading: motion/reel.js menyembunyikannya lewat
+              kelas `.loaded` begitu event `playing` menyala. */}
+          {data.video.src ? (
+            <div className="reel-loading" data-reel-loading aria-hidden="true">
+              <span className="reel-loading-pill">
+                <span className="reel-spinner" />
+                <span className="t-eyebrow">{dict.ui.loading}</span>
+              </span>
+            </div>
+          ) : null}
+
+          {/* Tanpa tombol mute: rekamannya tidak punya trek audio, dan
+              tombolnya menutupi ikon Recover HP di pojok kanan bawah. */}
+          {data.video.src ? null : (
+            <div className="case-video-badge" aria-hidden="true">
+              <span className="t-eyebrow">{data.video.badge}</span>
+            </div>
+          )}
+        </div>
+      </section>
+
       <section className="section section--divided">
         <div className="section-head reveal">
           <h2 className="t-label">{data.scope.label}</h2>
@@ -151,86 +230,6 @@ export default function RampageEvolutionCard({
           ))}
         </ol>
       </section>
-
-      {/* §6.4 — markup showreel, disembunyikan sementara: rekamannya
-          belum ada (data.video.src kosong). Markup-nya sengaja
-          dibiarkan di bawah sini, tinggal dikembalikan begitu
-          rekamannya siap, bukan dihapus. */}
-      {false && (
-        <section
-          className={`section section--divided case-video${
-            data.video.src ? "" : " case-video--empty"
-          }`}
-          aria-labelledby="case-video-label"
-        >
-          <div className="section-head reveal">
-            <h2 className="t-label" id="case-video-label">
-              {data.video.label}
-            </h2>
-            <p className="t-meta">{data.video.meta}</p>
-          </div>
-
-          <div
-            className="reel-wrap"
-            data-reel
-            data-dark
-            style={
-              { "--ar": data.video.ar, "--focus": data.video.posterFocus } as CSSProperties
-            }
-          >
-            {data.video.src ? (
-              <video
-                className="reel-media"
-                data-reel-media
-                data-src={data.video.src}
-                poster={data.video.poster}
-                muted
-                loop
-                playsInline
-                preload="none"
-              />
-            ) : (
-              <img
-                className="reel-media"
-                data-reel-media
-                src={data.video.poster}
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-            )}
-
-            <div className="reel-overlay">
-              <span className="reel-tag t-eyebrow">{data.video.tag}</span>
-              <span className="reel-year t-eyebrow">{data.video.year}</span>
-            </div>
-
-            {data.video.src ? (
-              <button
-                className="reel-mute"
-                data-reel-mute
-                aria-pressed="false"
-                aria-label={dict.reel.unmute}
-              >
-                <svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true" fill="none">
-                  <path d="M1 4.5h2L6 2v8L3 7.5H1z" stroke="currentColor" strokeWidth="1.1" />
-                  <path
-                    d="M8.5 4.2 11 6.8M11 4.2 8.5 6.8"
-                    stroke="currentColor"
-                    strokeWidth="1.1"
-                  />
-                </svg>
-              </button>
-            ) : (
-              <div className="case-video-badge" aria-hidden="true">
-                <span className="t-eyebrow">{data.video.badge}</span>
-              </div>
-            )}
-          </div>
-
-          <p className="t-meta case-cap">{data.video.caption}</p>
-        </section>
-      )}
 
       {data.blocks.map((b) => (
         <section className="section section--divided" key={b.label}>
