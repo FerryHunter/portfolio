@@ -2601,9 +2601,8 @@ body.preloading { overflow: hidden; }
    Komponen: components/cases/ProcessSections.tsx · scripts/process_sections.py
    Lightbox: motion/lightbox.js. */
 
-/* Anak grid default min-width:auto = min-content: satu diagram lebar
-   (min-width: 640px di bawah) akan melebarkan seluruh grid dan memicu
-   scroll horizontal halaman di mobile. Khusus section proses. */
+/* Anak grid default min-width:auto = min-content: gambar besar tidak
+   boleh melebarkan grid .case-note. Khusus section proses. */
 section[id^="process-"] .case-note > * { min-width: 0; }
 
 .case-pfig-text { margin-bottom: 8px; }
@@ -2614,7 +2613,7 @@ section[id^="process-"] .case-note > * { min-width: 0; }
   margin-top: 40px;
 }
 /* Desktop lebar: tumpukan figure tidak lari sampai gutter kanan, sama
-   seperti .case-fig (860px). Mobile tetap edge to edge (blok 900px). */
+   seperti .case-fig (860px). Di mobile figure memakai gutter halaman. */
 @media (min-width: 901px) {
   .case-pfigs { max-width: min(100%, 860px); }
 }
@@ -2668,19 +2667,8 @@ section[id^="process-"] .case-note > * { min-width: 0; }
 .case-pfig-ph-tag { color: var(--ink); }
 .case-pfig-ph-file { font-size: 13px; color: var(--ink); }
 
-/* Diagram lebar yang tidak di-zoom (wireframe): di layar sempit digulir
-   horizontal di dalam figure, bukan diperas sampai tak terbaca. */
-.case-pfig--scroll .case-pfig-frame { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.case-pfig--scroll .case-pfig-static img { min-width: 640px; }
-
 @media (max-width: 900px) {
   .case-pfigs { gap: 32px; margin-top: 32px; }
-  /* Mobile: figure edge to edge; caption/legend tetap di dalam gutter. */
-  .case-pfig { margin-inline: calc(var(--gutter) * -1); }
-  .case-pfig-frame { border-radius: 0; border-inline: 0; }
-  .case-pfig figcaption,
-  .case-pfig .case-pfig-legend { padding-inline: var(--gutter); }
-  .case-proc-placeholder { border-radius: 0; }
 }
 
 /* --- lightbox: <dialog> modal, markup dari server, perilaku di
