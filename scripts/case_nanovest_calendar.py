@@ -156,7 +156,107 @@ def block(b):
 '''
 
 
-blocks = "".join(block(b) for b in C["blocks"])
+problem  = block(C["blocks"][0])
+approach = block(C["blocks"][1])
+
+
+# ---------- helper: process figure dengan placeholder ----------------
+# Jika src kosong → kotak putus-putus yang menampilkan nama file yang
+# diharapkan Ferry isi. Berbeda dengan TSX (production: disembunyikan).
+def proc_figure(item, wide=False):
+    src_raw = item.get("img", "")
+    ar      = item.get("ar", 1.6)
+    alt     = item.get("alt", "")
+    extra   = " case-fig--wide" if wide else ""
+    phone   = " case-media--phone" if ar < 1 else ""
+
+    if src_raw:
+        src = f'../public{src_raw}' if src_raw.startswith("/") else src_raw
+        inner = (f'<div class="case-media{phone}" style="--ar:{ar}">'
+                 f'<img src="{src}" alt="{alt}" loading="lazy" decoding="async"></div>')
+    else:
+        fname = src_raw.split("/")[-1] if src_raw else "—"
+        inner = (f'<div class="case-proc-placeholder" style="--ar:{ar}">'
+                 f'<span>{fname or "(image not set)"}</span></div>')
+
+    return f'<figure class="case-fig reveal{extra}">{inner}</figure>'
+
+
+# ---------- 03 · Structure ----------------------------------------
+S = C["structure"]
+
+def _step_label(text):
+    return f'<span class="t-eyebrow case-proc-step-label">{text}</span>'
+
+wf_items_html = "".join(
+    proc_figure(w) for w in S["wireframes"]["items"] if w.get("img")
+)
+wireframes_row = ""
+if wf_items_html:
+    wireframes_row = f'<div class="case-proc-row">{wf_items_html}</div>'
+
+def _lead_paras(text):
+    if not text:
+        return ""
+    parts = text.split("\n\n")
+    html = "".join(f'<p class="case-p">{p}</p>' for p in parts)
+    return html
+
+_ia_path_fig  = proc_figure(S['iaPath'],   wide=True) if S.get('iaPath',   {}).get('img') else ''
+_flow_path_fig= proc_figure(S['flowPath'], wide=True) if S.get('flowPath', {}).get('img') else ''
+
+structure = f'''
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
+      <h2 class="t-label">{S['label']}</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">{S['meta']}</p>
+    </div>
+    <div class="case-note-body">
+      <div class="case-proc-head">
+        <h3 class="t-detail-h case-note-h">{S['heading']}</h3>
+        {_lead_paras(S.get('lead', ''))}
+      </div>
+      <div style="display:flex;flex-direction:column;gap:40px">
+        {_ia_path_fig}
+        {proc_figure(S['ia'], wide=True) if S['ia'].get('img') else ''}
+        {_flow_path_fig}
+        {proc_figure(S['flow'], wide=True) if S['flow'].get('img') else ''}
+        {wireframes_row}
+      </div>
+    </div>
+  </div>
+</section>
+''' if (S['ia'].get('img') or S['flow'].get('img') or wf_items_html) else ''
+
+# ---------- 04 · Research ----------------------------------------
+R = C["research"]
+
+_bm_fig   = proc_figure(R['benchmark'],     wide=True) if R['benchmark'].get('img')     else ''
+_gap_fig  = proc_figure(R['benchmarkGaps']) if R['benchmarkGaps'].get('img') else ''
+
+research = f'''
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
+      <h2 class="t-label">{R['label']}</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">{R['meta']}</p>
+    </div>
+    <div class="case-note-body">
+      <div class="case-proc-head">
+        <h3 class="t-detail-h case-note-h">{R['heading']}</h3>
+        {_lead_paras(R.get('lead', ''))}
+      </div>
+      <div style="display:flex;flex-direction:column;gap:40px">
+        {_bm_fig}
+        {_gap_fig}
+      </div>
+    </div>
+  </div>
+</section>
+''' if (R['benchmark'].get('img') or R['benchmarkGaps'].get('img')) else ''
+
+testing = ""
 
 # ---------- galeri ----------
 # Kolom sempit (case-gallery--phones): tiga layar potret di dua
@@ -304,7 +404,7 @@ nxt = f'''
 
 html = shell(
     D, LANG,
-    f"{hero}{overview}{mockup}{scope}{video if V['src'] else ''}{blocks}{gallery}{metrics}{deliverables}{nxt}",
+    f"{hero}{overview}{mockup}{scope}{video if V['src'] else ''}{problem}{structure}{research}{approach}{gallery}{metrics}{deliverables}{nxt}",
     title=C["meta"]["title"],
     description=C["meta"]["description"],
     home=HOME,

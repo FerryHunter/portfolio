@@ -607,7 +607,7 @@
         },
         {
           "label": "Pendekatan",
-          "meta": "03 · Cara kerjanya",
+          "meta": "05 · Cara kerjanya",
           "heading": "Daftar yang terbuka pada bulan ini, grid saat bulannya yang jadi pertanyaan.",
           "body": [
             "Daftar adalah kondisi awalnya. Event dikelompokkan di bawah bulannya, tanggal memegang rel kirinya sendiri, dan seluruhnya bergulir maju, karena pertanyaan yang biasa muncul adalah apa yang akan datang untuk saham saya, dan daftar menjawabnya tanpa menyuruh siapa pun membidik satu tanggal lebih dulu.",
@@ -690,7 +690,7 @@
       },
       "metrics": {
         "label": "Hasil",
-        "meta": "06 · Setelah tiga bulan",
+        "meta": "07 · Setelah tiga bulan",
         "items": [
           {
             "v": "2 ketuk",
@@ -731,6 +731,61 @@
         "cat": "Fintech · Mobile",
         "href": "/work/nanovest-limit-order",
         "img": "/work/covers/nanovest-limit-order.webp"
+      },
+      "research": {
+        "label": "Riset",
+        "meta": "04 · Riset",
+        "heading": "Sebelum menggambar apapun, aku bertanya siapa yang perlu tahu apa, dan kapan.",
+        "benchmark": {
+          "img": "/work/nanovest-calendar/research-benchmark.webp",
+          "ar": 2.4075,
+          "alt": "Riset kompetitor: tangkapan layar cara platform lain menampilkan aksi korporasi",
+          "caption": "Riset kompetitor: bagaimana platform lain menampilkan aksi korporasi."
+        },
+        "benchmarkGaps": {
+          "img": "/work/nanovest-calendar/research-benchmark-gaps.webp",
+          "ar": 1.4619,
+          "alt": "Wireframe low-fidelity: tiga layar menampilkan entry point, tampilan daftar, dan tampilan kalender",
+          "caption": "Wireframe low-fidelity: entry point, tampilan daftar, dan tampilan kalender."
+        },
+        "lead": "Benchmarked Revolut, Robinhood, Gotrade, and several other investment apps to see how each one surfaces upcoming corporate events: dividends, earnings, splits, and market-wide dates. I looked at where the event lives in the app, whether it’s a calendar, a list, or both, and how much of it is relevant to you versus the whole market.\n\nMost apps treated events as a feed of everything. Few helped an investor answer the simplest question: “what’s coming up for the stocks I actually own?” Those gaps shaped the first wireframes: a list and a calendar view for different ways of scanning, a My Portfolio / Watchlist split to cut the noise, and a filter by event type so holidays, corporate actions, and economic events don’t blur together."
+      },
+      "structure": {
+        "label": "Struktur",
+        "meta": "03 · Struktur",
+        "heading": "Di mana kalender berada, dan bagaimana seseorang sampai ke sana.",
+        "ia": {
+          "img": "/work/nanovest-calendar/structure-ia.webp",
+          "ar": 2.0101,
+          "alt": "Arsitektur informasi: di mana kalender berada dalam aplikasi",
+          "caption": "Arsitektur informasi: di mana kalender berada dalam aplikasi."
+        },
+        "flow": {
+          "img": "/work/nanovest-calendar/structure-flow.webp",
+          "ar": 1.9822,
+          "alt": "Alur pengguna: dari beranda ke dividen berikutnya",
+          "caption": "Alur pengguna: dari beranda ke dividen berikutnya."
+        },
+        "wireframes": {
+          "items": [
+            {
+              "img": "",
+              "ar": 0.8873,
+              "alt": "Wireframe low-fidelity: entry point dengan widget Event Calendar"
+            }
+          ]
+        },
+        "lead": "The calendar needed a home before it needed a design. I mapped where it sits in the app: reached from the Explore tab through a widget on the US Stocks page, then opening into two views of the same events, a list for scanning and a calendar for browsing by date. Filters, search, and the My Portfolio / Watchlist split sit on top, so the structure stays flat and nothing is more than a tap or two away.\n\nThe user flow follows one question, “what’s the next dividend for the stocks I own?”, and branches from there: searching an asset, switching segments, filtering by event type, or jumping to a date. I also drew the empty states (no result, no events on a date, an empty portfolio) so the edge cases were decided before any visual design started.",
+        "iaPath": {
+          "img": "",
+          "ar": 16.6667,
+          "alt": "Navigation path: Explore tab → US Stocks widget → Event Calendar"
+        },
+        "flowPath": {
+          "img": "",
+          "ar": 13.9924,
+          "alt": "User flow path annotation"
+        }
       }
     },
     "nanovest-investment-app": {

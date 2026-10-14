@@ -145,8 +145,49 @@
 <section class="section section--divided">
   <div class="case-note reveal">
     <div class="case-note-side">
+      <h2 class="t-label">Structure</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">03 · Structure</p>
+    </div>
+    <div class="case-note-body">
+      <div class="case-proc-head">
+        <h3 class="t-detail-h case-note-h">Where the calendar lives, and how someone gets there.</h3>
+        <p class="case-p">The calendar needed a home before it needed a design. I mapped where it sits in the app: reached from the Explore tab through a widget on the US Stocks page, then opening into two views of the same events, a list for scanning and a calendar for browsing by date. Filters, search, and the My Portfolio / Watchlist split sit on top, so the structure stays flat and nothing is more than a tap or two away.</p><p class="case-p">The user flow follows one question, “what’s the next dividend for the stocks I own?”, and branches from there: searching an asset, switching segments, filtering by event type, or jumping to a date. I also drew the empty states (no result, no events on a date, an empty portfolio) so the edge cases were decided before any visual design started.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:40px">
+        
+        <figure class="case-fig reveal case-fig--wide"><div class="case-media" style="--ar:2.0101"><img src="../public/work/nanovest-calendar/structure-ia.webp" alt="Information architecture: where the calendar sits in the app" loading="lazy" decoding="async"></div></figure>
+        
+        <figure class="case-fig reveal case-fig--wide"><div class="case-media" style="--ar:1.9822"><img src="../public/work/nanovest-calendar/structure-flow.webp" alt="User flow: from home to the next dividend" loading="lazy" decoding="async"></div></figure>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
+      <h2 class="t-label">Research</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">04 · Research</p>
+    </div>
+    <div class="case-note-body">
+      <div class="case-proc-head">
+        <h3 class="t-detail-h case-note-h">Before drawing anything, I asked who needs to know what, and when.</h3>
+        <p class="case-p">Benchmarked Revolut, Robinhood, Gotrade, and several other investment apps to see how each one surfaces upcoming corporate events: dividends, earnings, splits, and market-wide dates. I looked at where the event lives in the app, whether it’s a calendar, a list, or both, and how much of it is relevant to you versus the whole market.</p><p class="case-p">Most apps treated events as a feed of everything. Few helped an investor answer the simplest question: “what’s coming up for the stocks I actually own?” Those gaps shaped the first wireframes: a list and a calendar view for different ways of scanning, a My Portfolio / Watchlist split to cut the noise, and a filter by event type so holidays, corporate actions, and economic events don’t blur together.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:40px">
+        <figure class="case-fig reveal case-fig--wide"><div class="case-media" style="--ar:2.4075"><img src="../public/work/nanovest-calendar/research-benchmark.webp" alt="Competitive teardown: screenshots of how other platforms surface corporate actions" loading="lazy" decoding="async"></div></figure>
+        <figure class="case-fig reveal"><div class="case-media" style="--ar:1.4619"><img src="../public/work/nanovest-calendar/research-benchmark-gaps.webp" alt="Low-fidelity wireframes: three screens showing the entry point, list view, and calendar view" loading="lazy" decoding="async"></div></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided">
+  <div class="case-note reveal">
+    <div class="case-note-side">
       <h2 class="t-label">Approach</h2>
-      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">03 · How I worked</p>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">05 · How I worked</p>
     </div>
     <div class="case-note-body">
       <h3 class="t-detail-h case-note-h">A list that opens on this month, a grid when the month is the question.</h3>
@@ -166,7 +207,7 @@
 <section class="section case-metrics grain" data-dark data-reveal>
   <div class="section-head">
     <h2 class="t-label">Results</h2>
-    <p class="t-meta">06 · After three months</p>
+    <p class="t-meta">07 · After three months</p>
   </div>
   <div class="case-metrics-row"><div class="case-metric"><span class="case-metric-v">2 taps</span><span class="case-metric-k t-meta">Home to the next dividend</span></div><div class="case-metric"><span class="case-metric-v">+41%</span><span class="case-metric-k t-meta">Corporate-action screen opens</span></div><div class="case-metric"><span class="case-metric-v">−58%</span><span class="case-metric-k t-meta">Dividend questions in support</span></div><div class="case-metric"><span class="case-metric-v">3 → 1</span><span class="case-metric-k t-meta">Places to check a date</span></div></div>
   <p class="t-meta case-metrics-note">Placeholder figures. Replaced once the post-launch review lands.</p>

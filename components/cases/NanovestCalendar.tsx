@@ -8,9 +8,8 @@ import type { CaseProps } from "./types";
  * §6.11 — Case study: Nanovest · Event Calendar.
  *
  * Satu komponen untuk satu proyek, bukan template generik.
- * Seluruh asetnya layar ponsel potret 780 × 1688 — tidak ada satu
- * pun gambar yang dipotong, yang dibatasi lebarnya (lihat <Media>
- * dan §6.11).
+ * Seluruh aset layar ponsel adalah potret 780 × 1688 — tidak ada satu
+ * pun gambar yang dipotong, yang dibatasi lebarnya.
  *
  * Pasangannya di preview statis adalah
  * scripts/case_nanovest_calendar.py — dua file yang harus tetap
@@ -28,11 +27,6 @@ function Media({
   alt?: string;
   eager?: boolean;
 }) {
-  /* Semua aset di case ini layar ponsel utuh, jadi slotnya selalu
-     --phone: rasio aslinya sendiri, nol pemotongan, dan tanpa
-     latar — aset ponsel sudah membawa sudut membulatnya, dan latar
-     slot akan terlihat sebagai empat siku abu-abu di ujungnya.
-     Ukurannya diatur CSS lewat kelas di <figure>/kolomnya. */
   return (
     <div className="case-media case-media--phone" style={{ "--ar": ar } as CSSProperties}>
       <img src={img} alt={alt} loading={eager ? "eager" : "lazy"} decoding="async" />
@@ -63,15 +57,131 @@ function Figure({
   );
 }
 
+/**
+ * Process figure — wide diagram slot (IA, flows, research maps).
+ * Hides entirely if src is empty (production-safe).
+ * For the static preview generator the Python side shows the placeholder.
+ */
+function ProcFigure({
+  src,
+  ar = 1.6,
+  alt,
+  caption,
+  wide = false,
+}: {
+  src: string;
+  ar?: number;
+  alt: string;
+  caption?: string;
+  wide?: boolean;
+}) {
+  if (!src) return null;
+  return (
+    <figure className={`case-fig reveal${wide ? " case-fig--wide" : ""}`.trim()}>
+      <div className="case-media" style={{ "--ar": ar } as CSSProperties}>
+        <img src={src} alt={alt} loading="lazy" decoding="async" />
+      </div>
+      {caption ? <figcaption className="t-meta case-cap">{caption}</figcaption> : null}
+    </figure>
+  );
+}
+
+/**
+ * One before/after iteration block.
+ * Hidden entirely when both before and after images are missing.
+ */
+function IterBlock({
+  label,
+  before,
+  after,
+  seen,
+  changed,
+  tagBefore,
+  tagAfter,
+}: {
+  label: string;
+  before: { img: string; ar: number; alt: string };
+  after: { img: string; ar: number; alt: string };
+  seen: string;
+  changed: string;
+  tagBefore: string;
+  tagAfter: string;
+}) {
+  if (!before.img && !after.img) return null;
+  return (
+    <div className="case-iter">
+      <p className="t-eyebrow case-iter-label">{label}</p>
+      <div className="case-iter-pair">
+        <div>
+          <span className="t-eyebrow case-iter-slot-tag">{tagBefore}</span>
+          {before.img ? (
+            <div
+              className={`case-media${before.ar < 1 ? " case-media--phone" : ""}`}
+              style={{ "--ar": before.ar } as CSSProperties}
+            >
+              <img src={before.img} alt={before.alt} loading="lazy" decoding="async" />
+            </div>
+          ) : null}
+        </div>
+        <div>
+          <span className="t-eyebrow case-iter-slot-tag">{tagAfter}</span>
+          {after.img ? (
+            <div
+              className={`case-media${after.ar < 1 ? " case-media--phone" : ""}`}
+              style={{ "--ar": after.ar } as CSSProperties}
+            >
+              <img src={after.img} alt={after.alt} loading="lazy" decoding="async" />
+            </div>
+          ) : null}
+        </div>
+      </div>
+      {(seen || changed) ? (
+        <div className="case-iter-notes">
+          {seen ? <p>{seen}</p> : <span />}
+          {changed ? <p>{changed}</p> : <span />}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+/** Shared prose-block renderer for the .case-note grid layout. */
+function NoteBlock({ b }: { b: { label: string; meta: string; heading: string; body: string[] } }) {
+  return (
+    <section className="section section--divided">
+      <div className="case-note reveal">
+        <div className="case-note-side">
+          <h2 className="t-label">{b.label}</h2>
+          <p className="t-meta" style={{ color: "var(--ink-muted)", marginTop: 8 }}>
+            {b.meta}
+          </p>
+        </div>
+        <div className="case-note-body">
+          <h3 className="t-detail-h case-note-h">{b.heading}</h3>
+          {b.body.map((p) => (
+            <p className="case-p" key={p.slice(0, 32)}>
+              {p}
+            </p>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function NanovestCalendar({
   dict,
   lang,
   data,
 }: CaseProps<Cases["nanovest-calendar"]>) {
   const home = `/${lang}`;
+  const [problem, approach] = data.blocks;
+  const R = data.research;
+  const S = data.structure;
 
   return (
     <>
+      {/* ── hero ──────────────────────────────────────────────── */}
       <section className="case-hero" id="top">
         <div className="case-hero-deco" aria-hidden="true">
           <div className="case-hero-deco-blob" />
@@ -89,8 +199,6 @@ export default function NanovestCalendar({
           </h1>
           <p className="t-detail-b case-lead">{data.lead}</p>
 
-          {/* href kosong tidak dirender: tautan mati lebih buruk
-              daripada tautan yang belum ada. */}
           {data.site.href ? (
             <a
               className="pill pill--lg t-eyebrow"
@@ -123,6 +231,7 @@ export default function NanovestCalendar({
         />
       </section>
 
+      {/* ── 01 · The brief — overview ─────────────────────────── */}
       <section className="section section--divided tagline-section">
         <div className="tagline-grid reveal" data-stagger="18">
           <div>
@@ -137,6 +246,7 @@ export default function NanovestCalendar({
         </div>
       </section>
 
+      {/* mockup — wide figure */}
       <figure className="case-fig reveal case-fig--wide">
         <div className="case-media" style={{ "--ar": 3200 / 2400 } as CSSProperties}>
           <img
@@ -148,6 +258,7 @@ export default function NanovestCalendar({
         </div>
       </figure>
 
+      {/* scope list */}
       <section className="section section--divided">
         <div className="section-head reveal">
           <h2 className="t-label">{data.scope.label}</h2>
@@ -165,26 +276,27 @@ export default function NanovestCalendar({
         </ol>
       </section>
 
-      {data.video.src ? <section
-        className="section section--divided case-video"
-        aria-labelledby="case-video-label"
-      >
-        <div className="section-head reveal">
-          <h2 className="t-label" id="case-video-label">
-            {data.video.label}
-          </h2>
-          <p className="t-meta">{data.video.meta}</p>
-        </div>
-
-        <div
-          className="reel-wrap"
-          data-reel
-          data-dark
-          style={
-            { "--ar": data.video.ar, "--focus": data.video.posterFocus } as CSSProperties
-          }
+      {/* ── video (hidden until src is filled) ────────────────── */}
+      {data.video.src ? (
+        <section
+          className="section section--divided case-video"
+          aria-labelledby="case-video-label"
         >
-          {data.video.src ? (
+          <div className="section-head reveal">
+            <h2 className="t-label" id="case-video-label">
+              {data.video.label}
+            </h2>
+            <p className="t-meta">{data.video.meta}</p>
+          </div>
+
+          <div
+            className="reel-wrap"
+            data-reel
+            data-dark
+            style={
+              { "--ar": data.video.ar, "--focus": data.video.posterFocus } as CSSProperties
+            }
+          >
             <video
               className="reel-media"
               data-reel-media
@@ -195,23 +307,10 @@ export default function NanovestCalendar({
               playsInline
               preload="none"
             />
-          ) : (
-            <img
-              className="reel-media"
-              data-reel-media
-              src={data.video.poster}
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
-          )}
-
-          <div className="reel-overlay">
-            <span className="reel-tag t-eyebrow">{data.video.tag}</span>
-            <span className="reel-year t-eyebrow">{data.video.year}</span>
-          </div>
-
-          {data.video.src ? (
+            <div className="reel-overlay">
+              <span className="reel-tag t-eyebrow">{data.video.tag}</span>
+              <span className="reel-year t-eyebrow">{data.video.year}</span>
+            </div>
             <button
               className="reel-mute"
               data-reel-mute
@@ -227,37 +326,110 @@ export default function NanovestCalendar({
                 />
               </svg>
             </button>
-          ) : (
-            <div className="case-video-badge" aria-hidden="true">
-              <span className="t-eyebrow">{data.video.badge}</span>
-            </div>
-          )}
-        </div>
+          </div>
 
-        <p className="t-meta case-cap">{data.video.caption}</p>
-      </section> : null}
+          <p className="t-meta case-cap">{data.video.caption}</p>
+        </section>
+      ) : null}
 
-      {data.blocks.map((b) => (
-        <section className="section section--divided" key={b.label}>
+      {/* ── 02 · Where it broke — Problem ─────────────────────── */}
+      <NoteBlock b={problem} />
+
+      {/* ── 03 · Structure ────────────────────────────────────── */}
+      {(S.ia.img || S.flow.img || S.wireframes.items.some((w) => w.img)) ? (
+        <section className="section section--divided">
           <div className="case-note reveal">
             <div className="case-note-side">
-              <h2 className="t-label">{b.label}</h2>
+              <h2 className="t-label">{S.label}</h2>
               <p className="t-meta" style={{ color: "var(--ink-muted)", marginTop: 8 }}>
-                {b.meta}
+                {S.meta}
               </p>
             </div>
             <div className="case-note-body">
-              <h3 className="t-detail-h case-note-h">{b.heading}</h3>
-              {b.body.map((p) => (
-                <p className="case-p" key={p.slice(0, 32)}>
-                  {p}
-                </p>
-              ))}
+              <div className="case-proc-head">
+                <h3 className="t-detail-h case-note-h">{S.heading}</h3>
+                {S.lead ? S.lead.split("\n\n").map((p, i) => (
+                  <p key={i} className="case-p">{p}</p>
+                )) : null}
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
+                {S.ia.img ? (
+                  <>
+                    {S.iaPath?.img ? <ProcFigure src={S.iaPath.img} ar={S.iaPath.ar} alt={S.iaPath.alt} wide /> : null}
+                    <ProcFigure src={S.ia.img} ar={S.ia.ar} alt={S.ia.alt} wide />
+                  </>
+                ) : null}
+                {S.flow.img ? (
+                  <>
+                    {S.flowPath?.img ? <ProcFigure src={S.flowPath.img} ar={S.flowPath.ar} alt={S.flowPath.alt} wide /> : null}
+                    <ProcFigure src={S.flow.img} ar={S.flow.ar} alt={S.flow.alt} wide />
+                  </>
+                ) : null}
+                {S.wireframes.items.some((w) => w.img) ? (
+                  <div className="case-proc-row">
+                    {S.wireframes.items.map((w, i) =>
+                      w.img ? (
+                        <figure className="case-fig reveal" key={i}>
+                          <div
+                            className="case-media case-media--phone"
+                            style={{ "--ar": w.ar } as CSSProperties}
+                          >
+                            <img src={w.img} alt={w.alt} loading="lazy" decoding="async" />
+                          </div>
+                        </figure>
+                      ) : null
+                    )}
+                  </div>
+                ) : null}
+              </div>
             </div>
           </div>
         </section>
-      ))}
+      ) : null}
 
+      {/* ── 04 · Research ─────────────────────────────────────── */}
+      {(R.benchmark.img || R.benchmarkGaps.img) ? (
+        <section className="section section--divided">
+          <div className="case-note reveal">
+            <div className="case-note-side">
+              <h2 className="t-label">{R.label}</h2>
+              <p className="t-meta" style={{ color: "var(--ink-muted)", marginTop: 8 }}>
+                {R.meta}
+              </p>
+            </div>
+            <div className="case-note-body">
+              <div className="case-proc-head">
+                <h3 className="t-detail-h case-note-h">{R.heading}</h3>
+                {R.lead ? R.lead.split("\n\n").map((p, i) => (
+                  <p key={i} className="case-p">{p}</p>
+                )) : null}
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
+                {R.benchmark.img ? (
+                  <ProcFigure
+                    src={R.benchmark.img}
+                    ar={R.benchmark.ar}
+                    alt={R.benchmark.alt}
+                    wide
+                  />
+                ) : null}
+                {R.benchmarkGaps.img ? (
+                  <ProcFigure
+                    src={R.benchmarkGaps.img}
+                    ar={R.benchmarkGaps.ar}
+                    alt={R.benchmarkGaps.alt}
+                  />
+                ) : null}
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── 05 · How I worked — Approach ──────────────────────── */}
+      <NoteBlock b={approach} />
+
+      {/* ── Screens (unnumbered) ───────────────────────────────── */}
       <section className="section section--divided">
         <div className="section-head reveal">
           <h2 className="t-label">{data.gallery.label}</h2>
@@ -270,7 +442,7 @@ export default function NanovestCalendar({
         </div>
       </section>
 
-      {/* data-dark: nav membalik warnanya di atas section ini (§6.1) */}
+      {/* ── 06 · After three months — Results ─────────────────── */}
       <section className="section case-metrics grain" data-dark data-reveal>
         <div className="section-head">
           <h2 className="t-label">{data.metrics.label}</h2>
@@ -300,8 +472,6 @@ export default function NanovestCalendar({
       </section>
 
       <section className="section case-next-section">
-        {/* Track diduplikasi PERSIS 2× lalu digeser -50%
-            (@keyframes heroMarquee) → loop mulus, nol JS. */}
         <div className="case-marquee" aria-hidden="true">
           <div className="case-marquee-track">
             {[0, 1].map((set) => (
