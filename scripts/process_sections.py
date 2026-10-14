@@ -119,11 +119,9 @@ def figure_html(f, P):
         frame = (f'<button type="button" class="case-pfig-btn" data-zoom '
                  f'aria-haspopup="dialog" aria-label="{label}">{img}'
                  f'<span class="case-pfig-hint" aria-hidden="true">{ZOOM_ICON}</span></button>')
-        extra = ""
     else:
         frame = f'<div class="case-pfig-static">{img}</div>'
-        extra = " case-pfig--scroll"
-    return (f'<figure class="case-pfig{extra} reveal" id="{attr(f["id"])}">'
+    return (f'<figure class="case-pfig reveal" id="{attr(f["id"])}">'
             f'<div class="case-pfig-frame">{frame}</div>'
             f'{cap_html}{legend_html}</figure>')
 

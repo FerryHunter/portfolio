@@ -189,7 +189,7 @@ function Figure({ f, P }: { f: ResolvedFigure; P: Labels }) {
 
   return (
     <figure
-      className={`case-pfig${f.zoom ? "" : " case-pfig--scroll"} reveal`}
+      className="case-pfig reveal"
       id={f.id}
     >
       <div className="case-pfig-frame">
