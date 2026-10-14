@@ -2597,6 +2597,190 @@ body.preloading { overflow: hidden; }
 }
 .case-proc-placeholder span { word-break: break-all; }
 
+/* --- process sections: figure, legend, lightbox (Research / Structure) ---
+   Komponen: components/cases/ProcessSections.tsx · scripts/process_sections.py
+   Lightbox: motion/lightbox.js. */
+
+/* Anak grid default min-width:auto = min-content: satu diagram lebar
+   (min-width: 640px di bawah) akan melebarkan seluruh grid dan memicu
+   scroll horizontal halaman di mobile. Khusus section proses. */
+section[id^="process-"] .case-note > * { min-width: 0; }
+
+.case-pfig-text { margin-bottom: 8px; }
+.case-pfigs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+/* Desktop lebar: tumpukan figure tidak lari sampai gutter kanan, sama
+   seperti .case-fig (860px). Mobile tetap edge to edge (blok 900px). */
+@media (min-width: 901px) {
+  .case-pfigs { max-width: min(100%, 860px); }
+}
+/* Lebar penuh kolom kanan — tidak ikut batas 860px milik .case-fig. */
+.case-pfig { margin: 0; }
+.case-pfig-frame {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.case-pfig-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.case-pfig-btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: zoom-in;
+}
+.case-pfig-hint {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(13, 13, 11, .82);
+  color: var(--white);
+  transition: transform .3s var(--ease-soft), background .3s var(--ease-soft);
+}
+.case-pfig-btn:hover .case-pfig-hint,
+.case-pfig-btn:focus-visible .case-pfig-hint {
+  transform: scale(1.12);
+  background: var(--accent);
+}
+.case-pfig-legend { margin-top: 8px; color: var(--ink-muted); }
+
+/* Placeholder dev: nama berkas yang diharapkan jadi bagian paling terbaca. */
+.case-pfig-ph-tag { color: var(--ink); }
+.case-pfig-ph-file { font-size: 13px; color: var(--ink); }
+
+/* Diagram lebar yang tidak di-zoom (wireframe): di layar sempit digulir
+   horizontal di dalam figure, bukan diperas sampai tak terbaca. */
+.case-pfig--scroll .case-pfig-frame { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.case-pfig--scroll .case-pfig-static img { min-width: 640px; }
+
+@media (max-width: 900px) {
+  .case-pfigs { gap: 32px; margin-top: 32px; }
+  /* Mobile: figure edge to edge; caption/legend tetap di dalam gutter. */
+  .case-pfig { margin-inline: calc(var(--gutter) * -1); }
+  .case-pfig-frame { border-radius: 0; border-inline: 0; }
+  .case-pfig figcaption,
+  .case-pfig .case-pfig-legend { padding-inline: var(--gutter); }
+  .case-proc-placeholder { border-radius: 0; }
+}
+
+/* --- lightbox: <dialog> modal, markup dari server, perilaku di
+   motion/lightbox.js. Kursor sistem dikembalikan di dalamnya: kursor
+   custom (§5.2) berada di bawah top layer, jadi tidak terlihat di sini. */
+html.lb-open { overflow: hidden; }
+.lb {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #0b0b0a;
+  color: #f4f3ef;
+  cursor: auto;
+}
+.lb[open] {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+.lb::backdrop { background: #0b0b0a; }
+.lb-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px var(--gutter);
+}
+.lb-count { color: rgba(244, 243, 239, .72); }
+.lb-tools { display: flex; gap: 8px; margin-left: auto; }
+.lb.lb button {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid rgba(244, 243, 239, .28);
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .25s var(--ease-soft), border-color .25s var(--ease-soft);
+}
+.lb.lb button:hover:not(:disabled) {
+  background: rgba(244, 243, 239, .12);
+  border-color: rgba(244, 243, 239, .6);
+}
+.lb.lb button:disabled { opacity: .35; cursor: default; }
+.lb :focus-visible { outline: 2px solid #f4f3ef; outline-offset: 2px; }
+.lb-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 0;
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  cursor: zoom-in;
+}
+.lb-stage.is-zoomed { cursor: grab; }
+.lb-stage.is-zoomed:active { cursor: grabbing; }
+.lb-img {
+  display: block;
+  max-width: none;
+  background: #fff;
+  will-change: transform;
+}
+.lb.lb .lb-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  translate: 0 -50%;
+  font-size: 22px;
+  background: rgba(11, 11, 10, .6);
+}
+.lb-prev { left: var(--gutter); }
+.lb-next { right: var(--gutter); }
+.lb-cap {
+  margin: 0;
+  padding: 12px var(--gutter) 20px;
+  color: rgba(244, 243, 239, .72);
+  text-align: center;
+}
+.lb-cap[hidden],
+.lb-count[hidden],
+.lb.lb .lb-nav[hidden] { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .case-pfig-hint,
+  .lb.lb button { transition: none; }
+  .case-pfig-btn:hover .case-pfig-hint { transform: none; }
+}
+
 /* Iteration block (before / after) */
 .case-iter + .case-iter {
   margin-top: 48px;

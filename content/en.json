@@ -134,6 +134,20 @@
     "mute": "Mute",
     "unmute": "Unmute"
   },
+  "process": {
+    "research": "Research",
+    "structure": "Structure",
+    "tag": "Process",
+    "missing": "Image to upload",
+    "zoom": "Enlarge image",
+    "viewer": "Image viewer",
+    "close": "Close",
+    "prev": "Previous image",
+    "next": "Next image",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "fit": "Actual size / fit"
+  },
   "tagline": {
     "label": "About",
     "meta": "01 · What I actually do",
@@ -1026,7 +1040,7 @@
       ],
       "overview": {
         "label": "Overview",
-        "meta": "01 · The brief",
+        "meta": "The brief",
         "text": "Nanovest's next move is putting AI at the center of the investing experience, but the app's bright, gradient-heavy interface read as consumer-fun rather than as something trustworthy enough to hand financial decisions to. This redesign rebuilds the visual system around dark mode and a tighter, more technical palette, and gives the AI assistant a fixed home in the navigation bar itself, so it's reachable from every tab, not buried inside a single screen."
       },
       "showcase": {
@@ -1056,7 +1070,7 @@
       "blocks": [
         {
           "label": "Problem",
-          "meta": "02 · Where it broke",
+          "meta": "Where it broke",
           "heading": "The app's colour language undercut the seriousness of an AI advisor.",
           "body": [
             "Nanovest's interface leaned on a bright purple-to-pink gradient and colourful, badge-style icons for nearly everything, Featured cards, product icons, promo banners. That reads as consumer-fun, which is the wrong register for a product about to hand out AI-generated financial judgement calls; the same visual language sitting under a stock alert and a referral promo made both feel equally weightless.",
@@ -1065,7 +1079,7 @@
         },
         {
           "label": "Approach",
-          "meta": "03 · How I worked",
+          "meta": "How I worked",
           "heading": "Dark mode as the default, AI moved into the navigation itself.",
           "body": [
             "The interface rebuilt dark-first: near-black surfaces, a narrow set of cool graphite tones, replacing the purple-pink gradient identity with something closer to a trading terminal than a lifestyle app. Colour stopped decorating and started signalling, an accent only appears when it's carrying information, a gain, a loss, an alert that needs attention.",
@@ -1074,9 +1088,63 @@
           ]
         }
       ],
+      "research": {
+        "headline": "The real question was never what the AI says. It was where it lives.",
+        "p1": "I audited the existing Nanovest app screen by screen, from Home and Invest to Wallet and Account, marking every place an AI answer could surface and what it would compete with there. Then I looked at how other finance and trading apps place an assistant: a floating button, a chat tab, a search field, or a slot in the navigation. For each pattern I checked how many taps it takes to reach, whether it survives a change of screen, and whether it reads as part of the product or a widget on top of it. I kept it all as one side-by-side comparison, with the current Nanovest Home next to the patterns.",
+        "p2": "Most of the patterns put the assistant on a single screen or on a floating button above the content, so reaching it depended on where someone already was. That was the gap: AI as a destination, not a layer under every tab. It settled the placement before any visual work. The assistant goes into the tab bar itself, and the interface around it turns dark and restrained, so it reads as something worth trusting with money.",
+        "figures": [
+          {
+            "id": "research-benchmark",
+            "src": "",
+            "alt": "Side-by-side screenshots of AI assistant entry points in several finance apps, next to the current Nanovest Home screen",
+            "caption": "Benchmark: where finance apps place their AI assistant, next to the current Nanovest Home.",
+            "zoom": true,
+            "width": 3000,
+            "height": 1500,
+            "legend": ""
+          }
+        ]
+      },
+      "structure": {
+        "headline": "Where the AI lives, and how it follows someone through the app.",
+        "p1": "The assistant sits in the centre of the tab bar, between Invest and Grow, so it stands over every destination instead of inside one of them. Around it the app keeps four tabs: Home, Invest, Grow and Wallet. Invest holds the products (Crypto, Web3, Stocks and Gold) and the portfolio drill-down, and Wallet holds Nanovest Cash and Crypto Cash, with a tab for each currency.",
+        "p2": "The flow follows one question, “what is going on with my money right now?”, and it starts the same way from any tab: tap the centre icon, type or speak, get an answer that names the positions behind it, then go straight to the portfolio or the asset. I also drew the edge cases before any visual design: what the assistant shows for an empty portfolio, and how an alert looks different from the resting state. Both were decided in the wireframes, before colour or type came into it.",
+        "figures": [
+          {
+            "id": "structure-ia",
+            "src": "",
+            "alt": "Sitemap diagram: the tab bar with the AI assistant at the centre and the screens reached from each tab",
+            "caption": "Information architecture: the AI entry point above Home, Invest, Grow and Wallet.",
+            "zoom": true,
+            "width": 3000,
+            "height": 1500,
+            "legend": ""
+          },
+          {
+            "id": "structure-flow",
+            "src": "",
+            "alt": "Flow diagram from the AI entry point through question and answer to the portfolio and asset detail",
+            "caption": "User flow: from any tab to an answer, then on to the portfolio.",
+            "zoom": true,
+            "width": 3000,
+            "height": 1800,
+            "legend": ""
+          },
+          {
+            "id": "structure-wireframes",
+            "src": "",
+            "alt": "Row of low-fidelity wireframe screens showing Home in resting and alert states and the Ask anything surface",
+            "caption": "Low-fidelity wireframes: Home in its resting and alert states, with the AI entry in the tab bar.",
+            "zoom": false,
+            "width": 2400,
+            "height": 1200,
+            "legend": ""
+          }
+        ]
+      },
       "video": {
         "label": "Motion",
-        "meta": "04 · Screen recording",
+        "meta": "Screen recording",
         "src": "",
         "ar": 1.3333,
         "poster": "/work/nanovest-app-redesign/home-ai-alert.webp",
@@ -1134,7 +1202,7 @@
       },
       "steps": {
         "label": "Anatomy",
-        "meta": "05 · Four parts that carry the shell",
+        "meta": "Four parts that carry the shell",
         "items": [
           {
             "num": "1",
@@ -1168,7 +1236,7 @@
       },
       "metrics": {
         "label": "Results",
-        "meta": "06 · What the redesign changed",
+        "meta": "What the redesign changed",
         "items": [
           {
             "v": "1",
@@ -1259,7 +1327,7 @@
       ],
       "overview": {
         "label": "Overview",
-        "meta": "01 · The brief",
+        "meta": "The brief",
         "text": "Nanovest's US stocks only traded at market: *buy* meant right now, at whatever number sat on the ticker. A limit order lets someone name their own price instead and *leave*, so the app fills it later, at that number or better, without them watching the screen for it."
       },
       "mockup": {
@@ -1287,7 +1355,7 @@
       "blocks": [
         {
           "label": "Problem",
-          "meta": "02 · Where it broke",
+          "meta": "Where it broke",
           "heading": "Every order was a bet on the exact second it fired.",
           "body": [
             "The order screen had two buttons, Buy and Sell, both market orders. A trade filled at whatever price sat on the ticker that instant, so anyone with a number in mind (buy under Rp90.000, not before) had to hold the app open and time the tap themselves, or miss the price entirely.",
@@ -1296,18 +1364,72 @@
         },
         {
           "label": "Approach",
-          "meta": "03 · How I worked",
+          "meta": "How I worked",
           "heading": "Name a price, walk away, come back to a decision already made.",
           "body": [
-            "Limit Buy sits one tap from the stock's own detail screen, next to Buy and Sell, so it reads as a third way to trade the stock someone is already looking at, not a separate feature filed somewhere else.",
+            "Limit Buy sits one tap from the stock's own detail screen, behind the Buy button, so it reads as another way to buy the stock someone is already looking at, not a separate feature filed somewhere else.",
             "The price field opens anchored to today's price, with four quick offsets, -2%, -3%, -5%, -10%, above the keypad, because most limit orders are a discount off the current number, not a figure typed from memory.",
             "PIN authorization and a processing screen, the same two steps as any other transaction in the app, keep a scheduled order feeling like a purchase rather than a new kind of risk. It settles on one state, Scheduled, with total cost, share count, and a plain sentence saying the wallet is already charged and refunded automatically if the order never fills."
           ]
         }
       ],
+      "research": {
+        "headline": "A limit order is a promise about a price, so I started there.",
+        "p1": "I benchmarked limit order flows in Robinhood, Pluang, Gotrade, Revolut, and a handful of other investment apps, and traced Nanovest’s own market-order flow screen by screen. For each one I asked the same three questions: where does the price get set, what does the person see before they commit, and what happens to their money while the order waits? Holding every app to those three questions made very different screens easy to line up side by side.\n\nWhat stood out was how crowded the price step is. Several apps put the order type, limit price, shares, and expiry on a single screen, and leave you to work out how far your price sits from the market. The gap was not another field on a form. It was a way to name a price without doing arithmetic in your head, with today’s price always in view.",
+        "p2": "So the price became the only thing on its screen, with quick offsets of -2% to -10% below today’s price. Everything else moved to the steps after it: shares first, then fee, expiry, and total cost in a review step before the PIN. I sketched that sequence as low-fidelity wireframes first, to test the order of the steps before spending any time on visual design.",
+        "figures": [
+          {
+            "id": "research-benchmark",
+            "src": "",
+            "alt": "Side-by-side limit order entry screens from other trading apps",
+            "caption": "",
+            "zoom": true,
+            "width": 3000,
+            "height": 1500,
+            "legend": ""
+          },
+          {
+            "id": "structure-wireframes",
+            "src": "",
+            "alt": "Four low-fidelity phone wireframes: an intro explaining limit buy orders, limit price entry with quick offsets, shares entry with a running total, and the order review ending in a Confirm button",
+            "caption": "",
+            "zoom": false,
+            "width": 1809,
+            "height": 891,
+            "legend": ""
+          }
+        ]
+      },
+      "structure": {
+        "headline": "Where the order lives, and the fewest steps to place it.",
+        "p1": "I compared how Robinhood, Pluang, Gotrade, Revolut, and a few other investment apps structure a limit order, then mapped Nanovest’s own flow against them. Most of them start the order from the stock’s own page, where the decision is made, so I did the same: one tap on Buy opens the limit order flow. From there it runs in six steps: price, shares, review, PIN, processing, then a scheduled confirmation.\n\nThe information architecture decides which screen owns what: the price, the money, or the status. Each piece of information is asked for once and shown where it matters, so nothing is asked twice. Where other apps put several fields on one screen, I gave each step a single job.",
+        "p2": "The user flow follows one question: what happens to my money while I wait? So the review screen shows the limit price, fee, and total cost before the PIN, and the confirmation says plainly that the wallet is already charged and refunded if the order is cancelled or never fills. Cancelling stays one tap away from that same screen.\n\nI also mapped the unhappy paths: not enough balance, a wrong PIN, a cancelled order. Deciding what happens in those moments while the structure was still cheap to change meant the visual design could start with the edge cases already settled.",
+        "figures": [
+          {
+            "id": "structure-ia",
+            "src": "",
+            "alt": "Tree diagram of screens and how they connect, from the stock page to order status",
+            "caption": "",
+            "zoom": true,
+            "width": 2546,
+            "height": 985,
+            "legend": ""
+          },
+          {
+            "id": "structure-flow",
+            "src": "",
+            "alt": "Flow diagram of placing a limit buy order, with decision points and error paths",
+            "caption": "",
+            "zoom": true,
+            "width": 2000,
+            "height": 1212,
+            "legend": ""
+          }
+        ]
+      },
       "video": {
         "label": "Motion",
-        "meta": "04 · Screen recording",
+        "meta": "Screen recording",
         "src": "",
         "ar": 1.3333,
         "poster": "/work/nanovest-limit-order/limit-price.webp",
@@ -1345,12 +1467,12 @@
       },
       "steps": {
         "label": "Anatomy",
-        "meta": "05 · Five screens that carry the order",
+        "meta": "Five screens that carry the order",
         "items": [
           {
             "num": "1",
             "title": "Start from the stock itself",
-            "body": "Limit Buy lives next to Buy and Sell on the stock's own detail screen, not behind a separate order-type menu. Someone already looking at Apple's chart and price never has to leave it to name their own.",
+            "body": "Limit Buy opens straight from the Buy button on the stock's own detail screen. Someone already looking at Apple's chart and price never has to leave it to name their own.",
             "img": "/work/nanovest-limit-order/stock-detail.webp",
             "ar": 0.4618
           },
@@ -1386,7 +1508,7 @@
       },
       "metrics": {
         "label": "Results",
-        "meta": "06 · After launch",
+        "meta": "After launch",
         "items": [
           {
             "v": "3 taps",

@@ -3,6 +3,7 @@ import { Arrow } from "../Arrow";
 import { Words } from "../Words";
 import type { Cases } from "@/lib/dict";
 import type { CaseProps } from "./types";
+import ProcessSections, { resolveProcess, sectionNumbers } from "./ProcessSections";
 
 /**
  * Case study: Nanovest App Redesign (studi konsep, bukan klien).
@@ -70,6 +71,42 @@ export default function NanovestAppRedesign({
 }: CaseProps<Cases["nanovest-app-redesign"]>) {
   const home = `/${lang}`;
 
+  /* Research & Structure: komponen shared (./ProcessSections). Nomor
+     eyebrow diturunkan dari urutan render — bukan ditulis di JSON —
+     dan section tanpa konten tidak memesan nomor. */
+  const R = resolveProcess(data.research, data.slug);
+  const S = resolveProcess(data.structure, data.slug);
+  const num = sectionNumbers([
+    "overview",
+    "problem",
+    R && "research",
+    S && "structure",
+    "approach",
+    "gallery",
+    "metrics",
+  ]);
+
+  const block = (b: (typeof data.blocks)[number], n: string) => (
+    <section className="section section--divided" key={b.label}>
+      <div className="case-note reveal">
+        <div className="case-note-side">
+          <h2 className="t-label">{b.label}</h2>
+          <p className="t-meta" style={{ color: "var(--ink-muted)", marginTop: 8 }}>
+            {`${n} · ${b.meta}`}
+          </p>
+        </div>
+        <div className="case-note-body">
+          <h3 className="t-detail-h case-note-h">{b.heading}</h3>
+          {b.body.map((p) => (
+            <p className="case-p" key={p.slice(0, 32)}>
+              {p}
+            </p>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+
   return (
     <>
       <section className="case-hero" id="top">
@@ -128,7 +165,7 @@ export default function NanovestAppRedesign({
           <div>
             <p className="t-label">{data.overview.label}</p>
             <p className="t-meta" style={{ color: "var(--ink-muted)", marginTop: 8 }}>
-              {data.overview.meta}
+              {`${num.overview} · ${data.overview.meta}`}
             </p>
           </div>
           <p className="t-tagline tagline">
@@ -250,31 +287,17 @@ export default function NanovestAppRedesign({
       </section>
       */}
 
-      {data.blocks.map((b) => (
-        <section className="section section--divided" key={b.label}>
-          <div className="case-note reveal">
-            <div className="case-note-side">
-              <h2 className="t-label">{b.label}</h2>
-              <p className="t-meta" style={{ color: "var(--ink-muted)", marginTop: 8 }}>
-                {b.meta}
-              </p>
-            </div>
-            <div className="case-note-body">
-              <h3 className="t-detail-h case-note-h">{b.heading}</h3>
-              {b.body.map((p) => (
-                <p className="case-p" key={p.slice(0, 32)}>
-                  {p}
-                </p>
-              ))}
-            </div>
-          </div>
-        </section>
-      ))}
+      {block(data.blocks[0], num.problem)}
+
+      {/* Urutan spec: Problem → Research → Structure → Approach. */}
+      <ProcessSections dict={dict} research={R} structure={S} numbers={num} />
+
+      {block(data.blocks[1], num.approach)}
 
       <section className="section section--divided">
         <div className="section-head reveal">
           <h2 className="t-label">{data.gallery.label}</h2>
-          <p className="t-meta">{data.gallery.meta}</p>
+          <p className="t-meta">{`${num.gallery} · ${data.gallery.meta}`}</p>
         </div>
         <div className="case-gallery case-gallery--phones case-gallery--grid4">
           {data.gallery.items.map((g) => (
@@ -287,7 +310,7 @@ export default function NanovestAppRedesign({
       <section className="section case-metrics grain" data-dark data-reveal>
         <div className="section-head">
           <h2 className="t-label">{data.metrics.label}</h2>
-          <p className="t-meta">{data.metrics.meta}</p>
+          <p className="t-meta">{`${num.metrics} · ${data.metrics.meta}`}</p>
         </div>
         <div className="case-metrics-row">
           {data.metrics.items.map((m) => (

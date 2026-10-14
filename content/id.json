@@ -134,6 +134,20 @@
     "mute": "Bisukan",
     "unmute": "Nyalakan suara"
   },
+  "process": {
+    "research": "Riset",
+    "structure": "Struktur",
+    "tag": "Proses",
+    "missing": "Gambar menyusul",
+    "zoom": "Perbesar gambar",
+    "viewer": "Penampil gambar",
+    "close": "Tutup",
+    "prev": "Gambar sebelumnya",
+    "next": "Gambar berikutnya",
+    "zoomIn": "Perbesar",
+    "zoomOut": "Perkecil",
+    "fit": "Ukuran asli / sesuaikan"
+  },
   "tagline": {
     "label": "Tentang",
     "meta": "01 · Yang sebenarnya saya kerjakan",
@@ -1026,7 +1040,7 @@
       ],
       "overview": {
         "label": "Ringkasan",
-        "meta": "01 · Brief-nya",
+        "meta": "Brief-nya",
         "text": "Langkah berikutnya Nanovest adalah menaruh AI di pusat pengalaman investasi, tapi antarmuka aplikasinya yang cerah dan penuh gradasi terbaca sebagai fun ala konsumen, bukan sesuatu yang cukup dipercaya untuk diserahi keputusan finansial. Redesain ini membangun ulang sistem visualnya di sekitar dark mode dan palet yang lebih ketat dan teknikal, serta memberi asisten AI rumah tetap di navigation bar itu sendiri, sehingga bisa dijangkau dari tab mana pun, bukan terkubur di satu layar."
       },
       "showcase": {
@@ -1056,7 +1070,7 @@
       "blocks": [
         {
           "label": "Masalah",
-          "meta": "02 · Titik rusaknya",
+          "meta": "Titik rusaknya",
           "heading": "Bahasa warna aplikasi ini bertentangan dengan keseriusan seorang penasihat AI.",
           "body": [
             "Antarmuka Nanovest mengandalkan gradasi ungu-ke-pink yang cerah dan ikon bergaya badge berwarna-warni untuk hampir semuanya, kartu Featured, ikon produk, banner promo. Itu terbaca sebagai fun ala konsumen, register yang salah untuk produk yang akan menyerahkan keputusan finansial hasil AI; bahasa visual yang sama di bawah alert saham dan promo referral membuat keduanya terasa sama-sama tidak penting.",
@@ -1065,7 +1079,7 @@
         },
         {
           "label": "Pendekatan",
-          "meta": "03 · Cara kerjanya",
+          "meta": "Cara kerjanya",
           "heading": "Dark mode jadi default, AI pindah ke navigasi itu sendiri.",
           "body": [
             "Antarmukanya dibangun ulang dark-first: permukaan nyaris hitam, set warna graphite dingin yang sempit, menggantikan identitas gradasi ungu-pink dengan sesuatu yang lebih dekat ke trading terminal ketimbang aplikasi lifestyle. Warna berhenti menghias dan mulai memberi sinyal, aksen hanya muncul saat ia membawa informasi, untung, rugi, alert yang perlu diperhatikan.",
@@ -1074,9 +1088,63 @@
           ]
         }
       ],
+      "research": {
+        "headline": "Pertanyaan sebenarnya bukan apa kata AI, tapi di mana ia tinggal.",
+        "p1": "Saya mengaudit aplikasi Nanovest yang ada layar demi layar, dari Home dan Invest sampai Wallet dan Account, menandai setiap tempat jawaban AI bisa muncul dan apa yang akan bersaing dengannya di sana. Lalu saya melihat cara aplikasi keuangan dan trading lain menempatkan asisten: tombol mengambang, tab chat, kolom pencarian, atau satu slot di navigasi. Untuk tiap pola saya cek berapa ketukan untuk menjangkaunya, apakah ia bertahan saat layar berganti, dan apakah ia terbaca sebagai bagian produk atau widget yang ditempel di atasnya. Semuanya saya kumpulkan dalam satu perbandingan berdampingan, dengan Home Nanovest saat ini di samping pola-polanya.",
+        "p2": "Sebagian besar pola menaruh asisten di satu layar atau di tombol mengambang di atas konten, jadi menjangkaunya bergantung pada posisi seseorang saat itu. Itulah celahnya: AI sebagai tujuan, bukan lapisan di bawah setiap tab. Celah itu menentukan penempatannya sebelum kerja visual apa pun. Asisten masuk ke tab bar itu sendiri, dan antarmuka di sekelilingnya menjadi gelap dan terkendali, supaya terbaca sebagai sesuatu yang layak dipercaya untuk urusan uang.",
+        "figures": [
+          {
+            "id": "research-benchmark",
+            "src": "",
+            "alt": "Tangkapan layar berdampingan titik masuk asisten AI di beberapa aplikasi keuangan, di samping layar Home Nanovest saat ini",
+            "caption": "Benchmark: tempat aplikasi keuangan menaruh asisten AI-nya, berdampingan dengan Home Nanovest saat ini.",
+            "zoom": true,
+            "width": 3000,
+            "height": 1500,
+            "legend": ""
+          }
+        ]
+      },
+      "structure": {
+        "headline": "Di mana AI tinggal, dan bagaimana ia mengikuti seseorang di seluruh aplikasi.",
+        "p1": "Asisten duduk di tengah tab bar, di antara Invest dan Grow, sehingga ia berdiri di atas setiap tujuan, bukan di dalam salah satunya. Di sekelilingnya aplikasi menyimpan empat tab: Home, Invest, Grow, dan Wallet. Invest memuat produk (Crypto, Web3, Stocks, dan Gold) beserta rincian portofolio, sementara Wallet memuat Nanovest Cash dan Crypto Cash, dengan satu tab untuk setiap mata uang.",
+        "p2": "Alurnya mengikuti satu pertanyaan, “sedang apa uang saya sekarang?”, dan dimulai dengan cara yang sama dari tab mana pun: ketuk ikon tengah, ketik atau bicara, dapat jawaban yang menyebut posisi di baliknya, lalu langsung menuju portofolio atau asetnya. Saya juga menggambar kasus tepinya sebelum desain visual: apa yang ditampilkan asisten untuk portofolio kosong, dan bagaimana alert tampak berbeda dari state diam. Keduanya diputuskan di wireframe, sebelum warna atau tipografi ikut campur.",
+        "figures": [
+          {
+            "id": "structure-ia",
+            "src": "",
+            "alt": "Diagram sitemap: tab bar dengan asisten AI di tengah dan layar yang dijangkau dari setiap tab",
+            "caption": "Arsitektur informasi: titik masuk AI di atas Home, Invest, Grow, dan Wallet.",
+            "zoom": true,
+            "width": 3000,
+            "height": 1500,
+            "legend": ""
+          },
+          {
+            "id": "structure-flow",
+            "src": "",
+            "alt": "Diagram alur dari titik masuk AI, lewat pertanyaan dan jawaban, ke portofolio dan detail aset",
+            "caption": "User flow: dari tab mana pun ke jawaban, lalu ke portofolio.",
+            "zoom": true,
+            "width": 3000,
+            "height": 1800,
+            "legend": ""
+          },
+          {
+            "id": "structure-wireframes",
+            "src": "",
+            "alt": "Deretan layar wireframe low-fidelity: Home dalam state diam dan alert, serta permukaan Ask anything",
+            "caption": "Wireframe low-fidelity: state diam dan alert Home dengan titik masuk AI di tab bar.",
+            "zoom": false,
+            "width": 2400,
+            "height": 1200,
+            "legend": ""
+          }
+        ]
+      },
       "video": {
         "label": "Gerak",
-        "meta": "04 · Rekaman layar",
+        "meta": "Rekaman layar",
         "src": "",
         "ar": 1.3333,
         "poster": "/work/nanovest-app-redesign/home-ai-alert.webp",
@@ -1134,7 +1202,7 @@
       },
       "steps": {
         "label": "Anatomi",
-        "meta": "05 · Empat bagian yang memikul shell ini",
+        "meta": "Empat bagian yang memikul shell ini",
         "items": [
           {
             "num": "1",
@@ -1168,7 +1236,7 @@
       },
       "metrics": {
         "label": "Hasil",
-        "meta": "06 · Yang berubah dari redesain ini",
+        "meta": "Yang berubah dari redesain ini",
         "items": [
           {
             "v": "1",
@@ -1259,7 +1327,7 @@
       ],
       "overview": {
         "label": "Ringkasan",
-        "meta": "01 · Brief-nya",
+        "meta": "Brief-nya",
         "text": "Saham AS di Nanovest hanya bisa dibeli di harga pasar: *beli* berarti sekarang juga, di angka apa pun yang sedang tertera. Limit order membiarkan seseorang menentukan harganya sendiri lalu *pergi*, sehingga order itu terisi belakangan, di angka itu atau lebih baik, tanpa perlu menunggui layar."
       },
       "mockup": {
@@ -1287,7 +1355,7 @@
       "blocks": [
         {
           "label": "Masalah",
-          "meta": "02 · Titik rusaknya",
+          "meta": "Titik rusaknya",
           "heading": "Setiap order adalah taruhan pada detik ia ditekan.",
           "body": [
             "Layar order hanya punya dua tombol, Buy dan Sell, keduanya order pasar. Sebuah transaksi terisi di harga apa pun yang sedang tertera saat itu, jadi siapa pun yang punya angka di kepala (beli di bawah Rp90.000, bukan sebelum itu) harus membuka aplikasi dan menekan beli tepat waktu sendiri, atau kehilangan harganya sama sekali.",
@@ -1296,18 +1364,72 @@
         },
         {
           "label": "Pendekatan",
-          "meta": "03 · Cara kerjanya",
+          "meta": "Cara kerjanya",
           "heading": "Tentukan harga, pergi, kembali ke keputusan yang sudah dibuat.",
           "body": [
-            "Limit Buy duduk satu ketuk dari layar detail saham itu sendiri, di sebelah Buy dan Sell, sehingga terbaca sebagai cara ketiga memperdagangkan saham yang sedang dilihat, bukan fitur terpisah yang disimpan di tempat lain.",
+            "Limit Buy duduk satu ketuk dari layar detail saham itu sendiri, di balik tombol Buy, sehingga terbaca sebagai cara lain membeli saham yang sedang dilihat, bukan fitur terpisah yang disimpan di tempat lain.",
             "Kolom harga terbuka dengan jangkar di harga hari ini, dengan empat pilihan cepat, -2%, -3%, -5%, -10%, di atas keypad, karena kebanyakan limit order adalah potongan dari angka saat ini, bukan angka yang diketik dari ingatan.",
             "Otorisasi PIN dan layar processing, dua langkah yang sama seperti transaksi lain di aplikasi ini, membuat order terjadwal tetap terasa seperti pembelian, bukan risiko jenis baru. Semuanya berhenti di satu status, Scheduled, lengkap dengan total biaya, jumlah lembar, dan satu kalimat yang menyatakan saldo sudah dipotong dan akan dikembalikan otomatis kalau order itu tidak pernah terisi."
           ]
         }
       ],
+      "research": {
+        "headline": "Limit order adalah janji soal harga, jadi saya mulai dari sana.",
+        "p1": "Saya membandingkan alur limit order di Robinhood, Pluang, Gotrade, Revolut, dan segelintir aplikasi investasi lain, lalu menelusuri alur market order Nanovest sendiri layar demi layar. Untuk masing-masing saya mengajukan tiga pertanyaan yang sama: di mana harga ditentukan, apa yang dilihat orang sebelum berkomitmen, dan apa yang terjadi pada uangnya selama order menunggu? Menahan setiap aplikasi pada tiga pertanyaan itu membuat layar yang sangat berbeda mudah disejajarkan.\n\nYang menonjol adalah betapa penuhnya langkah harga. Beberapa aplikasi menaruh jenis order, harga limit, jumlah lembar, dan masa berlaku di satu layar, lalu membiarkan kita menghitung sendiri seberapa jauh harga kita dari pasar. Celahnya bukan kolom form tambahan. Celahnya adalah cara menyebut harga tanpa menghitung di kepala, dengan harga hari ini selalu terlihat.",
+        "p2": "Jadi harga menjadi satu-satunya isi layarnya, dengan pilihan cepat -2% sampai -10% di bawah harga hari ini. Semua yang lain dipindahkan ke langkah sesudahnya: jumlah lembar dulu, lalu biaya, masa berlaku, dan total di langkah tinjauan sebelum PIN. Urutan itu saya sketsa dulu sebagai wireframe fidelitas rendah, untuk menguji urutan langkahnya sebelum menghabiskan waktu di desain visual.",
+        "figures": [
+          {
+            "id": "research-benchmark",
+            "src": "",
+            "alt": "Layar input limit order dari aplikasi trading lain, berdampingan",
+            "caption": "",
+            "zoom": true,
+            "width": 3000,
+            "height": 1500,
+            "legend": ""
+          },
+          {
+            "id": "structure-wireframes",
+            "src": "",
+            "alt": "Empat wireframe ponsel fidelitas rendah: intro yang menjelaskan limit buy order, input harga limit dengan pilihan cepat, input jumlah lembar dengan total berjalan, dan tinjauan order yang berakhir di tombol Confirm",
+            "caption": "",
+            "zoom": false,
+            "width": 1809,
+            "height": 891,
+            "legend": ""
+          }
+        ]
+      },
+      "structure": {
+        "headline": "Di mana order tinggal, dan langkah paling sedikit untuk memasangnya.",
+        "p1": "Saya membandingkan bagaimana Robinhood, Pluang, Gotrade, Revolut, dan beberapa aplikasi investasi lain menyusun limit order, lalu memetakan alur Nanovest sendiri terhadap mereka. Kebanyakan dari mereka memulai order dari halaman saham itu sendiri, tempat keputusan dibuat, jadi saya melakukan hal yang sama: satu ketukan pada Buy membuka alur limit order. Dari sana alurnya berjalan dalam enam langkah: harga, jumlah lembar, tinjauan, PIN, processing, lalu konfirmasi terjadwal.\n\nArsitektur informasi menentukan layar mana yang memegang apa: harga, uang, atau status. Setiap informasi ditanyakan sekali dan ditampilkan di tempat yang relevan, sehingga tidak ada yang ditanyakan dua kali. Di tempat aplikasi lain menaruh beberapa kolom dalam satu layar, saya memberi setiap langkah satu tugas.",
+        "p2": "User flow-nya mengikuti satu pertanyaan: apa yang terjadi pada uang saya selama saya menunggu? Jadi layar tinjauan menampilkan harga limit, biaya, dan total sebelum PIN, dan konfirmasi menyatakan dengan jelas bahwa saldo sudah dipotong dan akan dikembalikan kalau order dibatalkan atau tidak pernah terisi. Membatalkan tetap berjarak satu ketukan dari layar yang sama.\n\nSaya juga memetakan jalur yang tidak mulus: saldo tidak cukup, PIN salah, order dibatalkan. Memutuskan apa yang terjadi di momen-momen itu selagi struktur masih murah untuk diubah berarti desain visual bisa dimulai dengan kasus tepi yang sudah beres.",
+        "figures": [
+          {
+            "id": "structure-ia",
+            "src": "",
+            "alt": "Diagram pohon layar dan hubungannya, dari halaman saham sampai status order",
+            "caption": "",
+            "zoom": true,
+            "width": 2546,
+            "height": 985,
+            "legend": ""
+          },
+          {
+            "id": "structure-flow",
+            "src": "",
+            "alt": "Diagram alur memasang limit buy order, lengkap dengan titik keputusan dan jalur error",
+            "caption": "",
+            "zoom": true,
+            "width": 2000,
+            "height": 1212,
+            "legend": ""
+          }
+        ]
+      },
       "video": {
         "label": "Gerak",
-        "meta": "04 · Rekaman layar",
+        "meta": "Rekaman layar",
         "src": "",
         "ar": 1.3333,
         "poster": "/work/nanovest-limit-order/limit-price.webp",
@@ -1345,12 +1467,12 @@
       },
       "steps": {
         "label": "Anatomi",
-        "meta": "05 · Lima layar yang memikul order ini",
+        "meta": "Lima layar yang memikul order ini",
         "items": [
           {
             "num": "1",
             "title": "Mulai dari saham itu sendiri",
-            "body": "Limit Buy berada di sebelah Buy dan Sell pada layar detail saham itu sendiri, bukan di balik menu jenis order terpisah. Orang yang sedang melihat chart dan harga Apple tidak perlu pergi ke mana pun untuk menentukan harganya sendiri.",
+            "body": "Limit Buy terbuka langsung dari tombol Buy pada layar detail saham itu sendiri. Orang yang sedang melihat chart dan harga Apple tidak perlu pergi ke mana pun untuk menentukan harganya sendiri.",
             "img": "/work/nanovest-limit-order/stock-detail.webp",
             "ar": 0.4618
           },
@@ -1386,7 +1508,7 @@
       },
       "metrics": {
         "label": "Hasil",
-        "meta": "06 · Setelah rilis",
+        "meta": "Setelah rilis",
         "items": [
           {
             "v": "3 ketuk",
