@@ -15,6 +15,7 @@ import { initTypewriter } from "./typewriter.js";
 import { initStickers } from "./stickers.js";
 import { initCookies } from "./cookies.js";
 import { initResume } from "./resume.js";
+import { initLightbox } from "./lightbox.js";
 
 export function initAll(root = document) {
   const teardowns = [
@@ -30,6 +31,7 @@ export function initAll(root = document) {
     initStickers(root),
     initCookies(root),
     initResume(root),
+    initLightbox(root),
   ];
   return () => teardowns.forEach((fn) => fn?.());
 }
@@ -47,4 +49,5 @@ export {
   initStickers,
   initCookies,
   initResume,
+  initLightbox,
 };

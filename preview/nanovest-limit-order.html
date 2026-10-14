@@ -139,15 +139,63 @@
   </div>
 </section>
 
+<section class="section section--divided" id="process-structure" aria-labelledby="process-structure-label">
+  <div class="case-note">
+    <div class="case-note-side reveal">
+      <h2 class="t-label" id="process-structure-label">Structure</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">03 · Process</p>
+    </div>
+    <div class="case-note-body">
+      <div class="case-pfig-text reveal">
+        <h3 class="t-detail-h case-note-h">Where the order lives, and the fewest steps to place it.</h3>
+        <p class="case-p">I compared how Robinhood, Pluang, Gotrade, Revolut, and a few other investment apps structure a limit order, then mapped Nanovest’s own flow against them. Most of them start the order from the stock’s own page, where the decision is made, so I did the same: one tap on Buy opens the limit order flow. From there it runs in six steps: price, shares, review, PIN, processing, then a scheduled confirmation.</p><p class="case-p">The information architecture decides which screen owns what: the price, the money, or the status. Each piece of information is asked for once and shown where it matters, so nothing is asked twice. Where other apps put several fields on one screen, I gave each step a single job.</p><p class="case-p">The user flow follows one question: what happens to my money while I wait? So the review screen shows the limit price, fee, and total cost before the PIN, and the confirmation says plainly that the wallet is already charged and refunded if the order is cancelled or never fills. Cancelling stays one tap away from that same screen.</p><p class="case-p">I also mapped the unhappy paths: not enough balance, a wrong PIN, a cancelled order. Deciding what happens in those moments while the structure was still cheap to change meant the visual design could start with the edge cases already settled.</p>
+      </div>
+      <div class="case-pfigs"><figure class="case-pfig reveal" id="structure-ia"><div class="case-pfig-frame"><button type="button" class="case-pfig-btn" data-zoom aria-haspopup="dialog" aria-label="Enlarge image"><img src="../public/work/nanovest-limit-order/structure-ia.webp" alt="Tree diagram of screens and how they connect, from the stock page to order status" width="2546" height="985" loading="lazy" decoding="async"><span class="case-pfig-hint" aria-hidden="true"><svg viewBox="0 0 14 14" width="14" height="14" fill="none" aria-hidden="true"><path d="M8.5 1.5h4v4M5.5 12.5h-4v-4M12.5 1.5 8 6M1.5 12.5 6 8" stroke="currentColor" stroke-width="1.2"/></svg></span></button></div></figure><figure class="case-pfig reveal" id="structure-flow"><div class="case-pfig-frame"><button type="button" class="case-pfig-btn" data-zoom aria-haspopup="dialog" aria-label="Enlarge image"><img src="../public/work/nanovest-limit-order/structure-flow.webp" alt="Flow diagram of placing a limit buy order, with decision points and error paths" width="2000" height="1212" loading="lazy" decoding="async"><span class="case-pfig-hint" aria-hidden="true"><svg viewBox="0 0 14 14" width="14" height="14" fill="none" aria-hidden="true"><path d="M8.5 1.5h4v4M5.5 12.5h-4v-4M12.5 1.5 8 6M1.5 12.5 6 8" stroke="currentColor" stroke-width="1.2"/></svg></span></button></div></figure></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided" id="process-research" aria-labelledby="process-research-label">
+  <div class="case-note">
+    <div class="case-note-side reveal">
+      <h2 class="t-label" id="process-research-label">Research</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">04 · Process</p>
+    </div>
+    <div class="case-note-body">
+      <div class="case-pfig-text reveal">
+        <h3 class="t-detail-h case-note-h">A limit order is a promise about a price, so I started there.</h3>
+        <p class="case-p">I benchmarked limit order flows in Robinhood, Pluang, Gotrade, Revolut, and a handful of other investment apps, and traced Nanovest’s own market-order flow screen by screen. For each one I asked the same three questions: where does the price get set, what does the person see before they commit, and what happens to their money while the order waits? Holding every app to those three questions made very different screens easy to line up side by side.</p><p class="case-p">What stood out was how crowded the price step is. Several apps put the order type, limit price, shares, and expiry on a single screen, and leave you to work out how far your price sits from the market. The gap was not another field on a form. It was a way to name a price without doing arithmetic in your head, with today’s price always in view.</p><p class="case-p">So the price became the only thing on its screen, with quick offsets of -2% to -10% below today’s price. Everything else moved to the steps after it: shares first, then fee, expiry, and total cost in a review step before the PIN. I sketched that sequence as low-fidelity wireframes first, to test the order of the steps before spending any time on visual design.</p>
+      </div>
+      <div class="case-pfigs"><figure class="case-pfig reveal" id="research-benchmark"><div class="case-pfig-frame"><button type="button" class="case-pfig-btn" data-zoom aria-haspopup="dialog" aria-label="Enlarge image"><img src="../public/work/nanovest-limit-order/research-benchmark.webp" alt="Side-by-side limit order entry screens from other trading apps" width="1593" height="766" loading="lazy" decoding="async"><span class="case-pfig-hint" aria-hidden="true"><svg viewBox="0 0 14 14" width="14" height="14" fill="none" aria-hidden="true"><path d="M8.5 1.5h4v4M5.5 12.5h-4v-4M12.5 1.5 8 6M1.5 12.5 6 8" stroke="currentColor" stroke-width="1.2"/></svg></span></button></div></figure><figure class="case-pfig case-pfig--scroll reveal" id="structure-wireframes"><div class="case-pfig-frame"><div class="case-pfig-static"><img src="../public/work/nanovest-limit-order/structure-wireframes.webp" alt="Four low-fidelity phone wireframes: an intro explaining limit buy orders, limit price entry with quick offsets, shares entry with a running total, and the order review ending in a Confirm button" width="1809" height="891" loading="lazy" decoding="async"></div></div></figure></div>
+    </div>
+  </div>
+</section>
+
+<dialog class="lb" data-lightbox aria-label="Image viewer">
+  <div class="lb-top">
+    <span class="lb-count t-eyebrow" data-lb-count aria-live="polite"></span>
+    <div class="lb-tools">
+      <button type="button" data-lb-out aria-label="Zoom out">−</button>
+      <button type="button" data-lb-in aria-label="Zoom in">+</button>
+      <button type="button" data-lb-fit aria-label="Actual size / fit">1:1</button>
+      <button type="button" data-lb-close aria-label="Close">×</button>
+    </div>
+  </div>
+  <div class="lb-stage" data-lb-stage><img class="lb-img" alt="" draggable="false"></div>
+  <button type="button" class="lb-nav lb-prev" data-lb-prev aria-label="Previous image">‹</button>
+  <button type="button" class="lb-nav lb-next" data-lb-next aria-label="Next image">›</button>
+  <p class="lb-cap t-meta" data-lb-cap></p>
+</dialog>
+
 <section class="section section--divided">
   <div class="case-note reveal">
     <div class="case-note-side">
       <h2 class="t-label">Approach</h2>
-      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">03 · How I worked</p>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">05 · How I worked</p>
     </div>
     <div class="case-note-body">
       <h3 class="t-detail-h case-note-h">Name a price, walk away, come back to a decision already made.</h3>
-      <p class="case-p">Limit Buy sits one tap from the stock's own detail screen, next to Buy and Sell, so it reads as a third way to trade the stock someone is already looking at, not a separate feature filed somewhere else.</p><p class="case-p">The price field opens anchored to today's price, with four quick offsets, -2%, -3%, -5%, -10%, above the keypad, because most limit orders are a discount off the current number, not a figure typed from memory.</p><p class="case-p">PIN authorization and a processing screen, the same two steps as any other transaction in the app, keep a scheduled order feeling like a purchase rather than a new kind of risk. It settles on one state, Scheduled, with total cost, share count, and a plain sentence saying the wallet is already charged and refunded automatically if the order never fills.</p>
+      <p class="case-p">Limit Buy sits one tap from the stock's own detail screen, behind the Buy button, so it reads as another way to buy the stock someone is already looking at, not a separate feature filed somewhere else.</p><p class="case-p">The price field opens anchored to today's price, with four quick offsets, -2%, -3%, -5%, -10%, above the keypad, because most limit orders are a discount off the current number, not a figure typed from memory.</p><p class="case-p">PIN authorization and a processing screen, the same two steps as any other transaction in the app, keep a scheduled order feeling like a purchase rather than a new kind of risk. It settles on one state, Scheduled, with total cost, share count, and a plain sentence saying the wallet is already charged and refunded automatically if the order never fills.</p>
     </div>
   </div>
 </section>
@@ -155,7 +203,7 @@
 <section class="section section--divided">
   <div class="section-head reveal">
     <h2 class="t-label">Screens</h2>
-    <p class="t-meta">Four of the five states</p>
+    <p class="t-meta">06 · Four of the five states</p>
   </div>
   <div class="case-gallery case-gallery--phones"><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4618"><img src="../public/work/nanovest-limit-order/stock-detail.webp" alt="Nanovest Limit Order" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4618"><img src="../public/work/nanovest-limit-order/limit-price.webp" alt="Nanovest Limit Order" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4618"><img src="../public/work/nanovest-limit-order/pin-code.webp" alt="Nanovest Limit Order" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4618"><img src="../public/work/nanovest-limit-order/scheduled.webp" alt="Nanovest Limit Order" loading="lazy" decoding="async"></div></figure></div>
 </section>
@@ -163,7 +211,7 @@
 <section class="section case-metrics grain" data-dark data-reveal>
   <div class="section-head">
     <h2 class="t-label">Results</h2>
-    <p class="t-meta">06 · After launch</p>
+    <p class="t-meta">07 · After launch</p>
   </div>
   <div class="case-metrics-row"><div class="case-metric"><span class="case-metric-v">3 taps</span><span class="case-metric-k t-meta">Stock detail to a scheduled order</span></div><div class="case-metric"><span class="case-metric-v">38%</span><span class="case-metric-k t-meta">US stock orders placed as limit</span></div><div class="case-metric"><span class="case-metric-v">−24%</span><span class="case-metric-k t-meta">Missed-price questions to support</span></div><div class="case-metric"><span class="case-metric-v">1 screen</span><span class="case-metric-k t-meta">Where an order's status lives</span></div></div>
   <p class="t-meta case-metrics-note">Placeholder figures. Replaced once the post-launch review lands.</p>

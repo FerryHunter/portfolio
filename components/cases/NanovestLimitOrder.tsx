@@ -3,6 +3,7 @@ import { Arrow } from "../Arrow";
 import { Words } from "../Words";
 import type { Cases } from "@/lib/dict";
 import type { CaseProps } from "./types";
+import ProcessSections, { resolveProcess, sectionNumbers } from "./ProcessSections";
 
 /**
  * Case study: Nanovest · US Stocks Limit Order.
@@ -70,6 +71,43 @@ export default function NanovestLimitOrder({
 }: CaseProps<Cases["nanovest-limit-order"]>) {
   const home = `/${lang}`;
 
+  /* Research & Structure: komponen shared (./ProcessSections). Nomor
+     eyebrow diturunkan dari urutan render — bukan ditulis di JSON —
+     dan section tanpa konten tidak memesan nomor. */
+  const R = resolveProcess(data.research, data.slug);
+  const S = resolveProcess(data.structure, data.slug);
+  const num = sectionNumbers([
+    "overview",
+    data.video.src && "video",
+    "problem",
+    S && "structure",
+    R && "research",
+    "approach",
+    "gallery",
+    "metrics",
+  ]);
+
+  const block = (b: (typeof data.blocks)[number], n: string) => (
+    <section className="section section--divided" key={b.label}>
+      <div className="case-note reveal">
+        <div className="case-note-side">
+          <h2 className="t-label">{b.label}</h2>
+          <p className="t-meta" style={{ color: "var(--ink-muted)", marginTop: 8 }}>
+            {`${n} · ${b.meta}`}
+          </p>
+        </div>
+        <div className="case-note-body">
+          <h3 className="t-detail-h case-note-h">{b.heading}</h3>
+          {b.body.map((p) => (
+            <p className="case-p" key={p.slice(0, 32)}>
+              {p}
+            </p>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+
   return (
     <>
       <section className="case-hero" id="top">
@@ -128,7 +166,7 @@ export default function NanovestLimitOrder({
           <div>
             <p className="t-label">{data.overview.label}</p>
             <p className="t-meta" style={{ color: "var(--ink-muted)", marginTop: 8 }}>
-              {data.overview.meta}
+              {`${num.overview} · ${data.overview.meta}`}
             </p>
           </div>
           <p className="t-tagline tagline">
@@ -175,7 +213,7 @@ export default function NanovestLimitOrder({
             <h2 className="t-label" id="case-video-label">
               {data.video.label}
             </h2>
-            <p className="t-meta">{data.video.meta}</p>
+            <p className="t-meta">{`${num.video} · ${data.video.meta}`}</p>
           </div>
 
           <div
@@ -223,22 +261,19 @@ export default function NanovestLimitOrder({
         </section>
       ) : null}
 
-      {data.blocks.map((b) => (
-        <section className="section section--divided" key={b.label}>
-          <div className="case-note reveal">
-            <div className="case-note-side">
-              <h2 className="t-label">{b.label}</h2>
-              <p className="t-meta" style={{ color: "var(--ink-muted)", marginTop: 8 }}>
-                {b.meta}
-              </p>
-            </div>
-            <div className="case-note-body">
-              <h3 className="t-detail-h case-note-h">{b.heading}</h3>
-              {b.body.map((p) => (
-                <p className="case-p" key={p.slice(0, 32)}>
-                  {p}
-                </p>
-              ))}
+      {block(data.blocks[0], num.problem)}
+
+      {/* Urutan di halaman ini (permintaan Ferry, berbeda dari spec):
+          Problem → Structure → Research → Approach. */}
+      <ProcessSections
+        dict={dict}
+        research={R}
+        structure={S}
+        numbers={num}
+        order={["structure", "research"]}
+      />
+
+      {block(data.blocks[1], num.approach)}
             </div>
           </div>
         </section>
@@ -247,7 +282,7 @@ export default function NanovestLimitOrder({
       <section className="section section--divided">
         <div className="section-head reveal">
           <h2 className="t-label">{data.gallery.label}</h2>
-          <p className="t-meta">{data.gallery.meta}</p>
+          <p className="t-meta">{`${num.gallery} · ${data.gallery.meta}`}</p>
         </div>
         <div className="case-gallery case-gallery--phones">
           {data.gallery.items.map((g) => (
@@ -260,7 +295,7 @@ export default function NanovestLimitOrder({
       <section className="section case-metrics grain" data-dark data-reveal>
         <div className="section-head">
           <h2 className="t-label">{data.metrics.label}</h2>
-          <p className="t-meta">{data.metrics.meta}</p>
+          <p className="t-meta">{`${num.metrics} · ${data.metrics.meta}`}</p>
         </div>
         <div className="case-metrics-row">
           {data.metrics.items.map((m) => (

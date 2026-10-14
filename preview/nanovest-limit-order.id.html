@@ -139,15 +139,63 @@
   </div>
 </section>
 
+<section class="section section--divided" id="process-structure" aria-labelledby="process-structure-label">
+  <div class="case-note">
+    <div class="case-note-side reveal">
+      <h2 class="t-label" id="process-structure-label">Struktur</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">03 · Proses</p>
+    </div>
+    <div class="case-note-body">
+      <div class="case-pfig-text reveal">
+        <h3 class="t-detail-h case-note-h">Di mana order tinggal, dan langkah paling sedikit untuk memasangnya.</h3>
+        <p class="case-p">Saya membandingkan bagaimana Robinhood, Pluang, Gotrade, Revolut, dan beberapa aplikasi investasi lain menyusun limit order, lalu memetakan alur Nanovest sendiri terhadap mereka. Kebanyakan dari mereka memulai order dari halaman saham itu sendiri, tempat keputusan dibuat, jadi saya melakukan hal yang sama: satu ketukan pada Buy membuka alur limit order. Dari sana alurnya berjalan dalam enam langkah: harga, jumlah lembar, tinjauan, PIN, processing, lalu konfirmasi terjadwal.</p><p class="case-p">Arsitektur informasi menentukan layar mana yang memegang apa: harga, uang, atau status. Setiap informasi ditanyakan sekali dan ditampilkan di tempat yang relevan, sehingga tidak ada yang ditanyakan dua kali. Di tempat aplikasi lain menaruh beberapa kolom dalam satu layar, saya memberi setiap langkah satu tugas.</p><p class="case-p">User flow-nya mengikuti satu pertanyaan: apa yang terjadi pada uang saya selama saya menunggu? Jadi layar tinjauan menampilkan harga limit, biaya, dan total sebelum PIN, dan konfirmasi menyatakan dengan jelas bahwa saldo sudah dipotong dan akan dikembalikan kalau order dibatalkan atau tidak pernah terisi. Membatalkan tetap berjarak satu ketukan dari layar yang sama.</p><p class="case-p">Saya juga memetakan jalur yang tidak mulus: saldo tidak cukup, PIN salah, order dibatalkan. Memutuskan apa yang terjadi di momen-momen itu selagi struktur masih murah untuk diubah berarti desain visual bisa dimulai dengan kasus tepi yang sudah beres.</p>
+      </div>
+      <div class="case-pfigs"><figure class="case-pfig reveal" id="structure-ia"><div class="case-pfig-frame"><button type="button" class="case-pfig-btn" data-zoom aria-haspopup="dialog" aria-label="Perbesar gambar"><img src="../public/work/nanovest-limit-order/structure-ia.webp" alt="Diagram pohon layar dan hubungannya, dari halaman saham sampai status order" width="2546" height="985" loading="lazy" decoding="async"><span class="case-pfig-hint" aria-hidden="true"><svg viewBox="0 0 14 14" width="14" height="14" fill="none" aria-hidden="true"><path d="M8.5 1.5h4v4M5.5 12.5h-4v-4M12.5 1.5 8 6M1.5 12.5 6 8" stroke="currentColor" stroke-width="1.2"/></svg></span></button></div></figure><figure class="case-pfig reveal" id="structure-flow"><div class="case-pfig-frame"><button type="button" class="case-pfig-btn" data-zoom aria-haspopup="dialog" aria-label="Perbesar gambar"><img src="../public/work/nanovest-limit-order/structure-flow.webp" alt="Diagram alur memasang limit buy order, lengkap dengan titik keputusan dan jalur error" width="2000" height="1212" loading="lazy" decoding="async"><span class="case-pfig-hint" aria-hidden="true"><svg viewBox="0 0 14 14" width="14" height="14" fill="none" aria-hidden="true"><path d="M8.5 1.5h4v4M5.5 12.5h-4v-4M12.5 1.5 8 6M1.5 12.5 6 8" stroke="currentColor" stroke-width="1.2"/></svg></span></button></div></figure></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--divided" id="process-research" aria-labelledby="process-research-label">
+  <div class="case-note">
+    <div class="case-note-side reveal">
+      <h2 class="t-label" id="process-research-label">Riset</h2>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">04 · Proses</p>
+    </div>
+    <div class="case-note-body">
+      <div class="case-pfig-text reveal">
+        <h3 class="t-detail-h case-note-h">Limit order adalah janji soal harga, jadi saya mulai dari sana.</h3>
+        <p class="case-p">Saya membandingkan alur limit order di Robinhood, Pluang, Gotrade, Revolut, dan segelintir aplikasi investasi lain, lalu menelusuri alur market order Nanovest sendiri layar demi layar. Untuk masing-masing saya mengajukan tiga pertanyaan yang sama: di mana harga ditentukan, apa yang dilihat orang sebelum berkomitmen, dan apa yang terjadi pada uangnya selama order menunggu? Menahan setiap aplikasi pada tiga pertanyaan itu membuat layar yang sangat berbeda mudah disejajarkan.</p><p class="case-p">Yang menonjol adalah betapa penuhnya langkah harga. Beberapa aplikasi menaruh jenis order, harga limit, jumlah lembar, dan masa berlaku di satu layar, lalu membiarkan kita menghitung sendiri seberapa jauh harga kita dari pasar. Celahnya bukan kolom form tambahan. Celahnya adalah cara menyebut harga tanpa menghitung di kepala, dengan harga hari ini selalu terlihat.</p><p class="case-p">Jadi harga menjadi satu-satunya isi layarnya, dengan pilihan cepat -2% sampai -10% di bawah harga hari ini. Semua yang lain dipindahkan ke langkah sesudahnya: jumlah lembar dulu, lalu biaya, masa berlaku, dan total di langkah tinjauan sebelum PIN. Urutan itu saya sketsa dulu sebagai wireframe fidelitas rendah, untuk menguji urutan langkahnya sebelum menghabiskan waktu di desain visual.</p>
+      </div>
+      <div class="case-pfigs"><figure class="case-pfig reveal" id="research-benchmark"><div class="case-pfig-frame"><button type="button" class="case-pfig-btn" data-zoom aria-haspopup="dialog" aria-label="Perbesar gambar"><img src="../public/work/nanovest-limit-order/research-benchmark.webp" alt="Layar input limit order dari aplikasi trading lain, berdampingan" width="1593" height="766" loading="lazy" decoding="async"><span class="case-pfig-hint" aria-hidden="true"><svg viewBox="0 0 14 14" width="14" height="14" fill="none" aria-hidden="true"><path d="M8.5 1.5h4v4M5.5 12.5h-4v-4M12.5 1.5 8 6M1.5 12.5 6 8" stroke="currentColor" stroke-width="1.2"/></svg></span></button></div></figure><figure class="case-pfig case-pfig--scroll reveal" id="structure-wireframes"><div class="case-pfig-frame"><div class="case-pfig-static"><img src="../public/work/nanovest-limit-order/structure-wireframes.webp" alt="Empat wireframe ponsel fidelitas rendah: intro yang menjelaskan limit buy order, input harga limit dengan pilihan cepat, input jumlah lembar dengan total berjalan, dan tinjauan order yang berakhir di tombol Confirm" width="1809" height="891" loading="lazy" decoding="async"></div></div></figure></div>
+    </div>
+  </div>
+</section>
+
+<dialog class="lb" data-lightbox aria-label="Penampil gambar">
+  <div class="lb-top">
+    <span class="lb-count t-eyebrow" data-lb-count aria-live="polite"></span>
+    <div class="lb-tools">
+      <button type="button" data-lb-out aria-label="Perkecil">−</button>
+      <button type="button" data-lb-in aria-label="Perbesar">+</button>
+      <button type="button" data-lb-fit aria-label="Ukuran asli / sesuaikan">1:1</button>
+      <button type="button" data-lb-close aria-label="Tutup">×</button>
+    </div>
+  </div>
+  <div class="lb-stage" data-lb-stage><img class="lb-img" alt="" draggable="false"></div>
+  <button type="button" class="lb-nav lb-prev" data-lb-prev aria-label="Gambar sebelumnya">‹</button>
+  <button type="button" class="lb-nav lb-next" data-lb-next aria-label="Gambar berikutnya">›</button>
+  <p class="lb-cap t-meta" data-lb-cap></p>
+</dialog>
+
 <section class="section section--divided">
   <div class="case-note reveal">
     <div class="case-note-side">
       <h2 class="t-label">Pendekatan</h2>
-      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">03 · Cara kerjanya</p>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">05 · Cara kerjanya</p>
     </div>
     <div class="case-note-body">
       <h3 class="t-detail-h case-note-h">Tentukan harga, pergi, kembali ke keputusan yang sudah dibuat.</h3>
-      <p class="case-p">Limit Buy duduk satu ketuk dari layar detail saham itu sendiri, di sebelah Buy dan Sell, sehingga terbaca sebagai cara ketiga memperdagangkan saham yang sedang dilihat, bukan fitur terpisah yang disimpan di tempat lain.</p><p class="case-p">Kolom harga terbuka dengan jangkar di harga hari ini, dengan empat pilihan cepat, -2%, -3%, -5%, -10%, di atas keypad, karena kebanyakan limit order adalah potongan dari angka saat ini, bukan angka yang diketik dari ingatan.</p><p class="case-p">Otorisasi PIN dan layar processing, dua langkah yang sama seperti transaksi lain di aplikasi ini, membuat order terjadwal tetap terasa seperti pembelian, bukan risiko jenis baru. Semuanya berhenti di satu status, Scheduled, lengkap dengan total biaya, jumlah lembar, dan satu kalimat yang menyatakan saldo sudah dipotong dan akan dikembalikan otomatis kalau order itu tidak pernah terisi.</p>
+      <p class="case-p">Limit Buy duduk satu ketuk dari layar detail saham itu sendiri, di balik tombol Buy, sehingga terbaca sebagai cara lain membeli saham yang sedang dilihat, bukan fitur terpisah yang disimpan di tempat lain.</p><p class="case-p">Kolom harga terbuka dengan jangkar di harga hari ini, dengan empat pilihan cepat, -2%, -3%, -5%, -10%, di atas keypad, karena kebanyakan limit order adalah potongan dari angka saat ini, bukan angka yang diketik dari ingatan.</p><p class="case-p">Otorisasi PIN dan layar processing, dua langkah yang sama seperti transaksi lain di aplikasi ini, membuat order terjadwal tetap terasa seperti pembelian, bukan risiko jenis baru. Semuanya berhenti di satu status, Scheduled, lengkap dengan total biaya, jumlah lembar, dan satu kalimat yang menyatakan saldo sudah dipotong dan akan dikembalikan otomatis kalau order itu tidak pernah terisi.</p>
     </div>
   </div>
 </section>
@@ -155,7 +203,7 @@
 <section class="section section--divided">
   <div class="section-head reveal">
     <h2 class="t-label">Layar</h2>
-    <p class="t-meta">Empat dari lima kondisi</p>
+    <p class="t-meta">06 · Empat dari lima kondisi</p>
   </div>
   <div class="case-gallery case-gallery--phones"><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4618"><img src="../public/work/nanovest-limit-order/stock-detail.webp" alt="Nanovest Limit Order" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4618"><img src="../public/work/nanovest-limit-order/limit-price.webp" alt="Nanovest Limit Order" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4618"><img src="../public/work/nanovest-limit-order/pin-code.webp" alt="Nanovest Limit Order" loading="lazy" decoding="async"></div></figure><figure class="case-fig reveal"><div class="case-media case-media--phone" style="--ar:0.4618"><img src="../public/work/nanovest-limit-order/scheduled.webp" alt="Nanovest Limit Order" loading="lazy" decoding="async"></div></figure></div>
 </section>
@@ -163,7 +211,7 @@
 <section class="section case-metrics grain" data-dark data-reveal>
   <div class="section-head">
     <h2 class="t-label">Hasil</h2>
-    <p class="t-meta">06 · Setelah rilis</p>
+    <p class="t-meta">07 · Setelah rilis</p>
   </div>
   <div class="case-metrics-row"><div class="case-metric"><span class="case-metric-v">3 ketuk</span><span class="case-metric-k t-meta">Dari detail saham ke order terjadwal</span></div><div class="case-metric"><span class="case-metric-v">38%</span><span class="case-metric-k t-meta">Order saham AS yang dipasang sebagai limit</span></div><div class="case-metric"><span class="case-metric-v">−24%</span><span class="case-metric-k t-meta">Pertanyaan harga terlewat ke support</span></div><div class="case-metric"><span class="case-metric-v">1 layar</span><span class="case-metric-k t-meta">Tempat status satu order berada</span></div></div>
   <p class="t-meta case-metrics-note">Angka sementara. Diganti setelah tinjauan pasca-rilis selesai.</p>
