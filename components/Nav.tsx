@@ -1,4 +1,4 @@
-import type { Dict } from "@/lib/dict";
+import { localHref, type Dict, type Lang } from "@/lib/dict";
 import { Arrow } from "./Arrow";
 
 /**
@@ -11,7 +11,7 @@ import { Arrow } from "./Arrow";
  * permintaan. Rute /en dan /id tetap ada dan bisa diakses langsung
  * lewat URL, hanya kontrol switch di UI yang dihapus.
  */
-export default function Nav({ dict }: { dict: Dict }) {
+export default function Nav({ dict, lang }: { dict: Dict; lang: Lang }) {
   return (
     <>
       <nav className="nav" data-nav aria-label={dict.nav.menu}>
@@ -20,7 +20,7 @@ export default function Nav({ dict }: { dict: Dict }) {
           <div className="nav-layer nav-layer--top">
             <div className="nav-group">
               {dict.nav.primary.map((item) => (
-                <a key={item.label} className="pill t-eyebrow" href={item.href}>
+                <a key={item.label} className="pill t-eyebrow" href={localHref(lang, item.href)}>
                   {item.label}
                   <Arrow />
                 </a>
@@ -52,7 +52,7 @@ export default function Nav({ dict }: { dict: Dict }) {
                 </button>
                 <div className="nav-drawer" data-drawer>
                   {dict.nav.drawer.map((item) => (
-                    <a key={item.label} className="pill t-eyebrow" href={item.href}>
+                    <a key={item.label} className="pill t-eyebrow" href={localHref(lang, item.href)}>
                       {item.label}
                       <Arrow />
                     </a>
@@ -64,11 +64,11 @@ export default function Nav({ dict }: { dict: Dict }) {
 
           {/* --- state: scrolled --- */}
           <div className="nav-layer nav-layer--scrolled">
-            <a className="nav-wordmark" href="#top">
+            <a className="nav-wordmark" href={localHref(lang, "#top")}>
               {dict.brand}
             </a>
             <div className="nav-group">
-              <a className="pill t-eyebrow" href="#contact">
+              <a className="pill t-eyebrow" href={localHref(lang, "#contact")}>
                 {dict.nav.cta}
                 <Arrow />
               </a>
@@ -77,7 +77,7 @@ export default function Nav({ dict }: { dict: Dict }) {
 
           {/* --- mobile bar (≤768px) --- */}
           <div className="nav-mobile-bar">
-            <a className="nav-wordmark" href="#top">
+            <a className="nav-wordmark" href={localHref(lang, "#top")}>
               {dict.brand}
             </a>
             <button
@@ -97,7 +97,7 @@ export default function Nav({ dict }: { dict: Dict }) {
       <div className="mobile-menu" id="mobile-menu" data-mobile-menu>
         <div>
           {[...dict.nav.primary, ...dict.nav.drawer].map((item) => (
-            <a key={item.label} className="t-menu" href={item.href}>
+            <a key={item.label} className="t-menu" href={localHref(lang, item.href)}>
               {item.label}
             </a>
           ))}

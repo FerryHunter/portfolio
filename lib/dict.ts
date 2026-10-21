@@ -19,6 +19,12 @@ export function isLang(value: string): value is Lang {
   return (LANGS as readonly string[]).includes(value);
 }
 
+/** Anchor lokal ("#work") hanya ada di homepage; dari halaman case ia
+ *  harus menuju /{lang}#work. Sama dengan link() di scripts/chrome.py. */
+export function localHref(lang: Lang, href: string): string {
+  return href.startsWith("#") ? `/${lang}${href}` : href;
+}
+
 export function getDict(lang: string): Dict {
   return isLang(lang) ? DICTS[lang] : DICTS[DEFAULT_LANG];
 }

@@ -5,7 +5,7 @@ import Cursor from "@/components/Cursor";
 import CookieBanner from "@/components/CookieBanner";
 import FooterCta from "@/components/FooterCta";
 import MotionRoot from "@/components/MotionRoot";
-import { getDict, LANGS } from "@/lib/dict";
+import { DEFAULT_LANG, getDict, isLang, LANGS } from "@/lib/dict";
 
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));
@@ -30,6 +30,7 @@ export default async function SiteLayout({
 }) {
   const { lang } = await params;
   const dict = getDict(lang);
+  const current = isLang(lang) ? lang : DEFAULT_LANG;
 
   return (
     <>
@@ -38,9 +39,9 @@ export default async function SiteLayout({
       <a className="skip-link" href="#main">
         {dict.ui.skip}
       </a>
-      <Nav dict={dict} />
+      <Nav dict={dict} lang={current} />
       <main id="main">{children}</main>
-      <FooterCta dict={dict} />
+      <FooterCta dict={dict} lang={current} />
       <CookieBanner dict={dict} />
       <MotionRoot />
     </>
