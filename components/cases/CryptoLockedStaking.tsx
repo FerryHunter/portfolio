@@ -224,8 +224,7 @@ export default function CryptoLockedStaking({
 
         <a
           className="case-next reveal"
-          href={data.next.href || `${home}#work`}
-          {...(data.next.href ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          href={data.next.href ? `${home}${data.next.href}` : `${home}#work`}
           data-cursor="view"
           data-cursor-label={dict.projects.label}
         >
