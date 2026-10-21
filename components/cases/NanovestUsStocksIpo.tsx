@@ -279,10 +279,6 @@ export default function NanovestUsStocksIpo({
       />
 
       {block(data.blocks[1], num.approach)}
-            </div>
-          </div>
-        </section>
-      ))}
 
       <section className="section section--divided">
         <div className="section-head reveal">
