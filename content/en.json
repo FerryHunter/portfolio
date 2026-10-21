@@ -213,6 +213,24 @@
         "comingSoon": false
       },
       {
+        "title": "Nanovest App Redesign",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-app-redesign.webp",
+        "href": "/work/nanovest-app-redesign",
+        "case": "nanovest-app-redesign",
+        "comingSoon": false
+      },
+      {
+        "title": "Nanovest US Stocks IPO",
+        "cat": "Fintech · Mobile",
+        "ar": 1.1855,
+        "img": "/work/covers/nanovest-us-stocks-ipo.webp",
+        "href": "/work/nanovest-us-stocks-ipo",
+        "case": "nanovest-us-stocks-ipo",
+        "comingSoon": false
+      },
+      {
         "title": "Nanovest Limit Order",
         "cat": "Fintech · Mobile",
         "ar": 1.1855,
@@ -229,24 +247,6 @@
         "href": "/work/nanovest-foreign-stocks",
         "case": "nanovest-foreign-stocks",
         "comingSoon": false
-      },
-      {
-        "title": "Nanovest US Stocks IPO",
-        "cat": "Fintech · Mobile",
-        "ar": 1.1855,
-        "img": "/work/covers/nanovest-us-stocks-ipo.webp",
-        "href": "/work/nanovest-us-stocks-ipo",
-        "case": "nanovest-us-stocks-ipo",
-        "comingSoon": false
-      },
-      {
-        "title": "Web3 Quest Web Design",
-        "cat": "Conversion",
-        "ar": 1.1855,
-        "img": "/work/covers/web3-quest-web-design.webp",
-        "href": "https://ferryworks.framer.website/detailsstiqylanding",
-        "case": "",
-        "comingSoon": true
       },
       {
         "title": "Nanovest Crypto Locked Staking",
@@ -303,15 +303,6 @@
         "comingSoon": false
       },
       {
-        "title": "Web App Game Quest",
-        "cat": "Web3",
-        "ar": 1.1855,
-        "img": "/work/covers/web3-quest-dashboard.webp",
-        "href": "https://ferryworks.framer.website/detailsstiqyquestingdashboard",
-        "case": "",
-        "comingSoon": true
-      },
-      {
         "title": "Nanovest Investment App",
         "cat": "Fintech · Mobile",
         "ar": 1.1855,
@@ -319,33 +310,6 @@
         "href": "/work/nanovest-investment-app",
         "case": "nanovest-investment-app",
         "comingSoon": false
-      },
-      {
-        "title": "Nanovest App Redesign",
-        "cat": "Fintech · Mobile",
-        "ar": 1.1855,
-        "img": "/work/covers/nanovest-app-redesign.webp",
-        "href": "/work/nanovest-app-redesign",
-        "case": "nanovest-app-redesign",
-        "comingSoon": false
-      },
-      {
-        "title": "Pluang Investment App",
-        "cat": "Fintech",
-        "ar": 1.1871,
-        "img": "https://framerusercontent.com/images/mzeoKkaSUYg6Tv6Sdu1JAC1sK9k.png?width=996&height=840",
-        "href": "",
-        "case": "",
-        "comingSoon": true
-      },
-      {
-        "title": "Bukalapak Logistic Admin Panel",
-        "cat": "Ecommerce · Ops",
-        "ar": 1.1871,
-        "img": "https://framerusercontent.com/images/1Pzy92K3ieuyPxNlr8aAdNZXzns.png?width=996&height=840",
-        "href": "",
-        "case": "",
-        "comingSoon": true
       },
       {
         "title": "Game Interface Study",
@@ -373,6 +337,42 @@
         "href": "/work/investment-app-reimagined",
         "case": "investment-app-reimagined",
         "comingSoon": false
+      },
+      {
+        "title": "Web3 Quest Web Design",
+        "cat": "Conversion",
+        "ar": 1.1855,
+        "img": "/work/covers/web3-quest-web-design.webp",
+        "href": "https://ferryworks.framer.website/detailsstiqylanding",
+        "case": "",
+        "comingSoon": true
+      },
+      {
+        "title": "Web App Game Quest",
+        "cat": "Web3",
+        "ar": 1.1855,
+        "img": "/work/covers/web3-quest-dashboard.webp",
+        "href": "https://ferryworks.framer.website/detailsstiqyquestingdashboard",
+        "case": "",
+        "comingSoon": true
+      },
+      {
+        "title": "Pluang Investment App",
+        "cat": "Fintech",
+        "ar": 1.1871,
+        "img": "https://framerusercontent.com/images/mzeoKkaSUYg6Tv6Sdu1JAC1sK9k.png?width=996&height=840",
+        "href": "",
+        "case": "",
+        "comingSoon": true
+      },
+      {
+        "title": "Bukalapak Logistic Admin Panel",
+        "cat": "Ecommerce · Ops",
+        "ar": 1.1871,
+        "img": "https://framerusercontent.com/images/1Pzy92K3ieuyPxNlr8aAdNZXzns.png?width=996&height=840",
+        "href": "",
+        "case": "",
+        "comingSoon": true
       }
     ]
   },
