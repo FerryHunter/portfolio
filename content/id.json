@@ -137,6 +137,7 @@
   "process": {
     "research": "Riset",
     "structure": "Struktur",
+    "brainstorm": "Brainstorm",
     "tag": "Proses",
     "missing": "Gambar menyusul",
     "zoom": "Perbesar gambar",
@@ -1838,7 +1839,7 @@
       ],
       "overview": {
         "label": "Ringkasan",
-        "meta": "01 · Brief-nya",
+        "meta": "Brief-nya",
         "text": "Nanovest hanya bisa menjual saham AS yang sudah diperdagangkan. Perusahaan yang masih dalam proses IPO, harganya baru berupa rentang dan hari pertama perdagangannya masih beberapa hari lagi, *tidak punya layar order sama sekali*: satu-satunya pilihan adalah menunggu, lalu membeli di angka apa pun yang ditentukan pasar pada hari pertama."
       },
       "mockup": {
@@ -1867,7 +1868,7 @@
       "blocks": [
         {
           "label": "Masalah",
-          "meta": "02 · Titik rusaknya",
+          "meta": "Titik rusaknya",
           "heading": "Tidak ada tempat untuk memesan saham sebelum ia ada di pasar.",
           "body": [
             "Setiap layar order di aplikasi ini berasumsi ada harga live: ketik nama perusahaan, lihat harganya, beli di harga pasar. Perusahaan yang masih dalam proses IPO, sahamnya baru berupa rentang harga dan hari perdagangan pertamanya masih beberapa hari lagi, tidak punya layar detail, tidak punya tombol order, tidak muncul di pencarian: ia memang belum bisa diperdagangkan.",
@@ -1876,7 +1877,7 @@
         },
         {
           "label": "Pendekatan",
-          "meta": "03 · Cara kerjanya",
+          "meta": "Cara kerjanya",
           "heading": "Rentang harga masuk, rentang harga keluar: satu order yang menyelesaikan dirinya sendiri.",
           "body": [
             "Daftar e-IPO mengelompokkan tiap penawaran ke On Going, Upcoming, Past, sehingga satu fakta yang benar-benar mengubah keputusan, berapa hari lagi waktu tersisa untuk order, terlihat sebelum siapa pun membuka satu perusahaan pun.",
@@ -1885,6 +1886,77 @@
           ]
         }
       ],
+      "research": {
+        "headline": "Order IPO adalah taruhan pada harga yang belum ada.",
+        "p1": "Saya melihat cara Robinhood dan SoFi menyediakan akses IPO, dan bagaimana investor di Indonesia sudah mengenal konsepnya lewat aplikasi e-IPO lokal. Untuk masing-masing, saya mengajukan tiga pertanyaan yang sama: apa yang dilihat orang sebelum berkomitmen, apa yang terjadi pada uangnya selama penawaran dibuka, dan bagaimana mereka tahu berapa lembar yang akhirnya didapat. Saya juga memetakan tahap IPO AS yang umum, dari dibuka, penetapan harga, alokasi, sampai listing, untuk melihat momen mana yang terlihat oleh investor ritel dan mana yang tersembunyi.",
+        "p2": "Celah yang ingin saya tutup bukan kolom form tambahan. Order IPO mengikat uang pada harga yang belum ada, dan jawaban atas tiga pertanyaan tadi biasanya datang setelah komitmen, bukan sebelumnya. Maka saya memutuskan order harus menampilkan seluruh timeline-nya sejak layar pertama, dan cerita uangnya (apa yang ditahan, apa yang dikembalikan, dan kapan) dinyatakan dalam kata-kata biasa di setiap langkah.",
+        "figures": [
+          {
+            "id": "research-benchmark",
+            "src": "",
+            "alt": "Empat layar IPO berdampingan: daftar IPO Access Robinhood, aplikasi gelap dengan hitung mundur peluncuran SpaceX, konfirmasi order e-IPO lokal untuk GOTO, dan halaman IPO SoFi",
+            "caption": "Layar order IPO dari empat aplikasi investasi, termasuk Robinhood (kiri) dan SoFi (kanan).",
+            "zoom": true,
+            "width": 1712,
+            "height": 837,
+            "legend": ""
+          }
+        ]
+      },
+      "brainstorm": {
+        "headline": "Saya menaruh flow kasar di depan desainer lain sebelum merapikan apa pun.",
+        "p1": "Saya mengadakan sync singkat dengan sesama UX designer lewat Google Meet dan memandu mereka melalui wireframe pertama flow IPO: pintu masuk dari US Stocks, daftar IPO, dan halaman satu penawaran. Drafnya sengaja mengikuti pola flow limit buy Nanovest yang sudah ada, supaya kelompok bisa menilai bagian baru dibanding sesuatu yang sudah dikenal semua orang. Saya bertanya di mana flow terasa asing, apa yang kurang, dan apa yang bisa dibuang.",
+        "p2": "Sesi itu menetapkan bentuk flow sebelum desain visual apa pun. Pola limit buy tetap dipakai ulang, karena membuat langkah order terasa akrab. Halaman penawaran mendapat tugas tambahan menjelaskan cara kerja IPO, lewat tanggal-tanggalnya dan blok singkat cara kerja.",
+        "figures": [
+          {
+            "id": "brainstorm-session",
+            "src": "",
+            "alt": "Sync tim lewat Google Meet dengan berbagi layar wireframe flow IPO: pintu masuk US Stocks, daftar IPO, dan halaman detail penawaran",
+            "caption": "Brainstorm lewat Google Meet, membahas wireframe pertama flow IPO.",
+            "zoom": true,
+            "width": 2000,
+            "height": 996,
+            "legend": ""
+          }
+        ]
+      },
+      "structure": {
+        "headline": "Di mana IPO berada di aplikasi, dan bagaimana order melaluinya.",
+        "p1": "IPO saya beri ruang e-IPO tersendiri, bukan dicampur ke daftar pasar, karena sebuah penawaran belum menjadi saham yang bisa diperdagangkan. Daftarnya disusun menurut waktu, On Going, Upcoming, dan Past, sebab tanggal penutupan penawaran adalah hal pertama yang dibutuhkan orang. Tiap penawaran membuka satu halaman detail, lalu langkah review, lalu halaman status yang mengikuti order sampai sahamnya listing.",
+        "p2": "Flow ini mengikuti satu pertanyaan: apa yang terjadi pada uang saya, dan kapan saya tahu? Karena itu layar review menampilkan jumlah, estimasi lembar, biaya, dan tanggal alokasi sebelum siapa pun menekan konfirmasi, dan halaman status menyebut harga final, lembar yang dialokasikan, dan refund dalam angka yang jelas. Saya juga menyelesaikan kasus tepi sejak awal: penawaran yang hanya terisi sebagian, pengecekan eligibilitas yang gagal, dan order yang dibiarkan terbuka sampai dibatalkan. Menetapkan semuanya selagi struktur masih murah diubah membuat desain visual bisa dimulai dengan state tersulit yang sudah terjawab.",
+        "figures": [
+          {
+            "id": "structure-ia",
+            "src": "",
+            "alt": "Diagram pohon layar dan hubungannya, dari daftar e-IPO sampai status order",
+            "caption": "Arsitektur informasi: bagaimana daftar e-IPO, detail penawaran, review order, dan status saling terhubung.",
+            "zoom": true,
+            "width": 2400,
+            "height": 1000,
+            "legend": ""
+          },
+          {
+            "id": "structure-flow",
+            "src": "",
+            "alt": "Diagram alur memasang order IPO, lengkap dengan titik keputusan dan jalur error",
+            "caption": "User flow order IPO, termasuk alokasi sebagian dan pengecekan eligibilitas yang gagal.",
+            "zoom": true,
+            "width": 2000,
+            "height": 1200,
+            "legend": ""
+          },
+          {
+            "id": "structure-wireframes",
+            "src": "",
+            "alt": "Empat wireframe ponsel low-fidelity: daftar e-IPO, detail penawaran, review order, dan hasil alokasi",
+            "caption": "Wireframe low-fidelity empat layar inti, sebelum desain visual apa pun.",
+            "zoom": false,
+            "width": 1800,
+            "height": 900,
+            "legend": ""
+          }
+        ]
+      },
       "video": {
         "label": "Gerak",
         "meta": "04 · Rekaman layar",
@@ -1959,7 +2031,7 @@
       },
       "metrics": {
         "label": "Hasil",
-        "meta": "06 · Setelah rilis",
+        "meta": "Setelah rilis",
         "items": [
           {
             "v": "4 ketuk",

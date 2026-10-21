@@ -311,20 +311,23 @@ export default function ProcessSections({
   dict,
   research,
   structure,
+  brainstorm = null,
   numbers,
   order = ["research", "structure"],
 }: {
   dict: Dict;
   research: ResolvedProcess | null;
   structure: ResolvedProcess | null;
+  /** Opsional: sesi brainstorm, hanya untuk case yang punya. */
+  brainstorm?: ResolvedProcess | null;
   numbers: Record<string, string>;
   /** Urutan render; default Research → Structure. Nomor tetap urusan
    *  pemanggil lewat sectionNumbers() dengan urutan yang sama. */
-  order?: Array<"research" | "structure">;
+  order?: Array<"research" | "structure" | "brainstorm">;
 }) {
   const P = dict.process;
-  const data = { research, structure };
-  const zoomable = [research, structure].some((s) =>
+  const data = { research, structure, brainstorm };
+  const zoomable = [research, structure, brainstorm].some((s) =>
     s?.figures.some((f) => f.exists && f.zoom)
   );
 
