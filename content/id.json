@@ -997,12 +997,12 @@
       "slug": "nanovest-app-redesign",
       "meta": {
         "title": "Nanovest App Redesign · Ferry Works",
-        "description": "Studi kasus: mendesain ulang aplikasi Nanovest di sekitar asisten AI yang terjangkau dari navigasi itu sendiri, antarmuka dark-mode-first, dan sistem warna yang lebih tenang dan profesional."
+        "description": "Studi kasus: menambahkan asisten AI ke aplikasi investasi Nanovest supaya orang bisa memeriksa pasar, harga, dan portofolio mereka cukup dengan bertanya. Mencakup riset kompetitor, iterasi bersama tim produk, dan design system lengkap."
       },
       "back": "Semua proyek",
       "eyebrow": "Studi kasus",
       "title": "Nanovest App Redesign",
-      "lead": "Redesain dark-mode-first yang memberi AI Nanovest rumah tetap di navigasi itu sendiri, dan menukar identitas gradasi ceria aplikasinya dengan permukaan tech yang lebih tenang dan profesional.",
+      "lead": "Nanovest belum punya AI. Saya mendesain ulang aplikasinya di sekitar asisten yang membuat memeriksa pasar, harga, dan portofolio semudah mengajukan pertanyaan, di dalam antarmuka yang lebih tenang dan profesional.",
       "site": {
         "label": "Kunjungi nanovest.io",
         "href": "https://nanovest.io/"
@@ -1015,7 +1015,7 @@
       },
       "facts": [
         {
-          "k": "Klien",
+          "k": "Perusahaan",
           "v": "Nanovest"
         },
         {
@@ -1042,7 +1042,7 @@
       "overview": {
         "label": "Ringkasan",
         "meta": "Brief-nya",
-        "text": "Langkah berikutnya Nanovest adalah menaruh AI di pusat pengalaman investasi, tapi antarmuka aplikasinya yang cerah dan penuh gradasi terbaca sebagai fun ala konsumen, bukan sesuatu yang cukup dipercaya untuk diserahi keputusan finansial. Redesain ini membangun ulang sistem visualnya di sekitar dark mode dan palet yang lebih ketat dan teknikal, serta memberi asisten AI rumah tetap di navigation bar itu sendiri, sehingga bisa dijangkau dari tab mana pun, bukan terkubur di satu layar."
+        "text": "AI sudah menjadi bagian standar aplikasi investasi modern, dan Nanovest belum memilikinya. Tujuannya adalah menambahkan asisten yang menghilangkan repotnya memeriksa pasar, harga, dan portofolio sendiri. Itu berarti lebih dari sekadar menambah kotak chat: menentukan di mana asisten tinggal, bagaimana seluruh aplikasi harus tampil di sekitarnya, dan bagaimana membuatnya terasa layak dipercaya ketika uang jadi taruhannya. Saya meriset cara aplikasi lain melakukannya, beriterasi bersama tim produk, dan membangun design system lengkap untuk menopangnya."
       },
       "showcase": {
         "label": "Tampilan nyata",
@@ -1056,33 +1056,34 @@
         "label": "Cakupan",
         "meta": "Yang saya kerjakan",
         "items": [
-          "Bedah kompetitor",
-          "Riset & benchmark dengan bantuan AI",
-          "Sistem desain dark-mode",
-          "Model navigasi AI",
+          "Riset & benchmark kompetitor",
+          "Riset dengan Claude",
+          "Design system lengkap",
+          "Asisten AI & model navigasi",
           "Arsitektur informasi",
-          "Permukaan wawasan AI",
+          "Jawaban AI: pasar, harga, portofolio",
           "Alur wallet & multi-currency",
           "Wireframe",
           "Desain antarmuka",
           "Empty & alert state",
-          "Prototyping"
+          "Prototyping",
+          "Iterasi bersama tim produk"
         ]
       },
       "blocks": [
         {
           "label": "Masalah",
-          "meta": "Titik rusaknya",
-          "heading": "Bahasa warna aplikasi ini bertentangan dengan keseriusan seorang penasihat AI.",
+          "meta": "Alasan revamp",
+          "heading": "AI kini jadi standar di aplikasi investasi. Nanovest belum punya.",
           "body": [
-            "Antarmuka Nanovest mengandalkan gradasi ungu-ke-pink yang cerah dan ikon bergaya badge berwarna-warni untuk hampir semuanya, kartu Featured, ikon produk, banner promo. Itu terbaca sebagai fun ala konsumen, register yang salah untuk produk yang akan menyerahkan keputusan finansial hasil AI; bahasa visual yang sama di bawah alert saham dan promo referral membuat keduanya terasa sama-sama tidak penting.",
-            "AI itu sendiri tidak punya alamat tetap. *Ask anything* hidup di dalam feed Home, satu kolom di antara beberapa lainnya, jadi memakainya berarti harus berada di layar yang tepat dulu. Asisten yang hanya ada di satu tab bukan kapabilitas level navigasi, itu widget."
+            "Di aplikasi keuangan dan trading, asisten AI sudah bergeser dari sekadar pelengkap menjadi sesuatu yang diharapkan orang: bertanya, dapat jawaban, tanpa perlu menggali. Nanovest belum punya yang seperti itu. Memeriksa harga, pergerakan pasar, atau kondisi portofolio berarti membuka tab yang tepat lalu mencarinya, dan setiap ketukan tambahan menambah gesekan. Merombak aplikasi adalah cara kami mengejar standar itu.",
+            "Menambahkan AI juga membuka masalah kedua. Aplikasinya bertumpu pada gradasi ungu-ke-pink yang cerah dan ikon bergaya badge berwarna-warni, yang terbaca sebagai main-main. Itu nada yang salah untuk asisten yang mungkin dijadikan pegangan untuk keputusan finansial, dan membuat alert saham dan promo referral terasa sama-sama ringan. Dan asisten yang terselip di satu layar hanya akan jadi widget, bukan kapabilitas. Ia butuh tampilan yang lebih tenang dan tempat tetap di dalam aplikasi."
           ]
         },
         {
           "label": "Pendekatan",
           "meta": "Cara kerjanya",
-          "heading": "Dark mode jadi default, AI pindah ke navigasi itu sendiri.",
+          "heading": "Tampilan yang lebih tenang, dan asisten AI yang cukup satu ketukan.",
           "body": [
             "Antarmukanya dibangun ulang dark-first: permukaan nyaris hitam, set warna graphite dingin yang sempit, menggantikan identitas gradasi ungu-pink dengan sesuatu yang lebih dekat ke trading terminal ketimbang aplikasi lifestyle. Warna berhenti menghias dan mulai memberi sinyal, aksen hanya muncul saat ia membawa informasi, untung, rugi, alert yang perlu diperhatikan.",
             "Ikon tengah di tab bar, yang sebelumnya cuma brand mark statis, menjadi entry point AI aplikasi ini. Mengetuknya dari Home, Invest, Wallet, atau Account membuka permukaan Ask Anything yang sama, jadi mendapat jawaban tidak pernah bergantung pada layar mana yang sedang dibuka.",
@@ -1092,7 +1093,7 @@
       ],
       "research": {
         "headline": "Pertanyaan sebenarnya bukan apa kata AI, tapi di mana ia tinggal.",
-        "p1": "Saya mengaudit aplikasi Nanovest yang ada layar demi layar, dari Home dan Invest sampai Wallet dan Account, menandai setiap tempat jawaban AI bisa muncul dan apa yang akan bersaing dengannya di sana. Lalu saya melihat cara aplikasi keuangan dan trading lain menempatkan asisten: tombol mengambang, tab chat, kolom pencarian, atau satu slot di navigasi. Untuk tiap pola saya cek berapa ketukan untuk menjangkaunya, apakah ia bertahan saat layar berganti, dan apakah ia terbaca sebagai bagian produk atau widget yang ditempel di atasnya. Referensi saya kumpulkan dalam satu papan untuk membaca pola asisten berdampingan dengan bahasa visual yang gelap dan teknikal.\n\nSaya memakai AI sebagai asisten riset, bukan pengambil keputusan. Ia mencari screen AI chat di Mobbin dari aplikasi keuangan dan perbankan, asisten umum, dan aplikasi pendamping, lalu mengumpulkan lebih dari 70 di antaranya ke satu board Figma yang dipilah ke tiga kelompok itu, supaya saya bisa membandingkan penempatan, empty state, dan cara jawaban membawa data. Setiap screen saya baca sendiri, yang tidak meyakinkan saya buang, dan kesimpulan di bawah adalah milik saya.",
+        "p1": "Saya mengaudit aplikasi Nanovest yang ada layar demi layar, dari Home dan Invest sampai Wallet dan Account, menandai setiap tempat jawaban AI bisa muncul dan apa yang akan bersaing dengannya di sana. Lalu saya membandingkan cara kompetitor dan aplikasi keuangan dan trading lain menempatkan asisten: tombol mengambang, tab chat, kolom pencarian, atau satu slot di navigasi. Untuk tiap pola saya cek berapa ketukan untuk menjangkaunya, apakah ia bertahan saat layar berganti, dan apakah ia terbaca sebagai bagian produk atau widget yang ditempel di atasnya. Referensi saya kumpulkan dalam satu papan untuk membaca pola asisten berdampingan dengan bahasa visual yang gelap dan teknikal.\n\nSaya memakai Claude sebagai asisten riset, bukan pengambil keputusan. Ia mencari screen AI chat di Mobbin dari aplikasi keuangan dan perbankan, asisten umum, dan aplikasi pendamping, lalu mengumpulkan lebih dari 70 di antaranya ke satu board Figma yang dipilah ke tiga kelompok itu, supaya saya bisa membandingkan penempatan, empty state, dan cara jawaban membawa data. Setiap screen saya baca sendiri, yang tidak meyakinkan saya buang, dan kesimpulan di bawah adalah milik saya.",
         "p2": "Sebagian besar pola menaruh asisten di satu layar atau di tombol mengambang di atas konten, jadi menjangkaunya bergantung pada posisi seseorang saat itu. Itulah celahnya: AI sebagai tujuan, bukan lapisan di bawah setiap tab. Celah itu menentukan penempatannya sebelum kerja visual apa pun. Asisten masuk ke tab bar itu sendiri, dan antarmuka di sekelilingnya menjadi gelap dan terkendali, supaya terbaca sebagai sesuatu yang layak dipercaya untuk urusan uang.",
         "figures": [
           {
@@ -1109,7 +1110,7 @@
             "id": "research-ai-search",
             "src": "",
             "alt": "Percakapan dengan asisten AI yang menampilkan pencarian Mobbin untuk screen AI chat aplikasi keuangan dan perbankan, dengan empat hasil pertama dari Public, Cash App, Perplexity, dan Lloyds",
-            "caption": "AI sebagai asisten riset: mencari screen AI chat aplikasi keuangan dan perbankan di Mobbin, lalu menarik hasilnya ke board benchmark.",
+            "caption": "Claude sebagai asisten riset: mencari screen AI chat aplikasi keuangan dan perbankan di Mobbin, lalu menarik hasilnya ke board benchmark.",
             "zoom": true,
             "width": 2000,
             "height": 1300,
@@ -1130,7 +1131,7 @@
       "structure": {
         "headline": "Di mana AI tinggal, dan bagaimana ia mengikuti seseorang di seluruh aplikasi.",
         "p1": "Asisten duduk di tengah tab bar, di antara Invest dan Grow, sehingga ia berdiri di atas setiap tujuan, bukan di dalam salah satunya. Di sekelilingnya aplikasi menyimpan empat tab: Home, Invest, Grow, dan Wallet. Invest memuat produk (Crypto, Web3, Stocks, dan Gold) beserta rincian portofolio, sementara Wallet memuat Nanovest Cash dan Crypto Cash, dengan satu tab untuk setiap mata uang.",
-        "p2": "Alurnya mengikuti satu pertanyaan, “sedang apa uang saya sekarang?”, dan dimulai dengan cara yang sama dari tab mana pun: ketuk ikon tengah, ketik atau bicara, dapat jawaban yang menyebut posisi di baliknya, lalu langsung menuju portofolio atau asetnya. Saya juga menggambar kasus tepinya sebelum desain visual: apa yang ditampilkan asisten untuk portofolio kosong, dan bagaimana alert tampak berbeda dari state diam. Keduanya diputuskan di wireframe, sebelum warna atau tipografi ikut campur.\n\nSetelah wireframe beres, saya menjelajahi sisi visualnya di satu kanvas: aplikasi yang ada, satu putaran pembaruan, reskin, dan eksplorasi 2.6, berdampingan, untuk menghasilkan banyak arah sebelum memilih satu.\n\nDari arah visual yang dipilih, saya membangun fondasi design system: tipografi, skala warna, spacing, dan radius, supaya setiap layar memakai token yang sama, bukan nilai satu-satu.",
+        "p2": "Alurnya mengikuti satu pertanyaan, “sedang apa uang saya sekarang?”, dan dimulai dengan cara yang sama dari tab mana pun: ketuk ikon tengah, ketik atau bicara, dapat jawaban yang menyebut posisi di baliknya, lalu langsung menuju portofolio atau asetnya. Saya juga menggambar kasus tepinya sebelum desain visual: apa yang ditampilkan asisten untuk portofolio kosong, dan bagaimana alert tampak berbeda dari state diam. Keduanya diputuskan di wireframe, sebelum warna atau tipografi ikut campur.\n\nYang bisa ditanyakan sengaja dibuat praktis: bagaimana kabar sebuah pasar atau aset hari ini, harga terkini saham, koin, atau emas, mengapa portofolio bergerak, dan mover mana yang layak dilihat. Setiap jawaban menyebut posisi atau aset di baliknya dan menautkan langsung ke sana, jadi asisten menghemat satu perjalanan di dalam aplikasi alih-alih menambahkannya.\n\nSemua ini tidak terjadi sendirian. Saya membawa penempatan, wireframe, dan arah visual melewati beberapa putaran bersama tim produk, dan scope, alur, serta prioritas bergeser setelah tiap putaran.\n\nSetelah wireframe beres, saya menjelajahi sisi visualnya di satu kanvas: aplikasi yang ada, satu putaran pembaruan, reskin, dan eksplorasi 2.6, berdampingan, untuk menghasilkan banyak arah sebelum memilih satu.\n\nDari arah visual yang dipilih, saya membangun design system lengkap: fondasinya (tipografi, skala warna, spacing, dan radius), lalu komponen dan pola di atasnya, supaya setiap layar memakai token dan bagian yang sama, bukan nilai satu-satu.",
         "figures": [
           {
             "id": "structure-ia-wireframes",
@@ -1257,8 +1258,8 @@
         ]
       },
       "metrics": {
-        "label": "Hasil",
-        "meta": "Yang berubah dari redesain ini",
+        "label": "Capaian",
+        "meta": "Yang disiapkan redesain ini",
         "items": [
           {
             "v": "1",
@@ -1277,18 +1278,20 @@
             "k": "Warna aksen, menggantikan palet multi-gradasi di Home, Wallet, dan Invest"
           }
         ],
-        "note": "Angka sementara. Diganti setelah tinjauan pasca-rilis selesai."
+        "note": "Capaian desain. Metrik dampak menyusul setelah peluncuran."
       },
       "deliverables": {
         "label": "Deliverable",
         "meta": "Yang diserahkan ke tim",
         "items": [
-          "Sistem desain dark-mode",
-          "Entry point AI di navigation bar",
+          "Design system lengkap: fondasi & komponen",
+          "Entry point asisten AI di navigation bar",
           "State alert Home & rail wawasan",
           "Tab Invest: market, mover, tema",
           "Wallet: pola enam mata uang",
           "Account: sistem tier & poin",
+          "Board benchmark kompetitor",
+          "Alur Ask Anything, empty & alert state",
           "Catatan handoff"
         ]
       },

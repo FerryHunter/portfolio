@@ -149,6 +149,8 @@ export default function NanovestAppRedesign({
             </div>
           ))}
         </dl>
+        {/* TODO(Ferry): Team shows "1 design · 3 eng", but the work involved the product team too. Needs the real line-up. */}
+        {/* TODO(Ferry): Role says "Senior Product Designer". Confirm it matches the title held at Nanovest. */}
 
         <Figure
           img={data.cover.img}
@@ -290,10 +292,17 @@ export default function NanovestAppRedesign({
       {block(data.blocks[0], num.problem)}
 
       {/* Urutan spec: Problem → Research → Structure → Approach. */}
+      {/* TODO(Ferry): Benchmark numbers: the text says "more than 70" screens, the captions say "thirty". Could both be true (70 total, 30 in finance), but state it clearly. */}
+      {/* TODO(Ferry): Tab bar: section 04 describes Home, Invest, Grow, Wallet, but the screens in section 06 include Account and Social, and section 05 mentions "Home, Invest, Wallet or Account". These do not match. */}
+      {/* TODO(Ferry): "What people can ask" paragraph is a proposed expansion. Confirm it matches what the design actually shows. */}
       <ProcessSections dict={dict} research={R} structure={S} numbers={num} />
 
+      {/* TODO(Ferry): "Previously a static brand mark" for the centre tab icon: confirm this is accurate. */}
+      {/* TODO(Ferry): Naming: "Ask anything" and "Ask Anything" are both used. If it is a feature name, use "Ask Anything" everywhere. */}
+      {/* TODO(Ferry): Tab bar: section 04 describes Home, Invest, Grow, Wallet, but the screens in section 06 include Account and Social, and section 05 mentions "Home, Invest, Wallet or Account". These do not match. */}
       {block(data.blocks[1], num.approach)}
 
+      {/* TODO(Ferry): Tab bar: section 04 describes Home, Invest, Grow, Wallet, but the screens in section 06 include Account and Social, and section 05 mentions "Home, Invest, Wallet or Account". These do not match. */}
       <section className="section section--divided">
         <div className="section-head reveal">
           <h2 className="t-label">{data.gallery.label}</h2>
@@ -306,6 +315,7 @@ export default function NanovestAppRedesign({
         </div>
       </section>
 
+      {/* TODO(Ferry): Metrics: "5 → 1" surfaces and "6 currencies". Section 04 lists four products under Invest (Crypto, Web3, Stocks, Gold). Confirm the numbers. */}
       {/* data-dark: nav membalik warnanya di atas section ini (§6.1) */}
       <section className="section case-metrics grain" data-dark data-reveal>
         <div className="section-head">

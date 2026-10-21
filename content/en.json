@@ -997,12 +997,12 @@
       "slug": "nanovest-app-redesign",
       "meta": {
         "title": "Nanovest App Redesign · Ferry Works",
-        "description": "Case study: redesigning the Nanovest app around an AI assistant reachable from the navigation itself, a dark-mode-first interface, and a calmer, more professional colour system."
+        "description": "Case study: adding an AI assistant to the Nanovest investing app so people can check markets, prices and their portfolio by simply asking. Includes competitor research, iteration with the product team and a full design system."
       },
       "back": "All work",
       "eyebrow": "Case study",
       "title": "Nanovest App Redesign",
-      "lead": "A dark-mode-first redesign that gives Nanovest's AI a permanent home in the navigation itself, and trades the app's playful gradient identity for a calmer, more professional tech surface.",
+      "lead": "Nanovest had no AI. I redesigned the app around an assistant that makes checking the market, prices and your portfolio as easy as asking a question, inside a calmer, more professional interface.",
       "site": {
         "label": "Visit nanovest.io",
         "href": "https://nanovest.io/"
@@ -1015,7 +1015,7 @@
       },
       "facts": [
         {
-          "k": "Client",
+          "k": "Company",
           "v": "Nanovest"
         },
         {
@@ -1042,7 +1042,7 @@
       "overview": {
         "label": "Overview",
         "meta": "The brief",
-        "text": "Nanovest's next move is putting AI at the center of the investing experience, but the app's bright, gradient-heavy interface read as consumer-fun rather than as something trustworthy enough to hand financial decisions to. This redesign rebuilds the visual system around dark mode and a tighter, more technical palette, and gives the AI assistant a fixed home in the navigation bar itself, so it's reachable from every tab, not buried inside a single screen."
+        "text": "AI has become a standard part of modern investing apps, and Nanovest didn't have it yet. The goal was to add an assistant that takes the effort out of checking the market, prices and your own portfolio. That meant more than adding a chat box: deciding where the assistant lives, how the whole app should look around it, and how to make it feel trustworthy when money is involved. I researched how other apps do it, iterated with the product team, and built a full design system to carry it."
       },
       "showcase": {
         "label": "Look and feel",
@@ -1056,33 +1056,34 @@
         "label": "Scope",
         "meta": "What the work covered",
         "items": [
-          "Competitive teardown",
-          "AI-assisted research & benchmarking",
-          "Dark-mode design system",
-          "AI navigation model",
+          "Competitor research & benchmarking",
+          "Research with Claude",
+          "Full design system",
+          "AI assistant & navigation model",
           "Information architecture",
-          "AI insight surface",
+          "AI answers: markets, prices, portfolio",
           "Wallet & multi-currency flows",
           "Wireframes",
           "Interface design",
           "Empty & alert states",
-          "Prototyping"
+          "Prototyping",
+          "Iteration with the product team"
         ]
       },
       "blocks": [
         {
           "label": "Problem",
-          "meta": "Where it broke",
-          "heading": "The app's colour language undercut the seriousness of an AI advisor.",
+          "meta": "Why revamp",
+          "heading": "AI is now the standard in investing apps. Nanovest didn't have it yet.",
           "body": [
-            "Nanovest's interface leaned on a bright purple-to-pink gradient and colourful, badge-style icons for nearly everything, Featured cards, product icons, promo banners. That reads as consumer-fun, which is the wrong register for a product about to hand out AI-generated financial judgement calls; the same visual language sitting under a stock alert and a referral promo made both feel equally weightless.",
-            "The AI itself had no fixed address. *Ask anything* lived inside Home's feed, one field among several, so using it meant being on the right screen first. An assistant that only exists on one tab isn't a navigation-level capability, it's a widget."
+            "Across finance and trading apps, an AI assistant has gone from nice-to-have to something people expect: ask a question, get an answer, skip the digging. Nanovest had nothing like it. Checking a price, a market move or how a portfolio was doing meant opening the right tab and hunting for it, and every extra tap adds friction. Revamping the app was our way of catching up with that standard.",
+            "Adding AI also exposed a second problem. The app leaned on a bright purple-to-pink gradient and colourful, badge-style icons, which reads as playful. That's the wrong tone for an assistant people might lean on for financial decisions, and it made a stock alert and a referral promo feel equally lightweight. And an assistant tucked into a single screen would be a widget, not a capability. It needed a calmer look and a permanent place in the app."
           ]
         },
         {
           "label": "Approach",
           "meta": "How I worked",
-          "heading": "Dark mode as the default, AI moved into the navigation itself.",
+          "heading": "A calmer look, and an AI assistant one tap away.",
           "body": [
             "The interface rebuilt dark-first: near-black surfaces, a narrow set of cool graphite tones, replacing the purple-pink gradient identity with something closer to a trading terminal than a lifestyle app. Colour stopped decorating and started signalling, an accent only appears when it's carrying information, a gain, a loss, an alert that needs attention.",
             "The center icon in the tab bar, previously a static brand mark, became the app's AI entry point. Tapping it from Home, Invest, Wallet or Account opens the same Ask Anything surface, so getting an answer never depends on which screen someone happens to be on.",
@@ -1092,7 +1093,7 @@
       ],
       "research": {
         "headline": "The real question was never what the AI says. It was where it lives.",
-        "p1": "I audited the existing Nanovest app screen by screen, from Home and Invest to Wallet and Account, marking every place an AI answer could surface and what it would compete with there. Then I looked at how other finance and trading apps place an assistant: a floating button, a chat tab, a search field, or a slot in the navigation. For each pattern I checked how many taps it takes to reach, whether it survives a change of screen, and whether it reads as part of the product or a widget on top of it. I kept the references on one board to read the assistant patterns beside the dark, technical visual language.\n\nI used AI as a research assistant, not as the decision maker. It searched Mobbin for AI chat screens across finance and banking apps, general assistants and companion apps, and gathered more than 70 of them into one Figma board, sorted into those three groups, so I could compare placement, empty states and how answers carry data. I read every screen myself, dropped the ones that didn't hold up, and the conclusions below are my own.",
+        "p1": "I audited the existing Nanovest app screen by screen, from Home and Invest to Wallet and Account, marking every place an AI answer could surface and what it would compete with there. Then I benchmarked how competitors and other finance and trading apps place an assistant: a floating button, a chat tab, a search field, or a slot in the navigation. For each pattern I checked how many taps it takes to reach, whether it survives a change of screen, and whether it reads as part of the product or a widget on top of it. I kept the references on one board to read the assistant patterns beside the dark, technical visual language.\n\nI used Claude as a research assistant, not as the decision maker. It searched Mobbin for AI chat screens across finance and banking apps, general assistants and companion apps, and gathered more than 70 of them into one Figma board, sorted into those three groups, so I could compare placement, empty states and how answers carry data. I read every screen myself, dropped the ones that didn't hold up, and the conclusions below are my own.",
         "p2": "Most of the patterns put the assistant on a single screen or on a floating button above the content, so reaching it depended on where someone already was. That was the gap: AI as a destination, not a layer under every tab. It settled the placement before any visual work. The assistant goes into the tab bar itself, and the interface around it turns dark and restrained, so it reads as something worth trusting with money.",
         "figures": [
           {
@@ -1109,7 +1110,7 @@
             "id": "research-ai-search",
             "src": "",
             "alt": "An AI assistant conversation showing a Mobbin search for finance and banking AI chat screens, with the first four results from Public, Cash App, Perplexity and Lloyds",
-            "caption": "AI as research assistant: searching Mobbin for finance and banking AI chat screens, then pulling the results into the benchmark board.",
+            "caption": "Claude as research assistant: searching Mobbin for finance and banking AI chat screens, then pulling the results into the benchmark board.",
             "zoom": true,
             "width": 2000,
             "height": 1300,
@@ -1130,7 +1131,7 @@
       "structure": {
         "headline": "Where the AI lives, and how it follows someone through the app.",
         "p1": "The assistant sits in the centre of the tab bar, between Invest and Grow, so it stands over every destination instead of inside one of them. Around it the app keeps four tabs: Home, Invest, Grow and Wallet. Invest holds the products (Crypto, Web3, Stocks and Gold) and the portfolio drill-down, and Wallet holds Nanovest Cash and Crypto Cash, with a tab for each currency.",
-        "p2": "The flow follows one question, “what is going on with my money right now?”, and it starts the same way from any tab: tap the centre icon, type or speak, get an answer that names the positions behind it, then go straight to the portfolio or the asset. I also drew the edge cases before any visual design: what the assistant shows for an empty portfolio, and how an alert looks different from the resting state. Both were decided in the wireframes, before colour or type came into it.\n\nWith the wireframes settled, I explored the visual side on a single canvas: the existing app, an updated pass, a reskin and the 2.6 explorations, side by side, to produce many directions before choosing one.\n\nFrom the chosen direction I built the design-system foundations: typography, colour scales, spacing and radius, so every screen draws from the same tokens instead of one-off values.",
+        "p2": "The flow follows one question, “what is going on with my money right now?”, and it starts the same way from any tab: tap the centre icon, type or speak, get an answer that names the positions behind it, then go straight to the portfolio or the asset. I also drew the edge cases before any visual design: what the assistant shows for an empty portfolio, and how an alert looks different from the resting state. Both were decided in the wireframes, before colour or type came into it.\n\nWhat people can ask is deliberately practical: how a market or asset is doing today, the current price of a stock, coin or gold, why a portfolio moved, and which movers are worth a look. Each answer names the positions or assets behind it and links straight to them, so the assistant saves a trip through the app instead of adding one.\n\nNone of this happened in isolation. I took placement, wireframes and visual directions through several rounds with the product team, and scope, flows and priorities shifted after each one.\n\nWith the wireframes settled, I explored the visual side on a single canvas: the existing app, an updated pass, a reskin and the 2.6 explorations, side by side, to produce many directions before choosing one.\n\nFrom the chosen direction I built a full design system: the foundations (typography, colour scales, spacing and radius), then the components and patterns on top of them, so every screen draws from the same tokens and parts instead of one-off values.",
         "figures": [
           {
             "id": "structure-ia-wireframes",
@@ -1257,8 +1258,8 @@
         ]
       },
       "metrics": {
-        "label": "Results",
-        "meta": "What the redesign changed",
+        "label": "Outcomes",
+        "meta": "What the redesign set up",
         "items": [
           {
             "v": "1",
@@ -1277,18 +1278,20 @@
             "k": "Accent colour, replacing a multi-gradient palette across Home, Wallet and Invest"
           }
         ],
-        "note": "Placeholder figures. Replaced once the post-launch review lands."
+        "note": "Design outcomes. Impact metrics will follow after launch."
       },
       "deliverables": {
         "label": "Deliverables",
         "meta": "Handed to the team",
         "items": [
-          "Dark-mode design system",
-          "AI entry point in the navigation bar",
+          "Full design system: foundations & components",
+          "AI assistant entry point in the navigation bar",
           "Home alert state & insight rail",
           "Invest tab: markets, movers, themes",
           "Wallet: six-currency pattern",
           "Account: tier & points system",
+          "Competitor benchmark board",
+          "Ask Anything flows, empty & alert states",
           "Handoff notes"
         ]
       },
