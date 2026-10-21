@@ -1,4 +1,4 @@
-import type { Dict } from "@/lib/dict";
+import { localHref, type Dict, type Lang } from "@/lib/dict";
 import { Arrow } from "./Arrow";
 import { Lines } from "./Words";
 import ResumeModal from "./ResumeModal";
@@ -10,7 +10,7 @@ import ResumeModal from "./ResumeModal";
  * muncul sendiri begitu nilainya diisi di content/*.json, tanpa
  * pernah menampilkan tautan mati.
  */
-export default function FooterCta({ dict }: { dict: Dict }) {
+export default function FooterCta({ dict, lang }: { dict: Dict; lang: Lang }) {
   const social = dict.footer.social.filter((s) => s.href);
 
   return (
@@ -79,7 +79,7 @@ export default function FooterCta({ dict }: { dict: Dict }) {
                 {item.label}
               </button>
             ) : (
-              <a key={item.label} href={item.href}>
+              <a key={item.label} href={localHref(lang, item.href)}>
                 {item.label}
               </a>
             )
