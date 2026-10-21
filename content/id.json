@@ -1057,6 +1057,7 @@
         "meta": "Yang saya kerjakan",
         "items": [
           "Bedah kompetitor",
+          "Riset & benchmark dengan bantuan AI",
           "Sistem desain dark-mode",
           "Model navigasi AI",
           "Arsitektur informasi",
@@ -1091,17 +1092,37 @@
       ],
       "research": {
         "headline": "Pertanyaan sebenarnya bukan apa kata AI, tapi di mana ia tinggal.",
-        "p1": "Saya mengaudit aplikasi Nanovest yang ada layar demi layar, dari Home dan Invest sampai Wallet dan Account, menandai setiap tempat jawaban AI bisa muncul dan apa yang akan bersaing dengannya di sana. Lalu saya melihat cara aplikasi keuangan dan trading lain menempatkan asisten: tombol mengambang, tab chat, kolom pencarian, atau satu slot di navigasi. Untuk tiap pola saya cek berapa ketukan untuk menjangkaunya, apakah ia bertahan saat layar berganti, dan apakah ia terbaca sebagai bagian produk atau widget yang ditempel di atasnya. Semuanya saya kumpulkan dalam satu perbandingan berdampingan, dengan Home Nanovest saat ini di samping pola-polanya.",
+        "p1": "Saya mengaudit aplikasi Nanovest yang ada layar demi layar, dari Home dan Invest sampai Wallet dan Account, menandai setiap tempat jawaban AI bisa muncul dan apa yang akan bersaing dengannya di sana. Lalu saya melihat cara aplikasi keuangan dan trading lain menempatkan asisten: tombol mengambang, tab chat, kolom pencarian, atau satu slot di navigasi. Untuk tiap pola saya cek berapa ketukan untuk menjangkaunya, apakah ia bertahan saat layar berganti, dan apakah ia terbaca sebagai bagian produk atau widget yang ditempel di atasnya. Referensi saya kumpulkan dalam satu papan untuk membaca pola asisten berdampingan dengan bahasa visual yang gelap dan teknikal.\n\nSaya memakai AI sebagai asisten riset, bukan pengambil keputusan. Ia mencari screen AI chat di Mobbin dari aplikasi keuangan dan perbankan, asisten umum, dan aplikasi pendamping, lalu mengumpulkan lebih dari 70 di antaranya ke satu board Figma yang dipilah ke tiga kelompok itu, supaya saya bisa membandingkan penempatan, empty state, dan cara jawaban membawa data. Setiap screen saya baca sendiri, yang tidak meyakinkan saya buang, dan kesimpulan di bawah adalah milik saya.",
         "p2": "Sebagian besar pola menaruh asisten di satu layar atau di tombol mengambang di atas konten, jadi menjangkaunya bergantung pada posisi seseorang saat itu. Itulah celahnya: AI sebagai tujuan, bukan lapisan di bawah setiap tab. Celah itu menentukan penempatannya sebelum kerja visual apa pun. Asisten masuk ke tab bar itu sendiri, dan antarmuka di sekelilingnya menjadi gelap dan terkendali, supaya terbaca sebagai sesuatu yang layak dipercaya untuk urusan uang.",
         "figures": [
           {
             "id": "research-benchmark",
             "src": "",
-            "alt": "Tangkapan layar berdampingan titik masuk asisten AI di beberapa aplikasi keuangan, di samping layar Home Nanovest saat ini",
-            "caption": "Benchmark: tempat aplikasi keuangan menaruh asisten AI-nya, berdampingan dengan Home Nanovest saat ini.",
+            "alt": "Kolase layar aplikasi keuangan dan kripto bergaya dark mode: wallet, dashboard saldo, prompt asisten AI, dan ringkasan perbankan",
+            "caption": "Benchmark: aplikasi keuangan dan kripto bergaya dark mode dan cara mereka menampilkan asisten AI, termasuk Wallex, MathWallet, dan Robinhood Banking.",
             "zoom": true,
             "width": 3000,
             "height": 1500,
+            "legend": ""
+          },
+          {
+            "id": "research-ai-search",
+            "src": "",
+            "alt": "Percakapan dengan asisten AI yang menampilkan pencarian Mobbin untuk screen AI chat aplikasi keuangan dan perbankan, dengan empat hasil pertama dari Public, Cash App, Perplexity, dan Lloyds",
+            "caption": "AI sebagai asisten riset: mencari screen AI chat aplikasi keuangan dan perbankan di Mobbin, lalu menarik hasilnya ke board benchmark.",
+            "zoom": true,
+            "width": 2000,
+            "height": 1300,
+            "legend": ""
+          },
+          {
+            "id": "research-ai-chat",
+            "src": "",
+            "alt": "Board tiga puluh layar ponsel dari aplikasi keuangan dan perbankan, masing-masing menampilkan chat asisten AI: empty state, jawaban dengan grafik dan tabel, serta saran balasan",
+            "caption": "Board benchmark: 30 screen AI chat aplikasi keuangan dan perbankan dari Mobbin, termasuk Cash App, Lloyds, Cleo, Public, Starling, dan Fidelity.",
+            "zoom": true,
+            "width": 2000,
+            "height": 1200,
             "legend": ""
           }
         ]
@@ -1109,36 +1130,36 @@
       "structure": {
         "headline": "Di mana AI tinggal, dan bagaimana ia mengikuti seseorang di seluruh aplikasi.",
         "p1": "Asisten duduk di tengah tab bar, di antara Invest dan Grow, sehingga ia berdiri di atas setiap tujuan, bukan di dalam salah satunya. Di sekelilingnya aplikasi menyimpan empat tab: Home, Invest, Grow, dan Wallet. Invest memuat produk (Crypto, Web3, Stocks, dan Gold) beserta rincian portofolio, sementara Wallet memuat Nanovest Cash dan Crypto Cash, dengan satu tab untuk setiap mata uang.",
-        "p2": "Alurnya mengikuti satu pertanyaan, “sedang apa uang saya sekarang?”, dan dimulai dengan cara yang sama dari tab mana pun: ketuk ikon tengah, ketik atau bicara, dapat jawaban yang menyebut posisi di baliknya, lalu langsung menuju portofolio atau asetnya. Saya juga menggambar kasus tepinya sebelum desain visual: apa yang ditampilkan asisten untuk portofolio kosong, dan bagaimana alert tampak berbeda dari state diam. Keduanya diputuskan di wireframe, sebelum warna atau tipografi ikut campur.",
+        "p2": "Alurnya mengikuti satu pertanyaan, “sedang apa uang saya sekarang?”, dan dimulai dengan cara yang sama dari tab mana pun: ketuk ikon tengah, ketik atau bicara, dapat jawaban yang menyebut posisi di baliknya, lalu langsung menuju portofolio atau asetnya. Saya juga menggambar kasus tepinya sebelum desain visual: apa yang ditampilkan asisten untuk portofolio kosong, dan bagaimana alert tampak berbeda dari state diam. Keduanya diputuskan di wireframe, sebelum warna atau tipografi ikut campur.\n\nSetelah wireframe beres, saya menjelajahi sisi visualnya di satu kanvas: aplikasi yang ada, satu putaran pembaruan, reskin, dan eksplorasi 2.6, berdampingan, untuk menghasilkan banyak arah sebelum memilih satu.\n\nDari arah visual yang dipilih, saya membangun fondasi design system: tipografi, skala warna, spacing, dan radius, supaya setiap layar memakai token yang sama, bukan nilai satu-satu.",
         "figures": [
           {
-            "id": "structure-ia",
+            "id": "structure-ia-wireframes",
             "src": "",
-            "alt": "Diagram sitemap: tab bar dengan asisten AI di tengah dan layar yang dijangkau dari setiap tab",
-            "caption": "Arsitektur informasi: titik masuk AI di atas Home, Invest, Grow, dan Wallet.",
+            "alt": "Board Figma dengan dua section berdampingan: sitemap arsitektur informasi di kiri dan delapan wireframe ponsel low-fidelity di kanan",
+            "caption": "Arsitektur informasi dan wireframe low-fidelity: entry AI di tengah bottom navigation, dan delapan layar.",
             "zoom": true,
-            "width": 3000,
-            "height": 1500,
+            "width": 1590,
+            "height": 1089,
             "legend": ""
           },
           {
-            "id": "structure-flow",
+            "id": "structure-iteration",
             "src": "",
-            "alt": "Diagram alur dari titik masuk AI, lewat pertanyaan dan jawaban, ke portofolio dan detail aset",
-            "caption": "User flow: dari tab mana pun ke jawaban, lalu ke portofolio.",
+            "alt": "Kanvas Figma diperkecil, berisi banyak baris layar aplikasi yang dikelompokkan dengan label seperti Existing, Updated, Nanovest Reskin, dan Nanovest 2.6",
+            "caption": "Iterasi UI dalam satu kanvas: Existing, Updated, Nanovest Reskin, dan Nanovest 2.6, dijelajahi berdampingan untuk menemukan arah visual.",
             "zoom": true,
             "width": 3000,
-            "height": 1800,
+            "height": 1350,
             "legend": ""
           },
           {
-            "id": "structure-wireframes",
+            "id": "structure-design-system",
             "src": "",
-            "alt": "Deretan layar wireframe low-fidelity: Home dalam state diam dan alert, serta permukaan Ask anything",
-            "caption": "Wireframe low-fidelity: state diam dan alert Home dengan titik masuk AI di tab bar.",
-            "zoom": false,
-            "width": 2400,
-            "height": 1200,
+            "alt": "Empat halaman fondasi design system: tipografi dengan contoh Poppins dan Inter, skala warna, skala spacing, dan skala radius",
+            "caption": "Fondasi design system: tipografi, warna, spacing, dan radius.",
+            "zoom": true,
+            "width": 1737,
+            "height": 1218,
             "legend": ""
           }
         ]
