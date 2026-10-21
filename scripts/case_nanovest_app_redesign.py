@@ -48,6 +48,25 @@ N = numbering(["overview", "problem"]
 
 HOME = "index.html" if LANG == "en" else f"index.{LANG}.html"
 
+# Poin yang perlu konfirmasi Ferry (nanovest-case-study-copy-update.md,
+# "Needs confirmation"): teks halaman TIDAK diubah, hanya diberi komentar
+# HTML supaya gampang dicari.
+TODO = {
+    'team': 'Team shows "1 design · 3 eng", but the work involved the product team too. Needs the real line-up.',
+    'role': 'Role says "Senior Product Designer". Confirm it matches the title held at Nanovest.',
+    'bench': 'Benchmark numbers: the text says "more than 70" screens, the captions say "thirty". Could both be true (70 total, 30 in finance), but state it clearly.',
+    'tabbar': 'Tab bar: section 04 describes Home, Invest, Grow, Wallet, but the screens in section 06 include Account and Social, and section 05 mentions "Home, Invest, Wallet or Account". These do not match.',
+    'ask': '"What people can ask" paragraph is a proposed expansion. Confirm it matches what the design actually shows.',
+    'static': '"Previously a static brand mark" for the centre tab icon: confirm this is accurate.',
+    'naming': 'Naming: "Ask anything" and "Ask Anything" are both used. If it is a feature name, use "Ask Anything" everywhere.',
+    'metrics': 'Metrics: "5 → 1" surfaces and "6 currencies". Section 04 lists four products under Invest (Crypto, Web3, Stocks, Gold). Confirm the numbers.',
+}
+
+
+def todo(*keys):
+    return "".join(f"<!-- TODO(Ferry): {TODO[k]} -->" for k in keys)
+
+
 
 def media(item, alt="", eager=False):
     """Slot gambar ber-aspect-ratio tetap (--ar) → nol layout shift.
@@ -104,6 +123,7 @@ hero = f'''
   </div>
 
   <dl class="case-facts reveal">{facts}</dl>
+  {todo("team", "role")}
 
   {figure(C['cover'], C['cover']['alt'],
           extra="case-fig--shot", eager=True)}
@@ -172,13 +192,15 @@ def block(b, num):
 
 
 problem = block(C["blocks"][0], N["problem"])
-approach = block(C["blocks"][1], N["approach"])
+approach = todo("static", "naming", "tabbar") + block(C["blocks"][1], N["approach"])
 
 # ---------- 03/04 · Research + Structure ----------
 # Urutan spec: Problem → Research → Structure → Approach. Lightbox
 # hanya dirender kalau ada figure yang bisa di-zoom.
+TODO_PROC = {"research": ("bench",), "structure": ("tabbar", "ask")}
 process = "".join(
-    section_html(k, PROC[k], P[k], N[k], P) for k in ("research", "structure") if PROC.get(k))
+    todo(*TODO_PROC[k]) + section_html(k, PROC[k], P[k], N[k], P)
+    for k in ("research", "structure") if PROC.get(k))
 if any(f.get("zoom") for k in PROC for f in PROC[k]["figures"] if f["exists"]):
     process += lightbox_html(P)
 
@@ -187,7 +209,7 @@ if any(f.get("zoom") for k in PROC for f in PROC[k]["figures"] if f["exists"]):
 # lebar penuh akan berdiri setinggi 1.200px masing-masing.
 gallery_items = "".join(figure(g, C["title"]) for g in C["gallery"]["items"])
 
-gallery = f'''
+gallery = todo("tabbar") + f'''
 <section class="section section--divided">
   <div class="section-head reveal">
     <h2 class="t-label">{C['gallery']['label']}</h2>
@@ -274,7 +296,7 @@ metric_items = "".join(
     f'<span class="case-metric-k t-meta">{m["k"]}</span></div>'
     for m in C["metrics"]["items"])
 
-metrics = f'''
+metrics = todo("metrics") + f'''
 <section class="section case-metrics grain" data-dark data-reveal>
   <div class="section-head">
     <h2 class="t-label">{C['metrics']['label']}</h2>
