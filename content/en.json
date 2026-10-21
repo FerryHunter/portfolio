@@ -137,6 +137,7 @@
   "process": {
     "research": "Research",
     "structure": "Structure",
+    "brainstorm": "Brainstorm",
     "tag": "Process",
     "missing": "Image to upload",
     "zoom": "Enlarge image",
@@ -1838,7 +1839,7 @@
       ],
       "overview": {
         "label": "Overview",
-        "meta": "01 · The brief",
+        "meta": "The brief",
         "text": "Nanovest could only sell a US stock once it was already trading. A company mid-IPO, still working through a price range days before its first trade, had *no order screen at all*: someone could only wait, then buy it at whatever multiple the market set on day one."
       },
       "mockup": {
@@ -1867,7 +1868,7 @@
       "blocks": [
         {
           "label": "Problem",
-          "meta": "02 · Where it broke",
+          "meta": "Where it broke",
           "heading": "There was nowhere to ask for a stock before it existed on the market.",
           "body": [
             "Every order screen in the app assumed a live ticker: type a company, see a price, buy at market. A company still mid-IPO, its shares priced only as a range and its first trade still days away, had no detail screen, no order button, nowhere in search: it simply wasn't tradable yet.",
@@ -1876,7 +1877,7 @@
         },
         {
           "label": "Approach",
-          "meta": "03 · How I worked",
+          "meta": "How I worked",
           "heading": "A price range in, a price range out: one order that settles itself.",
           "body": [
             "The e-IPO list groups every offering by On Going, Upcoming, Past, so the one fact that actually changes a decision, how many days are left to order, is visible before anyone taps into a single company.",
@@ -1885,6 +1886,77 @@
           ]
         }
       ],
+      "research": {
+        "headline": "An IPO order is a bet on a price nobody knows yet.",
+        "p1": "I looked at how Robinhood and SoFi handle IPO access, and at how investors in Indonesia already know the idea from local e-IPO apps. For each one I asked three questions: what does the person see before they commit, what happens to their money while the offering is open, and how do they find out what they actually got? I also mapped the stages of a typical US IPO, from open to pricing, allocation, and listing, to see which moments a retail investor can see and which stay hidden.",
+        "p2": "The gap I wanted to close was not another form field. An IPO order commits money against a price that does not exist yet, and the answers to those three questions usually arrive after the commitment, not before it. So I decided the order would show its whole timeline from the first screen, and that the money story (what is held, what is refunded, and when) would be stated in plain words at every step.",
+        "figures": [
+          {
+            "id": "research-benchmark",
+            "src": "",
+            "alt": "Four IPO screens side by side: a Robinhood IPO Access listing, a dark app with a launch countdown for SpaceX, an Indonesian e-IPO order confirmation for GOTO, and SoFi's IPO landing page",
+            "caption": "IPO ordering screens from four investment apps, including Robinhood (left) and SoFi (right).",
+            "zoom": true,
+            "width": 1712,
+            "height": 837,
+            "legend": ""
+          }
+        ]
+      },
+      "brainstorm": {
+        "headline": "I put a rough flow in front of other designers before polishing anything.",
+        "p1": "I ran a quick sync with fellow UX designers over Google Meet and walked them through a first wireframe of the IPO flow: the entry from US Stocks, the IPO list, and an individual offering page. The draft deliberately followed the pattern of Nanovest's existing limit buy flow, so the group could judge the new parts against something everyone already knew. I asked where the flow felt unfamiliar, what was missing, and what could be removed.",
+        "p2": "The session settled the shape of the flow before any visual design. Reusing the limit buy pattern stayed, because it kept the order step familiar. The offering page took on the extra job of explaining how an IPO works, with its dates and a short how-it-works block.",
+        "figures": [
+          {
+            "id": "brainstorm-session",
+            "src": "",
+            "alt": "A Google Meet team sync with a screen share of an IPO flow wireframe: the US Stocks entry, the IPO list, and an offering detail page",
+            "caption": "Brainstorm over Google Meet, walking through the first IPO flow wireframe.",
+            "zoom": true,
+            "width": 2000,
+            "height": 996,
+            "legend": ""
+          }
+        ]
+      },
+      "structure": {
+        "headline": "Where IPOs live in the app, and how an order moves through them.",
+        "p1": "I gave IPOs their own e-IPO space instead of mixing them into the market list, because an offering is not a tradable stock yet. The list is organized by time, On Going, Upcoming, and Past, since the date an offering closes is the first thing someone needs. Each offering opens to one detail page, then a review step, then a status page that follows the order until the stock lists.",
+        "p2": "The flow follows one question: what happens to my money, and when will I know? So the review screen shows the amount, estimated shares, fee, and allocation date before anyone confirms, and the status page states the final price, the shares allocated, and the refund in plain numbers. I also settled the edge cases early: an offering that fills only partly, an eligibility check that fails, and an order left open until it is cancelled. Deciding those while the structure was still cheap to change let the visual design start with the hard states already answered.",
+        "figures": [
+          {
+            "id": "structure-ia",
+            "src": "",
+            "alt": "Tree diagram of screens and how they connect, from the e-IPO list to order status",
+            "caption": "Information architecture: how the e-IPO list, offering detail, order review, and status connect.",
+            "zoom": true,
+            "width": 2400,
+            "height": 1000,
+            "legend": ""
+          },
+          {
+            "id": "structure-flow",
+            "src": "",
+            "alt": "Flow diagram of placing an IPO order, with decision points and error paths",
+            "caption": "User flow for an IPO order, including partial fills and a failed eligibility check.",
+            "zoom": true,
+            "width": 2000,
+            "height": 1200,
+            "legend": ""
+          },
+          {
+            "id": "structure-wireframes",
+            "src": "",
+            "alt": "Four low-fidelity phone wireframes: the e-IPO list, an offering detail, the order review, and the allocation result",
+            "caption": "Low-fidelity wireframes of the four core screens, before any visual design.",
+            "zoom": false,
+            "width": 1800,
+            "height": 900,
+            "legend": ""
+          }
+        ]
+      },
       "video": {
         "label": "Motion",
         "meta": "04 · Screen recording",
@@ -1959,7 +2031,7 @@
       },
       "metrics": {
         "label": "Results",
-        "meta": "06 · After launch",
+        "meta": "After launch",
         "items": [
           {
             "v": "4 taps",

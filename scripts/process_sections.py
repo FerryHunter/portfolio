@@ -183,7 +183,7 @@ def lightbox_html(P):
 '''
 
 
-def build(D, C, slug, keys=("research", "structure")):
+def build(D, C, slug, keys=("research", "structure", "brainstorm")):
     """Dict {key: html} + (prepared per key). Nomor dipakai pemanggil."""
     P = D["process"]
     return {k: prepare(C[k], slug) for k in keys if C.get(k)}, P

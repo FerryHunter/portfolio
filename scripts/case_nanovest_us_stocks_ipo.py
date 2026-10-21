@@ -27,13 +27,25 @@ import pathlib
 import sys
 
 from chrome import arrow, case_href, shell, words
+from process_sections import (build, lang_arg, lightbox_html, numbering,
+                              report_missing, section_html)
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-LANG = sys.argv[1] if len(sys.argv) > 1 else "en"
+LANG = lang_arg()
 SLUG = "nanovest-us-stocks-ipo"
 
 D = json.loads((ROOT / "content" / f"{LANG}.json").read_text(encoding="utf-8"))
 C = D["cases"][SLUG]
+
+# Research & Structure: section proses (scripts/process_sections.py).
+# Nomor eyebrow diturunkan dari urutan render, bukan ditulis tangan di
+# JSON; section tanpa konten tidak memesan nomor.
+# Structure disembunyikan dulu (kontennya tetap di JSON): tambahkan
+# "structure" kembali ke keys begitu diagram-nya siap.
+PROC, P = build(D, C, SLUG, keys=("research", "brainstorm"))
+N = numbering(["overview", "problem"]
+              + [k for k in ("research", "brainstorm", "structure") if PROC.get(k)]
+              + ["approach", "gallery", "metrics"])
 
 HOME = "index.html" if LANG == "en" else f"index.{LANG}.html"
 
@@ -107,7 +119,7 @@ overview = f'''
   <div class="tagline-grid reveal" data-stagger="18">
     <div>
       <p class="t-label">{C['overview']['label']}</p>
-      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">{C['overview']['meta']}</p>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">{N['overview']} · {C['overview']['meta']}</p>
     </div>
     <p class="t-tagline tagline">{words(C['overview']['text'])}</p>
   </div>
@@ -139,14 +151,14 @@ scope = f'''
 
 
 # ---------- blok prosa (problem, approach, …) ----------
-def block(b):
+def block(b, num):
     paras = "".join(f'<p class="case-p">{p}</p>' for p in b["body"])
     return f'''
 <section class="section section--divided">
   <div class="case-note reveal">
     <div class="case-note-side">
       <h2 class="t-label">{b['label']}</h2>
-      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">{b['meta']}</p>
+      <p class="t-meta" style="color:var(--ink-muted); margin-top:8px">{num} · {b['meta']}</p>
     </div>
     <div class="case-note-body">
       <h3 class="t-detail-h case-note-h">{b['heading']}</h3>
@@ -157,7 +169,16 @@ def block(b):
 '''
 
 
-blocks = "".join(block(b) for b in C["blocks"])
+problem = block(C["blocks"][0], N["problem"])
+approach = block(C["blocks"][1], N["approach"])
+
+# ---------- Research + Structure ----------
+# Urutan spec: Problem → Research → Structure → Approach. Lightbox
+# hanya dirender kalau ada figure yang bisa di-zoom.
+process = "".join(
+    section_html(k, PROC[k], P[k], N[k], P) for k in ("research", "brainstorm", "structure") if PROC.get(k))
+if any(f.get("zoom") for k in PROC for f in PROC[k]["figures"] if f["exists"]):
+    process += lightbox_html(P)
 
 # ---------- galeri ----------
 # Kolom sempit (case-gallery--phones): layar potret di dua kolom
@@ -168,7 +189,7 @@ gallery = f'''
 <section class="section section--divided">
   <div class="section-head reveal">
     <h2 class="t-label">{C['gallery']['label']}</h2>
-    <p class="t-meta">{C['gallery']['meta']}</p>
+    <p class="t-meta">{N['gallery']} · {C['gallery']['meta']}</p>
   </div>
   <div class="case-gallery case-gallery--phones">{gallery_items}</div>
 </section>
@@ -245,7 +266,7 @@ metrics = f'''
 <section class="section case-metrics grain" data-dark data-reveal>
   <div class="section-head">
     <h2 class="t-label">{C['metrics']['label']}</h2>
-    <p class="t-meta">{C['metrics']['meta']}</p>
+    <p class="t-meta">{N['metrics']} · {C['metrics']['meta']}</p>
   </div>
   <div class="case-metrics-row">{metric_items}</div>
   <p class="t-meta case-metrics-note">{C['metrics']['note']}</p>
@@ -298,7 +319,7 @@ nxt = f'''
 
 html = shell(
     D, LANG,
-    f"{hero}{overview}{mockup}{scope}{blocks}{gallery}{metrics}{deliverables}{nxt}",
+    f"{hero}{overview}{mockup}{scope}{problem}{process}{approach}{gallery}{metrics}{deliverables}{nxt}",
     title=C["meta"]["title"],
     description=C["meta"]["description"],
     home=HOME,
@@ -308,3 +329,4 @@ name = f"{SLUG}.html" if LANG == "en" else f"{SLUG}.{LANG}.html"
 out = ROOT / "preview" / name
 out.write_text(html, encoding="utf-8")
 print(f"→ {out.relative_to(ROOT)}  ({len(html):,} bytes)")
+report_missing()
