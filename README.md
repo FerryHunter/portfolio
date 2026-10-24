@@ -1615,6 +1615,26 @@ fps di perangkat nyata (tidak tersedia di environment ini); kalau
 masih terasa berat di HP tertentu, langkah berikutnya adalah
 mematikan scroll-parallax stiker khusus layar sentuh.
 
+### Gambar opsional di blok prosa Nanovest Calendar
+
+Blok prosa Calendar (Problem/Approach) kini boleh punya gambar lebar
+di bawah paragraf lewat field opsional `img`, `ar`, `alt` pada item
+`blocks[]` di `content/*.json`. Dipakai di blok Approach:
+`public/work/nanovest-calendar/approach-screens.webp` (2000×1299,
+`ar` 1.5396 persis rasio berkas). `NoteBlock` di `NanovestCalendar.tsx`
+merender `ProcFigure` (`wide`) bila `img` ada; generator
+`case_nanovest_calendar.py` melakukan hal yang sama lewat
+`proc_figure()`, dan definisi `problem`/`approach` dipindah ke bawah
+`proc_figure` karena `block()` sekarang memanggilnya (sebelum itu
+`NameError`). Catatan konten: `alt` di `id.json` masih berbahasa
+Inggris.
+
+Diverifikasi: type-check TypeScript penuh nol error, gambar 200 dan
+termuat 2000×1299, berada di blok Approach setelah tiga paragraf, dan
+setelah reveal pas di dalam kolom (365px di 405px viewport) tanpa
+terpotong. Skala 1.14 sebelum reveal adalah animasi masuk bawaan
+`.case-media img`, bukan overflow.
+
 ## Penyimpangan sadar dari spec
 
 | Spec | Di sini | Alasan |

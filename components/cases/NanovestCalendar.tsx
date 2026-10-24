@@ -146,7 +146,7 @@ function IterBlock({
 }
 
 /** Shared prose-block renderer for the .case-note grid layout. */
-function NoteBlock({ b }: { b: { label: string; meta: string; heading: string; body: string[] } }) {
+function NoteBlock({ b }: { b: { label: string; meta: string; heading: string; body: string[]; img?: string; ar?: number; alt?: string } }) {
   return (
     <section className="section section--divided">
       <div className="case-note reveal">
@@ -163,6 +163,7 @@ function NoteBlock({ b }: { b: { label: string; meta: string; heading: string; b
               {p}
             </p>
           ))}
+          {b.img ? <ProcFigure src={b.img} ar={b.ar ?? 1.6} alt={b.alt ?? ""} wide /> : null}
         </div>
       </div>
     </section>

@@ -139,7 +139,8 @@ scope = f'''
 
 # ---------- blok prosa (problem, approach, …) ----------
 def block(b):
-    paras = "".join(f'<p class="case-p">{p}</p>' for p in b["body"])
+    paras   = "".join(f'<p class="case-p">{p}</p>' for p in b["body"])
+    img_fig = proc_figure(b, wide=True) if b.get("img") else ""
     return f'''
 <section class="section section--divided">
   <div class="case-note reveal">
@@ -150,14 +151,11 @@ def block(b):
     <div class="case-note-body">
       <h3 class="t-detail-h case-note-h">{b['heading']}</h3>
       {paras}
+      {img_fig}
     </div>
   </div>
 </section>
 '''
-
-
-problem  = block(C["blocks"][0])
-approach = block(C["blocks"][1])
 
 
 # ---------- helper: process figure dengan placeholder ----------------
@@ -181,6 +179,9 @@ def proc_figure(item, wide=False):
 
     return f'<figure class="case-fig reveal{extra}">{inner}</figure>'
 
+
+problem  = block(C["blocks"][0])
+approach = block(C["blocks"][1])
 
 # ---------- 03 · Structure ----------------------------------------
 S = C["structure"]
