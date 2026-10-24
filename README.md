@@ -1431,16 +1431,16 @@ Teks seluruhnya dari `content/*.json → vibeCoding` (label, meta,
 label placeholder, dan `items[]` berisi `title`/`text`/`tag`),
 sehingga mengganti placeholder jadi highlight asli cukup mengisi
 JSON dan, untuk gambar, mengganti `.vibe-media`. Cuma SATU kartu
-placeholder (baru ada satu karya vibe coding), dengan kotak media
-putus-putus (gaya sama dengan `.case-proc-placeholder`). Awalnya
-dibuat 3 kartu dalam grid 3 kolom, tapi dengan satu item itu
-menyisakan dua kolom kosong, jadi tiap highlight dibuat satu baris
-"featured": media 16:10 lebar di kiri, teks rata bawah di kanan,
-bertumpuk jadi satu kolom ≤768px (`§6.7b` di `globals.css`).
-Menambah highlight cukup menambah item di JSON, barisnya menumpuk
-sendiri. Teks contoh sengaja netral
-("Project name", "Tools, Stack") supaya tidak menyiratkan proyek
-yang belum ada, dan tanpa em dash sesuai instruksi sebelumnya.
+(baru ada satu karya vibe coding). Tata letaknya mengikuti sketsa
+dari pemilik situs: tiap highlight satu baris, media di kiri selebar
+separuh container dengan rasio 2:1, blok teks di kanan rata bawah
+dengan media dan menjorok 88px dari tepinya (`--vibe-indent`, 40px
+≤1024px), bertumpuk satu kolom tanpa indentasi ≤768px (`§6.7b` di
+`globals.css`). Menambah highlight cukup menambah item di JSON,
+barisnya menumpuk sendiri. Percobaan sebelumnya ditinggalkan: grid 3
+kolom (satu item menyisakan dua kolom kosong) dan baris "featured"
+2/3 lebar (thumbnail 837px, dinilai terlalu besar). Teks contoh awal
+sengaja netral dan tanpa em dash sesuai instruksi sebelumnya.
 
 Update: kartu pertama sekarang proyek asli, **Superstars Motorsport**
 (`https://superstar-motorsport.vercel.app/index.html`, situs
@@ -1453,14 +1453,15 @@ putus-putus, sedangkan item tanpa keduanya tetap placeholder. Meta
 section diganti dari "Highlights coming soon" jadi "Built with AI".
 
 Thumbnail `public/work/vibe-coding/superstars-motorsport.webp` adalah
-screenshot hero situs itu: Chrome headless 1440×900 @2x (2880×1800,
-rasio 16:10 persis dengan slot media), dikonversi ke WebP 1920×1200
-q84 (±200 KB). Screenshot dari browser pane tidak dipakai karena pane
+screenshot hero situs itu: Chrome headless 1440×720 @2x (2880×1440,
+rasio 2:1 persis dengan slot media sehingga tidak ada bagian yang
+terpotong `object-fit: cover`), dikonversi ke WebP 1600×800 q84
+(±145 KB). Screenshot dari browser pane tidak dipakai karena pane
 kecil menghasilkan tangkapan 256×156 piksel. Kalau nanti ingin
-diganti, timpa berkas itu di path yang sama.
+diganti, timpa berkas itu di path yang sama dengan rasio 2:1.
 
 Diverifikasi di preview: section tepat setelah `#work`, 1 kartu,
-media 837px + teks 419px rata bawah di 1440px, bertumpuk di 375px,
+media 640px (50% container, rasio 2.00) + teks menjorok 88px rata bawah di 1440px, berdampingan di 900px, bertumpuk di 375px,
 nol scroll horizontal, `reveal` menyala, versi EN dan ID benar. Sisi Next.js tidak bisa dijalankan
 (`node`/`npm` tidak terpasang); komponennya memakai pola yang sama
 dengan `Companies`/`Projects` dan tipe `Dict` otomatis ikut dari
