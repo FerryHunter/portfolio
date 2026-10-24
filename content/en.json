@@ -1,8 +1,26 @@
 {
   "brand": "Ferry Works",
   "meta": {
-    "title": "Ferry Works · Mochamad Feriansyah, Senior Product Designer",
-    "description": "Senior product designer with 7+ years shipping web3, fintech, enterprise and game interfaces. Research, design systems, and work that survives handoff."
+    "title": "Mochamad Feriansyah | Senior Product Designer, Fintech, Investment & Gaming UI/UX",
+    "description": "Senior product designer with 7+ years in UI/UX for fintech, investment apps, web3 and game interfaces. Case studies in research, design systems and handoff."
+  },
+  "seo": {
+    "siteName": "Ferry Works",
+    "person": "Mochamad Feriansyah",
+    "jobTitle": "Senior Product Designer",
+    "heading": "Mochamad Feriansyah, Senior Product Designer and Visual Designer",
+    "caseStudies": "Case studies",
+    "knowsAbout": [
+      "UI/UX design",
+      "Product design",
+      "Fintech UX design",
+      "Investment app UI/UX",
+      "Gaming UI/UX",
+      "Web3 product design",
+      "Design systems",
+      "Enterprise software UX",
+      "Visual design"
+    ]
   },
   "ui": {
     "skip": "Skip to content",
@@ -579,7 +597,7 @@
     "nanovest-calendar": {
       "slug": "nanovest-calendar",
       "meta": {
-        "title": "Nanovest US Stocks Event Calendar · Ferry Works",
+        "title": "Nanovest US Stocks Event Calendar | Investment App UI/UX Case Study | Ferry Works",
         "description": "Case study: the US stock event calendar inside Nanovest, dividends, splits, earnings and market holidays for the stocks a user already owns."
       },
       "back": "All work",
@@ -842,7 +860,7 @@
     "nanovest-investment-app": {
       "slug": "nanovest-investment-app",
       "meta": {
-        "title": "Nanovest Investment App · Ferry Works",
+        "title": "Nanovest Investment App | Investment App UI/UX Case Study | Ferry Works",
         "description": "Case study: a guided onboarding home for Nanovest, fewer steps after login, and two ways into a first trade: explore assets or invest right away."
       },
       "back": "All work",
@@ -1032,7 +1050,7 @@
     "nanovest-app-redesign": {
       "slug": "nanovest-app-redesign",
       "meta": {
-        "title": "Nanovest App Redesign · Ferry Works",
+        "title": "Nanovest App Redesign | Investment App Redesign UI/UX Case Study | Ferry Works",
         "description": "Case study: adding an AI assistant to the Nanovest investing app so people can check markets, prices and their portfolio by simply asking. Includes competitor research, iteration with the product team and a full design system."
       },
       "back": "All work",
@@ -1343,7 +1361,7 @@
     "nanovest-limit-order": {
       "slug": "nanovest-limit-order",
       "meta": {
-        "title": "Nanovest Limit Order · Ferry Works",
+        "title": "Nanovest Limit Order | Stock Trading UI/UX Case Study | Ferry Works",
         "description": "Case study: a limit buy order for US stocks inside Nanovest — naming a price, walking away, and coming back to a filled order."
       },
       "back": "All work",
@@ -1615,7 +1633,7 @@
     "nanovest-foreign-stocks": {
       "slug": "nanovest-foreign-stocks",
       "meta": {
-        "title": "Nanovest Foreign Stocks · Ferry Works",
+        "title": "Nanovest Foreign Stocks | Stock Trading UI/UX Case Study | Ferry Works",
         "description": "Case study: bringing Hong Kong and China stocks into Nanovest, so Indonesian investors buy foreign shares in the same shelf that already holds gold, crypto, and US stocks."
       },
       "back": "All work",
@@ -1854,7 +1872,7 @@
     "nanovest-us-stocks-ipo": {
       "slug": "nanovest-us-stocks-ipo",
       "meta": {
-        "title": "Nanovest US Stocks IPO · Ferry Works",
+        "title": "Nanovest US Stocks IPO | IPO Investing UI/UX Case Study | Ferry Works",
         "description": "Case study: ordering shares in a US company before it starts trading, inside Nanovest. A conditional order against a price range, settled the moment the offering allocates."
       },
       "back": "All work",
@@ -2137,7 +2155,7 @@
     },
     "crypto-locked-staking": {
       "meta": {
-        "title": "Nanovest Crypto Locked Staking · Ferry Works",
+        "title": "Nanovest Crypto Locked Staking | Crypto Staking UI/UX Case Study | Ferry Works",
         "description": "Case study: a guided lock-up flow for IDDR and crypto balances inside Nanovest, from picking a coin to seeing the yield before committing."
       },
       "back": "All work",
@@ -2308,7 +2326,7 @@
     "amazon": {
       "slug": "amazon",
       "meta": {
-        "title": "Amazon Checkout Redesign · Ferry Works",
+        "title": "Amazon Checkout Redesign | E-commerce Checkout UX Case Study | Ferry Works",
         "description": "Case study: a concept redesign of Amazon's mobile checkout — six recurring frictions fixed across four screens: shipping address, delivery options, payment method, and one confirmation before the order goes through."
       },
       "back": "All work",
@@ -2512,7 +2530,7 @@
     "game-quest": {
       "slug": "game-quest",
       "meta": {
-        "title": "Rampage Game Quest · Ferry Works",
+        "title": "Rampage Game Quest | Mobile Game UI/UX Case Study | Ferry Works",
         "description": "Case study: the daily-quest and rewards HUD for a mobile action RPG — concept UI work on claim states, reward info and a two-currency economy."
       },
       "back": "All work",
@@ -2683,7 +2701,7 @@
     "rampage-evolution-card": {
       "slug": "rampage-evolution-card",
       "meta": {
-        "title": "Rampage Evolution Card · Ferry Works",
+        "title": "Rampage Evolution Card | Mobile Game UI/UX Case Study | Ferry Works",
         "description": "Case study: a level-up ability card system for a mobile roguelite — rarity tiers, holographic Evolution cards and the UI players see every time XP fills."
       },
       "back": "All work",
@@ -2850,7 +2868,7 @@
     "hris-dashboard": {
       "slug": "hris-dashboard",
       "meta": {
-        "title": "HRIS Dashboard · TricorUnify · Ferry Works",
+        "title": "HRIS Dashboard | HR Tech Dashboard UI/UX Case Study | Ferry Works",
         "description": "Case study: the company-and-employee HR dashboard for TricorUnify Asia, a real-time, multi-country platform for payroll, leave and employee records, run out of a Hong Kong head office."
       },
       "back": "All work",
@@ -3026,7 +3044,7 @@
     "stiqy-dashboard": {
       "slug": "stiqy-dashboard",
       "meta": {
-        "title": "Stiqy Rewards Dashboard · Ferry Works",
+        "title": "Stiqy Rewards Dashboard | Web3 Dashboard UI/UX Case Study | Ferry Works",
         "description": "Case study: the campaign dashboard game partners use to turn level clears into GEM rewards, claimed on a page of their own and redeemed for gear or another prize."
       },
       "back": "All work",
@@ -3202,7 +3220,7 @@
     "game-deployer": {
       "slug": "game-deployer",
       "meta": {
-        "title": "Web3 Game Deployer Engine · Ferry Works",
+        "title": "Web3 Game Deployer Engine | Web3 Developer Tool UI/UX Case Study | Ferry Works",
         "description": "Case study: the dashboard that takes a World Engine game shard from sign-up to a live, EVM-compatible chain, without a terminal window open the whole time."
       },
       "back": "All work",
@@ -3379,7 +3397,7 @@
     "game-interface-study": {
       "slug": "game-interface-study",
       "meta": {
-        "title": "Game Interface Study · Ferry Works",
+        "title": "Game Interface Study | Game Interface UI/UX Case Study | Ferry Works",
         "description": "Case study: a brand identity and HUD system for Hunters: Legend of Heroes, an imaginary MOBA explored for Argus Labs, balancing stylised magitech visuals against the clarity a competitive interface needs."
       },
       "back": "All work",
@@ -3550,7 +3568,7 @@
     "investment-app-reimagined": {
       "slug": "investment-app-reimagined",
       "meta": {
-        "title": "Investment App Reimagined · Ferry Works",
+        "title": "Investment App Reimagined | Investment App UI/UX Concept Case Study | Ferry Works",
         "description": "Concept case study: what an investment app looks like when it borrows its energy from the trading floor itself, a portfolio screen built from tickers, arrows, and a color that changes with the market's mood."
       },
       "back": "All work",

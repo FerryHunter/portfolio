@@ -1,8 +1,26 @@
 {
   "brand": "Ferry Works",
   "meta": {
-    "title": "Ferry Works · Mochamad Feriansyah, Senior Product Designer",
-    "description": "Senior product designer dengan pengalaman 7+ tahun di web3, fintech, enterprise, dan antarmuka game. Riset, design system, dan desain yang selamat sampai produksi."
+    "title": "Mochamad Feriansyah | Senior Product Designer, UI/UX Fintech, Investasi & Game",
+    "description": "Senior product designer dengan pengalaman 7+ tahun di UI/UX untuk fintech, aplikasi investasi, web3, dan antarmuka game. Studi kasus riset, design system, dan handoff."
+  },
+  "seo": {
+    "siteName": "Ferry Works",
+    "person": "Mochamad Feriansyah",
+    "jobTitle": "Senior Product Designer",
+    "heading": "Mochamad Feriansyah, Senior Product Designer dan Visual Designer",
+    "caseStudies": "Studi kasus",
+    "knowsAbout": [
+      "UI/UX design",
+      "Product design",
+      "Fintech UX design",
+      "Investment app UI/UX",
+      "Gaming UI/UX",
+      "Web3 product design",
+      "Design systems",
+      "Enterprise software UX",
+      "Visual design"
+    ]
   },
   "ui": {
     "skip": "Lewati ke konten",
@@ -579,7 +597,7 @@
     "nanovest-calendar": {
       "slug": "nanovest-calendar",
       "meta": {
-        "title": "Nanovest US Stocks Event Calendar · Ferry Works",
+        "title": "Nanovest US Stocks Event Calendar | Studi Kasus UI/UX Aplikasi Investasi | Ferry Works",
         "description": "Studi kasus: kalender event saham AS di dalam Nanovest, dividen, stock split, earnings, dan hari libur bursa untuk saham yang sudah dipegang pengguna."
       },
       "back": "Semua proyek",
@@ -842,7 +860,7 @@
     "nanovest-investment-app": {
       "slug": "nanovest-investment-app",
       "meta": {
-        "title": "Nanovest Investment App · Ferry Works",
+        "title": "Nanovest Investment App | Studi Kasus UI/UX Aplikasi Investasi | Ferry Works",
         "description": "Studi kasus: home onboarding yang lebih terpandu untuk Nanovest, lebih sedikit langkah setelah login, dan dua cara menuju transaksi pertama: explore aset atau langsung invest."
       },
       "back": "Semua proyek",
@@ -1032,7 +1050,7 @@
     "nanovest-app-redesign": {
       "slug": "nanovest-app-redesign",
       "meta": {
-        "title": "Nanovest App Redesign · Ferry Works",
+        "title": "Nanovest App Redesign | Studi Kasus Redesign UI/UX Aplikasi Investasi | Ferry Works",
         "description": "Studi kasus: menambahkan asisten AI ke aplikasi investasi Nanovest supaya orang bisa memeriksa pasar, harga, dan portofolio mereka cukup dengan bertanya. Mencakup riset kompetitor, iterasi bersama tim produk, dan design system lengkap."
       },
       "back": "Semua proyek",
@@ -1343,7 +1361,7 @@
     "nanovest-limit-order": {
       "slug": "nanovest-limit-order",
       "meta": {
-        "title": "Nanovest Limit Order · Ferry Works",
+        "title": "Nanovest Limit Order | Studi Kasus UI/UX Trading Saham | Ferry Works",
         "description": "Studi kasus: limit buy order untuk saham AS di dalam Nanovest — menentukan harga sendiri, meninggalkannya, dan kembali ke order yang sudah terisi."
       },
       "back": "Semua proyek",
@@ -1615,7 +1633,7 @@
     "nanovest-foreign-stocks": {
       "slug": "nanovest-foreign-stocks",
       "meta": {
-        "title": "Nanovest Foreign Stocks · Ferry Works",
+        "title": "Nanovest Foreign Stocks | Studi Kasus UI/UX Trading Saham | Ferry Works",
         "description": "Studi kasus: menghadirkan saham Hong Kong dan China ke Nanovest, sehingga investor Indonesia membeli saham luar negeri di rak yang sama dengan emas, kripto, dan saham AS."
       },
       "back": "Semua proyek",
@@ -1854,7 +1872,7 @@
     "nanovest-us-stocks-ipo": {
       "slug": "nanovest-us-stocks-ipo",
       "meta": {
-        "title": "Nanovest US Stocks IPO · Ferry Works",
+        "title": "Nanovest US Stocks IPO | Studi Kasus UI/UX Investasi IPO | Ferry Works",
         "description": "Studi kasus: memesan saham perusahaan AS sebelum ia mulai diperdagangkan, di dalam Nanovest: order bersyarat terhadap rentang harga, yang diselesaikan sendiri begitu penawarannya dialokasikan."
       },
       "back": "Semua proyek",
@@ -2137,7 +2155,7 @@
     },
     "crypto-locked-staking": {
       "meta": {
-        "title": "Nanovest Crypto Locked Staking · Ferry Works",
+        "title": "Nanovest Crypto Locked Staking | Studi Kasus UI/UX Staking Kripto | Ferry Works",
         "description": "Studi kasus: alur lock-up bertahap untuk saldo IDDR dan kripto di Nanovest, dari memilih koin sampai melihat yield-nya sebelum berkomitmen."
       },
       "back": "Semua proyek",
@@ -2308,7 +2326,7 @@
     "amazon": {
       "slug": "amazon",
       "meta": {
-        "title": "Amazon Checkout Redesign · Ferry Works",
+        "title": "Amazon Checkout Redesign | Studi Kasus UX Checkout E-commerce | Ferry Works",
         "description": "Studi kasus: konsep desain ulang checkout mobile Amazon — enam gesekan berulang yang diperbaiki di empat layar: alamat pengiriman, opsi pengiriman, metode pembayaran, dan satu layar konfirmasi sebelum order diproses."
       },
       "back": "Semua proyek",
@@ -2512,7 +2530,7 @@
     "game-quest": {
       "slug": "game-quest",
       "meta": {
-        "title": "Rampage Game Quest · Ferry Works",
+        "title": "Rampage Game Quest | Studi Kasus UI/UX Game Mobile | Ferry Works",
         "description": "Studi kasus: HUD quest harian dan reward untuk action RPG mobile — kerja UI konsep pada state klaim, info reward, dan ekonomi dua mata uang."
       },
       "back": "Semua proyek",
@@ -2683,7 +2701,7 @@
     "rampage-evolution-card": {
       "slug": "rampage-evolution-card",
       "meta": {
-        "title": "Rampage Evolution Card · Ferry Works",
+        "title": "Rampage Evolution Card | Studi Kasus UI/UX Game Mobile | Ferry Works",
         "description": "Studi kasus: sistem kartu ability level-up untuk roguelite mobile — tingkatan rarity, kartu Evolution holografik, dan UI yang dilihat pemain setiap kali XP penuh."
       },
       "back": "Semua proyek",
@@ -2850,7 +2868,7 @@
     "hris-dashboard": {
       "slug": "hris-dashboard",
       "meta": {
-        "title": "HRIS Dashboard · TricorUnify · Ferry Works",
+        "title": "HRIS Dashboard | Studi Kasus UI/UX Dashboard HR Tech | Ferry Works",
         "description": "Studi kasus: dashboard HR sisi company dan employee untuk TricorUnify Asia, platform real-time multi-negara untuk payroll, cuti dan data karyawan, dijalankan dari kantor pusat Hong Kong."
       },
       "back": "Semua proyek",
@@ -3026,7 +3044,7 @@
     "stiqy-dashboard": {
       "slug": "stiqy-dashboard",
       "meta": {
-        "title": "Stiqy Rewards Dashboard · Ferry Works",
+        "title": "Stiqy Rewards Dashboard | Studi Kasus UI/UX Dashboard Web3 | Ferry Works",
         "description": "Studi kasus: dashboard kampanye yang dipakai partner game mengubah level yang diselesaikan jadi reward GEM, diklaim di halaman tersendiri dan ditukar jadi item atau hadiah lain."
       },
       "back": "Semua proyek",
@@ -3202,7 +3220,7 @@
     "game-deployer": {
       "slug": "game-deployer",
       "meta": {
-        "title": "Web3 Game Deployer Engine · Ferry Works",
+        "title": "Web3 Game Deployer Engine | Studi Kasus UI/UX Tool Developer Web3 | Ferry Works",
         "description": "Studi kasus: dashboard yang membawa satu game shard World Engine dari pendaftaran sampai jadi chain EVM yang live, tanpa terminal terbuka sepanjang waktu."
       },
       "back": "Semua proyek",
@@ -3379,7 +3397,7 @@
     "game-interface-study": {
       "slug": "game-interface-study",
       "meta": {
-        "title": "Game Interface Study · Ferry Works",
+        "title": "Game Interface Study | Studi Kasus UI/UX Antarmuka Game | Ferry Works",
         "description": "Studi kasus: identitas brand dan sistem HUD untuk Hunters: Legend of Heroes, MOBA imajiner yang dieksplorasi untuk Argus Labs, menyeimbangkan visual magitech yang stylised dengan kejelasan yang dibutuhkan interface kompetitif."
       },
       "back": "Semua proyek",
@@ -3550,7 +3568,7 @@
     "investment-app-reimagined": {
       "slug": "investment-app-reimagined",
       "meta": {
-        "title": "Investment App Reimagined · Ferry Works",
+        "title": "Investment App Reimagined | Studi Kasus Konsep UI/UX Aplikasi Investasi | Ferry Works",
         "description": "Studi kasus konsep: seperti apa aplikasi investasi kalau energinya dipinjam langsung dari lantai bursa, layar portofolio yang dibangun dari ticker, panah, dan warna yang berubah mengikuti suasana pasar."
       },
       "back": "Semua proyek",

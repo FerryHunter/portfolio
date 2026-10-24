@@ -1635,6 +1635,36 @@ setelah reveal pas di dalam kolom (365px di 405px viewport) tanpa
 terpotong. Skala 1.14 sebelum reveal adalah animasi masuk bawaan
 `.case-media img`, bukan overflow.
 
+## Performa dan SEO / pencarian AI
+
+Diukur dengan lab CDP buatan sendiri (Chrome headless, throttling mobile), karena kuota PageSpeed Insights API habis.
+
+**Performa**
+
+| Temuan | Perbaikan |
+|---|---|
+| Gambar `public/` 44,3 MB (WebP lossless) | `scripts/optimize_images.py` mengenkode ulang ke WebP lossy (q84, q92 bila PSNR < 34 dB, lebar maks 2400). Hasil 10,1 MB; idempoten, `--dry-run` tersedia. |
+| Font dari Google Fonts/Fontshare (host pihak ketiga) | Di-host sendiri di `public/fonts` (Switzer 300/400/500, JetBrains Mono 400 latin), `@font-face` di `globals.css`, dua font atas lipatan di-preload. |
+| Tanpa cache header untuk aset statis | `headers()` di `next.config.mjs`: font immutable, gambar 1 hari + stale-while-revalidate 7 hari. |
+| Preloader menahan LCP (halaman case 5,9 dtk) | Dilewati bila sudah selesai di sesi ini (`sessionStorage fw-pre` + `html[data-seen]`), batas keras 2,2 dtk. |
+| Balloon hero 1 file besar | `srcSet` 768w + `fetchPriority="high"`. |
+| `/xx` dan `/xx/work/...` memberi 200 | `dynamicParams = false` + `notFound()`, jadi URL ganda tidak terindeks. |
+
+**SEO / GEO** (sumber tunggal: `content/*.json`, blok `seo` dan `meta`)
+
+- `lib/seo.ts`: `pageMetadata()` menyusun title, description, canonical, hreflang (en/id/x-default), Open Graph, Twitter; `homeJsonLd()` dan `caseJsonLd()` menyusun JSON-LD schema.org (WebSite, Person, ProfilePage, ItemList, Article, BreadcrumbList) lewat `components/JsonLd.tsx`.
+- H1 `sr-only` di Hero; marquee `aria-hidden`.
+- `robots` meta dengan `max-snippet -1` dan `max-image-preview large`.
+- `python3 scripts/build_seo.py` menghasilkan `public/sitemap.xml` (32 URL + hreflang), `robots.txt`, `llms.txt`. Jalankan ulang tiap menambah/menghapus case atau mengubah meta.
+- Judul case berformat `{judul} | {frasa kata kunci} | Ferry Works` (fintech, investment app, gaming UI/UX, dst).
+
+**Batasan yang disengaja**
+
+- `<html lang>` tetap `en` di halaman `/id` (memisahkannya butuh restrukturisasi root layout; belum aman tanpa build).
+- Preview Python tidak memuat JSON-LD/canonical (hanya untuk Next).
+- Showreel masih memakai placeholder `picsum.photos` (~100 KB pihak ketiga) sampai ada video asli.
+- Tidak ada yang bisa menjamin muncul di Google AI Overview. Yang bisa dilakukan hanya membuat situs terbaca baik; verifikasi Search Console, kirim sitemap, dan backlink (LinkedIn, Dribbble, GitHub) dikerjakan pemilik situs.
+
 ## Penyimpangan sadar dari spec
 
 | Spec | Di sini | Alasan |

@@ -1,0 +1,45 @@
+# Ferry Works
+
+> Portfolio of Mochamad Feriansyah, Senior Product Designer. Senior product designer with 7+ years in UI/UX for fintech, investment apps, web3 and game interfaces. Case studies in research, design systems and handoff.
+
+Available for freelance and full time roles. Remote · worldwide.
+
+## Case studies
+
+- [Nanovest US Stocks Event Calendar](https://www.ferryworks.space/en/work/nanovest-calendar): Case study: the US stock event calendar inside Nanovest, dividends, splits, earnings and market holidays for the stocks a user already owns.
+- [Nanovest Investment App](https://www.ferryworks.space/en/work/nanovest-investment-app): Case study: a guided onboarding home for Nanovest, fewer steps after login, and two ways into a first trade: explore assets or invest right away.
+- [Nanovest App Redesign](https://www.ferryworks.space/en/work/nanovest-app-redesign): Case study: adding an AI assistant to the Nanovest investing app so people can check markets, prices and their portfolio by simply asking. Includes competitor research, iteration with the product team and a full design system.
+- [Nanovest Limit Order](https://www.ferryworks.space/en/work/nanovest-limit-order): Case study: a limit buy order for US stocks inside Nanovest — naming a price, walking away, and coming back to a filled order.
+- [Nanovest Foreign Stocks](https://www.ferryworks.space/en/work/nanovest-foreign-stocks): Case study: bringing Hong Kong and China stocks into Nanovest, so Indonesian investors buy foreign shares in the same shelf that already holds gold, crypto, and US stocks.
+- [Nanovest US Stocks IPO](https://www.ferryworks.space/en/work/nanovest-us-stocks-ipo): Case study: ordering shares in a US company before it starts trading, inside Nanovest. A conditional order against a price range, settled the moment the offering allocates.
+- [Nanovest Crypto Locked Staking](https://www.ferryworks.space/en/work/crypto-locked-staking): Case study: a guided lock-up flow for IDDR and crypto balances inside Nanovest, from picking a coin to seeing the yield before committing.
+- [Amazon Checkout Redesign](https://www.ferryworks.space/en/work/amazon): Case study: a concept redesign of Amazon's mobile checkout — six recurring frictions fixed across four screens: shipping address, delivery options, payment method, and one confirmation before the order goes through.
+- [Rampage Game Quest](https://www.ferryworks.space/en/work/game-quest): Case study: the daily-quest and rewards HUD for a mobile action RPG — concept UI work on claim states, reward info and a two-currency economy.
+- [Rampage Evolution Card](https://www.ferryworks.space/en/work/rampage-evolution-card): Case study: a level-up ability card system for a mobile roguelite — rarity tiers, holographic Evolution cards and the UI players see every time XP fills.
+- [HRIS Dashboard](https://www.ferryworks.space/en/work/hris-dashboard): Case study: the company-and-employee HR dashboard for TricorUnify Asia, a real-time, multi-country platform for payroll, leave and employee records, run out of a Hong Kong head office.
+- [Stiqy Rewards Dashboard](https://www.ferryworks.space/en/work/stiqy-dashboard): Case study: the campaign dashboard game partners use to turn level clears into GEM rewards, claimed on a page of their own and redeemed for gear or another prize.
+- [Web3 Game Deployer Engine](https://www.ferryworks.space/en/work/game-deployer): Case study: the dashboard that takes a World Engine game shard from sign-up to a live, EVM-compatible chain, without a terminal window open the whole time.
+- [Game Interface Study](https://www.ferryworks.space/en/work/game-interface-study): Case study: a brand identity and HUD system for Hunters: Legend of Heroes, an imaginary MOBA explored for Argus Labs, balancing stylised magitech visuals against the clarity a competitive interface needs.
+- [Investment App Reimagined](https://www.ferryworks.space/en/work/investment-app-reimagined): Concept case study: what an investment app looks like when it borrows its energy from the trading floor itself, a portfolio screen built from tickers, arrows, and a color that changes with the market's mood.
+
+## Expertise
+
+- UI/UX design
+- Product design
+- Fintech UX design
+- Investment app UI/UX
+- Gaming UI/UX
+- Web3 product design
+- Design systems
+- Enterprise software UX
+- Visual design
+
+## Elsewhere
+
+- [LinkedIn](https://www.linkedin.com/in/mrferiansyah/)
+- [Dribbble](https://dribbble.com/ferferferry)
+
+## Languages
+
+- English: https://www.ferryworks.space/en
+- Bahasa Indonesia: https://www.ferryworks.space/id

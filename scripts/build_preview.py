@@ -87,19 +87,23 @@ wordmark_set = "".join(f'<span class="t-hero hero-word">{D["brand"]}</span>' for
 
 hero = f'''
 <section class="hero" id="top" data-hero>
+  <h1 class="sr-only">{D['seo']['heading']}</h1>
+
   <div class="hero-balloon" data-hero-balloon aria-hidden="true">
-    <img class="hero-balloon-img" src="../public/hero/balloon.webp" alt=""
-         width="938" height="1530" decoding="async" draggable="false">
+    <img class="hero-balloon-img" src="../public/hero/balloon.webp"
+         srcset="../public/hero/balloon-768.webp 768w, ../public/hero/balloon.webp 938w"
+         sizes="(max-width: 768px) 270px, 410px" alt=""
+         width="938" height="1530" decoding="async" fetchpriority="high" draggable="false">
   </div>
 
   {sticker_layer("back", 0.12)}
 
   <div class="hero-stage">
-    <div class="hero-marquee">
+    <div class="hero-marquee" aria-hidden="true">
       <div class="hero-reveal">
         <div class="hero-track">
           <div style="display:flex">{wordmark_set}</div>
-          <div style="display:flex" aria-hidden="true">{wordmark_set}</div>
+          <div style="display:flex">{wordmark_set}</div>
         </div>
       </div>
     </div>

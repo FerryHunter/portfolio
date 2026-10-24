@@ -3,13 +3,15 @@ import "./globals.css";
 
 /**
  * Aeonik (situs referensi) berlisensi komersial CoType Foundry →
- * disubstitusi Switzer + JetBrains Mono sesuai §0.
- * font-display: swap ditangani oleh kedua penyedia.
+ * disubstitusi Switzer + JetBrains Mono sesuai §0. Fontnya di-host
+ * sendiri (public/fonts, @font-face di globals.css) dan hanya dua yang
+ * di-preload: Switzer 400 (wordmark + teks isi) dan JetBrains Mono
+ * 400 (label nav di atas lipatan).
  *
- * openGraph/twitter di sini sengaja tidak menyebut title/description
- * sendiri — Next.js mengambilnya dari title/description yang di-
- * resolve tiap route (root, [lang], case study), og:image tetap satu
- * gambar sitewide yang diwarisi turunan tanpa perlu diulang di sana.
+ * metadata di sini hanya nilai bawaan (ikon, robots, fallback OG).
+ * Judul, deskripsi, canonical, hreflang, Open Graph, dan Twitter tiap
+ * halaman disusun oleh pageMetadata() di lib/seo.ts, karena Next
+ * mengganti objek openGraph anak secara utuh, bukan menggabungkannya.
  */
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ferryworks.space"),
@@ -22,6 +24,17 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-touch-icon.png",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     type: "website",
     siteName: "Ferry Works",
@@ -33,19 +46,29 @@ export const metadata: Metadata = {
   },
 };
 
+// Jalan sebelum cat pertama: kalau preloader sudah pernah selesai di sesi
+// ini, tandai <html> supaya CSS langsung menyembunyikannya (tanpa kilatan).
+const SEEN_SCRIPT =
+  "try{if(sessionStorage.getItem('fw-pre'))document.documentElement.setAttribute('data-seen','')}catch(e){}";
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://api.fontshare.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <script dangerouslySetInnerHTML={{ __html: SEEN_SCRIPT }} />
         <link
-          rel="stylesheet"
-          href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500&display=swap"
+          rel="preload"
+          href="/fonts/switzer-400.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
         />
         <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap"
+          rel="preload"
+          href="/fonts/jetbrains-mono-400-latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
         />
       </head>
       <body className="preloading">{children}</body>

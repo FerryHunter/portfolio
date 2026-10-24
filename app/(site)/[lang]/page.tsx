@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import Hero from "@/components/Hero";
 import Showreel from "@/components/Showreel";
 import Clients from "@/components/Clients";
@@ -6,20 +7,25 @@ import Tagline from "@/components/Tagline";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import VibeCoding from "@/components/VibeCoding";
-import { DEFAULT_LANG, getDict, isLang, type Lang } from "@/lib/dict";
+import JsonLd from "@/components/JsonLd";
+import { getDict, isLang } from "@/lib/dict";
+import { homeJsonLd } from "@/lib/seo";
+
+export const dynamicParams = false;
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
+  if (!isLang(lang)) notFound();
   const dict = getDict(lang);
-  const current: Lang = isLang(lang) ? lang : DEFAULT_LANG;
 
   return (
     <>
+      <JsonLd data={homeJsonLd(dict, lang)} />
       <Hero dict={dict} />
       <Showreel dict={dict} />
       <Tagline dict={dict} />
       <Services dict={dict} />
-      <Projects dict={dict} lang={current} />
+      <Projects dict={dict} lang={lang} />
       <VibeCoding dict={dict} />
       <Clients dict={dict} />
       <Companies dict={dict} />

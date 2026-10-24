@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CASE_PAGES } from "@/components/cases";
+import JsonLd from "@/components/JsonLd";
 import { getCase, getDict, isLang, LANGS, DEFAULT_LANG, type Lang } from "@/lib/dict";
+import { caseJsonLd, pageMetadata } from "@/lib/seo";
+
+// Slug di luar daftar menjadi 404 statis, bukan dirender saat diminta.
+export const dynamicParams = false;
 
 /**
  * Halaman case study dipilih dari registry, bukan dari satu
@@ -22,7 +27,8 @@ export async function generateMetadata({
   const { lang, slug } = await params;
   const data = getCase(getDict(lang), slug);
   if (!data) return {};
-  return { title: data.meta.title, description: data.meta.description };
+  const current: Lang = isLang(lang) ? lang : DEFAULT_LANG;
+  return pageMetadata(current, `/work/${slug}`, data.meta.title, data.meta.description);
 }
 
 export default async function CasePage({
@@ -40,5 +46,10 @@ export default async function CasePage({
   if (!data || !Page) notFound();
 
   const current: Lang = isLang(lang) ? lang : DEFAULT_LANG;
-  return <Page dict={dict} lang={current} data={data} />;
+  return (
+    <>
+      <JsonLd data={caseJsonLd(dict, data, current, slug)} />
+      <Page dict={dict} lang={current} data={data} />
+    </>
+  );
 }

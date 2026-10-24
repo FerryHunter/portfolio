@@ -133,16 +133,24 @@ export default function Hero({ dict }: { dict: Dict }) {
 
   return (
     <section className="hero" id="top" data-hero>
+      {/* Satu-satunya H1 halaman. Wordmark marquee di bawah hanya
+          dekorasi (aria-hidden), jadi mesin pencari dan pembaca layar
+          mendapat nama + peran yang sebenarnya dari sini. */}
+      <h1 className="sr-only">{dict.seo.heading}</h1>
+
       {/* Balon di belakang wordmark; parallax mouse di motion/parallax.js.
           Pasangannya di preview statis: scripts/build_preview.py. */}
       <div className="hero-balloon" data-hero-balloon aria-hidden="true">
         <img
           className="hero-balloon-img"
           src="/hero/balloon.webp"
+          srcSet="/hero/balloon-768.webp 768w, /hero/balloon.webp 938w"
+          sizes="(max-width: 768px) 270px, 410px"
           alt=""
           width={938}
           height={1530}
           decoding="async"
+          fetchPriority="high"
           draggable={false}
         />
       </div>
@@ -150,11 +158,11 @@ export default function Hero({ dict }: { dict: Dict }) {
       <StickerLayer items={back} variant="back" depth={0.12} />
 
       <div className="hero-stage">
-        <div className="hero-marquee">
+        <div className="hero-marquee" aria-hidden="true">
           <div className="hero-reveal">
             <div className="hero-track">
               {[0, 1].map((copy) => (
-                <div key={copy} style={{ display: "flex" }} aria-hidden={copy === 1}>
+                <div key={copy} style={{ display: "flex" }}>
                   {set.map((i) => (
                     <span key={i} className="t-hero hero-word">
                       {dict.brand}

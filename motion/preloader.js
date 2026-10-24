@@ -7,9 +7,21 @@
  * Safety: kalau ada aset yang menggantung, preloader tetap keluar
  * setelah HARD_STOP supaya pengunjung tidak pernah terkurung.
  */
-const HARD_STOP = 3500;
+const HARD_STOP = 2200;
+const SEEN_KEY = "fw-pre";
+
+const seen = () => {
+  try {
+    return Boolean(sessionStorage.getItem(SEEN_KEY));
+  } catch {
+    return false;
+  }
+};
 
 const finish = (pre) => {
+  try {
+    sessionStorage.setItem(SEEN_KEY, "1");
+  } catch {}
   document.body.classList.remove("preloading");
   document.body.classList.add("loaded");
   if (pre) {
@@ -22,7 +34,12 @@ const finish = (pre) => {
 export function initPreloader(root = document) {
   const pre = root.querySelector("[data-preloader]");
 
-  if (!pre || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  // Preloader hanya untuk kunjungan pertama dalam sesi. Tiap pindah
+  // halaman (home → case → "Next case") sebelumnya menampilkannya lagi
+  // dan menahan konten sampai window.load, yang menunggu gambar besar
+  // (di halaman case: LCP ±3,4 dtk dan preloader baru hilang ±5,9 dtk
+  // pada jaringan lambat).
+  if (!pre || seen() || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     finish(pre);
     return () => {};
   }
@@ -55,7 +72,7 @@ export function initPreloader(root = document) {
 
   const tick = () => {
     if (done) return;
-    shown += (target() - shown) * 0.08;
+    shown += (target() - shown) * 0.12;
     const value = Math.min(100, Math.round(shown));
     if (countEl) countEl.textContent = String(value).padStart(3, "0");
     if (barEl) barEl.style.width = `${value}%`;
@@ -67,7 +84,7 @@ export function initPreloader(root = document) {
   };
   raf = requestAnimationFrame(tick);
 
-  const onLoad = () => setTimeout(settle, 260);
+  const onLoad = () => setTimeout(settle, 120);
   if (document.readyState === "complete") onLoad();
   else window.addEventListener("load", onLoad, { once: true });
 
