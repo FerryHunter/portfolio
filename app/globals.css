@@ -632,6 +632,42 @@ body.loaded .hero-reveal { transform: none; }
   white-space: nowrap;
 }
 
+/* --- balon "FERRY WORKS" di belakang wordmark + parallax mouse ---
+   Komponen: components/Hero.tsx · scripts/build_preview.py ·
+   motion/balloon.js. z-index 0 = satu lapis dengan sticker belakang
+   (DOM lebih awal, jadi sticker tetap di atasnya) dan di bawah
+   .hero-stage, sehingga huruf hitam wordmark melintas di depan balon.
+   Pembungkus memegang posisi + parallax (--bx/--by/--br dari JS);
+   gambarnya sendiri memegang animasi masuk. */
+.hero-balloon {
+  position: absolute;
+  z-index: 0;
+  left: 60%;
+  top: 50%;
+  height: 74svh;
+  aspect-ratio: 938 / 1530;
+  pointer-events: none;
+  transform: translate(-50%, -50%)
+             translate3d(var(--bx, 0px), var(--by, 0px), 0)
+             rotate(var(--br, 0deg));
+  will-change: transform;
+}
+.hero-balloon-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+  filter: drop-shadow(0 28px 36px rgba(13, 13, 11, .14));
+  opacity: 0;
+  transform: translateY(6%) scale(.94);
+  transition: opacity 1s var(--ease) .35s, transform 1.4s var(--ease) .35s;
+}
+body.loaded .hero-balloon-img { opacity: 1; transform: none; }
+@media (max-width: 768px) {
+  .hero-balloon { left: 62%; height: 54svh; }
+}
+
 /* --- sticker layer, sepenuhnya data-driven via custom property --- */
 
 /* Satuan lebar sticker dipisah jadi token sendiri supaya skalanya
@@ -1729,6 +1765,7 @@ a.vibe-card { color: inherit; text-decoration: none; }
   }
 
   .hero-track { animation: none !important; }
+  .hero-balloon-img { opacity: 1 !important; transform: none !important; }
   .hsticker--emoji .hsticker-inner { animation: none !important; }
   .hero-reveal,
   .p-img,

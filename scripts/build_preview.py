@@ -80,6 +80,11 @@ wordmark_set = "".join(f'<span class="t-hero hero-word">{D["brand"]}</span>' for
 
 hero = f'''
 <section class="hero" id="top" data-hero>
+  <div class="hero-balloon" data-hero-balloon aria-hidden="true">
+    <img class="hero-balloon-img" src="../public/hero/balloon.webp" alt=""
+         width="938" height="1530" decoding="async" draggable="false">
+  </div>
+
   {sticker_layer("back", 0.12)}
 
   <div class="hero-stage">

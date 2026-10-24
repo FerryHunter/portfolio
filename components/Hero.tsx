@@ -116,6 +116,20 @@ export default function Hero({ dict }: { dict: Dict }) {
 
   return (
     <section className="hero" id="top" data-hero>
+      {/* Balon di belakang wordmark; parallax mouse di motion/balloon.js.
+          Pasangannya di preview statis: scripts/build_preview.py. */}
+      <div className="hero-balloon" data-hero-balloon aria-hidden="true">
+        <img
+          className="hero-balloon-img"
+          src="/hero/balloon.webp"
+          alt=""
+          width={938}
+          height={1530}
+          decoding="async"
+          draggable={false}
+        />
+      </div>
+
       <StickerLayer items={back} variant="back" depth={0.12} />
 
       <div className="hero-stage">

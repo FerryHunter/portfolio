@@ -1473,6 +1473,53 @@ nol scroll horizontal, `reveal` menyala, versi EN dan ID benar. Sisi Next.js tid
 dengan `Companies`/`Projects` dan tipe `Dict` otomatis ikut dari
 `en.json`.
 
+### Balon "FERRY WORKS" di hero + parallax mouse
+
+Diminta: PNG balon biru ditaruh di hero seperti referensi (balon di
+belakang wordmark raksasa, agak ke kanan) dengan efek parallax saat
+mouse hover.
+
+**Aset.** `frwrks.png` dari pengguna ternyata RGB TANPA alpha: kotak-
+kotak "transparan" ikut ter-bake sebagai piksel. Jadi harus di-cutout
+dulu. Tanpa numpy/OpenCV (hanya Pillow), latar dideteksi dari
+saturasi sangat rendah (kotak abu/putih) vs balon yang biru jenuh,
+lalu komponen latar dilabeli: yang menyentuh tepi atau besar tetap
+latar, sedangkan sorotan putih kecil di dalam balon dikembalikan jadi
+balon. Dua celah latar kecil yang terkurung (lubang huruf R dan celah
+R/S) sempat ikut terisi karena ukurannya di bawah ambang; dibedakan
+dari sorotan lewat ciri kotak abu (±40% pikselnya V < 225, sedangkan
+sorotan murni putih V ≥ 248). Tepi dirapikan (buang fringe 1px,
+haluskan, ambil warna tepi dari bagian dalam balon) dan diperiksa di
+atas latar paper maupun gelap pada zoom 3x: tanpa halo putih. Hasilnya
+`public/hero/balloon.webp` (938×1530 RGBA, 247 KB).
+
+**Penempatan.** `.hero-balloon` (z-index 0, DOM paling awal di hero)
+sehingga di bawah `.hero-stage` dan huruf hitam wordmark melintas di
+depan balon, persis referensi; sticker belakang tetap di atasnya.
+Tinggi 74svh di tengah vertikal, `left: 60%` (mobile 54svh, `left:
+62%`; sempat 68% tapi terpotong 14px di 375px). Pembungkus memegang
+posisi + parallax lewat custom property, `<img>` di dalamnya memegang
+animasi masuk (fade + naik) setelah `body.loaded`.
+
+**Parallax** (`motion/balloon.js`, dipasang di `initAll`, dipakai
+identik oleh React dan preview). Posisi kursor di dalam hero
+dinormalisasi -1..1 dari tengah; balon bergeser BERLAWANAN arah
+(kesan kedalaman karena di belakang wordmark) hingga 44px/30px dan
+miring hingga 5° ke arah kursor. Dihaluskan dengan lerp berbasis
+waktu (sama di 60Hz dan 120Hz), rAF tidur begitu posisi menetap, dan
+kembali ke tengah saat kursor keluar. Hanya `(hover: hover) and
+(pointer: fine)` dan bukan `prefers-reduced-motion`; layar sentuh
+dan reduced-motion mendapat balon statis.
+
+Diverifikasi: tangkapan Chrome headless 1440×900 (balon di belakang
+wordmark, sesuai referensi); logika parallax lewat pointer event
+nyata dengan jam 60fps sintetis (kanan-bawah → -44px/-30px/+5°,
+kiri-atas → kebalikannya, tengah → 0, ±53% jarak dalam 6 frame,
+menetap ±1,3 detik lalu tidur, pointer sentuh diabaikan, teardown
+membersihkan properti); balon utuh di dalam hero di 320/375/1024/
+1440px. Browser pane menahan rAF saat tersembunyi, jadi uji gerak
+memakai driver frame sintetis, bukan tampilan langsung.
+
 ## Penyimpangan sadar dari spec
 
 | Spec | Di sini | Alasan |
