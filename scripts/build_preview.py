@@ -256,13 +256,22 @@ projects = f'''
 </section>
 '''
 
-# ---------- vibe coding (placeholder) ----------
+# ---------- vibe coding ----------
 # Pasangan components/VibeCoding.tsx — markup harus tetap seragam.
-vibe_cards = "".join(f'''
-    <article class="vibe-card">
-      <div class="vibe-media" aria-hidden="true">
-        <span class="t-eyebrow">{D['vibeCoding']['placeholder']}</span>
-      </div>
+# Item ber-href jadi link keluar, ber-img menampilkan gambar (asset
+# di /public → prefiks ../public di preview), selain itu placeholder.
+def vibe_card(i, it):
+    V = D['vibeCoding']
+    if it.get("img"):
+        media = (f'<div class="vibe-media vibe-media--img">'
+                 f'<img src="../public{it["img"]}" alt="{it["alt"]}" '
+                 f'loading="lazy" decoding="async"></div>')
+    else:
+        media = (f'<div class="vibe-media" aria-hidden="true">'
+                 f'<span class="t-eyebrow">{V["placeholder"]}</span></div>')
+    cta = (f'<span class="vibe-cta t-eyebrow">{V["visit"]}{arrow()}</span>'
+           if it.get("href") else "")
+    body = f'''{media}
       <div class="vibe-foot">
         <div class="vibe-head">
           <span class="t-eyebrow vibe-num">{i:02d}</span>
@@ -270,8 +279,15 @@ vibe_cards = "".join(f'''
         </div>
         <h3 class="vibe-title">{it['title']}</h3>
         <p class="vibe-text">{it['text']}</p>
-      </div>
-    </article>''' for i, it in enumerate(D['vibeCoding']['items'], 1))
+        {cta}
+      </div>'''
+    if it.get("href"):
+        return (f'\n    <a class="vibe-card" href="{it["href"]}" target="_blank" '
+                f'rel="noopener noreferrer" data-cursor="view">{body}</a>')
+    return f'\n    <article class="vibe-card">{body}</article>'
+
+
+vibe_cards = "".join(vibe_card(i, it) for i, it in enumerate(D['vibeCoding']['items'], 1))
 
 vibe = f'''
 <section class="section section--divided" id="vibe-coding" aria-labelledby="vibe-label">

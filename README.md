@@ -1442,6 +1442,23 @@ sendiri. Teks contoh sengaja netral
 ("Project name", "Tools, Stack") supaya tidak menyiratkan proyek
 yang belum ada, dan tanpa em dash sesuai instruksi sebelumnya.
 
+Update: kartu pertama sekarang proyek asli, **Superstars Motorsport**
+(`https://superstar-motorsport.vercel.app/index.html`, situs
+penyelenggara Porsche Sprint Challenge Indonesia). Deskripsinya
+diambil dari isi situs itu sendiri (meta description + about), bukan
+karangan. Item JSON mendapat field opsional `href`, `img`, `alt`;
+kartu ber-`href` jadi link keluar (tab baru, `rel` noopener) dengan
+CTA "Visit site", kartu ber-`img` menampilkan gambar tanpa bingkai
+putus-putus, sedangkan item tanpa keduanya tetap placeholder. Meta
+section diganti dari "Highlights coming soon" jadi "Built with AI".
+
+Thumbnail `public/work/vibe-coding/superstars-motorsport.webp` adalah
+screenshot hero situs itu: Chrome headless 1440×900 @2x (2880×1800,
+rasio 16:10 persis dengan slot media), dikonversi ke WebP 1920×1200
+q84 (±200 KB). Screenshot dari browser pane tidak dipakai karena pane
+kecil menghasilkan tangkapan 256×156 piksel. Kalau nanti ingin
+diganti, timpa berkas itu di path yang sama.
+
 Diverifikasi di preview: section tepat setelah `#work`, 1 kartu,
 media 837px + teks 419px rata bawah di 1440px, bertumpuk di 375px,
 nol scroll horizontal, `reveal` menyala, versi EN dan ID benar. Sisi Next.js tidak bisa dijalankan

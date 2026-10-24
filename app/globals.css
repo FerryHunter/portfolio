@@ -1564,6 +1564,34 @@ body.loaded .hero-meta { opacity: 1; transform: none; }
   line-height: 1.5;
   color: var(--ink-muted);
 }
+/* Item dengan gambar: tanpa bingkai putus-putus, gambar menutup slot.
+   Item dengan href: seluruh kartu adalah link, gambar zoom halus saat
+   hover (hanya di perangkat yang punya hover). */
+.vibe-media--img {
+  border: 0;
+  overflow: hidden;
+  background: var(--border);
+}
+.vibe-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .9s var(--ease);
+}
+a.vibe-card { color: inherit; text-decoration: none; }
+.vibe-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  color: var(--ink);
+}
+.vibe-cta svg { width: 9px; height: 9px; flex: 0 0 auto; }
+@media (hover: hover) {
+  a.vibe-card:hover .vibe-media img { transform: scale(1.03); }
+  a.vibe-card:hover .vibe-cta svg { animation: pillArrow .5s var(--ease); }
+}
 @media (max-width: 768px) {
   .vibe-grid { gap: 40px; }
   .vibe-card { grid-template-columns: minmax(0, 1fr); gap: 14px; }

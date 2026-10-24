@@ -378,13 +378,17 @@
   },
   "vibeCoding": {
     "label": "Vibe coding",
-    "meta": "Highlight segera hadir",
+    "meta": "Dibangun dengan AI",
     "placeholder": "Placeholder",
+    "visit": "Kunjungi situs",
     "items": [
       {
-        "title": "Nama proyek",
-        "text": "Satu atau dua kalimat tentang fungsinya dan apa yang dibangun dengan AI.",
-        "tag": "Tools, Stack"
+        "title": "Superstars Motorsport",
+        "text": "Situs web untuk penyelenggara Porsche Sprint Challenge Indonesia, dibangun dengan AI.",
+        "tag": "Situs web",
+        "href": "https://superstar-motorsport.vercel.app/index.html",
+        "img": "/work/vibe-coding/superstars-motorsport.webp",
+        "alt": "Situs Superstars Motorsport: mobil balap berbaris di grid start sirkuit Mandalika"
       }
     ]
   },

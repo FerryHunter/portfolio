@@ -378,13 +378,17 @@
   },
   "vibeCoding": {
     "label": "Vibe coding",
-    "meta": "Highlights coming soon",
+    "meta": "Built with AI",
     "placeholder": "Placeholder",
+    "visit": "Visit site",
     "items": [
       {
-        "title": "Project name",
-        "text": "One or two lines about what it does and what was built with AI.",
-        "tag": "Tools, Stack"
+        "title": "Superstars Motorsport",
+        "text": "Website for the organiser of Porsche Sprint Challenge Indonesia, built with AI.",
+        "tag": "Website",
+        "href": "https://superstar-motorsport.vercel.app/index.html",
+        "img": "/work/vibe-coding/superstars-motorsport.webp",
+        "alt": "Superstars Motorsport website: racing cars lined up on the starting grid at Mandalika circuit"
       }
     ]
   },
