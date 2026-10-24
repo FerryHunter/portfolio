@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import type { Dict } from "@/lib/dict";
 
 /**
@@ -22,10 +23,36 @@ export default function Clients({ dict }: { dict: Dict }) {
       className="section section--divided sectors-section"
       aria-labelledby="clients-label"
     >
-      {/* Ornamen line art, terpotong setengah di tepi kanan.
-          Dekoratif murni, jadi disembunyikan dari screen reader. */}
-      <div className="sector-orbit" aria-hidden="true">
-        <i className="sector-orbit-art" />
+      {/* Stiker di sisi kanan yang kosong (menggantikan ornamen orbit).
+          Posisinya data-driven dari content/*.json → clients.stickers,
+          memakai kelas .hsticker yang sama dengan hero. Dekoratif
+          murni, jadi disembunyikan dari screen reader. */}
+      <div className="sector-stickers" aria-hidden="true">
+        {dict.clients.stickers.map((s) => (
+          <div
+            key={s.src}
+            className="hsticker hsticker--image"
+            style={
+              {
+                "--x": s.x,
+                "--y": s.y,
+                "--w": s.w,
+                "--r": `${s.r}deg`,
+              } as CSSProperties
+            }
+          >
+            <div className="hsticker-inner">
+              <img
+                src={s.src}
+                alt=""
+                style={{ "--ar": s.ar } as CSSProperties}
+                loading="lazy"
+                decoding="async"
+                draggable={false}
+              />
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="section-head reveal">

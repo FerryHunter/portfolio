@@ -68,58 +68,57 @@
     ],
     "stickers": [
       {
-        "kind": "emoji",
+        "kind": "image",
         "layer": "back",
-        "x": 14,
+        "x": 16,
         "y": 27,
-        "w": 11,
-        "r": -7,
-        "emoji": "🎨"
-      },
-      {
-        "kind": "emoji",
-        "layer": "back",
-        "x": 86,
-        "y": 21,
-        "w": 9,
-        "r": 8,
-        "emoji": "✏️"
-      },
-      {
-        "kind": "emoji",
-        "layer": "back",
-        "x": 79,
-        "y": 74,
-        "w": 12,
-        "r": -4,
-        "emoji": "🧩"
-      },
-      {
-        "kind": "emoji",
-        "layer": "front",
-        "x": 25,
-        "y": 77,
-        "w": 8,
-        "r": 11,
-        "emoji": "💡"
-      },
-      {
-        "kind": "emoji",
-        "layer": "front",
-        "x": 93,
-        "y": 51,
-        "w": 7,
+        "w": 17,
         "r": -9,
-        "emoji": "📐"
+        "src": "/hero/stickers/ferry-works-arch.webp",
+        "ar": 1.1715
       },
       {
-        "kind": "emoji",
+        "kind": "image",
+        "layer": "back",
+        "x": 40,
+        "y": 15,
+        "w": 17,
+        "r": -5,
+        "src": "/hero/stickers/ideas-in-progress.webp",
+        "ar": 2.4167,
+        "hideMobile": true
+      },
+      {
+        "kind": "image",
         "layer": "front",
-        "x": 7,
-        "y": 63,
-        "w": 6.5,
-        "r": 5,
-        "emoji": "✨"
+        "x": 89,
+        "y": 38,
+        "w": 12,
+        "r": 9,
+        "src": "/hero/stickers/good-design.webp",
+        "ar": 0.9671
+      },
+      {
+        "kind": "image",
+        "layer": "front",
+        "x": 24,
+        "y": 69,
+        "w": 15,
+        "r": -6,
+        "src": "/hero/stickers/product-design.webp",
+        "ar": 1.5247,
+        "hideMobile": true
+      },
+      {
+        "kind": "image",
+        "layer": "front",
+        "x": 82,
+        "y": 77,
+        "w": 17,
+        "r": 7,
+        "src": "/hero/stickers/ferryworks.webp",
+        "ar": 2.1071,
+        "hideMobile": true
       }
     ],
     "scroll": "(SCROLL)",
@@ -440,6 +439,24 @@
       },
       {
         "t": ". Different users, different stakes, and every time the same question: what makes someone finish the flow instead of leaving?"
+      }
+    ],
+    "stickers": [
+      {
+        "x": 70,
+        "y": 44,
+        "w": 15,
+        "r": -8,
+        "src": "/hero/stickers/build-bolder.webp",
+        "ar": 1.2714
+      },
+      {
+        "x": 84,
+        "y": 66,
+        "w": 8,
+        "r": 12,
+        "src": "/hero/stickers/silver-star.webp",
+        "ar": 0.9665
       }
     ]
   },

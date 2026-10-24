@@ -1501,8 +1501,9 @@ Tinggi 74svh di tengah vertikal, `left: 60%` (mobile 54svh, `left:
 posisi + parallax lewat custom property, `<img>` di dalamnya memegang
 animasi masuk (fade + naik) setelah `body.loaded`.
 
-**Parallax** (`motion/balloon.js`, dipasang di `initAll`, dipakai
-identik oleh React dan preview). Posisi kursor di dalam hero
+**Parallax** (awalnya `motion/parallax.js`, kini digabung ke
+`motion/parallax.js`, lihat bagian stiker di bawah; dipasang di
+`initAll`, dipakai identik oleh React dan preview). Posisi kursor di dalam hero
 dinormalisasi -1..1 dari tengah; balon bergeser BERLAWANAN arah
 (kesan kedalaman karena di belakang wordmark) hingga 44px/30px dan
 miring hingga 5° ke arah kursor. Dihaluskan dengan lerp berbasis
@@ -1519,6 +1520,69 @@ menetap ±1,3 detik lalu tidur, pointer sentuh diabaikan, teardown
 membersihkan properti); balon utuh di dalam hero di 320/375/1024/
 1440px. Browser pane menahan rAF saat tersembunyi, jadi uji gerak
 memakai driver frame sintetis, bukan tampilan langsung.
+
+### Stiker gambar di hero + Sectors, emoji dihapus, parallax semua stiker
+
+Diminta: emoji di hero diganti stiker PNG yang dipotong sendiri oleh
+pemilik situs, disebar ala Benorth, gambar orbit di kanan section
+Sectors juga diganti stiker, lalu semua stiker diberi parallax mouse.
+
+**Aset.** Pertama dicoba memotong dari satu sheet stiker, tetapi
+latarnya kotak-kotak AI yang tidak teratur (kotak 6-9px, tepi putih
+die-cut hanya 2-3px dan warnanya sama dengan kotak putih), jadi
+segmentasi warna tidak akan andal untuk 20+ stiker berbeda. Pemilik
+situs lalu mengirim tujuh stiker yang sudah dipotong (alpha asli),
+dipakai langsung: dipangkas ke batas konten dan dikonversi ke WebP
+(`public/hero/stickers/*.webp`, total ±132 KB). Resolusinya kecil
+(≤ 410px lebar), jadi sedikit lunak di layar retina; berkas beresolusi
+lebih tinggi dengan nama sama bisa langsung menimpa.
+
+**Data.** `hero.stickers` (EN + ID) kini berisi 5 stiker `kind:
+"image"` (`src`, `ar`, `x`/`y` %, `w` satuan lebar, `r` derajat,
+`layer` back/front, `hideMobile` opsional); keenam emoji dihapus
+dari konten. Kode jenis `emoji` dibiarkan karena bagian dari sistem
+data-driven hero. Sectors mendapat `clients.stickers` (2 stiker).
+Pembagian: hero = arch FERRY WORKS, IDEAS IN PROGRESS, GOOD DESIGN,
+PRODUCT DESIGN, FERRYWORKS; Sectors = BUILD BOLDER, bintang perak;
+ubah lewat JSON saja. Tiga stiker hero bertanda `hideMobile`
+(disembunyikan ≤768px agar tidak menutupi wordmark).
+
+**Penyebaran.** Tidak acak per muat (itu menggeser layout dan
+membuat hydration React tidak cocok); posisi disusun sekali sebagai
+data, tersebar dengan sudut, ukuran, dan lapisan berbeda: dua di
+belakang wordmark (di atas balon), tiga di depan, dua di antaranya
+menimpa tepi wordmark seperti stiker Benorth. Stiker gambar tidak
+dibungkus kartu putih (`.hsticker--image`): tepi die-cut sudah ada di
+gambar, bayangannya digambar CSS `drop-shadow` supaya ikut bentuk alpha.
+
+**Sectors.** Blok `.sector-orbit*`, `@keyframes orbitSpin`, markup di
+`Clients.tsx` dan `build_preview.py`, serta `public/orbit.svg`
+dihapus (tidak dipakai di tempat lain). Gantinya `.sector-stickers`
+(absolut, `pointer-events: none`), memakai kelas `.hsticker` yang sama
+dengan hero; disembunyikan ≤900px seperti orbit sebelumnya.
+
+**Parallax semua stiker.** `motion/balloon.js` digeneralisasi jadi
+`motion/parallax.js` dengan dua scene (hero, Sectors). Kursor
+dinormalisasi -1..1 dari tengah scene; tiap elemen bergeser
+berlawanan arah sebesar 44px × 30px × kedalaman dan miring ke arah
+kursor. Kedalaman: balon 1, stiker belakang 0.8, stiker depan 1.5,
+masing-masing × variasi 0.8/1.0/1.2 per stiker (terukur: 28 sampai
+79px). Hasil ditulis lewat `--mx/--my/--mr` yang dibaca
+`.hsticker-inner` dan `.hero-balloon`, BUKAN `transform` langsung,
+karena `hero.js` sudah menulis transform pada `.hsticker` untuk
+parallax scroll; keduanya jalan bersamaan tanpa saling menimpa.
+Daftar elemen dibaca ulang tiap kursor masuk, sehingga stiker yang
+ditempel pengunjung lewat "Leave your sticker" ikut bergerak. Hanya
+pointer halus dengan hover dan bukan reduced-motion.
+
+Diverifikasi: tangkapan Chrome headless hero 1440×900 (stiker tersebar,
+sesuai gaya Benorth) dan Sectors; parallax lewat pointer event nyata
+dengan jam 60fps sintetis (hero dan Sectors bergerak terpisah, sentuh
+diabaikan, stiker baru ikut, teardown membersihkan properti);
+kedelapan aset 200 `image/webp` di EN dan ID; tidak ada sisa emoji
+atau orbit di markup; mobile: 3 stiker tersembunyi, sisanya di dalam
+layar, nol scroll horizontal. Sisi Next.js tidak bisa dijalankan
+(`node`/`npm` tidak terpasang).
 
 ## Penyimpangan sadar dari spec
 

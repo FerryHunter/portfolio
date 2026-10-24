@@ -8,7 +8,7 @@ import { initCursor } from "./cursor.js";
 import { initReveal } from "./reveal.js";
 import { initNav } from "./nav.js";
 import { initHero } from "./hero.js";
-import { initBalloon } from "./balloon.js";
+import { initParallax } from "./parallax.js";
 import { initReel } from "./reel.js";
 import { initServices } from "./services.js";
 import { initStrip } from "./strip.js";
@@ -25,7 +25,7 @@ export function initAll(root = document) {
     initReveal(root),
     initNav(root),
     initHero(root),
-    initBalloon(root),
+    initParallax(root),
     initReel(root),
     initServices(root),
     initStrip(root),
@@ -44,7 +44,7 @@ export {
   initReveal,
   initNav,
   initHero,
-  initBalloon,
+  initParallax,
   initReel,
   initServices,
   initStrip,

@@ -21,11 +21,15 @@ type Sticker = {
   seed?: string;
   text?: string;
   emoji?: string;
+  /** kind "image": path di /public + sembunyikan di mobile. */
+  src?: string;
+  hideMobile?: boolean;
 };
 
 /** Ragam bentuk, semuanya tanpa satu pun file aset. */
 const KIND_CLASS: Record<string, string> = {
   emoji: "hsticker--emoji",
+  image: "hsticker--image",
   photo: "",
   round: "hsticker--round",
   "blob-a": "hsticker--blob hsticker--blob-a",
@@ -50,6 +54,17 @@ function Mark() {
 
 function StickerBody({ s }: { s: Sticker }) {
   if (s.kind === "emoji") return <>{s.emoji}</>;
+  if (s.kind === "image")
+    return (
+      <img
+        src={s.src}
+        alt=""
+        style={{ "--ar": s.ar ?? 1 } as CSSProperties}
+        loading="eager"
+        decoding="async"
+        draggable={false}
+      />
+    );
   if (s.kind.startsWith("word")) return <>{s.text}</>;
   if (s.kind === "mark") return <Mark />;
   const ar = s.ar ?? 1;
@@ -86,7 +101,9 @@ function StickerLayer({
       {items.map((s, i) => (
         <div
           key={`${s.kind}-${i}`}
-          className={`hsticker ${KIND_CLASS[s.kind] ?? ""}`.trim()}
+          className={`hsticker ${KIND_CLASS[s.kind] ?? ""} ${s.hideMobile ? "hsticker--desk" : ""}`
+            .replace(/\s+/g, " ")
+            .trim()}
           style={
             {
               "--x": s.x,
@@ -116,7 +133,7 @@ export default function Hero({ dict }: { dict: Dict }) {
 
   return (
     <section className="hero" id="top" data-hero>
-      {/* Balon di belakang wordmark; parallax mouse di motion/balloon.js.
+      {/* Balon di belakang wordmark; parallax mouse di motion/parallax.js.
           Pasangannya di preview statis: scripts/build_preview.py. */}
       <div className="hero-balloon" data-hero-balloon aria-hidden="true">
         <img

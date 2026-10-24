@@ -30,6 +30,7 @@ D = json.loads((ROOT / "content" / f"{LANG}.json").read_text(encoding="utf-8"))
 # Ragam bentuk sticker, semuanya tanpa satu pun file aset.
 KIND_CLASS = {
     "emoji": "hsticker--emoji",
+    "image": "hsticker--image",
     "photo": "",
     "round": "hsticker--round",
     "blob-a": "hsticker--blob hsticker--blob-a",
@@ -55,6 +56,11 @@ def sticker_body(s):
         return s["text"]
     if s["kind"] == "mark":
         return MARK_SVG
+    if s["kind"] == "image":
+        # Aset ditulis relatif terhadap /public di JSON; preview duduk
+        # di /preview/, jadi ia yang menambahkan prefiks.
+        return (f'<img src="../public{s["src"]}" alt="" style="--ar:{s.get("ar", 1)}" '
+                f'loading="eager" decoding="async" draggable="false">')
     ar = s.get("ar", 1)
     h = round(900 / ar)
     return (f'<img src="https://picsum.photos/seed/{s["seed"]}/900/{h}" alt="" '
@@ -65,7 +71,8 @@ def sticker_layer(variant, depth, target=False):
     items = [s for s in D["hero"]["stickers"] if s["layer"] == variant]
     inner = ""
     for s in items:
-        cls = ("hsticker " + KIND_CLASS.get(s["kind"], "")).strip()
+        cls = ("hsticker " + KIND_CLASS.get(s["kind"], "")
+               + (" hsticker--desk" if s.get("hideMobile") else "")).strip()
         inner += (
             f'<div class="{cls}" style="--x:{s["x"]}; --y:{s["y"]}; '
             f'--w:{s["w"]}; --r:{s["r"]}deg">'
@@ -361,9 +368,18 @@ segs = "".join(
      else f'<span>{s["t"]}</span>')
     for s in D["clients"]["segments"]
 )
+# Stiker di sisi kanan Sectors (menggantikan ornamen orbit); pasangan
+# components/Clients.tsx, memakai kelas .hsticker yang sama dengan hero.
+sector_stickers = "".join(
+    f'<div class="hsticker hsticker--image" style="--x:{st["x"]}; --y:{st["y"]}; '
+    f'--w:{st["w"]}; --r:{st["r"]}deg"><div class="hsticker-inner">'
+    f'<img src="../public{st["src"]}" alt="" style="--ar:{st["ar"]}" '
+    f'loading="lazy" decoding="async" draggable="false"></div></div>'
+    for st in D["clients"]["stickers"]
+)
 clients = f"""
 <section class="section section--divided sectors-section" aria-labelledby="clients-label">
-  <div class="sector-orbit" aria-hidden="true"><i class="sector-orbit-art"></i></div>
+  <div class="sector-stickers" aria-hidden="true">{sector_stickers}</div>
   <div class="section-head reveal">
     <h2 class="t-label" id="clients-label">{D['clients']['label']}</h2>
     <p class="t-meta">{D['clients']['meta']}</p>

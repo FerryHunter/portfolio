@@ -634,10 +634,10 @@ body.loaded .hero-reveal { transform: none; }
 
 /* --- balon "FERRY WORKS" di belakang wordmark + parallax mouse ---
    Komponen: components/Hero.tsx · scripts/build_preview.py ·
-   motion/balloon.js. z-index 0 = satu lapis dengan sticker belakang
+   motion/parallax.js. z-index 0 = satu lapis dengan sticker belakang
    (DOM lebih awal, jadi sticker tetap di atasnya) dan di bawah
    .hero-stage, sehingga huruf hitam wordmark melintas di depan balon.
-   Pembungkus memegang posisi + parallax (--bx/--by/--br dari JS);
+   Pembungkus memegang posisi + parallax (--mx/--my/--mr dari JS);
    gambarnya sendiri memegang animasi masuk. */
 .hero-balloon {
   position: absolute;
@@ -648,8 +648,8 @@ body.loaded .hero-reveal { transform: none; }
   aspect-ratio: 938 / 1530;
   pointer-events: none;
   transform: translate(-50%, -50%)
-             translate3d(var(--bx, 0px), var(--by, 0px), 0)
-             rotate(var(--br, 0deg));
+             translate3d(var(--mx, 0px), var(--my, 0px), 0)
+             rotate(var(--mr, 0deg));
   will-change: transform;
 }
 .hero-balloon-img {
@@ -689,7 +689,12 @@ body.loaded .hero-balloon-img { opacity: 1; transform: none; }
 }
 
 .hsticker-inner {
-  transform: translate(-50%, -50%) rotate(var(--r, 0deg));
+  /* --mx/--my/--mr = parallax mouse (motion/parallax.js); sengaja lewat
+     custom property karena hero.js memegang `transform` .hsticker. */
+  transform: translate(-50%, -50%)
+             translate3d(var(--mx, 0px), var(--my, 0px), 0)
+             rotate(calc(var(--r, 0deg) + var(--mr, 0deg)));
+  will-change: transform;
   padding: 5%;
   background: var(--white);
   border-radius: var(--radius, 4px);
@@ -711,6 +716,28 @@ body.loaded .hero-balloon-img { opacity: 1; transform: none; }
 .hsticker--round { --radius: 999px; }
 .hsticker--round .hsticker-inner,
 .hsticker--round img { border-radius: 999px; }
+
+/* Stiker gambar (kind "image"): potongan dengan alpha asli dari
+   public/hero/stickers/*.webp. Tidak dibungkus kartu putih seperti
+   foto, karena tepi die-cut putihnya sudah ada di gambar itu sendiri;
+   bayangannya digambar CSS (bukan di-bake) supaya ikut bentuk alpha. */
+.hsticker--image .hsticker-inner {
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  filter: drop-shadow(0 8px 16px rgba(13, 13, 11, .16));
+}
+.hsticker--image img {
+  display: block;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+/* Stiker yang hanya muat di layar lebar disembunyikan di mobile supaya
+   hero tidak penuh sesak dan tidak menutupi wordmark. */
+@media (max-width: 768px) {
+  .hsticker--desk { display: none; }
+}
 
 /* Blob: tepi tak beraturan lewat clip-path. Diterapkan di
    .hsticker-inner supaya bingkai putihnya ikut terpotong. */
@@ -1441,61 +1468,30 @@ body.loaded .hero-meta { opacity: 1; transform: none; }
 
 
 /* ============================================================
-   SECTORS — ornamen orbit
-   Line art dipakai lewat CSS mask, bukan inline SVG: satu berkas
-   jadi sumber tunggal untuk komponen React maupun generator
-   preview, dan warnanya tetap ikut token.
+   SECTORS — stiker di sisi kanan
+   Menggantikan ornamen orbit line-art. Posisi data-driven dari
+   content/*.json → clients.stickers, memakai kelas .hsticker yang
+   sama dengan hero (--x/--y/--w/--r, satuan lebar --sticker-unit).
+   Komponen: components/Clients.tsx · scripts/build_preview.py.
    ============================================================ */
 .sectors-section {
+  --sticker-unit: 1vw;
   position: relative;
-  overflow: hidden;        /* inilah yang memotong ornamen */
+  overflow: hidden;        /* stiker yang meluber dipotong di tepi section */
 }
 .sectors-section > * { position: relative; z-index: 1; }
 
-.sector-orbit {
+.sectors-section > .sector-stickers {
   position: absolute;
+  inset: 0;
   z-index: 0;
-  /* Bukan 50% telanjang: pada tinggi section yang sebenarnya,
-     tepi atas orbit berakhir 17px DI ATAS dasar baris meta
-     ("02 · Six industries, one question") dan keduanya beririsan
-     horizontal. Offset tetap 48px menurunkannya sampai kedua
-     celah positif, sementara persentasenya tetap ikut tinggi
-     section. */
-  top: calc(50% + 48px);
-  right: 0;
-  width: clamp(340px, 42vw, 620px);
-  /* Digeser separuh lebarnya keluar tepi kanan → terpotong tepat
-     setengah. Wrapper yang menangani posisi, anaknya yang
-     berputar: satu elemen tidak bisa memegang dua transform yang
-     berbeda tujuan. */
-  transform: translate(50%, -50%);
   pointer-events: none;
 }
 
-.sector-orbit-art {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1;
-  background: var(--ink);
-  opacity: .11;
-  -webkit-mask: url("../public/orbit.svg") center / contain no-repeat;
-  mask: url("../public/orbit.svg") center / contain no-repeat;
-  animation: orbitSpin 90s linear infinite;
-  will-change: transform;
-}
-
-@keyframes orbitSpin {
-  to { transform: rotate(360deg); }
-}
-
-/* Di bawah 900px sisi kanan tidak lagi kosong: teks memakai
-   seluruh lebar, jadi ornamennya hanya akan mengganggu. */
+/* Di bawah 900px teks memakai seluruh lebar dan sisi kanan tidak lagi
+   kosong, jadi stikernya hanya akan menutupi teks. */
 @media (max-width: 900px) {
-  .sector-orbit { display: none; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .sector-orbit-art { animation: none; }
+  .sectors-section > .sector-stickers { display: none; }
 }
 
 
