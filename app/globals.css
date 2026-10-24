@@ -1559,11 +1559,11 @@ body.loaded .hero-meta { opacity: 1; transform: none; }
   gap: 16px;
   color: var(--ink-muted);
 }
-.vibe-title { font-size: 15px; font-weight: 400; letter-spacing: -.01em; }
+/* Ukuran teks sama dengan detail Services: judul .t-detail-h, paragraf
+   .t-detail-b (lihat .service-detail p untuk warna dan lebar baca). */
 .vibe-text {
-  max-width: 38ch;
-  font-size: 14px;
-  line-height: 1.5;
+  margin-top: 8px;
+  max-width: 46ch;
   color: var(--ink-muted);
 }
 /* Item dengan gambar: tanpa bingkai putus-putus, gambar menutup slot.

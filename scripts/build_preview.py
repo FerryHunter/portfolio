@@ -277,8 +277,8 @@ def vibe_card(i, it):
           <span class="t-eyebrow vibe-num">{i:02d}</span>
           <span class="t-eyebrow vibe-tag">{it['tag']}</span>
         </div>
-        <h3 class="vibe-title">{it['title']}</h3>
-        <p class="vibe-text">{it['text']}</p>
+        <h3 class="vibe-title t-detail-h">{it['title']}</h3>
+        <p class="vibe-text t-detail-b">{it['text']}</p>
         {cta}
       </div>'''
     if it.get("href"):

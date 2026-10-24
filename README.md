@@ -1452,6 +1452,12 @@ CTA "Visit site", kartu ber-`img` menampilkan gambar tanpa bingkai
 putus-putus, sedangkan item tanpa keduanya tetap placeholder. Meta
 section diganti dari "Highlights coming soon" jadi "Built with AI".
 
+Ukuran teks kartu disamakan dengan detail Services: judul memakai
+`.t-detail-h` (27px, 22px di mobile) dan paragraf `.t-detail-b`
+(22.5px/300, 17px di mobile) dengan warna muted dan `max-width: 46ch`
+yang sama seperti `.service-detail p`. Diverifikasi lewat computed
+style: identik dengan Services di 1440px dan 375px.
+
 Thumbnail `public/work/vibe-coding/superstars-motorsport.webp` adalah
 screenshot hero situs itu: Chrome headless 1440×720 @2x (2880×1440,
 rasio 2:1 persis dengan slot media sehingga tidak ada bagian yang

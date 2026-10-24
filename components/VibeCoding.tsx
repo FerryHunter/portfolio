@@ -47,8 +47,8 @@ export default function VibeCoding({ dict }: { dict: Dict }) {
                   <span className="t-eyebrow vibe-num">{String(i + 1).padStart(2, "0")}</span>
                   <span className="t-eyebrow vibe-tag">{it.tag}</span>
                 </div>
-                <h3 className="vibe-title">{it.title}</h3>
-                <p className="vibe-text">{it.text}</p>
+                <h3 className="vibe-title t-detail-h">{it.title}</h3>
+                <p className="vibe-text t-detail-b">{it.text}</p>
                 {it.href ? (
                   <span className="vibe-cta t-eyebrow">
                     {v.visit}
