@@ -20,12 +20,17 @@ export function initHero(root = document) {
 
   let raf = 0;
   let running = true;
+  let lastY = -1;
 
   const tick = () => {
     if (!running) return;
     const y = window.scrollY;
-    // Berhenti menghitung begitu hero keluar viewport.
-    if (y < window.innerHeight * 1.2) {
+    // Menulis transform tiap frame walau scroll diam memaksa style
+    // recalc + komposit berulang untuk semua stiker (berat di HP);
+    // cukup tulis saat posisi scroll berubah. Berhenti menghitung
+    // begitu hero keluar viewport.
+    if (y !== lastY && y < window.innerHeight * 1.2) {
+      lastY = y;
       layers.forEach(({ depth, items }) => {
         const shift = -y * depth;
         items.forEach((item, i) => {

@@ -650,7 +650,6 @@ body.loaded .hero-reveal { transform: none; }
   transform: translate(-50%, -50%)
              translate3d(var(--mx, 0px), var(--my, 0px), 0)
              rotate(var(--mr, 0deg));
-  will-change: transform;
 }
 .hero-balloon-img {
   display: block;
@@ -694,7 +693,6 @@ body.loaded .hero-balloon-img { opacity: 1; transform: none; }
   transform: translate(-50%, -50%)
              translate3d(var(--mx, 0px), var(--my, 0px), 0)
              rotate(calc(var(--r, 0deg) + var(--mr, 0deg)));
-  will-change: transform;
   padding: 5%;
   background: var(--white);
   border-radius: var(--radius, 4px);
@@ -833,6 +831,27 @@ body.loaded .hero-balloon-img { opacity: 1; transform: none; }
   width: 100%;
   height: auto;
   color: var(--ink);
+}
+
+/* Performa per jenis perangkat.
+
+   Pointer halus (mouse): parallax mouse (motion/parallax.js) menulis
+   --mx/--my/--mr tiap frame, jadi balon dan isi stiker dipromosikan
+   ke layer GPU sendiri.
+
+   Layar sentuh: TIDAK ada parallax mouse, dan `filter: drop-shadow`
+   berblur besar pada elemen yang bergerak (parallax scroll hero.js)
+   sangat berat di GPU HP, terutama balon 28px/36px dan tiap stiker;
+   layer permanen (will-change) juga hanya menambah memori. Jadi di
+   sana filter dimatikan dan layer tidak dipaksa. Stiker tetap terbaca
+   lewat tepi die-cut putihnya sendiri. */
+@media (hover: hover) and (pointer: fine) {
+  .hero-balloon,
+  .hsticker-inner { will-change: transform; }
+}
+@media (hover: none), (pointer: coarse) {
+  .hsticker .hsticker-inner,
+  .hero-balloon-img { filter: none; }
 }
 
 .hero.placing .hsticker { opacity: 0; }

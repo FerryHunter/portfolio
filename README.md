@@ -1584,6 +1584,37 @@ atau orbit di markup; mobile: 3 stiker tersembunyi, sisanya di dalam
 layar, nol scroll horizontal. Sisi Next.js tidak bisa dijalankan
 (`node`/`npm` tidak terpasang).
 
+### Perbaikan lag parallax stiker di HP
+
+Dilaporkan: parallax stiker sangat lag di HP. Parallax mouse
+(`motion/parallax.js`) memang tidak aktif di layar sentuh, jadi
+penyebabnya ada di dua hal lain yang diperburuk oleh stiker gambar
+baru:
+
+1. `motion/hero.js` (parallax scroll) menulis `style.transform` ke
+   setiap stiker pada SETIAP frame walau scroll diam. Diukur dengan
+   Proxy di `el.style` terhadap versi lama dari git: 900 penulisan
+   dalam 180 frame saat scroll diam (5 stiker × tiap frame) dan 300
+   dalam 60 frame setelah scroll sekali. Sekarang menulis hanya saat
+   `scrollY` berubah: 0 saat diam dan 5 (sekali) setelah scroll.
+2. `filter: drop-shadow` berblur besar pada elemen yang bergerak
+   (balon 28px/36px, tiap stiker) plus `will-change: transform`
+   permanen pada balon dan semua `.hsticker-inner`; di GPU HP
+   ini yang paling berat dan hanya menambah memori. Sekarang di
+   perangkat sentuh (`(hover: none), (pointer: coarse)`) semua filter
+   stiker dan balon dimatikan (stiker tetap terbaca lewat tepi
+   die-cut putihnya), sedangkan `will-change` dipindah ke blok
+   pointer halus (`(hover: hover) and (pointer: fine)`) yang memang
+   dipakai parallax mouse.
+
+Diverifikasi: emulasi sentuh (`pointer: coarse`) → `filter: none` dan
+`will-change: auto` di balon, stiker hero, dan stiker Sectors; desktop
+tidak berubah (bayangan tetap, `will-change: transform`). Ini
+diverifikasi lewat gaya terkomputasi dan hitungan penulisan, bukan
+fps di perangkat nyata (tidak tersedia di environment ini); kalau
+masih terasa berat di HP tertentu, langkah berikutnya adalah
+mematikan scroll-parallax stiker khusus layar sentuh.
+
 ## Penyimpangan sadar dari spec
 
 | Spec | Di sini | Alasan |
