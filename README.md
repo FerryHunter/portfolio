@@ -1419,6 +1419,36 @@ dijalankan `tsc`/`next build` sungguhan di environment ini
 komponen yang sudah terbukti bekerja, bukan ditulis dari nol, untuk
 menjaga risiko itu serendah mungkin.
 
+### Section "Vibe coding" (placeholder) di bawah Work
+
+Diminta: satu section baru tepat di bawah Work untuk highlight vibe
+coding, placeholder dulu. Dibuat sebagai komponen sendiri
+(`components/VibeCoding.tsx`) dan disisipkan di `page.tsx` antara
+`Projects` dan `Clients`; pasangannya di preview statis adalah blok
+`vibe` di `scripts/build_preview.py`, markup-nya dijaga seragam.
+
+Teks seluruhnya dari `content/*.json → vibeCoding` (label, meta,
+label placeholder, dan `items[]` berisi `title`/`text`/`tag`),
+sehingga mengganti placeholder jadi highlight asli cukup mengisi
+JSON dan, untuk gambar, mengganti `.vibe-media`. Cuma SATU kartu
+placeholder (baru ada satu karya vibe coding), dengan kotak media
+putus-putus (gaya sama dengan `.case-proc-placeholder`). Awalnya
+dibuat 3 kartu dalam grid 3 kolom, tapi dengan satu item itu
+menyisakan dua kolom kosong, jadi tiap highlight dibuat satu baris
+"featured": media 16:10 lebar di kiri, teks rata bawah di kanan,
+bertumpuk jadi satu kolom ≤768px (`§6.7b` di `globals.css`).
+Menambah highlight cukup menambah item di JSON, barisnya menumpuk
+sendiri. Teks contoh sengaja netral
+("Project name", "Tools, Stack") supaya tidak menyiratkan proyek
+yang belum ada, dan tanpa em dash sesuai instruksi sebelumnya.
+
+Diverifikasi di preview: section tepat setelah `#work`, 1 kartu,
+media 837px + teks 419px rata bawah di 1440px, bertumpuk di 375px,
+nol scroll horizontal, `reveal` menyala, versi EN dan ID benar. Sisi Next.js tidak bisa dijalankan
+(`node`/`npm` tidak terpasang); komponennya memakai pola yang sama
+dengan `Companies`/`Projects` dan tipe `Dict` otomatis ikut dari
+`en.json`.
+
 ## Penyimpangan sadar dari spec
 
 | Spec | Di sini | Alasan |

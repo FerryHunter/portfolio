@@ -256,6 +256,34 @@ projects = f'''
 </section>
 '''
 
+# ---------- vibe coding (placeholder) ----------
+# Pasangan components/VibeCoding.tsx — markup harus tetap seragam.
+vibe_cards = "".join(f'''
+    <article class="vibe-card">
+      <div class="vibe-media" aria-hidden="true">
+        <span class="t-eyebrow">{D['vibeCoding']['placeholder']}</span>
+      </div>
+      <div class="vibe-foot">
+        <div class="vibe-head">
+          <span class="t-eyebrow vibe-num">{i:02d}</span>
+          <span class="t-eyebrow vibe-tag">{it['tag']}</span>
+        </div>
+        <h3 class="vibe-title">{it['title']}</h3>
+        <p class="vibe-text">{it['text']}</p>
+      </div>
+    </article>''' for i, it in enumerate(D['vibeCoding']['items'], 1))
+
+vibe = f'''
+<section class="section section--divided" id="vibe-coding" aria-labelledby="vibe-label">
+  <div class="section-head reveal">
+    <h2 class="t-label" id="vibe-label">{D['vibeCoding']['label']}</h2>
+    <p class="t-meta">{D['vibeCoding']['meta']}</p>
+  </div>
+  <div class="vibe-grid reveal">{vibe_cards}
+  </div>
+</section>
+'''
+
 # ---------- companies ----------
 companies = f"""
 <section class="section section--divided" aria-labelledby="companies-label">
@@ -332,6 +360,7 @@ html = shell(D, LANG, f"""
 {tagline}
 {services}
 {projects}
+{vibe}
 {clients}
 {companies}
 """)

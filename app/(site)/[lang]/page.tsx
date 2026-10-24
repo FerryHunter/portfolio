@@ -5,6 +5,7 @@ import Companies from "@/components/Companies";
 import Tagline from "@/components/Tagline";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
+import VibeCoding from "@/components/VibeCoding";
 import { DEFAULT_LANG, getDict, isLang, type Lang } from "@/lib/dict";
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
@@ -19,6 +20,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <Tagline dict={dict} />
       <Services dict={dict} />
       <Projects dict={dict} lang={current} />
+      <VibeCoding dict={dict} />
       <Clients dict={dict} />
       <Companies dict={dict} />
     </>

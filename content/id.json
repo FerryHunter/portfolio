@@ -376,6 +376,18 @@
       }
     ]
   },
+  "vibeCoding": {
+    "label": "Vibe coding",
+    "meta": "Highlight segera hadir",
+    "placeholder": "Placeholder",
+    "items": [
+      {
+        "title": "Nama proyek",
+        "text": "Satu atau dua kalimat tentang fungsinya dan apa yang dibangun dengan AI.",
+        "tag": "Tools, Stack"
+      }
+    ]
+  },
   "clients": {
     "label": "Sektor",
     "meta": "02 · Enam industri, satu pertanyaan",
@@ -628,7 +640,10 @@
             "Daftar adalah kondisi awalnya. Event dikelompokkan di bawah bulannya, tanggal memegang rel kirinya sendiri, dan seluruhnya bergulir maju, karena pertanyaan yang biasa muncul adalah apa yang akan datang untuk saham saya, dan daftar menjawabnya tanpa menyuruh siapa pun membidik satu tanggal lebih dulu.",
             "Grid bulanan duduk di balik satu ikon di header, untuk pertanyaan yang lain: minggu ini bentuknya seperti apa. Ia membawa tiga kelas event yang sama sebagai titik warna (hari libur AS, corporate action, event ekonomi), dan daftarnya tetap ada di bawahnya, tidak berubah. Satu set data, dua cara membaca, tanpa layar kedua yang harus ikut dirawat.",
             "Cakupan berupa sepasang chip, bukan tab bar: My Portfolio dan Watchlist mempersempit baris yang sama di tempatnya. Jenis event ditaruh di sheet dari ikon filter, supaya empat pilihannya datang selebar layar dan terjangkau ibu jari, bukan diperas jadi dropdown di pucuk layar."
-          ]
+          ],
+          "img": "/work/nanovest-calendar/approach-screens.webp",
+          "ar": 1.5396,
+          "alt": "All Event Calendar screens including edge cases"
         }
       ],
       "video": {

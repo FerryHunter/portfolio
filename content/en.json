@@ -376,6 +376,18 @@
       }
     ]
   },
+  "vibeCoding": {
+    "label": "Vibe coding",
+    "meta": "Highlights coming soon",
+    "placeholder": "Placeholder",
+    "items": [
+      {
+        "title": "Project name",
+        "text": "One or two lines about what it does and what was built with AI.",
+        "tag": "Tools, Stack"
+      }
+    ]
+  },
   "clients": {
     "label": "Sectors",
     "meta": "02 · Six industries, one question",
@@ -628,7 +640,10 @@
             "The list is the default. Events group under the month they fall in, the date keeps its own left rail, and the whole thing scrolls forward, because the usual question is what is coming for my stocks, and a list answers it without asking anyone to aim at a target first.",
             "The month grid sits behind one icon in the header, for the other question: what does this week look like. It carries the same three event classes as coloured dots (US holiday, corporate action, economic event), and the list stays underneath it, unchanged. One data set, two readings, no second screen to keep in sync.",
             "Scope is a pair of chips, not a tab bar: My Portfolio and Watchlist narrow the same rows in place. Event type is a sheet from the filter icon, so four choices arrive full width and thumb-reachable instead of squeezed into a dropdown at the top of the screen."
-          ]
+          ],
+          "img": "/work/nanovest-calendar/approach-screens.webp",
+          "ar": 1.5396,
+          "alt": "All Event Calendar screens including edge cases"
         }
       ],
       "video": {

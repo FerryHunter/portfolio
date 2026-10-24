@@ -1515,6 +1515,62 @@ body.loaded .hero-meta { opacity: 1; transform: none; }
 
 
 /* ============================================================
+   §6.7b — VIBE CODING (highlight, masih placeholder)
+   Komponen: components/VibeCoding.tsx · scripts/build_preview.py
+   Slot media memakai gaya putus-putus yang sama dengan
+   .case-proc-placeholder; ganti isinya dengan gambar/video asli
+   begitu highlight-nya ada.
+   ============================================================ */
+.vibe-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 56px;
+}
+/* Tiap highlight satu baris "featured": media lebar di kiri, teks di
+   kanan, rata bawah dengan media. Satu item tidak menyisakan kolom
+   kosong, dan menambah item cukup menumpuk baris baru. */
+.vibe-card {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: end;
+}
+.vibe-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 10;
+  border: 1.5px dashed var(--border);
+  border-radius: 6px;
+  color: var(--ink-muted);
+  text-align: center;
+}
+.vibe-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.vibe-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--ink-muted);
+}
+.vibe-title { font-size: 15px; font-weight: 400; letter-spacing: -.01em; }
+.vibe-text {
+  max-width: 38ch;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
+@media (max-width: 768px) {
+  .vibe-grid { gap: 40px; }
+  .vibe-card { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+}
+
+
+/* ============================================================
    §6.9 — FOOTER CTA
    ============================================================ */
 #footer-cta {
