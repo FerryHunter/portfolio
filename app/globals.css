@@ -3,7 +3,7 @@
    Struktur mengikuti build spec: §2 token, §3 type, §4 layout,
    §5 global behavior, §6 per-section, §9 accessibility.
    Font Aeonik (lisensi komersial) disubstitusi Switzer +
-   JetBrains Mono sesuai §0.
+   D-DIN (label) sesuai §0.
    ============================================================ */
 
 /* ---------- font (self-host dari /public/fonts) ----------
@@ -11,7 +11,7 @@
    pihak ketiga yang memblokir render ditambah empat koneksi baru
    (DNS + TLS) sebelum teks pertama bisa tampil, terutama terasa di
    HP. Berkasnya sama persis dengan yang disajikan Fontshare / Google
-   (Switzer 300/400/500, JetBrains Mono 400 subset latin), jadi
+   (Switzer 300/400/500, D-DIN 400), jadi
    tampilan tidak berubah. Path absolut /fonts/... sengaja, supaya
    cocok dengan <link rel="preload"> di layout; halaman preview statis
    menimpanya dengan path relatif (scripts/chrome.py). */
@@ -37,12 +37,11 @@
   src: url("/fonts/switzer-500.woff2") format("woff2");
 }
 @font-face {
-  font-family: "JetBrains Mono";
+  font-family: "D-DIN";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/jetbrains-mono-400-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url("/fonts/d-din-400.woff2") format("woff2");
 }
 
 /* ---------- reset ---------- */
@@ -100,7 +99,7 @@ h1, h2, h3, h4, p { margin: 0; }
 
   /* Layout */
   --font:      "Switzer", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-mono: "D-DIN", "DIN Alternate", "Bahnschrift", "DIN", "Arial Narrow", Arial, sans-serif; /* label/eyebrow; nama --font-mono dipertahankan */
   --nav-h:     56px;
   --gutter:    80px;
 }

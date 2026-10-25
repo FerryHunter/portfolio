@@ -1644,7 +1644,7 @@ Diukur dengan lab CDP buatan sendiri (Chrome headless, throttling mobile), karen
 | Temuan | Perbaikan |
 |---|---|
 | Gambar `public/` 44,3 MB (WebP lossless) | `scripts/optimize_images.py` mengenkode ulang ke WebP lossy (q84, q92 bila PSNR < 34 dB, lebar maks 2400). Hasil 10,1 MB; idempoten, `--dry-run` tersedia. |
-| Font dari Google Fonts/Fontshare (host pihak ketiga) | Di-host sendiri di `public/fonts` (Switzer 300/400/500, JetBrains Mono 400 latin), `@font-face` di `globals.css`, dua font atas lipatan di-preload. |
+| Font dari Google Fonts/Fontshare (host pihak ketiga) | Di-host sendiri di `public/fonts` (Switzer 300/400/500, D-DIN 400), `@font-face` di `globals.css`, dua font atas lipatan di-preload. |
 | Tanpa cache header untuk aset statis | `headers()` di `next.config.mjs`: font immutable, gambar 1 hari + stale-while-revalidate 7 hari. |
 | Preloader menahan LCP (halaman case 5,9 dtk) | Dilewati bila sudah selesai di sesi ini (`sessionStorage fw-pre` + `html[data-seen]`), batas keras 2,2 dtk. |
 | Balloon hero 1 file besar | `srcSet` 768w + `fetchPriority="high"`. |
@@ -1664,6 +1664,15 @@ Diukur dengan lab CDP buatan sendiri (Chrome headless, throttling mobile), karen
 - Preview Python tidak memuat JSON-LD/canonical (hanya untuk Next).
 - Showreel masih memakai placeholder `picsum.photos` (~100 KB pihak ketiga) sampai ada video asli.
 - Tidak ada yang bisa menjamin muncul di Google AI Overview. Yang bisa dilakukan hanya membuat situs terbaca baik; verifikasi Search Console, kirim sitemap, dan backlink (LinkedIn, Dribbble, GitHub) dikerjakan pemilik situs.
+
+## Font label: D-DIN
+
+Semua teks bergaya label (eyebrow, nav, meta, catatan huruf kapital) dulu memakai JetBrains Mono lewat variabel `--font-mono`. Sekarang memakai **D-DIN** (SIL OFL 1.1, Datto), pengganti gratis untuk DIN yang komersial.
+
+- Berkas: `public/fonts/d-din-400.woff2` (20 KB) + `D-DIN-LICENSE.txt`. Hanya bobot 400 yang ada, jadi label tidak boleh diberi `font-weight` lain (browser akan membuat faux-bold).
+- Nama variabel `--font-mono` sengaja tidak diubah supaya tidak menyentuh ratusan aturan CSS. Isinya kini D-DIN, lalu fallback DIN Alternate, Bahnschrift, Arial Narrow.
+- D-DIN proporsional, bukan monospace, jadi lebar label berubah sedikit; letter-spacing tetap.
+- Di-preload di `app/layout.tsx` dan `scripts/chrome.py` (menggantikan JetBrains Mono). Kalau punya lisensi DIN asli (mis. DIN Next), cukup ganti berkas woff2 dan nama `font-family` di `globals.css`.
 
 ## Penyimpangan sadar dari spec
 

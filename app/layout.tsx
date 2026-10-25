@@ -3,9 +3,9 @@ import "./globals.css";
 
 /**
  * Aeonik (situs referensi) berlisensi komersial CoType Foundry →
- * disubstitusi Switzer + JetBrains Mono sesuai §0. Fontnya di-host
+ * disubstitusi Switzer + D-DIN (label, pengganti DIN komersial) sesuai §0. Fontnya di-host
  * sendiri (public/fonts, @font-face di globals.css) dan hanya dua yang
- * di-preload: Switzer 400 (wordmark + teks isi) dan JetBrains Mono
+ * di-preload: Switzer 400 (wordmark + teks isi) dan D-DIN
  * 400 (label nav di atas lipatan).
  *
  * metadata di sini hanya nilai bawaan (ikon, robots, fallback OG).
@@ -65,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <link
           rel="preload"
-          href="/fonts/jetbrains-mono-400-latin.woff2"
+          href="/fonts/d-din-400.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
